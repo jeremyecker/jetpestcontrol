@@ -1,4 +1,5 @@
-import { type RegionConfig } from '@/hub.config';
+// RegionConfig type inlined to avoid hub.config circular deps
+interface RegionConfig { shortName: string; name: string; }
 
 export const SERVICES = [
   { name: 'Ant Control', slug: 'ant-control', icon: '🐜' },
