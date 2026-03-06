@@ -54,10 +54,10 @@ export default function ReviewsSection({
               <p className="text-gray-700 text-sm flex-1 mb-3">&ldquo;{review.text}&rdquo;</p>
               <div className="flex items-center gap-2">
                 <div className="w-8 h-8 bg-brand-primary rounded-full flex items-center justify-center text-white text-sm font-bold">
-                  {review.author[0]}
+                  {review.name[0]}
                 </div>
                 <div>
-                  <span className="text-sm font-medium text-gray-800">{review.author}</span>
+                  <span className="text-sm font-medium text-gray-800">{review.name}</span>
                   {review.location && (
                     <span className="block text-xs text-gray-400">{review.location}</span>
                   )}

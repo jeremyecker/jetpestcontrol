@@ -23,9 +23,6 @@ export const metadata: Metadata = {
     icon: '/favicon.ico',
     apple: '/icon-192.png',
   },
-  openGraph: {
-    images: ['/og-image.png'],
-  },
   alternates: {
     canonical: './',
   },
@@ -33,6 +30,7 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: SITE_NAME,
     locale: 'en_US',
+    images: ['/og-image.png'],
   },
 };
 
