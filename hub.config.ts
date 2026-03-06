@@ -20,6 +20,7 @@ export const BRAND = {
   secondaryColor: '#2A5C8F',
   accentColor: '#E63946',
   yearFounded: 2015,
+  region: 'Brooklyn, Queens, Manhattan, Nassau & Suffolk Counties',
   webhookUrl: '',
 } as const;
 
@@ -55,6 +56,73 @@ export const REVIEWS = [
 // ============================================================
 // REGIONS — Brooklyn (primary), Queens, Manhattan, Nassau, Suffolk
 // ============================================================
+const BROOKLYN_TOWNS = [
+  'Bay Ridge', 'Bedford-Stuyvesant', 'Bensonhurst', 'Borough Park', 'Brighton Beach',
+  'Brooklyn Heights', 'Brownsville', 'Bushwick', 'Canarsie', 'Carroll Gardens',
+  'Clinton Hill', 'Cobble Hill', 'Coney Island', 'Crown Heights', 'Ditmas Park',
+  'Downtown Brooklyn', 'Dumbo', 'East Flatbush', 'East New York', 'Flatbush',
+  'Flatlands', 'Fort Greene', 'Gravesend', 'Greenpoint', 'Kensington',
+  'Marine Park', 'Park Slope', 'Sheepshead Bay', 'Sunset Park', 'Williamsburg',
+];
+const QUEENS_TOWNS = [
+  'Arverne', 'Astoria', 'Bayside', 'Bellerose', 'Briarwood',
+  'Cambria Heights', 'College Point', 'Corona', 'Douglaston',
+  'East Elmhurst', 'Elmhurst', 'Far Rockaway', 'Floral Park',
+  'Flushing', 'Forest Hills', 'Fresh Meadows', 'Glen Oaks',
+  'Glendale', 'Hollis', 'Howard Beach', 'Jackson Heights',
+  'Jamaica', 'Kew Gardens', 'Little Neck', 'Long Island City',
+  'Maspeth', 'Middle Village', 'Oakland Gardens', 'Ozone Park',
+  'Rego Park', 'Richmond Hill', 'Ridgewood', 'Woodhaven',
+];
+const MANHATTAN_TOWNS = [
+  'Battery Park City', 'Chelsea', 'Chinatown', 'East Harlem', 'East Village',
+  'Financial District', 'Flatiron District', 'Gramercy Park', 'Greenwich Village',
+  'Hamilton Heights', 'Harlem', "Hell's Kitchen", 'Inwood', 'Kips Bay',
+  'Lenox Hill', 'Little Italy', 'Lower East Side', 'Marble Hill', 'Midtown',
+  'Morningside Heights', 'Murray Hill', 'NoHo', 'Nolita', 'Roosevelt Island',
+  'SoHo', 'Stuyvesant Town', 'Tribeca', 'Upper East Side', 'Upper West Side',
+  'Washington Heights', 'West Village', 'Yorkville',
+];
+const NASSAU_TOWNS = [
+  'Atlantic Beach', 'Baldwin', 'Bayville', 'Bellmore', 'Bethpage',
+  'Carle Place', 'Cedarhurst', 'East Meadow', 'East Rockaway', 'Elmont',
+  'Farmingdale', 'Floral Park', 'Franklin Square', 'Freeport', 'Garden City',
+  'Glen Cove', 'Glen Head', 'Glenwood Landing', 'Great Neck', 'Greenvale',
+  'Hempstead', 'Herricks', 'Hewlett', 'Hicksville', 'Inwood',
+  'Island Park', 'Jericho', 'Lawrence', 'Levittown', 'Lido Beach',
+  'Locust Valley', 'Long Beach', 'Lynbrook', 'Malverne', 'Manhasset',
+  'Massapequa', 'Massapequa Park', 'Merrick', 'Mineola', 'New Hyde Park',
+  'North Bellmore', 'North Merrick', 'North New Hyde Park', 'Oceanside',
+  'Old Bethpage', 'Old Westbury', 'Oyster Bay', 'Plainview', 'Point Lookout',
+  'Port Washington', 'Rockville Centre', 'Roosevelt', 'Roslyn', 'Roslyn Heights',
+  'Sea Cliff', 'Seaford', 'South Farmingdale', 'South Floral Park',
+  'South Hempstead', 'Syosset', 'Uniondale', 'Valley Stream', 'Wantagh',
+  'West Hempstead', 'Westbury', 'Williston Park', 'Woodbury', 'Woodmere',
+];
+const SUFFOLK_TOWNS = [
+  'Amityville', 'Aquebogue', 'Babylon', 'Bay Shore', 'Bayport', 'Bellport',
+  'Blue Point', 'Bohemia', 'Brentwood', 'Bridgehampton', 'Brightwaters',
+  'Brookhaven', 'Calverton', 'Center Moriches', 'Centereach', 'Central Islip',
+  'Cold Spring Harbor', 'Commack', 'Copiague', 'Coram', 'Cutchogue',
+  'Deer Park', 'Dix Hills', 'East Hampton', 'East Islip', 'East Marion',
+  'East Moriches', 'East Northport', 'East Patchogue', 'East Quogue',
+  'East Setauket', 'Eastport', 'Farmingville', 'Fire Island', 'Flanders',
+  'Great River', 'Greenlawn', 'Greenport', 'Hauppauge', 'Holbrook',
+  'Holtsville', 'Huntington', 'Huntington Station', 'Islandia', 'Islip',
+  'Islip Terrace', 'Jamesport', 'Kings Park', 'Lake Grove', 'Lake Ronkonkoma',
+  'Laurel', 'Lindenhurst', 'Manorville', 'Mastic', 'Mastic Beach',
+  'Mattituck', 'Medford', 'Melville', 'Middle Island', 'Miller Place',
+  'Montauk', 'Moriches', 'Mount Sinai', 'Nesconset', 'North Babylon',
+  'North Patchogue', 'Northport', 'Oakdale', 'Ocean Beach', 'Orient',
+  'Patchogue', 'Peconic', 'Port Jefferson', 'Port Jefferson Station',
+  'Quogue', 'Remsenburg', 'Ridge', 'Riverhead', 'Rocky Point', 'Ronkonkoma',
+  'Sag Harbor', 'Sagaponack', 'Saint James', 'Sayville', 'Selden',
+  'Shelter Island', 'Shirley', 'Shoreham', 'Smithtown', 'Sound Beach',
+  'South Jamesport', 'Southampton', 'Southold', 'Speonk', 'Stony Brook',
+  'Wading River', 'Wainscott', 'Water Mill', 'West Babylon', 'West Islip',
+  'West Sayville', 'Westhampton', 'Westhampton Beach', 'Wyandanch', 'Yaphank',
+];
+
 export const REGIONS: RegionConfig[] = [
   {
     slug: 'brooklyn',
@@ -161,76 +229,16 @@ export const REGIONS: RegionConfig[] = [
 // Town arrays imported from data - see Quest config for full lists
 // Brooklyn, Queens, Manhattan, Nassau, Suffolk towns defined in data/towns.json
 
-const BROOKLYN_TOWNS = [
-  'Bay Ridge', 'Bedford-Stuyvesant', 'Bensonhurst', 'Borough Park', 'Brighton Beach',
-  'Brooklyn Heights', 'Brownsville', 'Bushwick', 'Canarsie', 'Carroll Gardens',
-  'Clinton Hill', 'Cobble Hill', 'Coney Island', 'Crown Heights', 'Ditmas Park',
-  'Downtown Brooklyn', 'Dumbo', 'East Flatbush', 'East New York', 'Flatbush',
-  'Flatlands', 'Fort Greene', 'Gravesend', 'Greenpoint', 'Kensington',
-  'Marine Park', 'Park Slope', 'Sheepshead Bay', 'Sunset Park', 'Williamsburg',
-];
 
-const QUEENS_TOWNS = [
-  'Arverne', 'Astoria', 'Bayside', 'Bellerose', 'Briarwood',
-  'Cambria Heights', 'College Point', 'Corona', 'Douglaston',
-  'East Elmhurst', 'Elmhurst', 'Far Rockaway', 'Floral Park',
-  'Flushing', 'Forest Hills', 'Fresh Meadows', 'Glen Oaks',
-  'Glendale', 'Hollis', 'Howard Beach', 'Jackson Heights',
-  'Jamaica', 'Kew Gardens', 'Little Neck', 'Long Island City',
-  'Maspeth', 'Middle Village', 'Oakland Gardens', 'Ozone Park',
-  'Rego Park', 'Richmond Hill', 'Ridgewood', 'Woodhaven',
-];
 
-const MANHATTAN_TOWNS = [
-  'Battery Park City', 'Chelsea', 'Chinatown', 'East Harlem', 'East Village',
-  'Financial District', 'Flatiron District', 'Gramercy Park', 'Greenwich Village',
-  'Hamilton Heights', 'Harlem', "Hell's Kitchen", 'Inwood', 'Kips Bay',
-  'Lenox Hill', 'Little Italy', 'Lower East Side', 'Marble Hill', 'Midtown',
-  'Morningside Heights', 'Murray Hill', 'NoHo', 'Nolita', 'Roosevelt Island',
-  'SoHo', 'Stuyvesant Town', 'Tribeca', 'Upper East Side', 'Upper West Side',
-  'Washington Heights', 'West Village', 'Yorkville',
-];
 
-const NASSAU_TOWNS = [
-  'Atlantic Beach', 'Baldwin', 'Bayville', 'Bellmore', 'Bethpage',
-  'Carle Place', 'Cedarhurst', 'East Meadow', 'East Rockaway', 'Elmont',
-  'Farmingdale', 'Floral Park', 'Franklin Square', 'Freeport', 'Garden City',
-  'Glen Cove', 'Glen Head', 'Glenwood Landing', 'Great Neck', 'Greenvale',
-  'Hempstead', 'Herricks', 'Hewlett', 'Hicksville', 'Inwood',
-  'Island Park', 'Jericho', 'Lawrence', 'Levittown', 'Lido Beach',
-  'Locust Valley', 'Long Beach', 'Lynbrook', 'Malverne', 'Manhasset',
-  'Massapequa', 'Massapequa Park', 'Merrick', 'Mineola', 'New Hyde Park',
-  'North Bellmore', 'North Merrick', 'North New Hyde Park', 'Oceanside',
-  'Old Bethpage', 'Old Westbury', 'Oyster Bay', 'Plainview', 'Point Lookout',
-  'Port Washington', 'Rockville Centre', 'Roosevelt', 'Roslyn', 'Roslyn Heights',
-  'Sea Cliff', 'Seaford', 'South Farmingdale', 'South Floral Park',
-  'South Hempstead', 'Syosset', 'Uniondale', 'Valley Stream', 'Wantagh',
-  'West Hempstead', 'Westbury', 'Williston Park', 'Woodbury', 'Woodmere',
-];
 
-const SUFFOLK_TOWNS = [
-  'Amityville', 'Aquebogue', 'Babylon', 'Bay Shore', 'Bayport', 'Bellport',
-  'Blue Point', 'Bohemia', 'Brentwood', 'Bridgehampton', 'Brightwaters',
-  'Brookhaven', 'Calverton', 'Center Moriches', 'Centereach', 'Central Islip',
-  'Cold Spring Harbor', 'Commack', 'Copiague', 'Coram', 'Cutchogue',
-  'Deer Park', 'Dix Hills', 'East Hampton', 'East Islip', 'East Marion',
-  'East Moriches', 'East Northport', 'East Patchogue', 'East Quogue',
-  'East Setauket', 'Eastport', 'Farmingville', 'Fire Island', 'Flanders',
-  'Great River', 'Greenlawn', 'Greenport', 'Hauppauge', 'Holbrook',
-  'Holtsville', 'Huntington', 'Huntington Station', 'Islandia', 'Islip',
-  'Islip Terrace', 'Jamesport', 'Kings Park', 'Lake Grove', 'Lake Ronkonkoma',
-  'Laurel', 'Lindenhurst', 'Manorville', 'Mastic', 'Mastic Beach',
-  'Mattituck', 'Medford', 'Melville', 'Middle Island', 'Miller Place',
-  'Montauk', 'Moriches', 'Mount Sinai', 'Nesconset', 'North Babylon',
-  'North Patchogue', 'Northport', 'Oakdale', 'Ocean Beach', 'Orient',
-  'Patchogue', 'Peconic', 'Port Jefferson', 'Port Jefferson Station',
-  'Quogue', 'Remsenburg', 'Ridge', 'Riverhead', 'Rocky Point', 'Ronkonkoma',
-  'Sag Harbor', 'Sagaponack', 'Saint James', 'Sayville', 'Selden',
-  'Shelter Island', 'Shirley', 'Shoreham', 'Smithtown', 'Sound Beach',
-  'South Jamesport', 'Southampton', 'Southold', 'Speonk', 'Stony Brook',
-  'Wading River', 'Wainscott', 'Water Mill', 'West Babylon', 'West Islip',
-  'West Sayville', 'Westhampton', 'Westhampton Beach', 'Wyandanch', 'Yaphank',
-];
+
+
+// ============================================================
+// NETWORK SITES — sister sites for cross-linking
+// ============================================================
+export const NETWORK_SITES: NetworkSite[] = [];
 
 // ============================================================
 // TYPES
@@ -269,4 +277,11 @@ export interface RegionConfig {
   metaDescription: string;
   towns: string[];
   townCount: number;
+}
+
+export interface NetworkSite {
+  name: string;
+  url: string;
+  description: string;
+  emoji: string;
 }
