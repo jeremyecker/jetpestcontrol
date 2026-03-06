@@ -51,9 +51,9 @@ export default async function ServicePage({ params }: { params: Promise<{ region
       <div className="max-w-4xl mx-auto px-4 py-16">
         <nav className="text-sm text-gray-500 mb-8">
           <Link href={`/${regionSlug}/`} className="hover:text-brand-primary">{region.name}</Link>
-          {' \u2192 '}
+          {' → '}
           <Link href={`/${regionSlug}/services/`} className="hover:text-brand-primary">Services</Link>
-          {' \u2192 '}
+          {' → '}
           <span className="text-gray-900">{service.name}</span>
         </nav>
 
@@ -70,11 +70,11 @@ export default async function ServicePage({ params }: { params: Promise<{ region
             </div>
 
             <div className="bg-red-50 border border-red-100 rounded-xl p-6 mb-10">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">\u26a0\ufe0f Signs You Need {service.name}</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">⚠️ Signs You Need {service.name}</h2>
               <ul className="space-y-3">
                 {content.signs.map((sign, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <span className="text-red-500 font-bold mt-0.5">\u2022</span>
+                    <span className="text-red-500 font-bold mt-0.5">•</span>
                     <span className="text-gray-700">{sign}</span>
                   </li>
                 ))}
@@ -99,11 +99,11 @@ export default async function ServicePage({ params }: { params: Promise<{ region
             </div>
 
             <div className="bg-green-50 border border-green-100 rounded-xl p-6 mb-10">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">\ud83d\udee1\ufe0f Prevention Tips</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">🛡️ Prevention Tips</h2>
               <ul className="space-y-3">
                 {content.prevention.map((tip, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <span className="text-green-600 font-bold mt-0.5">\u2713</span>
+                    <span className="text-green-600 font-bold mt-0.5">✓</span>
                     <span className="text-gray-700">{tip}</span>
                   </li>
                 ))}
@@ -120,11 +120,11 @@ export default async function ServicePage({ params }: { params: Promise<{ region
         <div className="bg-gray-50 rounded-xl p-6 mb-10">
           <h2 className="text-xl font-bold text-gray-900 mb-3">Why Choose {BRAND.name}?</h2>
           <ul className="space-y-2 text-gray-700">
-            <li>\u2705 Licensed and insured technicians</li>
-            <li>\u2705 Family and pet-safe treatments</li>
-            <li>\u2705 Same-day service available</li>
-            <li>\u2705 Free, no-obligation estimates</li>
-            <li>\u2705 Serving all of {fullArea}</li>
+            <li>✅ Licensed and insured technicians</li>
+            <li>✅ Family and pet-safe treatments</li>
+            <li>✅ Same-day service available</li>
+            <li>✅ Free, no-obligation estimates</li>
+            <li>✅ Serving all of {fullArea}</li>
           </ul>
         </div>
 
