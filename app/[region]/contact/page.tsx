@@ -9,8 +9,8 @@ export async function generateMetadata({ params }: { params: Promise<{ region: s
   const region = getRegion(regionSlug);
   if (!region) return {};
   return {
-    title: `Contact Us \u2014 ${region.name} Pest Control`,
-    description: `Get a free pest control estimate in ${region.name}. Call or fill out our form \u2014 fast response, no pressure.`,
+    title: `Contact Us — ${region.name} Pest Control`,
+    description: `Get a free pest control estimate in ${region.name}. Call or fill out our form — fast response, no pressure.`,
   };
 }
 
@@ -29,7 +29,7 @@ export default async function ContactPage({ params }: { params: Promise<{ region
     <div className="max-w-5xl mx-auto px-4 py-16">
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          Contact {SITE_NAME} \u2014 {region.name}
+          Contact {SITE_NAME} — {region.name}
         </h1>
         <p className="text-xl text-gray-600">
           Get a free estimate or ask a question. We respond fast.
@@ -52,7 +52,7 @@ export default async function ContactPage({ params }: { params: Promise<{ region
               </div>
               <div>
                 <p className="text-sm text-gray-500">Hours</p>
-                <p className="text-gray-700">Mon\u2013Fri: {HOURS.weekday}</p>
+                <p className="text-gray-700">Mon–Fri: {HOURS.weekday}</p>
                 <p className="text-gray-700">Sat: {HOURS.saturday}</p>
               </div>
               <div>

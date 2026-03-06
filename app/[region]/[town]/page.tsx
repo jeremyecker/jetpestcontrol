@@ -42,9 +42,9 @@ export default async function TownPage({ params }: { params: Promise<{ region: s
       <div className="max-w-4xl mx-auto px-4 py-16">
         <nav className="text-sm text-gray-500 mb-8">
           <Link href={`/${regionSlug}/`} className="hover:text-brand-primary">{region.name}</Link>
-          {' \u2192 '}
+          {' → '}
           <Link href={`/${regionSlug}/service-areas/`} className="hover:text-brand-primary">Service Areas</Link>
-          {' \u2192 '}
+          {' → '}
           <span className="text-gray-900">{townName}</span>
         </nav>
 
@@ -59,10 +59,10 @@ export default async function TownPage({ params }: { params: Promise<{ region: s
           <h2 className="text-xl font-bold text-brand-dark mb-3">Serving {townName} with:</h2>
           <ul className="space-y-2 text-brand-dark">
             {region.primaryPests.map(pest => (
-              <li key={pest}>\u2705 {pest} treatment and prevention</li>
+              <li key={pest}>✅ {pest} treatment and prevention</li>
             ))}
-            <li>\u2705 Same-day service available</li>
-            <li>\u2705 Family and pet-safe treatments</li>
+            <li>✅ Same-day service available</li>
+            <li>✅ Family and pet-safe treatments</li>
           </ul>
         </div>
 

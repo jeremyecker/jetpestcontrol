@@ -23,14 +23,14 @@ export default function AboutPage() {
           </p>
           <p>
             Our technicians are licensed, insured, and trained in the latest Integrated Pest Management (IPM)
-            techniques \u2014 approaches that are effective against pests while being safe for your family and pets.
+            techniques — approaches that are effective against pests while being safe for your family and pets.
           </p>
           <h2>Why Homeowners Choose Us</h2>
           <ul>
             <li>Local experts who understand the pest pressures across {regionNames}</li>
             <li>Same-day service availability</li>
             <li>Family-safe, EPA-approved treatments</li>
-            <li>Transparent pricing \u2014 no surprise charges</li>
+            <li>Transparent pricing — no surprise charges</li>
             <li>Over {yearsInBusiness} years of experience</li>
             <li>We stand behind our work</li>
           </ul>

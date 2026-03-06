@@ -17,7 +17,7 @@ const townCount = getTownCount();
 const homepageFAQs = [
   {
     question: 'Are your treatments safe for kids and pets?',
-    answer: `Absolutely \u2014 we use EPA-approved products and Integrated Pest Management (IPM) techniques specifically chosen to be gentle around children and pets.`,
+    answer: `Absolutely — we use EPA-approved products and Integrated Pest Management (IPM) techniques specifically chosen to be gentle around children and pets.`,
   },
   {
     question: `What areas do you cover?`,
@@ -29,7 +29,7 @@ const homepageFAQs = [
   },
   {
     question: 'How much does pest control cost?',
-    answer: `Every home is different. We offer free, no-obligation estimates \u2014 call or submit the form for a quote specific to your situation.`,
+    answer: `Every home is different. We offer free, no-obligation estimates — call or submit the form for a quote specific to your situation.`,
   },
   {
     question: 'What if pests return after treatment?',

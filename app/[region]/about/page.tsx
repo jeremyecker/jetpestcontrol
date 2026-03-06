@@ -9,7 +9,7 @@ export async function generateMetadata({ params }: { params: Promise<{ region: s
   const region = getRegion(regionSlug);
   if (!region) return {};
   return {
-    title: `About Us \u2014 ${region.name}`,
+    title: `About Us — ${region.name}`,
     description: `Learn about ${BRAND.name} and our commitment to pest-free ${region.name} homes.`,
   };
 }
@@ -35,14 +35,14 @@ export default async function AboutPage({ params }: { params: Promise<{ region: 
           </p>
           <p>
             Our technicians are licensed, insured, and trained in the latest Integrated Pest Management (IPM) 
-            techniques \u2014 approaches that are effective against pests while being safe for your family and pets.
+            techniques — approaches that are effective against pests while being safe for your family and pets.
           </p>
           <h2>Why {region.name} Homeowners Choose Us</h2>
           <ul>
             <li>Local experts who know {region.name}&apos;s pest pressures</li>
             <li>Same-day service availability</li>
             <li>Family-safe, EPA-approved treatments</li>
-            <li>Transparent pricing \u2014 no surprise charges</li>
+            <li>Transparent pricing — no surprise charges</li>
             <li>We stand behind our work</li>
           </ul>
           <h2>Our Commitment</h2>

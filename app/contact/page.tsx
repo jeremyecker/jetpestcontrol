@@ -35,7 +35,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <p className="text-sm text-gray-500">Hours</p>
-                <p className="text-gray-700">Mon\u2013Fri: {HOURS.weekday}</p>
+                <p className="text-gray-700">Mon–Fri: {HOURS.weekday}</p>
                 <p className="text-gray-700">Sat: {HOURS.saturday}</p>
               </div>
               <div>

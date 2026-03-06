@@ -53,7 +53,7 @@ export default async function RegionHomePage({ params }: { params: Promise<{ reg
     },
     {
       question: 'How much does pest control cost?',
-      answer: `Every home is different. Call us or fill out the form for a free, no-obligation estimate \u2014 no surprise charges, no pressure.`,
+      answer: `Every home is different. Call us or fill out the form for a free, no-obligation estimate — no surprise charges, no pressure.`,
     },
     {
       question: 'What if pests return after treatment?',

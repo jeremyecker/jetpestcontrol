@@ -28,7 +28,7 @@ export default async function ServiceAreasPage({ params }: { params: Promise<{ r
     <div className="max-w-6xl mx-auto px-4 py-16">
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          Service Areas \u2014 {region.name}
+          Service Areas — {region.name}
         </h1>
         <p className="text-xl text-gray-600">
           We serve all {region.townCount > 0 ? region.townCount : ''} towns across {region.name}.

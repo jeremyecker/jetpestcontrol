@@ -93,7 +93,7 @@ export const TRUST_STATS = [
   { icon: '\uD83D\uDD12', value: 'Licensed', label: '& Insured' },
   { icon: '\uD83D\uDD2C', value: 'IPM', label: 'Trained Experts' },
   { icon: '\uD83D\uDCDE', value: 'Fast', label: 'Response Time' },
-  { icon: '\u2705', value: 'Family', label: 'Safe Treatments' },
+  { icon: '✅', value: 'Family', label: 'Safe Treatments' },
 ] as const;
 
 export const LEAD_ROUTING = {
@@ -134,8 +134,8 @@ export const FOOTER_LINKS = {
 } as const;
 
 export const HOURS = {
-  weekday: '7:00 AM \u2013 7:00 PM',
-  saturday: '7:00 AM \u2013 5:00 PM',
+  weekday: '7:00 AM – 7:00 PM',
+  saturday: '7:00 AM – 5:00 PM',
   sunday: 'Closed',
   emergency: '24/7 Emergency Service Available',
 } as const;
