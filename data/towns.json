@@ -1,0 +1,2090 @@
+[
+  {
+    "name": "Albertson",
+    "slug": "albertson",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Alden Manor",
+    "slug": "alden-manor",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Amagansett",
+    "slug": "amagansett",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Amityville",
+    "slug": "amityville",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Astoria",
+    "slug": "astoria",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "Atlantic Beach",
+    "slug": "atlantic-beach",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Baldwin",
+    "slug": "baldwin",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Battery Park City",
+    "slug": "battery-park-city",
+    "region": "manhattan",
+    "regionName": "Manhattan",
+    "county": "New York",
+    "countySlug": "new-york"
+  },
+  {
+    "name": "Bay Ridge",
+    "slug": "bay-ridge",
+    "region": "brooklyn",
+    "regionName": "Brooklyn",
+    "county": "Kings",
+    "countySlug": "kings"
+  },
+  {
+    "name": "Bayport",
+    "slug": "bayport",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Bayside",
+    "slug": "bayside",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "Bayville",
+    "slug": "bayville",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Bedford-Stuyvesant",
+    "slug": "bedford-stuyvesant",
+    "region": "brooklyn",
+    "regionName": "Brooklyn",
+    "county": "Kings",
+    "countySlug": "kings"
+  },
+  {
+    "name": "Bellerose",
+    "slug": "bellerose",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "Bellport",
+    "slug": "bellport",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Bensonhurst",
+    "slug": "bensonhurst",
+    "region": "brooklyn",
+    "regionName": "Brooklyn",
+    "county": "Kings",
+    "countySlug": "kings"
+  },
+  {
+    "name": "Bethpage",
+    "slug": "bethpage",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Blue Point",
+    "slug": "blue-point",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Bohemia",
+    "slug": "bohemia",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Borough Park",
+    "slug": "borough-park",
+    "region": "brooklyn",
+    "regionName": "Brooklyn",
+    "county": "Kings",
+    "countySlug": "kings"
+  },
+  {
+    "name": "Bridgehampton",
+    "slug": "bridgehampton",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Brighton Beach",
+    "slug": "brighton-beach",
+    "region": "brooklyn",
+    "regionName": "Brooklyn",
+    "county": "Kings",
+    "countySlug": "kings"
+  },
+  {
+    "name": "Brightwaters",
+    "slug": "brightwaters",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Brookhaven",
+    "slug": "brookhaven",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Brooklyn Heights",
+    "slug": "brooklyn-heights",
+    "region": "brooklyn",
+    "regionName": "Brooklyn",
+    "county": "Kings",
+    "countySlug": "kings"
+  },
+  {
+    "name": "Brownsville",
+    "slug": "brownsville",
+    "region": "brooklyn",
+    "regionName": "Brooklyn",
+    "county": "Kings",
+    "countySlug": "kings"
+  },
+  {
+    "name": "Bushwick",
+    "slug": "bushwick",
+    "region": "brooklyn",
+    "regionName": "Brooklyn",
+    "county": "Kings",
+    "countySlug": "kings"
+  },
+  {
+    "name": "Calverton",
+    "slug": "calverton",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Cambria Heights",
+    "slug": "cambria-heights",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "Canarsie",
+    "slug": "canarsie",
+    "region": "brooklyn",
+    "regionName": "Brooklyn",
+    "county": "Kings",
+    "countySlug": "kings"
+  },
+  {
+    "name": "Carle Place",
+    "slug": "carle-place",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Carroll Gardens",
+    "slug": "carroll-gardens",
+    "region": "brooklyn",
+    "regionName": "Brooklyn",
+    "county": "Kings",
+    "countySlug": "kings"
+  },
+  {
+    "name": "Cedarhurst",
+    "slug": "cedarhurst",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Center Moriches",
+    "slug": "center-moriches",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Centereach",
+    "slug": "centereach",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Centerport",
+    "slug": "centerport",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Central Islip",
+    "slug": "central-islip",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Chelsea",
+    "slug": "chelsea",
+    "region": "manhattan",
+    "regionName": "Manhattan",
+    "county": "New York",
+    "countySlug": "new-york"
+  },
+  {
+    "name": "Cherry Grove",
+    "slug": "cherry-grove",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Chinatown",
+    "slug": "chinatown",
+    "region": "manhattan",
+    "regionName": "Manhattan",
+    "county": "New York",
+    "countySlug": "new-york"
+  },
+  {
+    "name": "Clinton Hill",
+    "slug": "clinton-hill",
+    "region": "brooklyn",
+    "regionName": "Brooklyn",
+    "county": "Kings",
+    "countySlug": "kings"
+  },
+  {
+    "name": "Cobble Hill",
+    "slug": "cobble-hill",
+    "region": "brooklyn",
+    "regionName": "Brooklyn",
+    "county": "Kings",
+    "countySlug": "kings"
+  },
+  {
+    "name": "Cold Spring Harb",
+    "slug": "cold-spring-harb",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "College Point",
+    "slug": "college-point",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "Commack",
+    "slug": "commack",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Coney Island",
+    "slug": "coney-island",
+    "region": "brooklyn",
+    "regionName": "Brooklyn",
+    "county": "Kings",
+    "countySlug": "kings"
+  },
+  {
+    "name": "Copiague",
+    "slug": "copiague",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Coram",
+    "slug": "coram",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Corona",
+    "slug": "corona",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "Crown Heights",
+    "slug": "crown-heights",
+    "region": "brooklyn",
+    "regionName": "Brooklyn",
+    "county": "Kings",
+    "countySlug": "kings"
+  },
+  {
+    "name": "Cutchogue",
+    "slug": "cutchogue",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "DUMBO",
+    "slug": "dumbo",
+    "region": "brooklyn",
+    "regionName": "Brooklyn",
+    "county": "Kings",
+    "countySlug": "kings"
+  },
+  {
+    "name": "Davis Park",
+    "slug": "davis-park",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Deer Park",
+    "slug": "deer-park",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Dix Hills",
+    "slug": "dix-hills",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Dyker Heights",
+    "slug": "dyker-heights",
+    "region": "brooklyn",
+    "regionName": "Brooklyn",
+    "county": "Kings",
+    "countySlug": "kings"
+  },
+  {
+    "name": "East Elmhurst",
+    "slug": "east-elmhurst",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "East Hampton",
+    "slug": "east-hampton",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "East Harlem",
+    "slug": "east-harlem",
+    "region": "manhattan",
+    "regionName": "Manhattan",
+    "county": "New York",
+    "countySlug": "new-york"
+  },
+  {
+    "name": "East Islip",
+    "slug": "east-islip",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "East Marion",
+    "slug": "east-marion",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "East Meadow",
+    "slug": "east-meadow",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "East Moriches",
+    "slug": "east-moriches",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "East New York",
+    "slug": "east-new-york",
+    "region": "brooklyn",
+    "regionName": "Brooklyn",
+    "county": "Kings",
+    "countySlug": "kings"
+  },
+  {
+    "name": "East Norwich",
+    "slug": "east-norwich",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "East Quogue",
+    "slug": "east-quogue",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "East Rockaway",
+    "slug": "east-rockaway",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "East Village",
+    "slug": "east-village",
+    "region": "manhattan",
+    "regionName": "Manhattan",
+    "county": "New York",
+    "countySlug": "new-york"
+  },
+  {
+    "name": "Eastport",
+    "slug": "eastport",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Elwood",
+    "slug": "elwood",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Far Rockaway",
+    "slug": "far-rockaway",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "Farmingville",
+    "slug": "farmingville",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Financial District",
+    "slug": "financial-district",
+    "region": "manhattan",
+    "regionName": "Manhattan",
+    "county": "New York",
+    "countySlug": "new-york"
+  },
+  {
+    "name": "Flatbush",
+    "slug": "flatbush",
+    "region": "brooklyn",
+    "regionName": "Brooklyn",
+    "county": "Kings",
+    "countySlug": "kings"
+  },
+  {
+    "name": "Flatiron District",
+    "slug": "flatiron-district",
+    "region": "manhattan",
+    "regionName": "Manhattan",
+    "county": "New York",
+    "countySlug": "new-york"
+  },
+  {
+    "name": "Flatlands",
+    "slug": "flatlands",
+    "region": "brooklyn",
+    "regionName": "Brooklyn",
+    "county": "Kings",
+    "countySlug": "kings"
+  },
+  {
+    "name": "Floral Park",
+    "slug": "floral-park",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "Floral Park",
+    "slug": "floral-park",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Flushing",
+    "slug": "flushing",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "Forest Hills",
+    "slug": "forest-hills",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "Fort Greene",
+    "slug": "fort-greene",
+    "region": "brooklyn",
+    "regionName": "Brooklyn",
+    "county": "Kings",
+    "countySlug": "kings"
+  },
+  {
+    "name": "Franklin Square",
+    "slug": "franklin-square",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Freeport",
+    "slug": "freeport",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Fresh Meadows",
+    "slug": "fresh-meadows",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "Garden City",
+    "slug": "garden-city",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Glen Cove",
+    "slug": "glen-cove",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Glen Head",
+    "slug": "glen-head",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Glen Oaks",
+    "slug": "glen-oaks",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "Glenwood Landing",
+    "slug": "glenwood-landing",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Gramercy Park",
+    "slug": "gramercy-park",
+    "region": "manhattan",
+    "regionName": "Manhattan",
+    "county": "New York",
+    "countySlug": "new-york"
+  },
+  {
+    "name": "Gravesend",
+    "slug": "gravesend",
+    "region": "brooklyn",
+    "regionName": "Brooklyn",
+    "county": "Kings",
+    "countySlug": "kings"
+  },
+  {
+    "name": "Great Neck",
+    "slug": "great-neck",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Greenlawn",
+    "slug": "greenlawn",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Greenpoint",
+    "slug": "greenpoint",
+    "region": "brooklyn",
+    "regionName": "Brooklyn",
+    "county": "Kings",
+    "countySlug": "kings"
+  },
+  {
+    "name": "Greenport",
+    "slug": "greenport",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Greenvale",
+    "slug": "greenvale",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Greenwich Village",
+    "slug": "greenwich-village",
+    "region": "manhattan",
+    "regionName": "Manhattan",
+    "county": "New York",
+    "countySlug": "new-york"
+  },
+  {
+    "name": "Halesite",
+    "slug": "halesite",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Hamilton Heights",
+    "slug": "hamilton-heights",
+    "region": "manhattan",
+    "regionName": "Manhattan",
+    "county": "New York",
+    "countySlug": "new-york"
+  },
+  {
+    "name": "Hampton Bays",
+    "slug": "hampton-bays",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Harlem",
+    "slug": "harlem",
+    "region": "manhattan",
+    "regionName": "Manhattan",
+    "county": "New York",
+    "countySlug": "new-york"
+  },
+  {
+    "name": "Hauppauge",
+    "slug": "hauppauge",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Hell's Kitchen",
+    "slug": "hells-kitchen",
+    "region": "manhattan",
+    "regionName": "Manhattan",
+    "county": "New York",
+    "countySlug": "new-york"
+  },
+  {
+    "name": "Hempstead",
+    "slug": "hempstead",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Hewlett",
+    "slug": "hewlett",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Hicksville",
+    "slug": "hicksville",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Hillside Manor",
+    "slug": "hillside-manor",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Holbrook",
+    "slug": "holbrook",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Hollis",
+    "slug": "hollis",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "Holtsville",
+    "slug": "holtsville",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Inwood",
+    "slug": "inwood",
+    "region": "manhattan",
+    "regionName": "Manhattan",
+    "county": "New York",
+    "countySlug": "new-york"
+  },
+  {
+    "name": "Island Park",
+    "slug": "island-park",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Islip",
+    "slug": "islip",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Islip Terrace",
+    "slug": "islip-terrace",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Jackson Heights",
+    "slug": "jackson-heights",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "Jamaica",
+    "slug": "jamaica",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "Jamesport",
+    "slug": "jamesport",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Jericho",
+    "slug": "jericho",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Kew Gardens",
+    "slug": "kew-gardens",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "Kings Park",
+    "slug": "kings-park",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Kings Point Cont",
+    "slug": "kings-point-cont",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Kips Bay",
+    "slug": "kips-bay",
+    "region": "manhattan",
+    "regionName": "Manhattan",
+    "county": "New York",
+    "countySlug": "new-york"
+  },
+  {
+    "name": "Kismet",
+    "slug": "kismet",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Lake Grove",
+    "slug": "lake-grove",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Lake Ronkonkoma",
+    "slug": "lake-ronkonkoma",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Laurel",
+    "slug": "laurel",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Lawrence",
+    "slug": "lawrence",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Lenox Hill",
+    "slug": "lenox-hill",
+    "region": "manhattan",
+    "regionName": "Manhattan",
+    "county": "New York",
+    "countySlug": "new-york"
+  },
+  {
+    "name": "Levittown",
+    "slug": "levittown",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Lindenhurst",
+    "slug": "lindenhurst",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Little Italy",
+    "slug": "little-italy",
+    "region": "manhattan",
+    "regionName": "Manhattan",
+    "county": "New York",
+    "countySlug": "new-york"
+  },
+  {
+    "name": "Little Neck",
+    "slug": "little-neck",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "Locust Valley",
+    "slug": "locust-valley",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Long Beach",
+    "slug": "long-beach",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Lower East Side",
+    "slug": "lower-east-side",
+    "region": "manhattan",
+    "regionName": "Manhattan",
+    "county": "New York",
+    "countySlug": "new-york"
+  },
+  {
+    "name": "Lynbrook",
+    "slug": "lynbrook",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Malverne",
+    "slug": "malverne",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Manorville",
+    "slug": "manorville",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Marble Hill",
+    "slug": "marble-hill",
+    "region": "manhattan",
+    "regionName": "Manhattan",
+    "county": "New York",
+    "countySlug": "new-york"
+  },
+  {
+    "name": "Maspeth",
+    "slug": "maspeth",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "Massapequa Park",
+    "slug": "massapequa-park",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Mastic",
+    "slug": "mastic",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Mastic Beach",
+    "slug": "mastic-beach",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Mattituck",
+    "slug": "mattituck",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Medford",
+    "slug": "medford",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Melville",
+    "slug": "melville",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Middle Island",
+    "slug": "middle-island",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Middle Village",
+    "slug": "middle-village",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "Midtown",
+    "slug": "midtown",
+    "region": "manhattan",
+    "regionName": "Manhattan",
+    "county": "New York",
+    "countySlug": "new-york"
+  },
+  {
+    "name": "Midwood",
+    "slug": "midwood",
+    "region": "brooklyn",
+    "regionName": "Brooklyn",
+    "county": "Kings",
+    "countySlug": "kings"
+  },
+  {
+    "name": "Mill Neck",
+    "slug": "mill-neck",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Miller Place",
+    "slug": "miller-place",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Mineola",
+    "slug": "mineola",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Montauk",
+    "slug": "montauk",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Moriches",
+    "slug": "moriches",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Morningside Heights",
+    "slug": "morningside-heights",
+    "region": "manhattan",
+    "regionName": "Manhattan",
+    "county": "New York",
+    "countySlug": "new-york"
+  },
+  {
+    "name": "Mount Sinai",
+    "slug": "mount-sinai",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Murray Hill",
+    "slug": "murray-hill",
+    "region": "manhattan",
+    "regionName": "Manhattan",
+    "county": "New York",
+    "countySlug": "new-york"
+  },
+  {
+    "name": "Nesconset",
+    "slug": "nesconset",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "New Hyde Park",
+    "slug": "new-hyde-park",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "New Suffolk",
+    "slug": "new-suffolk",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "NoHo",
+    "slug": "noho",
+    "region": "manhattan",
+    "regionName": "Manhattan",
+    "county": "New York",
+    "countySlug": "new-york"
+  },
+  {
+    "name": "Nolita",
+    "slug": "nolita",
+    "region": "manhattan",
+    "regionName": "Manhattan",
+    "county": "New York",
+    "countySlug": "new-york"
+  },
+  {
+    "name": "North Babylon",
+    "slug": "north-babylon",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "North Bellmore",
+    "slug": "north-bellmore",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "North Massapequa",
+    "slug": "north-massapequa",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "North Merrick",
+    "slug": "north-merrick",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "North Woodmere",
+    "slug": "north-woodmere",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Northport",
+    "slug": "northport",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Oak Beach",
+    "slug": "oak-beach",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Oakdale",
+    "slug": "oakdale",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Ocean Beach",
+    "slug": "ocean-beach",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Oceanside",
+    "slug": "oceanside",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Old Bethpage",
+    "slug": "old-bethpage",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Old Westbury",
+    "slug": "old-westbury",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Orient",
+    "slug": "orient",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Oyster Bay",
+    "slug": "oyster-bay",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Ozone Park",
+    "slug": "ozone-park",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "Park Slope",
+    "slug": "park-slope",
+    "region": "brooklyn",
+    "regionName": "Brooklyn",
+    "county": "Kings",
+    "countySlug": "kings"
+  },
+  {
+    "name": "Peconic",
+    "slug": "peconic",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Plainview",
+    "slug": "plainview",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Plandome",
+    "slug": "plandome",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Point Lookout",
+    "slug": "point-lookout",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Port Jefferson",
+    "slug": "port-jefferson",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Port Jefferson S",
+    "slug": "port-jefferson-s",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Port Washington",
+    "slug": "port-washington",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Prospect Heights",
+    "slug": "prospect-heights",
+    "region": "brooklyn",
+    "regionName": "Brooklyn",
+    "county": "Kings",
+    "countySlug": "kings"
+  },
+  {
+    "name": "Queens Village",
+    "slug": "queens-village",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "Quogue",
+    "slug": "quogue",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Red Hook",
+    "slug": "red-hook",
+    "region": "brooklyn",
+    "regionName": "Brooklyn",
+    "county": "Kings",
+    "countySlug": "kings"
+  },
+  {
+    "name": "Rego Park",
+    "slug": "rego-park",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "Remsenburg",
+    "slug": "remsenburg",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Richmond Hill",
+    "slug": "richmond-hill",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "Ridge",
+    "slug": "ridge",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Ridgewood",
+    "slug": "ridgewood",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "Riverhead",
+    "slug": "riverhead",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Rockville Centre",
+    "slug": "rockville-centre",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Rocky Point",
+    "slug": "rocky-point",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Roosevelt",
+    "slug": "roosevelt",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Roosevelt Island",
+    "slug": "roosevelt-island",
+    "region": "manhattan",
+    "regionName": "Manhattan",
+    "county": "New York",
+    "countySlug": "new-york"
+  },
+  {
+    "name": "Rosedale",
+    "slug": "rosedale",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "Roslyn",
+    "slug": "roslyn",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Roslyn Heights",
+    "slug": "roslyn-heights",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "S Ozone Park",
+    "slug": "s-ozone-park",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "S Richmond Hill",
+    "slug": "s-richmond-hill",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "Sag Harbor",
+    "slug": "sag-harbor",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Sagaponack",
+    "slug": "sagaponack",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Saint James",
+    "slug": "saint-james",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Sea Cliff",
+    "slug": "sea-cliff",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Seaford",
+    "slug": "seaford",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Selden",
+    "slug": "selden",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Setauket",
+    "slug": "setauket",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Sheepshead Bay",
+    "slug": "sheepshead-bay",
+    "region": "brooklyn",
+    "regionName": "Brooklyn",
+    "county": "Kings",
+    "countySlug": "kings"
+  },
+  {
+    "name": "Shelter Island",
+    "slug": "shelter-island",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Shelter Island H",
+    "slug": "shelter-island-h",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Shirley",
+    "slug": "shirley",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Shoreham",
+    "slug": "shoreham",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Smithtown",
+    "slug": "smithtown",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "SoHo",
+    "slug": "soho",
+    "region": "manhattan",
+    "regionName": "Manhattan",
+    "county": "New York",
+    "countySlug": "new-york"
+  },
+  {
+    "name": "Sound Beach",
+    "slug": "sound-beach",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "South Farmingdal",
+    "slug": "south-farmingdal",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "South Jamesport",
+    "slug": "south-jamesport",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Southampton",
+    "slug": "southampton",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Southold",
+    "slug": "southold",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Speonk",
+    "slug": "speonk",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Springfield Gard",
+    "slug": "springfield-gard",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "Stony Brook",
+    "slug": "stony-brook",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Stuyvesant Town",
+    "slug": "stuyvesant-town",
+    "region": "manhattan",
+    "regionName": "Manhattan",
+    "county": "New York",
+    "countySlug": "new-york"
+  },
+  {
+    "name": "Sunnyside",
+    "slug": "sunnyside",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "Sunset Park",
+    "slug": "sunset-park",
+    "region": "brooklyn",
+    "regionName": "Brooklyn",
+    "county": "Kings",
+    "countySlug": "kings"
+  },
+  {
+    "name": "Syosset",
+    "slug": "syosset",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Tribeca",
+    "slug": "tribeca",
+    "region": "manhattan",
+    "regionName": "Manhattan",
+    "county": "New York",
+    "countySlug": "new-york"
+  },
+  {
+    "name": "Uniondale",
+    "slug": "uniondale",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Upper East Side",
+    "slug": "upper-east-side",
+    "region": "manhattan",
+    "regionName": "Manhattan",
+    "county": "New York",
+    "countySlug": "new-york"
+  },
+  {
+    "name": "Upper West Side",
+    "slug": "upper-west-side",
+    "region": "manhattan",
+    "regionName": "Manhattan",
+    "county": "New York",
+    "countySlug": "new-york"
+  },
+  {
+    "name": "Valley Stream",
+    "slug": "valley-stream",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Wading River",
+    "slug": "wading-river",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Wainscott",
+    "slug": "wainscott",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Wantagh",
+    "slug": "wantagh",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Washington Heights",
+    "slug": "washington-heights",
+    "region": "manhattan",
+    "regionName": "Manhattan",
+    "county": "New York",
+    "countySlug": "new-york"
+  },
+  {
+    "name": "Water Mill",
+    "slug": "water-mill",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "West Babylon",
+    "slug": "west-babylon",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "West Brentwood",
+    "slug": "west-brentwood",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "West Hempstead",
+    "slug": "west-hempstead",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "West Islip",
+    "slug": "west-islip",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "West Sayville",
+    "slug": "west-sayville",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "West Village",
+    "slug": "west-village",
+    "region": "manhattan",
+    "regionName": "Manhattan",
+    "county": "New York",
+    "countySlug": "new-york"
+  },
+  {
+    "name": "Westbury",
+    "slug": "westbury",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Westhampton",
+    "slug": "westhampton",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Westhampton Beac",
+    "slug": "westhampton-beac",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Wheatley Heights",
+    "slug": "wheatley-heights",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Whitestone",
+    "slug": "whitestone",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "Williamsburg",
+    "slug": "williamsburg",
+    "region": "brooklyn",
+    "regionName": "Brooklyn",
+    "county": "Kings",
+    "countySlug": "kings"
+  },
+  {
+    "name": "Williston Park",
+    "slug": "williston-park",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Windsor Terrace",
+    "slug": "windsor-terrace",
+    "region": "brooklyn",
+    "regionName": "Brooklyn",
+    "county": "Kings",
+    "countySlug": "kings"
+  },
+  {
+    "name": "Woodbury",
+    "slug": "woodbury",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Woodhaven",
+    "slug": "woodhaven",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "Woodmere",
+    "slug": "woodmere",
+    "region": "nassau",
+    "regionName": "Nassau County",
+    "county": "Nassau",
+    "countySlug": "nassau"
+  },
+  {
+    "name": "Woodside",
+    "slug": "woodside",
+    "region": "queens",
+    "regionName": "Queens",
+    "county": "Queens",
+    "countySlug": "queens"
+  },
+  {
+    "name": "Yaphank",
+    "slug": "yaphank",
+    "region": "suffolk",
+    "regionName": "Suffolk County",
+    "county": "Suffolk",
+    "countySlug": "suffolk"
+  },
+  {
+    "name": "Yorkville",
+    "slug": "yorkville",
+    "region": "manhattan",
+    "regionName": "Manhattan",
+    "county": "New York",
+    "countySlug": "new-york"
+  }
+]
