@@ -71,7 +71,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                       day: 'numeric',
                     })}
                   </time>
-                  <span>\u2022</span>
+                  <span>•</span>
                   <span>{post.author}</span>
                 </div>
                 <h1 className="heading-1 mb-4">{post.title}</h1>
@@ -92,7 +92,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   if (trimmed.startsWith('- **')) {
                     return (
                       <p key={i} className="ml-4" dangerouslySetInnerHTML={{
-                        __html: '\u2022 ' + trimmed.slice(2).replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-green-600 hover:underline">$1</a>')
+                        __html: '• ' + trimmed.slice(2).replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-green-600 hover:underline">$1</a>')
                       }} />
                     );
                   }
@@ -123,7 +123,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   href={PHONE_HREF}
                   className="block w-full text-center bg-brand-accent text-white font-bold py-3 rounded-lg hover:bg-orange-600 transition-colors"
                 >
-                  \uD83D\uDCDE Call {PHONE}
+                  📞 Call {PHONE}
                 </a>
               </div>
 

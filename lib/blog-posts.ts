@@ -8,12 +8,12 @@ import { GEO, SITE_NAME } from '@/site.config';
  */
 export const blogPosts: BlogPost[] = [
   {
-    slug: 'termites-in-nassau-county',
+    slug: 'termites-signs-prevention',
     title: `Termites in ${GEO.countyFull}: Signs, Prevention & Treatment`,
     description: `Learn how to identify and prevent termite infestations in ${GEO.countyFull}, ${GEO.stateCode}. Expert tips from ${SITE_NAME}.`,
     date: '2024-11-15',
     author: `${SITE_NAME} Team`,
-    tags: ['termites', 'prevention', 'nassau-county'],
+    tags: ['termites', 'prevention', 'local-pest-control'],
     content: `
 ## Termites Are a Serious Threat in ${GEO.countyFull}
 
@@ -234,7 +234,7 @@ Whether you're dealing with ants in your kitchen or mice in your basement, there
     description: `Learn how to identify hornets, understand the risks of an infestation, and find professional hornet removal in ${GEO.countyFull}, ${GEO.stateCode}.`,
     date: '2024-11-19',
     author: `${SITE_NAME} Team`,
-    tags: ['hornets', 'wasps', 'stinging-insects', 'nassau-county', 'removal'],
+    tags: ['hornets', 'wasps', 'stinging-insects', 'local-pest-control', 'removal'],
     content: `
 ## Hornets Are a Growing Concern for ${GEO.countyFull} Homeowners
 
@@ -339,7 +339,7 @@ Every situation is different depending on nest size, location, and accessibility
     description: `Stink bugs invading your ${GEO.countyFull} home? Learn why they come, how to prevent them, and when to call a professional exterminator.`,
     date: '2024-11-12',
     author: `${SITE_NAME} Team`,
-    tags: ['stink-bugs', 'prevention', 'nassau-county', 'fall-pests'],
+    tags: ['stink-bugs', 'prevention', 'local-pest-control', 'fall-pests'],
     content: `
 ## What Are Stink Bugs and Why Are They in Your ${GEO.countyFull} Home?
 
@@ -443,7 +443,7 @@ The most effective long-term strategy is a combination of thorough exterior seal
     description: `Protect your ${GEO.countyFull} business from pests. Learn about commercial pest control solutions for restaurants, offices, and property managers.`,
     date: '2024-11-05',
     author: `${SITE_NAME} Team`,
-    tags: ['commercial', 'pest-control', 'nassau-county', 'business', 'restaurants'],
+    tags: ['commercial', 'pest-control', 'local-pest-control', 'business', 'restaurants'],
     content: `
 ## Keeping ${GEO.countyFull} Businesses Pest-Free
 
@@ -539,7 +539,7 @@ Absolutely. We understand that pest emergencies can happen at any time. If you e
     description: `Learn how understanding pest behavior leads to more effective pest control for ${GEO.countyFull} homeowners. Tips on cockroaches, ants, mosquitoes, and more.`,
     date: '2024-10-28',
     author: `${SITE_NAME} Team`,
-    tags: ['pest-behavior', 'cockroaches', 'ants', 'mosquitoes', 'nassau-county', 'ipm'],
+    tags: ['pest-behavior', 'cockroaches', 'ants', 'mosquitoes', 'local-pest-control', 'ipm'],
     content: `
 ## Why Understanding Pest Behavior Matters for ${GEO.countyFull} Homeowners
 
@@ -649,7 +649,7 @@ Absolutely. By knowing what conditions attract specific pests — moisture level
     description: `Worried about termites in ${GEO.countyFull}? Learn about termite species, signs of invasion, damage potential, and professional treatment from ${SITE_NAME}.`,
     date: '2024-10-15',
     author: `${SITE_NAME} Team`,
-    tags: ['termites', 'termite-damage', 'prevention', 'nassau-county', 'treatment'],
+    tags: ['termites', 'termite-damage', 'prevention', 'local-pest-control', 'treatment'],
     content: `
 ## Termite Invasions: A Persistent Threat to ${GEO.countyFull} Homes
 
@@ -769,7 +769,7 @@ We recommend an annual professional termite inspection for all ${GEO.countyFull}
     description: `Don't let pest problems spiral out of control. Learn why ignoring pests in your ${GEO.countyFull} home leads to costly damage, health risks, and bigger headaches down the road.`,
     date: '2024-11-19',
     author: `${SITE_NAME} Team`,
-    tags: ['pest-control', 'prevention', 'rodents', 'cockroaches', 'nassau-county', 'home-maintenance'],
+    tags: ['pest-control', 'prevention', 'rodents', 'cockroaches', 'local-pest-control', 'home-maintenance'],
     content: `
 ## Why Ignoring Pest Problems in ${GEO.countyFull} Always Makes Things Worse
 
@@ -853,7 +853,7 @@ It depends on the season, but rodents, cockroaches, and termites are among the m
     description: `Dealing with fruit flies in your ${GEO.countyFull} kitchen? Learn about their lifecycle, effective home remedies, and when it's time to call a professional pest control team.`,
     date: '2024-11-18',
     author: `${SITE_NAME} Team`,
-    tags: ['fruit-flies', 'general-pest', 'prevention', 'nassau-county', 'home-remedies'],
+    tags: ['fruit-flies', 'general-pest', 'prevention', 'local-pest-control', 'home-remedies'],
     content: `
 ## The Fruit Fly Problem in ${GEO.countyFull} Homes
 
@@ -964,7 +964,7 @@ Fruit flies are small, tan-colored flies attracted to ripe fruit and fermentatio
     description: `A comprehensive guide to dealing with roach infestations in ${GEO.countyFull}. Learn to identify species, understand health risks, and discover effective control strategies.`,
     date: '2024-11-17',
     author: `${SITE_NAME} Team`,
-    tags: ['cockroaches', 'pest-control', 'nassau-county', 'health-risks', 'prevention'],
+    tags: ['cockroaches', 'pest-control', 'local-pest-control', 'health-risks', 'prevention'],
     content: `
 ## The Roach Reality in ${GEO.countyFull}
 
@@ -1076,7 +1076,7 @@ Yes — a cockroach can survive for up to a week without its head because it bre
     description: `Learn about "super rats" — pesticide-resistant rodents showing up in ${GEO.countyFull} and ${GEO.region}. Find out how they evolved and what you can do to protect your home.`,
     date: '2024-11-16',
     author: `${SITE_NAME} Team`,
-    tags: ['rodents', 'rats', 'pest-control', 'nassau-county', 'prevention'],
+    tags: ['rodents', 'rats', 'pest-control', 'local-pest-control', 'prevention'],
     content: `
 ## What Are "Super Rats" — and Are They in ${GEO.countyFull}?
 
@@ -1168,12 +1168,12 @@ Rats are active year-round, but homeowners in ${GEO.countyFull} typically notice
     `.trim(),
   },
   {
-    slug: 'bed-bug-infestation-nassau-county',
+    slug: 'bed-bug-infestation-guide',
     title: `Bed Bug Infestations in ${GEO.countyFull}: Signs, Health Impacts & Professional Treatment`,
     description: `Bed bug infestations are on the rise in ${GEO.countyFull}. Learn the warning signs, understand health impacts, and find out how professional treatment can restore your peace of mind.`,
     date: '2024-11-14',
     author: `${SITE_NAME} Team`,
-    tags: ['bed-bugs', 'pest-control', 'nassau-county', 'health-risks', 'treatment'],
+    tags: ['bed-bugs', 'pest-control', 'local-pest-control', 'health-risks', 'treatment'],
     content: `
 ## Bed Bug Infestations Are Rising in ${GEO.countyFull}
 
@@ -1292,7 +1292,7 @@ Professional treatment is highly effective when combined with proper preparation
     description: `Think cheese catches mice or ultrasonic devices repel pests? We debunk 7 popular pest control myths for ${GEO.countyFull} homeowners.`,
     date: '2024-10-28',
     author: `${SITE_NAME} Team`,
-    tags: ['pest-control', 'myths', 'rodents', 'bed-bugs', 'nassau-county', 'education'],
+    tags: ['pest-control', 'myths', 'rodents', 'bed-bugs', 'local-pest-control', 'education'],
     content: `
 ## Stop Believing These Pest Control Myths
 
@@ -1389,7 +1389,7 @@ Yes! Ladybugs, spiders, ground beetles, and praying mantises are all beneficial 
     description: `Wondering if DIY pest control is enough? Learn when home remedies work and when it's time to call a ${GEO.countyFull} professional.`,
     date: '2024-10-21',
     author: `${SITE_NAME} Team`,
-    tags: ['pest-control', 'diy', 'tips', 'nassau-county', 'prevention'],
+    tags: ['pest-control', 'diy', 'tips', 'local-pest-control', 'prevention'],
     content: `
 ## The DIY Pest Control Question Every Homeowner Faces
 
@@ -1500,7 +1500,7 @@ We recommend at least an annual pest inspection for most homes in ${GEO.countyFu
     description: `Protect your family from ticks and Lyme disease in ${GEO.countyFull}. Learn prevention tips, tick removal, and yard treatment options.`,
     date: '2024-10-14',
     author: `${SITE_NAME} Team`,
-    tags: ['ticks', 'lyme-disease', 'prevention', 'nassau-county', 'family', 'outdoor'],
+    tags: ['ticks', 'lyme-disease', 'prevention', 'local-pest-control', 'family', 'outdoor'],
     content: `
 ## Ticks and Lyme Disease: What Every ${GEO.countyFull} Family Should Know
 
@@ -1661,7 +1661,7 @@ If your property is in ${GEO.countyFull} and you have any combination of grass, 
     description: `Cold weather drives pests indoors. Learn which winter pests target ${GEO.countyFull} homes and how to keep them out.`,
     date: '2024-10-07',
     author: `${SITE_NAME} Team`,
-    tags: ['winter', 'pests', 'rodents', 'prevention', 'nassau-county', 'seasonal'],
+    tags: ['winter', 'pests', 'rodents', 'prevention', 'local-pest-control', 'seasonal'],
     content: `
 ## Winter Pests: The Uninvited Houseguests of ${GEO.countyFull}
 
@@ -1783,7 +1783,7 @@ Sealing entry points is one of the most effective pest prevention strategies, bu
     description: `Termites, carpenter ants, bed bugs, powder post beetles, and rodents — the 5 most destructive pests threatening ${GEO.countyFull} homes.`,
     date: '2024-09-30',
     author: `${SITE_NAME} Team`,
-    tags: ['termites', 'carpenter-ants', 'bed-bugs', 'rodents', 'beetles', 'nassau-county', 'home-damage'],
+    tags: ['termites', 'carpenter-ants', 'bed-bugs', 'rodents', 'beetles', 'local-pest-control', 'home-damage'],
     content: `
 ## The 5 Pests That Cause the Most Damage to ${GEO.countyFull} Homes
 
@@ -1918,12 +1918,12 @@ We recommend annual inspections at minimum for all homes in ${GEO.countyFull}. H
   },
 
   {
-    slug: 'lyme-disease-ticks-nassau-county',
+    slug: 'lyme-disease-ticks-prevention',
     title: `Lyme Disease & Tick Prevention in ${GEO.countyFull}: What Every Resident Should Know`,
     description: `Lyme disease is a serious concern in ${GEO.countyFull}. Learn about black-legged ticks, Lyme disease stages, symptoms, and professional tick control from ${SITE_NAME}.`,
     date: '2025-02-15',
     author: `${SITE_NAME} Team`,
-    tags: ['ticks', 'lyme-disease', 'prevention', 'nassau-county', 'outdoor-safety'],
+    tags: ['ticks', 'lyme-disease', 'prevention', 'local-pest-control', 'outdoor-safety'],
     content: `
 ## Lyme Disease Is a Growing Threat in ${GEO.countyFull}
 
@@ -2052,7 +2052,7 @@ If you or family members are frequently finding ticks, or your property is adjac
     description: `Raccoons and squirrels entering ${GEO.countyFull} homes cause serious damage and health risks. Learn the warning signs and why professional wildlife exclusion is essential.`,
     date: '2025-02-10',
     author: `${SITE_NAME} Team`,
-    tags: ['wildlife', 'raccoons', 'squirrels', 'attic', 'nassau-county', 'exclusion'],
+    tags: ['wildlife', 'raccoons', 'squirrels', 'attic', 'local-pest-control', 'exclusion'],
     content: `
 ## Wildlife in ${GEO.countyFull} Homes Is More Common Than You Think
 

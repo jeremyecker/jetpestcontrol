@@ -8,7 +8,7 @@ import CTABanner from '@/components/sections/CTABanner';
 import TrustBar from '@/components/sections/TrustBar';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: `Reviews \u2014 ${GMB.rating} Stars`,
+  title: `Reviews — ${GMB.rating} Stars`,
   description: `Read real reviews from homeowners across ${GEO.region}. ${SITE_NAME} is rated ${GMB.rating}/5 with verified Google reviews.`,
   path: '/reviews',
 });

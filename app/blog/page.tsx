@@ -8,7 +8,7 @@ import Card from '@/components/ui/Card';
 import CTABanner from '@/components/sections/CTABanner';
 
 export const metadata: Metadata = generatePageMetadata({
-  title: `Pest Control Blog \u2014 Tips & Guides`,
+  title: `Pest Control Blog — Tips & Guides`,
   description: `Expert pest control tips and guides for homeowners across ${GEO.region}. Stay informed about common pests, prevention tips, and treatment options.`,
   path: '/blog',
 });
@@ -44,7 +44,7 @@ export default function BlogPage() {
                   </div>
                   <h2 className="text-lg font-bold text-brand-dark mb-2">{post.title}</h2>
                   <p className="text-gray-600 text-sm flex-1 mb-3">{post.description}</p>
-                  <span className="text-brand-primary text-sm font-semibold">Read More \u2192</span>
+                  <span className="text-brand-primary text-sm font-semibold">Read More →</span>
                 </div>
               </Card>
             ))}
