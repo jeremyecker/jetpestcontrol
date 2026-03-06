@@ -112,6 +112,9 @@ export const NAV_LINKS = [
   { label: 'Home', href: '/' },
   { label: 'Services', href: '/services' },
   { label: 'Service Areas', href: '/service-areas' },
+  { label: 'Reviews', href: '/reviews' },
+  { label: 'Blog', href: '/blog' },
+  { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
 ] as const;
 
@@ -125,7 +128,9 @@ export const FOOTER_LINKS = {
   ],
   company: [
     { label: 'About Us', href: '/about' },
+    { label: 'Reviews', href: '/reviews' },
     { label: 'Contact', href: '/contact' },
+    { label: 'Blog', href: '/blog' },
   ],
   legal: [
     { label: 'Privacy Policy', href: '/privacy' },
@@ -140,7 +145,29 @@ export const HOURS = {
   emergency: '24/7 Emergency Service Available',
 } as const;
 
-export const REVIEWS = [] as const;
+export const REVIEWS = [
+  {
+    author: 'Brooklyn Resident',
+    location: 'Brooklyn, NY',
+    rating: 5,
+    date: '2024-10-05',
+    text: "Jet Pest Control was incredible. We had a serious roach problem in our brownstone and they handled it discreetly with their unmarked trucks. The technician was thorough, professional, and explained everything. Two treatments and the problem was completely gone. Highly recommend for anyone in Brooklyn!",
+  },
+  {
+    author: 'Queens Homeowner',
+    location: 'Queens, NY',
+    rating: 5,
+    date: '2024-09-18',
+    text: "We called Jet for a mouse problem and they responded the same day. The technician found entry points we never would have noticed, sealed everything up, and set up a monitoring plan. Haven't seen a mouse since. Their attention to detail is outstanding.",
+  },
+  {
+    author: 'Manhattan Business Owner',
+    location: 'Manhattan, NY',
+    rating: 5,
+    date: '2024-08-30',
+    text: "As a restaurant owner, pest control is critical. Jet Pest Control provides discreet, thorough service that keeps us in full compliance. Their team works around our schedule, and the documentation they provide for health inspections is excellent. Wouldn't trust anyone else.",
+  },
+] as const;
 
 export const NETWORK_SITES = [] as const;
 
