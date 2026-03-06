@@ -142,4 +142,6 @@ export const HOURS = {
 
 export const REVIEWS = [] as const;
 
+export const NETWORK_SITES = [] as const;
+
 export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA4_ID || '';
