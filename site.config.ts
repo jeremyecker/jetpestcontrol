@@ -67,17 +67,17 @@ export const PEST_OPTIONS = [
 ] as const;
 
 export const SERVICES = [
-  { name: 'Ant Control', slug: 'ant-control', icon: '\uD83D\uDC1C', description: 'Keep ants out of your kitchen and away from your family. Effective, family-friendly treatments.' },
-  { name: 'Termite Treatment', slug: 'termite-treatment', icon: '\uD83E\uDEB5', description: 'Protect your biggest investment. Expert termite inspections and treatment.' },
-  { name: 'Bed Bug Removal', slug: 'bed-bug-removal', icon: '\uD83D\uDECF\uFE0F', description: 'Help your family sleep easy again. Thorough bed bug removal using proven treatments.' },
-  { name: 'Rodent Control', slug: 'rodent-control', icon: '\uD83D\uDC00', description: "Mice and rats don\'t belong near your family. We remove them and seal entry points." },
-  { name: 'Cockroach Control', slug: 'cockroach-control', icon: '\uD83E\uDEB3', description: 'Complete cockroach elimination that protects your family and home.' },
-  { name: 'Mosquito Control', slug: 'mosquito-control', icon: '\uD83E\uDD9F', description: 'Take back your backyard. Family-friendly mosquito treatments for outdoor enjoyment.' },
-  { name: 'Spider Control', slug: 'spider-control', icon: '\uD83D\uDD77\uFE0F', description: 'No more surprises in the basement or garage. Thorough spider removal for your whole home.' },
-  { name: 'Wasp & Hornet Removal', slug: 'wasp-hornet-removal', icon: '\uD83D\uDC1D', description: "Protect your family from stinging insects. We\'ll remove nests from your property." },
-  { name: 'Flea & Tick Treatment', slug: 'flea-tick-treatment', icon: '\uD83E\uDD97', description: 'Protect your family and pets. Professional flea and tick control for home and yard.' },
-  { name: 'Wildlife Removal', slug: 'wildlife-removal', icon: '\uD83E\uDD9D', description: 'Raccoons in the attic? Humane removal that protects your family.' },
-  { name: 'Commercial Pest Control', slug: 'commercial-pest-control', icon: '\uD83C\uDFE2', description: 'Customized pest management for businesses. Discreet, reliable, effective.' },
+  { name: 'Ant Control', slug: 'ant-control', icon: '🐜', description: 'Keep ants out of your kitchen and away from your family. Effective, family-friendly treatments.' },
+  { name: 'Termite Treatment', slug: 'termite-treatment', icon: '🪵', description: 'Protect your biggest investment. Expert termite inspections and treatment.' },
+  { name: 'Bed Bug Removal', slug: 'bed-bug-removal', icon: '🛏️', description: 'Help your family sleep easy again. Thorough bed bug removal using proven treatments.' },
+  { name: 'Rodent Control', slug: 'rodent-control', icon: '🐀', description: "Mice and rats don\'t belong near your family. We remove them and seal entry points." },
+  { name: 'Cockroach Control', slug: 'cockroach-control', icon: '🪳', description: 'Complete cockroach elimination that protects your family and home.' },
+  { name: 'Mosquito Control', slug: 'mosquito-control', icon: '🦟', description: 'Take back your backyard. Family-friendly mosquito treatments for outdoor enjoyment.' },
+  { name: 'Spider Control', slug: 'spider-control', icon: '🕷️', description: 'No more surprises in the basement or garage. Thorough spider removal for your whole home.' },
+  { name: 'Wasp & Hornet Removal', slug: 'wasp-hornet-removal', icon: '🐝', description: "Protect your family from stinging insects. We\'ll remove nests from your property." },
+  { name: 'Flea & Tick Treatment', slug: 'flea-tick-treatment', icon: '🦗', description: 'Protect your family and pets. Professional flea and tick control for home and yard.' },
+  { name: 'Wildlife Removal', slug: 'wildlife-removal', icon: '🦝', description: 'Raccoons in the attic? Humane removal that protects your family.' },
+  { name: 'Commercial Pest Control', slug: 'commercial-pest-control', icon: '🏢', description: 'Customized pest management for businesses. Discreet, reliable, effective.' },
 ] as const;
 
 export const GMB = {
@@ -88,11 +88,11 @@ export const GMB = {
 } as const;
 
 export const TRUST_STATS = [
-  { icon: '\uD83E\uDD1D', value: '10+ Years', label: 'Protecting Families' },
-  { icon: '\u26A1', value: 'Same Day', label: 'Service Available' },
-  { icon: '\uD83D\uDD12', value: 'Licensed', label: '& Insured' },
-  { icon: '\uD83D\uDD2C', value: 'IPM', label: 'Trained Experts' },
-  { icon: '\uD83D\uDCDE', value: 'Fast', label: 'Response Time' },
+  { icon: '🤝', value: '10+ Years', label: 'Protecting Families' },
+  { icon: '⚡', value: 'Same Day', label: 'Service Available' },
+  { icon: '🔒', value: 'Licensed', label: '& Insured' },
+  { icon: '🔬', value: 'IPM', label: 'Trained Experts' },
+  { icon: '📞', value: 'Fast', label: 'Response Time' },
   { icon: '✅', value: 'Family', label: 'Safe Treatments' },
 ] as const;
 
