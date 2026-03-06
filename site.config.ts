@@ -71,6 +71,15 @@ export const SEO = {
   ogImage: '/images/og-default.jpg',
 };
 
+export const TRUST_STATS = [
+  { icon: '\uD83E\uDD1D', value: '2015+ Years', label: 'Protecting Families' },
+  { icon: '\u26A1', value: 'Same Day', label: 'Service Available' },
+  { icon: '\uD83D\uDD12', value: 'Licensed', label: '& Insured' },
+  { icon: '\uD83D\uDD2C', value: 'IPM', label: 'Trained Experts' },
+  { icon: '\uD83D\uDCDE', value: 'Fast', label: 'Response Time' },
+  { icon: '\u2705', value: 'Family', label: 'Safe Treatments' },
+];
+
 export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA4_ID || '';
 export const REVIEWS = HUB_REVIEWS;
 export const NETWORK_SITES = HUB_NETWORK;
