@@ -88,7 +88,7 @@ export const GMB = {
 } as const;
 
 export const TRUST_STATS = [
-  { icon: '🤝', value: 'Thousands', label: 'Connected with Local Pros' },
+  { icon: '🤝', value: 'Thousands', label: 'Of Happy Customers' },
   { icon: '⚡', value: 'Same Day', label: 'Next Day Service' },
   { icon: '🔒', value: 'Discreet', label: 'Services' },
   { icon: '🔬', value: 'Expert', label: 'Analysis & Delivery' },
