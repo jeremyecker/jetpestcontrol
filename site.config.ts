@@ -147,26 +147,47 @@ export const HOURS = {
 
 export const REVIEWS = [
   {
-    author: 'Brooklyn Resident',
-    location: 'Brooklyn, NY',
+    name: "Leah G.",
     rating: 5,
-    date: '2024-10-05',
-    text: "Jet Pest Control was incredible. We had a serious roach problem in our brownstone and they handled it discreetly with their unmarked trucks. The technician was thorough, professional, and explained everything. Two treatments and the problem was completely gone. Highly recommend for anyone in Brooklyn!",
+    text: "Jeffrey was great! He was super calm, meticulous, and answered all of my questions while he was here. I especially appreciate that he came out quickly within the same day, when my own building wouldn’t coordinate a quick response to a pest issue. Would definitely recommend him and this company.",
+    date: "2 days ago",
+    source: "Google"
   },
   {
-    author: 'Queens Homeowner',
-    location: 'Queens, NY',
+    name: "Derrick A.",
     rating: 5,
-    date: '2024-09-18',
-    text: "We called Jet for a mouse problem and they responded the same day. The technician found entry points we never would have noticed, sealed everything up, and set up a monitoring plan. Haven't seen a mouse since. Their attention to detail is outstanding.",
+    text: "Jeffery was fantastic — professional, thorough, and very knowledgeable. He took the time to explain things and gave me helpful tips for the future, which I really appreciated. I have nothing but positive things to say about Jet Pest Control, from the technicians to customer service, the whole team is 10/10!",
+    date: "6 days ago",
+    source: "Google"
   },
   {
-    author: 'Manhattan Business Owner',
-    location: 'Manhattan, NY',
+    name: "Patricia T.",
     rating: 5,
-    date: '2024-08-30',
-    text: "As a restaurant owner, pest control is critical. Jet Pest Control provides discreet, thorough service that keeps us in full compliance. Their team works around our schedule, and the documentation they provide for health inspections is excellent. Wouldn't trust anyone else.",
+    text: "Jeffry does an excellent job, he’s the best at what he does!",
+    date: "1 day ago",
+    source: "Google"
   },
+  {
+    name: "Michael P.",
+    rating: 5,
+    text: "The very best. Very personable and friendly, gets the job done quick!",
+    date: "2 weeks ago",
+    source: "Google"
+  },
+  {
+    name: "Adriana K.",
+    rating: 5,
+    text: "Julio was amazing!!! Took care of the service with good manners and attention.",
+    date: "6 days ago",
+    source: "Google"
+  },
+  {
+    name: "Olga S.",
+    rating: 5,
+    text: "Thank you, Katherine and Allison, for the excellent client service and your prompt response.",
+    date: "2 weeks ago",
+    source: "Google"
+  }
 ] as const;
 
 export const NETWORK_SITES = [] as const;
