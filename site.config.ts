@@ -88,12 +88,12 @@ export const GMB = {
 } as const;
 
 export const TRUST_STATS = [
-  { icon: '🤝', value: '10+ Years', label: 'Protecting Families' },
-  { icon: '⚡', value: 'Same Day', label: 'Service Available' },
-  { icon: '🔒', value: 'Licensed', label: '& Insured' },
-  { icon: '🔬', value: 'IPM', label: 'Trained Experts' },
-  { icon: '📞', value: 'Fast', label: 'Response Time' },
-  { icon: '✅', value: 'Family', label: 'Safe Treatments' },
+  { icon: '🤝', value: 'Thousands', label: 'Connected with Local Pros' },
+  { icon: '⚡', value: 'Same Day', label: 'Next Day Service' },
+  { icon: '🔒', value: 'Discreet', label: 'Services' },
+  { icon: '🔬', value: 'Expert', label: 'Analysis & Delivery' },
+  { icon: '📞', value: 'High-Level', label: 'Communication' },
+  { icon: '✅', value: 'Licensed', label: '& Insured' },
 ] as const;
 
 export const LEAD_ROUTING = {
