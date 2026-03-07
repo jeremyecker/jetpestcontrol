@@ -1,2207 +1,887 @@
-import type { BlogPost } from '@/lib/types';
-import { GEO, SITE_NAME } from '@/site.config';
+export interface BlogPost {
+  slug: string;
+  title: string;
+  date: string;
+  excerpt: string;
+  content: string;
+  author: string;
+  category: string;
+  readTime: string;
+  tags: string[];
+}
 
-/**
- * Blog posts for this site.
- * Each post has unique, county-specific content.
- * New sites should customize these with local context.
- */
 export const blogPosts: BlogPost[] = [
   {
-    slug: 'termites-signs-prevention',
-    title: `Termites in ${GEO.countyFull}: Signs, Prevention & Treatment`,
-    description: `Learn how to identify and prevent termite infestations in ${GEO.countyFull}, ${GEO.stateCode}. Expert tips from ${SITE_NAME}.`,
-    date: '2024-11-15',
-    author: `${SITE_NAME} Team`,
-    tags: ['termites', 'prevention', 'local-pest-control'],
-    content: `
-## Termites Are a Serious Threat in ${GEO.countyFull}
+    slug: "termites-brooklyn-queens-nyc",
+    title: "Termite Infestation Signs in Brooklyn, Queens, and NYC: What to Know",
+    date: "2025-01-15",
+    excerpt: "Termites are quietly destroying homes across Brooklyn, Queens, and Nassau County. Here's how to spot them before the damage becomes costly.",
+    author: "Jet Pest Control Team",
+    category: "Termites",
+    readTime: "6 min read",
+    tags: ["termites", "pest control near me", "Brooklyn", "Queens", "Nassau County"],
+    content: `# Termite Infestation Signs in Brooklyn, Queens, and NYC: What to Know
 
-Eastern subterranean termites are the most common species found in ${GEO.countyFull}, ${GEO.stateCode}. These destructive insects cause billions of dollars in property damage across the United States each year, and Long Island homes are particularly vulnerable due to our humid climate and aging housing stock.
+Termites cause over $5 billion in property damage across the United States each year — and homeowners across Brooklyn, Queens, and Nassau County are far from immune. While many people think of termites as a suburban problem, the reality is that subterranean termites are extremely active in older wooden structures throughout New York City's boroughs and Long Island.
 
-### Signs of Termite Activity
+If you've been searching for **pest control near me** in Brooklyn, Queens, or Nassau County, termite protection should be part of your plan — especially if you own a brownstone, attached home, or pre-war building.
 
-Homeowners in ${GEO.countyFull} should watch for these warning signs:
+## Why NYC and Long Island Have Termite Risk
 
-- **Mud tubes** on foundation walls, especially in basements and crawl spaces
-- **Discarded wings** near windows and doors, particularly in spring (swarming season)
-- **Hollow-sounding wood** when tapped — termites eat wood from the inside out
-- **Bubbling or peeling paint** that resembles water damage
-- **Frass (droppings)** — tiny wood-colored pellets near wooden structures
+**Brooklyn and Queens** have extensive stocks of wooden-framed row houses, brownstones, and attached homes built between 1880 and 1950. Many of these homes sit on foundations where soil moisture has been elevated for decades by aging drainage infrastructure, basement flooding, and proximity to underground utilities. Subterranean termites require moisture to survive — the soil conditions beneath many Brooklyn and Queens neighborhoods provide it year-round.
 
-### When Is Termite Season in ${GEO.countyFull}?
+**Nassau County** — particularly communities like Hempstead, Garden City, Great Neck, and Manhasset — has a combination of older housing stock and suburban moisture conditions that mirrors what we see in the southern boroughs. Sandy soils near Long Island's north and south shores stay consistently moist, and wooded lots provide both harborage and a moisture-rich environment.
 
-Termite swarms typically occur in ${GEO.countyFull} between **March and June**, when temperatures warm and humidity rises. However, termites are active year-round underground. Just because you don't see swarmers doesn't mean your home is protected.
+## Warning Signs to Watch For
 
-### Prevention Tips for ${GEO.countyFull} Homeowners
+**Mud Tubes:** Pencil-width tunnels of dried soil on foundation walls or exposed basement walls. Subterranean termites build these tubes to travel between their underground colony and above-ground wood. In Brooklyn brownstones, check the basement foundation walls and under the front stoop. In Queens attached homes, check exposed sill plates in the basement.
 
-1. **Reduce moisture** around your foundation — fix leaky faucets and ensure proper drainage
-2. **Keep wood away** from your home's foundation — firewood, mulch, and debris should be at least 20 feet away
-3. **Seal cracks** in your foundation and around utility pipes
-4. **Schedule annual inspections** — professional termite inspections can catch problems early
-5. **Consider preventive treatment** — liquid barriers and bait stations provide ongoing protection
+**Swarmer Termites:** Late March through May, established termite colonies send out winged reproductive termites in large numbers. If you see dozens of small pale-winged insects emerging near windows, foundation gaps, or wooden moldings, call an exterminator immediately. Discarded wings near windowsills are equally diagnostic.
 
-### Professional Termite Treatment Options
+**Hollow-Sounding Wood:** Tap wooden floors, door frames, and baseboards. Hollow sounds indicate termites have consumed the interior. This is common in older wooden floor structures in Brooklyn row houses.
 
-At ${SITE_NAME}, we offer comprehensive termite solutions including:
+**Tight-Fitting Doors:** When termites consume wood and introduce moisture, frames warp. Multiple doors or windows in the same area that suddenly fit poorly warrant a professional inspection.
 
-- **Liquid termiticide barriers** — applied around your foundation to create a protective zone
-- **Bait station systems** — strategically placed to intercept termite colonies
-- **Wood treatment** — direct application to infested areas
-- **Annual monitoring** — ongoing inspections to ensure long-term protection
+**Frass:** Small piles of pale sawdust-like material near wooden structures may indicate drywood termite activity (less common than subterranean but present in NYC).
 
-Don't wait until you see damage. Contact us today for a free termite estimate for your ${GEO.countyFull} home.
-    `.trim(),
+## Professional Termite Treatment
+
+Jet Pest Control treats termite infestations throughout Brooklyn, Queens, Manhattan, Nassau, and Suffolk Counties. We use liquid soil barrier treatments and bait station systems depending on property characteristics. For attached homes and row houses, we coordinate treatment to protect against colony migration from adjacent properties.
+
+Call (718) 710-0330 (Brooklyn, Queens, Manhattan) or (516) 774-5051 (Nassau, Suffolk) for a free termite inspection. When you need **pest control near me** for termite protection in NYC or Long Island, Jet Pest Control delivers fast, discreet service with unmarked vehicles.`
   },
   {
-    slug: 'spring-pest-prevention-tips',
-    title: `Spring Pest Prevention Tips for ${GEO.countyFull} Homeowners`,
-    description: `Prepare your ${GEO.countyFull} home for spring pest season with these expert prevention tips.`,
-    date: '2024-10-20',
-    author: `${SITE_NAME} Team`,
-    tags: ['prevention', 'spring', 'tips'],
-    content: `
-## Spring Is Prime Pest Season on Long Island
+    slug: "spring-pest-prevention-brooklyn-queens",
+    title: "Spring Pest Prevention in Brooklyn, Queens, and Nassau County",
+    date: "2025-02-01",
+    excerpt: "Spring brings ants, cockroaches, termites, and bed bugs back to active mode across Brooklyn, Queens, and Nassau. Here's how to protect your home before pest season peaks.",
+    author: "Jet Pest Control Team",
+    category: "Seasonal",
+    readTime: "6 min read",
+    tags: ["spring pest control", "pest control near me", "Brooklyn", "Queens", "Nassau County"],
+    content: `# Spring Pest Prevention in Brooklyn, Queens, and Nassau County
 
-As temperatures rise across ${GEO.countyFull}, pests that were dormant during winter become active again. Spring is the busiest time of year for exterminators in the ${GEO.region} area, and for good reason — ants, termites, mosquitoes, and rodents all ramp up activity.
+Spring in New York City and Long Island is a time of renewal — and a time of rapidly escalating pest activity. Warmer temperatures trigger dormant insect colonies back to active feeding and reproduction. Rodents that overwintered in wall voids become bolder and more active. And for homeowners in Brooklyn, Queens, and Nassau County, the search for **pest control near me** starts picking up significantly in March and April.
 
-### Top Spring Pests in ${GEO.countyFull}
+The homeowners who take action in early spring consistently have fewer pest problems all the way through October. Jet Pest Control has been providing spring pest protection across the five boroughs and Long Island for years, and we see the same pattern every season.
 
-- **Ants** — Carpenter ants and pavement ants are extremely common in ${GEO.countyFull} homes
-- **Termites** — Swarm season peaks in April and May
-- **Mosquitoes** — Standing water from spring rains creates breeding grounds
-- **Ticks** — ${GEO.countyFull}'s parks and wooded areas see increased tick activity
-- **Rodents** — Mice that sheltered inside during winter may still be present
+## Why Spring Is Critical for NYC Pest Control
 
-### Your Spring Pest Prevention Checklist
+Unlike suburban areas where pests primarily pressure homes from outdoor natural areas, urban pest pressure in Brooklyn and Queens comes from all directions: neighboring units in attached homes, subway infrastructure, commercial corridors, and the urban landscape itself. A building that successfully deterred pests all winter can see rapid re-infestation in spring as activity levels across the neighborhood spike.
 
-**Exterior:**
-- Walk the perimeter of your home and seal any cracks or gaps larger than 1/4 inch
-- Clean gutters and ensure downspouts direct water away from your foundation
-- Trim shrubs and tree branches that touch your home
-- Remove leaf litter and debris from around your foundation
-- Check window screens for tears and replace as needed
+## Top Spring Pests Across Our Service Area
 
-**Interior:**
-- Store food in sealed containers — especially pet food
-- Fix any leaky pipes or faucets (moisture attracts pests)
-- Vacuum regularly, especially in corners and under furniture
-- Declutter storage areas like basements, attics, and garages
-- Check for signs of mouse droppings in pantries and cabinets
+**German Cockroaches:** The dominant urban pest in NYC apartment buildings, brownstones, and commercial properties. Cockroach activity spikes in April and May as temperatures rise and colonies that contracted over winter expand rapidly. In multi-unit buildings in Crown Heights, Flatbush, and Flushing, a single infested unit can seed an entire floor within weeks.
 
-### When to Call a Professional
+**Termite Swarmers:** March through May is peak swarmer season. In pre-war brownstones throughout Park Slope, Bed-Stuy, and Bushwick, and in older homes in Bayside and Forest Hills, termite swarms near windows or foundation gaps indicate established colonies. Call immediately.
 
-If you're seeing pests despite prevention efforts, it's time to call ${SITE_NAME}. Our licensed technicians serve all 63 towns across ${GEO.countyFull} and can identify the source of your pest problem quickly.
+**Ants:** Odorous house ants and pavement ants appear in kitchen trails and bathroom floors as they emerge seeking food and moisture. Spring treatment before colonies reach full size is dramatically more effective.
 
-Early intervention is always more effective — and less expensive — than waiting for an infestation to grow.
-    `.trim(),
+**Bed Bugs:** Bed bug activity increases in spring as people travel, purchase used furniture, and move apartments. NYC's high population density and housing turnover make bed bug exposure a year-round risk — but spring moves are a particular vector.
+
+**Mice:** Spring is when mice that overwintered become more active and visible, often emerging from wall voids into living spaces as they search for nesting sites.
+
+## Spring Pest-Proofing Checklist
+
+**For Brooklyn/Queens apartments and attached homes:**
+- Seal gaps around kitchen pipes under the sink with steel wool and caulk
+- Check bathroom caulking around tub and toilet base — gap = cockroach highway
+- Inspect where utility conduits enter from exterior walls
+- Check window frames and door thresholds for gaps
+- Inspect under appliances and behind refrigerator for roach activity
+
+**For Nassau and Suffolk homes:**
+- Clear debris from foundation perimeter
+- Check for termite mud tubes on foundation walls
+- Trim branches touching the house (rodent access)
+- Inspect deck boards and stairs for soft spots
+
+## Professional Spring Protection
+
+Jet Pest Control provides spring pest control throughout Brooklyn, Queens, Manhattan, Nassau, and Suffolk. Call (718) 710-0330 (NYC boroughs) or (516) 774-5051 (Nassau, Suffolk) to schedule your spring treatment. When you need **pest control near me** this spring, Jet Pest Control brings discreet, professional service with unmarked vehicles throughout New York.`
   },
   {
-    slug: 'rodent-control-guide',
-    title: `The Complete Guide to Rodent Control in ${GEO.countyFull}`,
-    description: `Expert rodent control strategies for ${GEO.countyFull} homes. Learn how to identify, prevent, and eliminate mice and rats.`,
-    date: '2024-09-10',
-    author: `${SITE_NAME} Team`,
-    tags: ['rodents', 'mice', 'rats', 'guide'],
-    content: `
-## Rodent Problems in ${GEO.countyFull}
+    slug: "rodent-control-brooklyn-queens-nyc",
+    title: "Rodent Control in Brooklyn, Queens, and NYC: Solving the Mouse and Rat Problem",
+    date: "2025-02-15",
+    excerpt: "Mice and rats are a serious challenge in Brooklyn, Queens, and Nassau County. Here's what actually works — from exclusion to professional treatment.",
+    author: "Jet Pest Control Team",
+    category: "Rodents",
+    readTime: "6 min read",
+    tags: ["rodent control", "mice", "rats", "exterminator near me", "Brooklyn", "Queens"],
+    content: `# Rodent Control in Brooklyn, Queens, and NYC: Solving the Mouse and Rat Problem
 
-${GEO.countyFull}'s suburban landscape — with its mix of older homes, restaurants, and green spaces — provides ideal conditions for rodents. House mice, Norway rats, and deer mice are all common throughout ${GEO.region}.
+New York City has one of the most significant rodent problems of any city in the world — and Brooklyn and Queens are no exception. From the rowhouses of Bay Ridge to the apartments of Flushing, mice and rats are a persistent challenge that most NYC-area homeowners and building managers have dealt with at some point.
 
-### Identifying Your Rodent Problem
+If you're searching for an **exterminator near me** after hearing scratching in your Brooklyn walls or finding droppings in your Queens kitchen, you're in the right place.
 
-**House Mice:**
-- Small (2-4 inches body), gray-brown fur
-- Droppings are small, pointed, about 1/4 inch
-- Prefer nesting in walls, attics, and basements
-- Can squeeze through gaps as small as a dime
+## Why NYC Has Extreme Rodent Pressure
 
-**Norway Rats:**
-- Large (7-10 inches body), brown fur
-- Droppings are larger, blunt-ended, about 3/4 inch
-- Prefer basements, burrows near foundations
-- Need a gap only the size of a quarter to enter
+**Underground infrastructure:** New York's subway system, sewer network, and utility tunnels provide an enormous rodent habitat beneath the city. Norway rats — the large, burrowing species — use these systems to travel between blocks and access building foundations through sewer connections, utility penetrations, and gaps in basement walls.
 
-### Health Risks
+**Restaurant and food waste density:** The concentration of restaurants, bodegas, and food service establishments throughout Brooklyn and Queens creates a consistent food source sustaining large rodent populations. Commercial corridors along Atlantic Avenue, Myrtle Avenue, Jamaica Avenue, and Main Street Flushing generate rodent pressure that spills into adjacent residential streets.
 
-Rodents in your ${GEO.countyFull} home aren't just a nuisance — they're a health hazard:
+**Attached housing:** Row houses and multi-family buildings in Williamsburg, Crown Heights, Brownsville, and Ridgewood share wall systems that rodents use as highways between properties. Addressing one unit without coordinating with adjacent buildings often produces only temporary relief.
 
-- **Hantavirus** — transmitted through droppings and urine
-- **Salmonella** — contaminated food surfaces
-- **Leptospirosis** — through contact with rodent urine
-- **Property damage** — gnawed wires (fire hazard), damaged insulation, contaminated food
+**Nassau County:** While rodent pressure is less intense than urban Brooklyn, Nassau communities with proximity to restaurant strips, retention basins, and densely wooded areas — particularly in Hempstead and areas near Great Neck waterways — see significant rodent pressure, particularly in fall when outdoor food sources diminish.
 
-### Professional Rodent Control
+## What Actually Works
 
-At ${SITE_NAME}, our rodent control process includes:
+**Step 1: Exclusion.** This is the only permanent solution. Every gap, crack, and penetration where rodents can enter must be sealed with material they cannot gnaw through: galvanized hardware cloth for large openings, copper mesh packed with caulk for pipe gaps, and concrete for foundation cracks. Without exclusion, trapping is an endless cycle.
 
-1. **Thorough inspection** — identifying entry points, nesting areas, and extent of infestation
-2. **Exclusion** — sealing entry points with steel wool, caulk, and metal flashing
-3. **Trapping program** — strategically placed traps for quick population reduction
-4. **Sanitation guidance** — helping you eliminate food and water sources
-5. **Follow-up visits** — ensuring the problem is fully resolved
+**Step 2: Interior trap placement.** Snap traps placed strategically along rodent travel routes (along walls, behind appliances, in cabinet corners) eliminate existing interior population. We avoid interior bait stations — rodents dying inside walls create odor and secondary pest problems.
 
-Don't let rodents take over your home. Call us today for a free estimate.
-    `.trim(),
+**Step 3: Exterior bait stations.** Tamper-resistant exterior bait stations placed along the building perimeter, in parking areas, and near dumpsters reduce the pressure population outside before they can enter.
+
+**Step 4: Sanitation guidance.** Eliminating accessible food sources — open trash containers, uncovered compost, pet food left out — reduces attractiveness.
+
+Jet Pest Control provides comprehensive rodent control for residential and commercial properties throughout Brooklyn, Queens, Manhattan, Nassau, and Suffolk. Call (718) 710-0330 or (516) 774-5051. When you need an **exterminator near me** for rodents in NYC or Long Island, Jet Pest Control delivers fast, discreet service.`
   },
   {
-    slug: 'bed-bug-infestation',
-    title: `Bed Bugs in ${GEO.countyFull}: What Every Homeowner Should Know`,
-    description: `Complete guide to bed bug identification, prevention, and treatment for ${GEO.countyFull} residents.`,
-    date: '2024-08-05',
-    author: `${SITE_NAME} Team`,
-    tags: ['bed-bugs', 'guide', 'treatment'],
-    content: `
-## Bed Bugs Don't Discriminate
+    slug: "bed-bug-treatment-brooklyn-queens-nyc",
+    title: "Bed Bug Treatment in Brooklyn, Queens, and NYC: What to Do Now",
+    date: "2025-03-01",
+    excerpt: "New York City has one of the highest bed bug rates in the country. Here's exactly what to do if you find bed bugs in Brooklyn, Queens, or Nassau County.",
+    author: "Jet Pest Control Team",
+    category: "Bed Bugs",
+    readTime: "6 min read",
+    tags: ["bed bugs", "bed bug treatment", "exterminator near me", "Brooklyn", "Queens", "NYC"],
+    content: `# Bed Bug Treatment in Brooklyn, Queens, and NYC: What to Do Now
 
-Bed bug infestations have been on the rise across ${GEO.countyFull} and the greater ${GEO.region} area. Contrary to popular belief, bed bugs have nothing to do with cleanliness — they can infest any home, hotel, or business.
+New York City consistently ranks among the top cities in the United States for bed bug activity. Brooklyn and Queens — with their dense apartment buildings, high population turnover, and extensive short-term rental market — see bed bug infestations at rates far above national averages. If you've found bed bugs in Williamsburg, Crown Heights, Astoria, Jackson Heights, or anywhere across NYC or Nassau County, this guide is for you.
 
-### How Bed Bugs Spread
+Jet Pest Control provides discreet, professional bed bug treatment throughout Brooklyn, Queens, Manhattan, and Long Island — using unmarked vehicles because we understand the sensitivity of this issue.
 
-Bed bugs are excellent hitchhikers. Common ways they enter ${GEO.countyFull} homes:
+## The NYC Bed Bug Challenge
 
-- **Travel** — hotels, Airbnbs, planes, and trains
-- **Used furniture** — secondhand mattresses, couches, and dressers
-- **Visitors** — guests can unknowingly bring them on luggage or clothing
-- **Multi-unit buildings** — they can travel between apartments through walls and pipes
+**Apartment density:** In high-rise and multi-unit buildings throughout Brooklyn and Queens, bed bugs migrate between units through shared walls, electrical conduits, plumbing chases, and floor/ceiling gaps. A successful treatment in one unit can be undermined by reintroduction from an adjacent untreated unit within weeks.
 
-### Signs of Bed Bugs
+**Population turnover:** New York's constant cycle of apartment moves — people bringing secondhand furniture, luggage from hotels, and belongings from previous infested residences — introduces bed bugs into new locations constantly.
 
-- Small, rust-colored stains on sheets (blood spots)
-- Tiny dark spots (bed bug excrement)
-- Small, white eggs or shed skins in mattress seams
-- Itchy welts on your body, often in a line pattern
-- A sweet, musty odor in severe infestations
+**Short-term rentals:** Airbnb and VRBO properties in popular Brooklyn and Queens neighborhoods see the highest bed bug introduction rates in the borough.
 
-### Professional Treatment Options
+**Secondhand furniture:** Curbside furniture, vintage markets, and online marketplace pickups are a major vector for bed bug introduction throughout Brooklyn's neighborhoods.
 
-**Heat Treatment:**
-Our most effective method. We raise room temperatures to 120-135°F, which kills bed bugs at all life stages — eggs included. One treatment, done right.
+## Signs of Bed Bugs
 
-**Chemical Treatment:**
-For targeted or budget-friendly solutions, professional-grade insecticides applied to all hiding spots. Usually requires 2-3 visits.
+- Reddish-brown insects about the size of an apple seed in mattress seams, behind headboards, or in box springs
+- Rust-colored blood spots or dark fecal spots on sheets and mattress edges
+- Small red itchy welts in lines or clusters on exposed skin, particularly arms, neck, and shoulders
+- Tiny white eggs (1mm) or pale yellow shed skins in harborage areas
+- A sweet, musty odor in heavily infested rooms
 
-**Combination Approach:**
-Heat + chemical for severe infestations, providing immediate knockdown plus residual protection.
+## Why Consumer Products Don't Work in NYC
 
-### Why DIY Doesn't Work for Bed Bugs
+New York area bed bug populations have developed significant resistance to pyrethroid insecticides — the active ingredient in virtually every consumer bed bug product. Consumer foggers don't just fail; they actively scatter the infestation into adjacent rooms and units, making professional treatment harder and more expensive.
 
-Over-the-counter sprays and foggers are largely ineffective against bed bugs and can actually make the problem worse by scattering them to new areas. Professional treatment is the only reliable solution.
+## Professional Treatment Options
 
-Contact ${SITE_NAME} for a confidential bed bug inspection of your ${GEO.countyFull} home.
-    `.trim(),
+**Heat Treatment:** The most effective option for NYC apartments. We raise the entire room or unit to 120–135°F, killing all bed bugs and eggs in every harborage site simultaneously. No chemicals required; you can return home the same day. Particularly effective in multi-room apartments because heat penetrates wall voids, furniture, and clothing.
+
+**Chemical Treatment:** Multiple applications of professional-grade products including non-repellent residuals, contact killers, and insect growth regulators. Requires 2–3 visits spaced 2 weeks apart to break the reproductive cycle. More accessible price point for isolated infestations.
+
+**Building-Wide Coordination:** For multi-unit buildings, Jet Pest Control works with building managers to coordinate treatment across adjacent units, preventing cross-infestation during the treatment period.
+
+## Next Steps If You've Found Bed Bugs
+
+1. Don't move your mattress to another room — this spreads the infestation
+2. Don't use a fogger — scatters bugs throughout the unit
+3. Encase your mattress and box spring in certified bed bug encasements
+4. Wash and dry all bedding and clothing on high heat (30+ minutes at 120°F minimum)
+5. Call Jet Pest Control immediately for a professional inspection
+
+Call (718) 710-0330 (Brooklyn, Queens, Manhattan) or (516) 774-5051 (Nassau, Suffolk) for same-day bed bug inspection and treatment. Unmarked vehicles; completely discreet service. When you need an **exterminator near me** for bed bugs in NYC, Jet Pest Control responds fast.`
   },
   {
-    slug: 'eco-friendly-pest-control',
-    title: `Eco-Friendly Pest Control Options in ${GEO.countyFull}`,
-    description: `Learn about green, eco-friendly pest control methods available for ${GEO.countyFull} homes and businesses.`,
-    date: '2024-07-18',
-    author: `${SITE_NAME} Team`,
-    tags: ['eco-friendly', 'green', 'ipm'],
-    content: `
-## Green Pest Control for ${GEO.countyFull} Families
+    slug: "cockroach-control-brooklyn-queens-nyc",
+    title: "Cockroach Control in Brooklyn, Queens, and NYC: Eliminating Roaches for Good",
+    date: "2025-03-15",
+    excerpt: "German cockroaches dominate NYC apartment buildings. Here's how to actually eliminate them in Brooklyn, Queens, and Nassau County — not just push them to the next room.",
+    author: "Jet Pest Control Team",
+    category: "Cockroaches",
+    readTime: "6 min read",
+    tags: ["cockroach control", "roaches", "exterminator near me", "Brooklyn", "Queens", "NYC"],
+    content: `# Cockroach Control in Brooklyn, Queens, and NYC: Eliminating Roaches for Good
 
-More and more ${GEO.countyFull} homeowners are asking about eco-friendly pest control options — and we're happy to provide them. Modern pest management has come a long way from blanket chemical applications.
+German cockroaches are endemic to New York City apartment buildings, brownstones, and commercial kitchens. In Brooklyn neighborhoods like Flatbush, East New York, and Canarsie, and in Queens communities from Jamaica to Astoria, German cockroach infestations are among the most common pest control calls we receive — and among the most challenging to treat effectively.
 
-### Integrated Pest Management (IPM)
+If you've been searching for an **exterminator near me** for roaches in Brooklyn or Queens, this is what you need to know.
 
-IPM is the gold standard for environmentally responsible pest control. It focuses on:
+## Why NYC Has Such Severe Cockroach Problems
 
-1. **Prevention first** — eliminating conditions that attract pests
-2. **Monitoring** — identifying exactly what pests are present and where
-3. **Targeted treatment** — using the least toxic effective method
-4. **Follow-up** — ensuring long-term results
+**Connectivity:** German cockroaches in multi-unit buildings travel through shared plumbing chases, electrical conduits, wall voids, and even under doors. An infestation in one unit reinfests adjacent units through these pathways. Without a building-wide approach, individual unit treatments provide only temporary relief.
 
-### Green Methods We Use
+**Heat and moisture:** NYC apartments — particularly in older buildings without modern HVAC — run hot and humid, especially in summer. German cockroaches thrive in conditions above 70°F with humidity over 60%. Kitchen and bathroom areas in dense Brooklyn and Queens apartment buildings provide ideal conditions year-round.
 
-- **Exclusion work** — sealing entry points is the most effective and chemical-free method
-- **Botanical insecticides** — derived from plants like chrysanthemums and neem
-- **Diatomaceous earth** — natural powder that's effective against crawling insects
-- **Bait stations** — targeted application that minimizes chemical exposure
-- **Heat treatment** — for bed bugs, uses zero chemicals
-- **Biological controls** — beneficial organisms that target specific pests
+**Food availability:** The sheer density of food — in restaurants, bodegas, and residential kitchens — in Brooklyn and Queens neighborhoods sustains massive cockroach populations that constantly pressure nearby buildings.
 
-### Friendly for Kids, Pets, and the Environment
+**Resistance:** German cockroach populations in the New York metropolitan area have developed significant resistance to pyrethroid insecticides over decades of widespread consumer use. The spray that worked in the 1990s barely works today.
 
-At ${SITE_NAME}, we prioritize the well-being of your family and pets. Our technicians are trained in the latest green pest control methods and can recommend the best approach for your specific situation.
+## Why Consumer Products Make Things Worse
 
-Whether you're dealing with ants in your kitchen or mice in your basement, there's an eco-friendly solution that works. Contact us to discuss green pest control options for your ${GEO.countyFull} home.
-    `.trim(),
+Repellent insecticide sprays — the kind sold in hardware stores — don't eliminate cockroach colonies. They repel visible cockroaches into deeper harborage areas and adjacent rooms or units. You see fewer roaches briefly, then a larger population resurfaces weeks later, now spread more broadly. This is exactly the wrong outcome in a shared building.
+
+## Professional Treatment: What Actually Works
+
+**Gel bait:** Applied in micro-dots directly in cockroach harborage areas — inside cabinet hinges, behind wall plates, under appliances, in bathroom cabinet gaps. Non-repellent; worker cockroaches feed on bait and carry toxic material back to the colony through contact and fecal transfer. This is the gold standard for German cockroach control in NYC apartments.
+
+**Insect growth regulator (IGR):** Prevents juvenile cockroaches from maturing into reproductive adults. Applied alongside gel bait to break the breeding cycle within weeks.
+
+**Void treatment:** For severe infestations with established colonies in wall voids, direct application into harborage areas ensures colony elimination beyond visible surfaces.
+
+**Building coordination:** Jet Pest Control works with property managers and building supers to coordinate simultaneous treatment in adjacent units, preventing reinfection during the treatment period.
+
+## What You Can Do
+
+- Fix all leaking pipes — moisture is the primary attractant
+- Run floor drains monthly — dried traps allow sewer cockroaches to enter
+- Store food in sealed containers
+- Empty trash cans nightly with lids
+- Seal gaps around pipes under sinks
+
+For cockroach problems in Brooklyn, Queens, Manhattan, Nassau, or Suffolk, call (718) 710-0330 or (516) 774-5051. Unmarked vehicles; discreet professional service. Jet Pest Control — when you need **pest control near me** for roaches in NYC or Long Island.`
   },
   {
-    slug: 'hornets-infestation',
-    title: `Hornets Infestation in ${GEO.countyFull}: Species, Risks & Professional Removal`,
-    description: `Learn how to identify hornets, understand the risks of an infestation, and find professional hornet removal in ${GEO.countyFull}, ${GEO.stateCode}.`,
-    date: '2024-11-19',
-    author: `${SITE_NAME} Team`,
-    tags: ['hornets', 'wasps', 'stinging-insects', 'local-pest-control', 'removal'],
-    content: `
-## Hornets Are a Growing Concern for ${GEO.countyFull} Homeowners
+    slug: "ant-control-brooklyn-queens-nyc",
+    title: "Ant Control in Brooklyn, Queens, and Nassau County",
+    date: "2025-04-01",
+    excerpt: "Ants invade homes across Brooklyn, Queens, and Nassau County every spring. Here's how to identify them, why DIY fails, and how to stop them for good.",
+    author: "Jet Pest Control Team",
+    category: "Ants",
+    readTime: "6 min read",
+    tags: ["ant control", "ants", "pest control near me", "Brooklyn", "Queens", "Nassau County"],
+    content: `# Ant Control in Brooklyn, Queens, and Nassau County
 
-If you have noticed large, aggressive wasps buzzing around your yard, deck, or eaves, you may be dealing with a hornet infestation. Hornets are among the most intimidating stinging insects found in ${GEO.countyFull}, and their nests can grow surprisingly fast during the warm months. For families in communities like [Garden City](/garden-city) and [Massapequa](/massapequa), spending time outdoors is a big part of suburban life — and a hornet nest near your home can put a real damper on backyard barbecues, pool days, and weekend gardening.
+Ants are one of the most common spring and summer pest complaints across Brooklyn, Queens, and Nassau County. Whether it's a trail of tiny odorous house ants marching across your Williamsburg kitchen counter, pavement ants pushing up through bathroom tile joints in Astoria, or carpenter ants excavating deck framing in Garden City, ant problems affect homeowners and renters throughout our service area.
 
-Unlike honeybees, hornets can sting multiple times, and they are far more territorial. Disturbing a nest — even accidentally — can trigger an aggressive swarm response that poses a genuine health risk, especially for children, the elderly, and anyone with allergies.
+## Common Ant Species
 
-## Common Hornet Species in ${GEO.countyFull}
+**Odorous House Ants:** Small, dark brown, with a distinctive rotten-coconut smell when crushed. The most common indoor ant throughout Brooklyn, Queens, and Nassau County. Colonies can contain 100,000+ workers with multiple queens — meaning contact spray treatment, while it kills visible foragers, does nothing to the colony. These ants trail along walls, pipes, and countertops seeking food and moisture.
 
-Several species of hornets and large wasps are found throughout ${GEO.region}:
+**Pavement Ants:** Small dark ants nesting under sidewalks, patio slabs, and driveways. Common throughout Brooklyn and Queens, where they enter buildings through expansion joints, foundation cracks, and floor gaps. If you're seeing small ants emerging from cracks in your bathroom or basement floor, these are likely the culprit.
 
-- **Bald-Faced Hornets** — Black and white with a distinctive white face. They build large, papery, football-shaped nests in trees, shrubs, and under eaves. Very aggressive when their nest is disturbed.
-- **European Hornets** — Brown and yellow, noticeably larger than yellowjackets. They sometimes nest inside wall voids and hollow trees. European hornets are attracted to outdoor lighting at night.
-- **Yellowjackets** — While technically wasps, yellowjackets are often confused with hornets due to their size and aggressive behavior. They nest underground or in wall cavities and are especially problematic at outdoor gatherings.
+**Carpenter Ants:** Large black ants that excavate galleries in moisture-damaged wood. More common in Nassau County's older housing stock than in dense urban areas, but found in Brooklyn brownstones with moisture-compromised wooden elements. In communities like Great Neck, Manhasset, and Garden City, carpenter ants in deck framing and basement sill plates are a regular concern.
 
-All three species are common across ${GEO.countyFull} neighborhoods from Hicksville and Bethpage to Oceanside and Long Beach. Their activity peaks from late June through October.
+**Pharaoh Ants:** Tiny pale yellow ants common in hospital and commercial building environments in Manhattan, increasingly found in large multi-unit apartment buildings in Brooklyn and Queens. Extremely difficult to control — improper treatment causes colony fission, spreading the infestation.
 
-## Identifying a Hornet Infestation
+## Why DIY Fails
 
-Early detection can help you avoid a painful encounter. Watch for these signs around your ${GEO.countyFull} property:
+Contact spray kills the ants you see, but stimulates the colony to send more foragers. With multi-queen colonies like odorous house ants and pharaoh ants, this can actually cause the colony to divide and spread. Effective ant control requires non-repellent baits that worker ants carry back to the colony for whole-colony elimination.
 
-- **Visible nests** — Papery gray or tan structures attached to eaves, soffits, tree branches, or playground equipment
-- **Increased buzzing activity** — A steady stream of hornets flying to and from one area of your home or yard
-- **Chewed wood surfaces** — Hornets chew wood fibers to build their nests, leaving small scraped patches on decks, fences, and siding
-- **Aggressive behavior** — Hornets flying directly at you or family members when you approach a certain area
-- **Indoor sightings** — Finding hornets inside your home may indicate a nest in a wall void or attic space
+## Professional Ant Control
 
-A single hornet nest can house 400 to 700 workers by late summer, so early intervention is key.
+Jet Pest Control uses gel and granule baits combined with exterior perimeter treatment. For carpenter ants, we locate the primary nest site and treat it directly. For building-wide ant issues in NYC apartment buildings, we coordinate with building management for a comprehensive approach.
 
-## The Risks of a Hornet Infestation
-
-Hornets near your home are more than just a nuisance — they present real concerns for your family:
-
-- **Painful stings** — Hornet stings are significantly more painful than bee stings and can cause swelling, redness, and intense discomfort
-- **Allergic reactions** — For individuals with venom allergies, a single sting can trigger anaphylaxis, a life-threatening reaction requiring immediate medical attention
-- **Multiple stings** — Unlike bees, hornets can sting repeatedly without dying, which means a single hornet can deliver more venom
-- **Property access** — A nest near your door, walkway, or play area can make part of your property unusable
-- **Pet danger** — Curious dogs and cats are especially prone to getting stung when they investigate buzzing nests
-
-According to health professionals, stinging insect encounters are one of the leading causes of emergency room visits during ${GEO.countyFull}'s summer and early fall months.
-
-## Why DIY Hornet Removal Is Risky
-
-It can be tempting to grab a can of wasp spray and handle the problem yourself, but DIY hornet removal often backfires:
-
-- **Incomplete removal** — Spraying may kill surface hornets but miss the queen and interior workers, allowing the nest to rebuild
-- **Aggressive counterattack** — Disturbing a nest without proper equipment and technique can trigger a mass defensive response
-- **Height and access** — Many nests are located in high or hard-to-reach areas, creating fall hazards
-- **Chemical misuse** — Over-the-counter pesticides used improperly can expose your family and pets to unnecessary chemicals
-
-For nests larger than a golf ball, or any nest near high-traffic areas of your property, professional removal is strongly recommended.
-
-## Professional Hornet Treatment in ${GEO.countyFull}
-
-At ${SITE_NAME}, our [wasp and hornet removal service](/services/wasp-hornet-removal) is designed to eliminate active nests quickly and protect your family from future encounters. Here is what our process looks like:
-
-1. **Thorough inspection** — We identify all active nests on your property, including hidden nests in wall voids, attics, and underground burrows
-2. **Species identification** — Knowing exactly which species we are dealing with determines the best treatment approach
-3. **Protective removal** — Our licensed technicians use professional-grade equipment and techniques to neutralize nests with minimal disruption to your household
-4. **Nest disposal** — We physically remove the nest structure when accessible to prevent re-colonization
-5. **Prevention guidance** — We advise you on steps to make your property less attractive to stinging insects going forward
-
-We serve homeowners across ${GEO.countyFull}, from [Garden City](/garden-city) and Great Neck to [Massapequa](/massapequa) and Oceanside. If you have spotted hornets on your property, do not wait — [contact us today](/contact) for a free estimate.
-
-## Preventing Future Hornet Problems
-
-After professional treatment, take these steps to reduce the chances of hornets returning:
-
-- Keep garbage cans tightly sealed — hornets feed on protein and sugary foods
-- Remove fallen fruit from your yard promptly
-- Fill in ground holes that could become nesting sites for yellowjackets
-- Seal cracks and gaps around your roofline, soffits, and window frames
-- Avoid leaving pet food outdoors
-- Consider scheduling a preventive inspection each spring before nesting season begins
-
-## Frequently Asked Questions
-
-### When is hornet season in ${GEO.countyFull}?
-
-Hornet activity in ${GEO.countyFull} typically begins in late spring when queens emerge to establish new colonies. Nests grow throughout the summer and reach peak size in August and September. Activity slows after the first hard frost, usually in late October or November.
-
-### Are hornets more dangerous than bees?
-
-Hornets are generally more aggressive than honeybees, especially when defending their nest. They can sting multiple times without dying, which means a single hornet can deliver more venom. Individuals with venom allergies should be particularly cautious and seek immediate medical attention if stung.
-
-### Can I remove a hornet nest myself?
-
-We strongly advise against DIY removal, particularly for nests larger than a golf ball or nests located near doorways, play areas, or high-traffic zones. Professional technicians have the protective equipment and specialized products needed to handle removal without putting your family at risk.
-
-### How quickly can you respond to a hornet emergency?
-
-Contact ${SITE_NAME} and we will schedule a visit as soon as possible. Hornet situations near areas where children or pets play are treated as a priority. Call us or [request a free estimate online](/contact) to get started.
-
-### How much does hornet removal cost in ${GEO.countyFull}?
-
-Every situation is different depending on nest size, location, and accessibility. We provide free estimates with no obligation so you know exactly what to expect. [Reach out to our team](/contact) for a personalized quote.
-    `.trim(),
+Call (718) 710-0330 (NYC) or (516) 774-5051 (Nassau, Suffolk). When you need **pest control near me** for ants in Brooklyn, Queens, or Nassau County, Jet Pest Control eliminates the colony — not just the trail.`
   },
   {
-    slug: 'stink-bugs-invasion',
-    title: `Stink Bug Invasion: How to Protect Your ${GEO.countyFull} Home`,
-    description: `Stink bugs invading your ${GEO.countyFull} home? Learn why they come, how to prevent them, and when to call a professional exterminator.`,
-    date: '2024-11-12',
-    author: `${SITE_NAME} Team`,
-    tags: ['stink-bugs', 'prevention', 'local-pest-control', 'fall-pests'],
-    content: `
-## What Are Stink Bugs and Why Are They in Your ${GEO.countyFull} Home?
+    slug: "mosquito-control-brooklyn-queens-nassau",
+    title: "Mosquito Control in Brooklyn, Queens, and Nassau County",
+    date: "2025-04-15",
+    excerpt: "Mosquitoes breed in urban backyards, Jamaica Bay marshes, and Nassau County wetlands. Here's how Jet Pest Control helps families reclaim their outdoor spaces.",
+    author: "Jet Pest Control Team",
+    category: "Mosquitoes",
+    readTime: "6 min read",
+    tags: ["mosquito control", "mosquitoes", "pest control near me", "Brooklyn", "Queens", "Nassau County"],
+    content: `# Mosquito Control in Brooklyn, Queens, and Nassau County
 
-If you have ever squished a small, shield-shaped brown bug and immediately regretted it because of the foul odor it released, you have met the brown marmorated stink bug. Originally from Asia, these pungent pests arrived in the United States in the late 1990s and have since become one of the most common fall invaders in ${GEO.countyFull} and across ${GEO.region}.
+Mosquitoes are a significant summer pest throughout our service area — from the backyards of Park Slope and Astoria to the suburban yards of Hempstead and Great Neck. While Nassau County sees the most intense mosquito pressure from its proximity to wetlands and the Long Island Sound, urban Brooklyn and Queens also have substantial mosquito activity driven by standing water in residential and commercial areas.
 
-Stink bugs are not dangerous — they do not bite, sting, or carry diseases. But they are incredibly annoying. Every autumn, as temperatures drop across neighborhoods in [Levittown](/levittown), [Hicksville](/hicksville), Valley Stream, and Floral Park, stink bugs begin searching for warm places to spend the winter. Your home, with its heated walls and cozy attic spaces, looks like the perfect winter retreat.
+## Sources of Mosquito Breeding
 
-## Why Stink Bugs Invade ${GEO.countyFull} Homes
+**Brooklyn and Queens:**
+- Standing water in flat-roofed building drains and HVAC drain pans
+- Clogged gutters on attached homes
+- Green spaces and parks with retention areas — Prospect Park, Flushing Meadows-Corona Park, Forest Park
+- Neglected containers in shared backyards and community gardens
+- Jamaica Bay wetlands generating pressure on adjacent Southeast Queens neighborhoods
 
-Stink bugs are what entomologists call "overwintering pests." They do not breed inside your home — they simply use it as a shelter to survive the cold months. Here is why ${GEO.countyFull}'s suburban communities are especially attractive to them:
+**Nassau County:**
+- Retention ponds and detention basins throughout suburban developments
+- Long Island Sound and bay wetlands near Great Neck, Manhasset, and the North Shore
+- Residential ornamental ponds and birdbaths
+- Low-lying areas with seasonal standing water
 
-- **Older housing stock** — Many homes across ${GEO.countyFull} were built in the 1950s and 1960s, with more gaps, cracks, and entry points than newer construction
-- **Abundant vegetation** — Stink bugs feed on fruit trees, ornamental plants, and garden vegetables that are common in Long Island yards
-- **Temperature swings** — ${GEO.countyFull}'s fall weather features warm sunny days followed by chilly nights, which triggers stink bugs to seek shelter
-- **Proximity to agriculture** — The farms and nurseries scattered across eastern Long Island provide ample stink bug habitat
+## Health Risks
 
-On warm fall afternoons, you may notice dozens of stink bugs clustered on the sunny, south-facing sides of homes throughout ${GEO.countyFull}. They are warming themselves before squeezing through tiny openings to get inside.
+West Nile Virus has been documented in Nassau County mosquito pools consistently for over two decades. NYC's five boroughs also see WNV activity in summer. Eastern Equine Encephalitis is present in eastern Long Island. Dog heartworm is highly prevalent throughout Nassau County.
 
-## How Stink Bugs Get Inside
+## Professional Mosquito Control
 
-These persistent pests are surprisingly skilled at finding entry points. Common access routes include:
+**Barrier Spray Treatment:** We treat vegetation, underside of leaves, mulch beds, and shaded rest areas where adult mosquitoes harbor during daylight hours. Effective for 3–4 weeks per treatment.
 
-- Gaps around window and door frames
-- Torn or ill-fitting window screens
-- Cracks in siding and foundation walls
-- Openings around utility pipes, cables, and vents
-- Under damaged weather stripping
-- Through attic vents and soffits
+**Seasonal Programs:** Regular treatments from May through September provide consistent protection throughout the season. Customers across Nassau and in suburban Queens report dramatically improved backyard enjoyment with seasonal programs.
 
-A stink bug only needs a gap of about 1/8 of an inch to squeeze through, so even well-maintained homes are vulnerable.
+**Source Reduction:** We provide detailed recommendations for eliminating or treating standing water sources on your property.
 
-## The Stink Bug Problem: More Than Just a Smell
-
-While stink bugs will not damage your home's structure or pose health risks, they create several frustrating issues:
-
-- **Foul odor** — When threatened, crushed, or vacuumed, they release a pungent, cilantro-like chemical from glands on their abdomen
-- **Sheer numbers** — A single home can harbor hundreds or even thousands of overwintering stink bugs in wall voids and attic spaces
-- **Staining** — Their secretions can leave brown stains on curtains, walls, and upholstery
-- **Springtime emergence** — As your home warms in spring, dormant stink bugs "wake up" and begin appearing indoors, sometimes in alarming numbers
-- **Attract more pests** — Large numbers of dead stink bugs inside walls can attract carpet beetles and other secondary pests
-
-## How to Prevent Stink Bugs from Entering Your Home
-
-The best approach to stink bugs is prevention. Take these steps before fall arrives:
-
-### Seal Entry Points
-- Caulk around windows, doors, and utility penetrations
-- Replace damaged weather stripping
-- Repair or replace torn window screens
-- Cover attic vents and chimney openings with fine mesh screening
-
-### Reduce Attractants
-- Turn off unnecessary outdoor lights at night — stink bugs are attracted to light
-- Switch to yellow or sodium-vapor bulbs for porch lights
-- Keep yard vegetation trimmed and away from your home's exterior
-- Harvest garden produce promptly
-
-### Interior Strategies
-- If stink bugs get inside, use a vacuum to collect them rather than crushing them (empty the bag outside immediately to avoid the smell)
-- A shallow dish of soapy water under a desk lamp can serve as a simple trap
-- Seal gaps around interior light fixtures and ceiling fans where stink bugs may emerge from wall voids
-
-## When to Call a Professional
-
-If you are finding stink bugs in large numbers throughout your home — or if they return year after year despite your prevention efforts — it is time to call in the experts. Our [general pest control service](/services) at ${SITE_NAME} includes:
-
-- **Comprehensive exterior inspection** to identify every potential entry point
-- **Targeted exterior treatment** applied to your home's perimeter before fall invasion season
-- **Exclusion work** to physically seal gaps, cracks, and openings
-- **Interior treatment** when needed for active infestations
-- **Seasonal follow-up** to ensure your home stays protected year after year
-
-We help families across ${GEO.countyFull} keep their homes comfortable and pest-free — from [Levittown](/levittown) and [Hicksville](/hicksville) to Syosset, Plainview, and beyond. [Contact us](/contact) today for a free estimate.
-
-## Frequently Asked Questions
-
-### Do stink bugs bite?
-
-No, stink bugs do not bite or sting humans or pets. They are primarily a nuisance pest due to their odor and their tendency to invade homes in large numbers during the fall.
-
-### Why should I avoid crushing stink bugs?
-
-Crushing a stink bug triggers the release of a foul-smelling chemical from glands on their body. This odor can linger on surfaces and skin and may even attract additional stink bugs. Instead, gently collect them with a tissue or vacuum and dispose of them outside.
-
-### When is stink bug season in ${GEO.countyFull}?
-
-Stink bug invasion season in ${GEO.countyFull} typically runs from mid-September through November, when cooling temperatures drive them to seek warm shelter. You may see them again in spring (March through May) when overwintering bugs become active and try to exit your home.
-
-### Can stink bugs damage my house?
-
-Stink bugs do not cause structural damage. However, large populations hidden in wall voids can produce unpleasant odors, stain surfaces, and attract secondary pests like carpet beetles that feed on dead insects.
-
-### What is the best way to keep stink bugs out permanently?
-
-The most effective long-term strategy is a combination of thorough exterior sealing (exclusion) and a preventive perimeter treatment applied before fall. A professional pest control service can ensure all entry points are addressed. [Reach out to our team](/contact) to schedule a consultation.
-    `.trim(),
+Call (718) 710-0330 (Brooklyn, Queens, Manhattan) or (516) 774-5051 (Nassau, Suffolk). For **pest control near me** that actually reduces mosquito pressure in the NYC area and Nassau County, Jet Pest Control is your local professional.`
   },
   {
-    slug: 'bugs-be-gone-commercial-pest-control',
-    title: `Commercial Pest Control for ${GEO.countyFull} Businesses`,
-    description: `Protect your ${GEO.countyFull} business from pests. Learn about commercial pest control solutions for restaurants, offices, and property managers.`,
-    date: '2024-11-05',
-    author: `${SITE_NAME} Team`,
-    tags: ['commercial', 'pest-control', 'local-pest-control', 'business', 'restaurants'],
-    content: `
-## Keeping ${GEO.countyFull} Businesses Pest-Free
+    slug: "wasp-hornet-removal-brooklyn-queens-nassau",
+    title: "Wasp and Hornet Removal in Brooklyn, Queens, and Nassau County",
+    date: "2025-05-01",
+    excerpt: "Wasps and hornets build nests across Brooklyn brownstones, Queens yards, and Nassau County homes every summer. Here's when to call Jet Pest Control.",
+    author: "Jet Pest Control Team",
+    category: "Stinging Insects",
+    readTime: "6 min read",
+    tags: ["wasp removal", "hornet nest", "stinging insects", "exterminator near me", "Brooklyn", "Queens"],
+    content: `# Wasp and Hornet Removal in Brooklyn, Queens, and Nassau County
 
-Running a business in ${GEO.countyFull} comes with plenty of challenges — pests should not be one of them. Whether you manage a restaurant on the main strip in [Mineola](/mineola), an office building in Great Neck, or a retail storefront in Garden City, unwanted pests can threaten your reputation, your bottom line, and even your ability to stay open.
+Late summer across our service area means stinging insect colonies at peak population. Yellow jacket nests in Brooklyn brownstone walls, bald-faced hornet nests under the eaves of Queens detached homes, and ground nests in Nassau County suburban yards — these colonies can contain thousands of aggressive workers by August. If you've discovered a stinging insect nest, don't attempt removal yourself.
 
-Commercial pest problems require a different approach than residential ones. The stakes are higher, the regulations are stricter, and the spaces are often more complex. That is why ${SITE_NAME} offers dedicated [commercial pest control services](/services) designed specifically for the needs of ${GEO.countyFull} businesses.
+## Common Species in Our Service Area
 
-## Why Pests Are a Serious Threat to Your Business
+**Yellow Jackets:** The most aggressive and commonly encountered stinging insect. They build nests in wall voids (very common in Brooklyn brownstones and Queens attached homes), underground in abandoned burrows, under decking, and in attic areas. By August, established colonies contain 4,000–5,000 workers who defend aggressively. Yellow jackets also scavenge food — a particular problem at outdoor dining areas and backyard gatherings.
 
-A single pest sighting can have cascading consequences for a commercial operation:
+**Bald-Faced Hornets:** Large black and white hornets building distinctive football-shaped gray nests in trees, under eaves, or in shrubs. Highly aggressive; capable of stinging multiple times. Colonies reach 400–700 workers at peak. Common in the more suburban portions of Queens (Bayside, Douglaston) and throughout Nassau County.
 
-- **Health code violations** — Restaurants, cafes, bakeries, and food service businesses can face fines, mandatory closures, or failed inspections if pests are found on the premises
-- **Customer loss** — One bad review mentioning cockroaches or mice can drive away dozens of potential customers
-- **Employee morale** — No one wants to work in a space where they encounter rodents, ants, or flies on a regular basis
-- **Property damage** — Rodents gnaw through wiring, insulation, and inventory. Termites compromise structural integrity. Stored product pests destroy warehouse goods.
-- **Liability concerns** — Pest-related health incidents on your property can create legal exposure
+**Paper Wasps:** Slender orange-brown wasps building small open-celled nests under eaves, in window frames, and around deck railings. Very common in Nassau County suburban homes. Less aggressive than yellow jackets unless the nest is directly disturbed.
 
-For food-service businesses in particular, the ${GEO.stateCode} Department of Health takes pest issues extremely seriously. Regular inspections mean there is no room for shortcuts.
+**Ground Yellow Jackets:** Encountered during lawn mowing or gardening throughout Nassau County suburban yards. Accidentally disturbing a ground nest can produce dozens of simultaneous stings.
 
-## Industries We Serve Across ${GEO.countyFull}
+## Why Not to Treat Yourself
 
-Our [commercial pest management programs](/commercial) are tailored to the unique challenges of each industry:
+Consumer aerosol sprays kill guard wasps at nest entrances without penetrating to the colony. Spraying wall void nests drives thousands of agitated wasps deeper into the building structure. And with anaphylaxis risk affecting up to 5% of the population, any nest removal carries medical risk.
 
-### Restaurants and Food Service
-From diners and pizzerias to catering halls and food trucks, we understand the specific pest pressures facing ${GEO.countyFull}'s vibrant food scene. Our programs focus on cockroach, rodent, and fly prevention with methods that are compatible with food preparation environments.
+## Professional Treatment
 
-### Office Buildings and Corporate Spaces
-Ants, mice, and occasional invaders like stink bugs can disrupt productivity and create an unprofessional environment. We provide discreet, scheduled treatments that work around your business hours.
+Jet Pest Control treats stinging insect nests throughout Brooklyn, Queens, Manhattan, Nassau, and Suffolk. We identify species, apply penetrating professional treatment, and remove accessible nests. Same-day emergency service for nests blocking entry points or near children's areas.
 
-### Property Management
-Managing multi-unit residential properties means dealing with pest issues that can spread quickly between units. We offer building-wide programs for apartment complexes, condos, and HOA communities across ${GEO.countyFull}.
-
-### Retail and Warehousing
-Stored product pests like Indian meal moths and warehouse beetles can contaminate inventory and cost you thousands. Our monitoring and treatment programs protect your merchandise.
-
-### Healthcare and Childcare Facilities
-Clinics, daycare centers, and assisted living facilities need pest management that is gentle yet effective. We use family-friendly and environmentally responsible methods appropriate for sensitive environments.
-
-## Our Commercial Pest Control Process
-
-When you partner with ${SITE_NAME}, here is what you can expect:
-
-1. **Initial consultation and inspection** — We tour your facility, identify current pest issues, and assess risk areas specific to your industry and location
-2. **Customized treatment plan** — No two businesses are the same. We develop a plan that addresses your specific pest pressures, regulatory requirements, and scheduling needs
-3. **Integrated Pest Management (IPM)** — We prioritize prevention, monitoring, and targeted treatments over blanket chemical applications
-4. **Regular service visits** — Consistent monitoring ensures problems are caught early, before they escalate into emergencies
-5. **Documentation and reporting** — We provide detailed service reports for your records, including health inspection support when needed
-6. **Emergency response** — Pest emergencies do not follow a schedule, and neither do we. Our team is available when you need us most
-
-## Why ${GEO.countyFull} Businesses Need Year-Round Protection
-
-${GEO.countyFull}'s climate means different pest pressures throughout the year:
-
-- **Spring** — Ants, termites, and flies become active as temperatures rise
-- **Summer** — Mosquitoes, wasps, and roach populations surge in the heat and humidity
-- **Fall** — Rodents, stink bugs, and occasional invaders seek shelter as it cools
-- **Winter** — Mice and rats move indoors, and stored product pests thrive in heated warehouses
-
-A one-time treatment is rarely sufficient for commercial properties. Year-round protection through a scheduled service plan is the most cost-effective way to prevent pest problems before they start.
-
-## Protecting Your Reputation
-
-In today's world of online reviews and social media, a single pest incident can go viral. Protecting your business from pests is not just about compliance — it is about protecting the reputation you have worked hard to build. Families in ${GEO.countyFull} choose local businesses they trust, and maintaining a clean, pest-free environment is part of earning that trust.
-
-Whether your business is in [Mineola](/mineola), Floral Park, Valley Stream, or anywhere else in ${GEO.countyFull}, ${SITE_NAME} is here to help. [Contact us today](/contact) for a free commercial pest assessment and let us build a protection plan for your business.
-
-## Frequently Asked Questions
-
-### How often should a commercial property receive pest control service?
-
-Most ${GEO.countyFull} businesses benefit from monthly or bi-monthly service visits. Restaurants and food service businesses often require more frequent visits — sometimes weekly — to meet health code requirements and maintain a pest-free environment.
-
-### Will pest control treatments disrupt my business operations?
-
-We schedule service visits around your business hours to minimize any disruption. Many of our commercial clients receive treatments after hours, on weekends, or during slow periods. Our technicians work quickly and discreetly.
-
-### Do you provide documentation for health inspections?
-
-Yes. We provide detailed service logs, treatment records, and pest activity reports that you can present during health department inspections. Our documentation is designed to help you demonstrate compliance.
-
-### What types of pests are most common in ${GEO.countyFull} commercial properties?
-
-The most common commercial pests in ${GEO.countyFull} include cockroaches (especially German cockroaches in food service), mice and rats, ants, flies, and stored product pests. Seasonal invaders like stink bugs and wasps are also frequent concerns.
-
-### Can you handle pest emergencies outside of regular service visits?
-
-Absolutely. We understand that pest emergencies can happen at any time. If you experience an urgent issue between scheduled visits, [contact our team](/contact) and we will arrange a prompt response.
-    `.trim(),
+Call (718) 710-0330 or (516) 774-5051. Unmarked vehicles. When you need an **exterminator near me** for wasps or hornets across NYC or Nassau County, call Jet Pest Control.`
   },
   {
-    slug: 'pest-behavior',
-    title: `Understanding Pest Behavior: How It Helps Control Pests in ${GEO.countyFull}`,
-    description: `Learn how understanding pest behavior leads to more effective pest control for ${GEO.countyFull} homeowners. Tips on cockroaches, ants, mosquitoes, and more.`,
-    date: '2024-10-28',
-    author: `${SITE_NAME} Team`,
-    tags: ['pest-behavior', 'cockroaches', 'ants', 'mosquitoes', 'local-pest-control', 'ipm'],
-    content: `
-## Why Understanding Pest Behavior Matters for ${GEO.countyFull} Homeowners
+    slug: "wildlife-removal-brooklyn-queens-nassau",
+    title: "Wildlife Removal in Brooklyn, Queens, and Nassau County",
+    date: "2025-05-15",
+    excerpt: "Raccoons, squirrels, and pigeons are a growing problem across Brooklyn, Queens, and Nassau County. Here's how Jet Pest Control handles wildlife safely and effectively.",
+    author: "Jet Pest Control Team",
+    category: "Wildlife",
+    readTime: "6 min read",
+    tags: ["wildlife removal", "raccoon removal", "squirrel removal", "exterminator near me", "Brooklyn", "Queens"],
+    content: `# Wildlife Removal in Brooklyn, Queens, and Nassau County
 
-Most people think pest control is simply about spraying chemicals and setting traps. But the truth is, the most effective pest management starts with understanding *why* pests do what they do. At ${SITE_NAME}, we believe that knowledge of pest behavior is the foundation of every successful treatment plan — and it is one of the reasons we deliver lasting results for families across ${GEO.countyFull}.
+Urban and suburban wildlife conflicts are increasing across our entire service area. Raccoons break into attics in Park Slope brownstones and Nassau County Colonials alike. Squirrels chew through rooflines in Forest Hills and Bayside. Pigeons roost on commercial building ledges throughout Brooklyn and create health hazards with their accumulating droppings. When wildlife moves into your property, professional removal is essential.
 
-Insects and rodents have survived for millions of years by developing highly specialized behaviors: foraging patterns, nesting preferences, communication systems, and seasonal rhythms. When we understand these behaviors, we can outsmart pests rather than just react to them. This approach — called Integrated Pest Management (IPM) — is more effective, more environmentally friendly, and better for your family.
+## Raccoons in Brooklyn and Queens
 
-## The Science Behind Pest Behavior
+Raccoons have adapted extraordinarily well to urban environments. In Brooklyn neighborhoods like Prospect Park South, Bay Ridge, and Flatbush, raccoons navigate fence lines and alleyways to access attics through deteriorating soffits and damaged fascia. They're surprisingly strong — capable of tearing open weakened roof edges and climbing attached roofs with ease.
 
-### Pheromone Communication
+In Queens, raccoons are abundant in neighborhoods adjacent to parks: Forest Hills, Rego Park, Kew Gardens, and Jamaica Estates all see regular raccoon conflicts. Raccoon feces can carry Baylisascaris procyonis (raccoon roundworm), a potentially fatal parasite — attic contamination requires professional decontamination, not just removal.
 
-Most insects communicate through chemical signals called pheromones. These invisible scent trails serve as highways of information:
+## Squirrels
 
-- **Trail pheromones** guide colony members to food sources (this is why you see ants marching in a line)
-- **Alarm pheromones** warn others of danger and trigger defensive behavior
-- **Aggregation pheromones** attract pests to favorable nesting or feeding sites
-- **Mating pheromones** help insects find reproductive partners over long distances
+Eastern gray squirrels enter attics through gaps in fascia boards, at roof vent intersections, and where tree branches overhang the roofline. Once inside, they chew electrical wiring (fire hazard) and nest in insulation. Common throughout Nassau County and in the detached-home areas of eastern Queens (Bayside, Douglaston, Little Neck). Without exclusion of all entry points, new squirrels move in within days of removal.
 
-Understanding pheromone communication allows pest professionals to disrupt these chemical signals, bait traps more effectively, and target the heart of an infestation rather than just the visible scouts.
+## Pigeons in Commercial Areas
 
-### Thigmotaxis — Why Pests Love Tight Spaces
+Pigeons roosting on building ledges, HVAC equipment, and fire escapes in commercial areas of Brooklyn and Queens create health hazards through their acidic, disease-carrying droppings. Professional exclusion using bird spikes, netting, and wire coils is required for lasting control. Jet Pest Control provides commercial pigeon exclusion services.
 
-Many insects, especially cockroaches, exhibit a behavior called thigmotaxis — a preference for tight, enclosed spaces where their bodies are in contact with surfaces on multiple sides. This is why you find roaches tucked into cracks, behind appliances, and under sinks rather than wandering in the open.
+## Skunks and Opossums
 
-This behavioral knowledge directly informs where we place bait stations and monitoring devices in your [Bethpage](/bethpage) or Plainview home, maximizing the chance that pests will encounter our treatments.
+In the more suburban portions of Queens and throughout Nassau County, skunks burrow under stoops, porches, and deck foundations. Skunks are a primary rabies vector in New York. Opossums den in crawl spaces and under decks but rarely cause structural damage.
 
-## Common ${GEO.countyFull} Pests and Their Key Behaviors
-
-### Cockroaches: Nocturnal and Resilient
-
-[Cockroaches](/services/cockroach-control) are among the most common and persistent pests in ${GEO.countyFull} homes. Understanding their behavior is critical to eliminating them:
-
-- **Nocturnal activity** — Cockroaches are most active at night, which is why you may only see them when you flip on the kitchen light. If you spot cockroaches during the day, it often means the infestation is severe and they are being pushed out of hiding by overcrowding.
-- **Thigmotactic movement** — They prefer traveling along edges, walls, and through crevices rather than crossing open spaces
-- **Rapid reproduction** — A single German cockroach egg case contains 30-40 eggs, and they reproduce roughly every six weeks
-- **Food and moisture needs** — Cockroaches are attracted to even tiny crumbs and drops of water, which is why kitchen and bathroom areas are hotspots
-
-**How we use this knowledge:** We place gel baits in cracks, crevices, and along travel paths where cockroaches naturally move. Because roaches share food through a behavior called trophallaxis, poisoned bait spreads throughout the colony — reaching individuals that never directly contact the bait station.
-
-### Ants: The Cooperative Colonists
-
-[Ants](/services/ant-control) are social insects with highly organized colonies. In ${GEO.countyFull}, the most common species include carpenter ants, pavement ants, and odorous house ants.
-
-- **Trail following** — Worker ants lay pheromone trails from food sources back to the colony, recruiting more foragers along the way
-- **Colony structure** — The queen is the reproductive center. Eliminating workers without reaching the queen means the colony simply rebuilds.
-- **Satellite nests** — Carpenter ants, common in the older homes of Manhasset and Great Neck, often establish satellite nests inside wall voids and damp wood, separate from their main colony
-
-**How we use this knowledge:** Rather than simply spraying ants you can see, we use slow-acting baits that workers carry back to the colony and share with the queen and larvae. This eliminates the entire colony from the inside out.
-
-### Mosquitoes: The Heat Seekers
-
-Mosquitoes locate hosts by detecting body heat, carbon dioxide, and certain body chemicals. In ${GEO.countyFull}'s warm, humid summers — especially in low-lying areas near Oceanside and Long Beach — mosquitoes can be relentless.
-
-- **Breeding behavior** — Female mosquitoes lay eggs in standing water, and even a bottle cap of water is sufficient for breeding
-- **Peak activity times** — Most species are most active at dawn and dusk
-- **Host preference** — Research shows mosquitoes are more attracted to certain blood types, darker clothing, and people who have recently exercised
-
-**How we use this knowledge:** Our mosquito reduction programs focus on eliminating breeding sites, treating standing water, and applying barrier treatments to vegetation where mosquitoes rest during the day.
-
-### Rodents: Creatures of Habit
-
-Mice and rats are neophobic — they are cautious around new objects in their environment. A trap placed in a new location may be avoided for days simply because it is unfamiliar.
-
-- **Established runways** — Rodents follow the same paths repeatedly, leaving grease marks along walls and baseboards
-- **Gnawing instinct** — Their teeth grow continuously, driving a constant need to gnaw on wood, plastic, and even electrical wiring
-- **Nesting proximity** — Mice typically nest within 10-30 feet of their food source
-
-**How we use this knowledge:** We identify established runways using grease marks, droppings, and other signs, then place traps directly in these paths. We also pre-bait traps with food but leave them unset initially, allowing rodents to become comfortable feeding before we activate the traps.
-
-## How This Approach Benefits Your Family
-
-Behavior-based pest management offers several advantages for ${GEO.countyFull} homeowners:
-
-- **More targeted treatments** — We apply products exactly where pests live and travel, reducing unnecessary chemical use
-- **Faster results** — Targeting behavioral patterns means treatments reach the core of the infestation more quickly
-- **Longer-lasting protection** — By addressing the root behaviors that attract and sustain pests, we prevent re-infestation
-- **Family-friendly methods** — Less reliance on broad-spectrum treatments means a gentler approach for homes with children and pets
-
-Whether you are in [Bethpage](/bethpage), Syosset, Levittown, or anywhere else in ${GEO.countyFull}, our team applies the latest research in pest behavior to every service visit. [Contact us today](/contact) for a free consultation and experience the difference that science-driven pest control makes.
-
-## Frequently Asked Questions
-
-### What is Integrated Pest Management (IPM)?
-
-IPM is an approach to pest control that combines knowledge of pest biology and behavior with prevention, monitoring, and targeted treatments. Rather than relying solely on pesticides, IPM uses the least-toxic effective methods and focuses on long-term prevention. It is the approach recommended by leading universities and the EPA.
-
-### Why do I keep seeing ants even after spraying?
-
-Spraying visible ants with a repellent product can actually make the problem worse by scattering the colony and causing it to "bud" into multiple new colonies. A more effective strategy is to use bait products that workers carry back to the queen, eliminating the colony at its source.
-
-### How do you know where to place traps and bait?
-
-Our technicians are trained to read the behavioral signs pests leave behind — droppings, grease marks, pheromone trails, and harborage patterns. This allows us to place treatments in the exact locations where pests are most active, significantly improving effectiveness.
-
-### Is behavior-based pest control better for families with kids and pets?
-
-Yes. Because we target treatments to specific areas where pests live and travel, we use less product overall and can often choose gentler formulations. This means less chemical exposure for your family while still achieving excellent results.
-
-### Can understanding pest behavior help prevent infestations before they start?
-
-Absolutely. By knowing what conditions attract specific pests — moisture levels, food sources, entry points, harborage areas — we can help you make your home less inviting to pests in the first place. Prevention is always the most effective and least costly form of pest control.
-    `.trim(),
+For all wildlife conflicts, call (718) 710-0330 (NYC) or (516) 774-5051 (Nassau, Suffolk). Jet Pest Control provides humane removal, entry point exclusion, and follow-up to prevent recurrence. When you need **pest control near me** for wildlife removal across NYC or Nassau County, Jet Pest Control has you covered.`
   },
   {
-    slug: 'termites-invasions',
-    title: `Termite Invasions in ${GEO.countyFull}: Damage, Prevention & Treatment Options`,
-    description: `Worried about termites in ${GEO.countyFull}? Learn about termite species, signs of invasion, damage potential, and professional treatment from ${SITE_NAME}.`,
-    date: '2024-10-15',
-    author: `${SITE_NAME} Team`,
-    tags: ['termites', 'termite-damage', 'prevention', 'local-pest-control', 'treatment'],
-    content: `
-## Termite Invasions: A Persistent Threat to ${GEO.countyFull} Homes
+    slug: "flea-tick-control-brooklyn-queens-nassau",
+    title: "Flea and Tick Control in Brooklyn, Queens, and Nassau County",
+    date: "2025-06-01",
+    excerpt: "Fleas and ticks affect families and pets across Brooklyn, Queens, and Nassau County. Here's how to protect your home and yard from these persistent parasites.",
+    author: "Jet Pest Control Team",
+    category: "Fleas & Ticks",
+    readTime: "6 min read",
+    tags: ["flea control", "tick control", "pest control near me", "Brooklyn", "Queens", "Nassau County"],
+    content: `# Flea and Tick Control in Brooklyn, Queens, and Nassau County
 
-Termites are often called "silent destroyers" for good reason — they can eat through wood, flooring, and even wallpaper for months or years before homeowners notice any damage. For families in ${GEO.countyFull} communities like [Syosset](/syosset), [Plainview](/plainview), Hicksville, and Bethpage, termite invasions are not a matter of *if* but *when*. The warm, humid climate of ${GEO.region}, combined with Long Island's abundance of wood-framed homes, creates ideal conditions for termite colonies to thrive.
+Fleas and ticks are a genuine health concern across our entire service area — from urban Brooklyn backyards to Nassau County suburban properties. Deer ticks transmit Lyme disease, anaplasmosis, and babesiosis. Dog ticks carry Rocky Mountain spotted fever. Fleas spread cat scratch disease and are a constant discomfort for pet-owning households.
 
-Every year, termites cause an estimated five billion dollars in property damage across the United States — and most homeowner insurance policies do not cover that damage. Understanding the termite threat and taking proactive steps is the best way to protect your home and your investment.
+## Ticks in NYC and Nassau County
 
-## Termite Species Found in ${GEO.countyFull}
+**Nassau County** has significant deer tick pressure due to the suburban/natural interface. Communities adjacent to Nassau County parks, golf courses, and naturalized vegetation see the highest tick exposure. Deer tick nymphs — about the size of a poppy seed — are most active May–July and are responsible for most Lyme disease transmission because they're so easily overlooked.
 
-### Eastern Subterranean Termites
+**Brooklyn and Queens:** Deer ticks are present in green spaces, particularly Prospect Park, Forest Park, and the larger parks in Queens and Staten Island. Urban residents with dogs that use these parks regularly should use veterinarian-approved tick prevention and check both themselves and their pets after park visits.
 
-The most common and destructive termite species in ${GEO.countyFull} is the Eastern subterranean termite. These termites live in underground colonies that can contain hundreds of thousands — or even millions — of individuals. Key characteristics include:
+## Fleas in Urban and Suburban Settings
 
-- **Colony size** — Mature colonies can contain 60,000 to over one million workers
-- **Mud tubes** — They build pencil-width mud tubes to travel between their underground colony and their food source (your home)
-- **Moisture dependent** — They require constant contact with soil moisture to survive, which is why they build those protective tubes
-- **Feeding habits** — Workers can consume approximately five grams of wood per day, which adds up to significant structural damage over time
-- **Activity** — They are active year-round, though swarming typically occurs in spring
+Fleas are primarily introduced by pets. But in Brooklyn and Queens, they're also introduced through wildlife (feral cats, raccoons, opossums) that traverse shared outdoor spaces, backyards, and yards. Once inside, fleas are extremely difficult to eliminate without professional treatment — one female produces 500+ eggs in her lifetime, and flea pupae remain dormant in carpet and flooring for months.
 
-### Drywood Termites
+## Professional Treatment
 
-While less common in ${GEO.countyFull} than subterranean species, drywood termites can occasionally be found in imported lumber and furniture. Unlike subterranean termites, they do not need contact with soil and can establish colonies entirely within the wood they infest.
+**Indoor flea treatment:** Combination adulticide and insect growth regulator applied to all carpeted areas and pet rest areas. Must be combined with veterinarian-approved pet treatment simultaneously.
 
-## Signs of a Termite Invasion
+**Yard tick treatment:** Residual product applied to the perimeter margin between lawn and wooded or mulched areas. We recommend May treatment (targeting nymphs) and September treatment (targeting adults) for Nassau County properties.
 
-Early detection is critical for minimizing damage. Here are the warning signs every ${GEO.countyFull} homeowner should know:
-
-- **Mud tubes on foundation walls** — These pencil-width tunnels running from the soil up your foundation are the most telltale sign of subterranean termites
-- **Swarmers** — Winged termites (or their discarded wings) near windows and light fixtures, especially in spring, indicate an active colony nearby
-- **Hollow-sounding wood** — Tap on baseboards, door frames, and window sills. If they sound hollow or papery, termites may have eaten the wood from the inside
-- **Sagging floors or ceilings** — Advanced infestations can weaken structural supports enough to cause visible warping
-- **Bubbling or peeling paint** — Moisture from termite activity behind walls can cause paint to bubble, blister, or peel
-- **Frass** — Tiny wood-colored pellets near wooden structures (more common with drywood termites)
-- **Tight-fitting doors and windows** — As termites consume wood and produce moisture, frames can warp, making doors and windows difficult to open
-
-## The True Cost of Termite Damage
-
-Termite damage can be devastating for ${GEO.countyFull} homeowners:
-
-- **Structural compromise** — Termites eat through floor joists, wall studs, roof rafters, and support beams, weakening your home's structural integrity
-- **Cosmetic damage** — Ruined hardwood floors, damaged trim, and destroyed cabinetry
-- **Reduced property value** — A history of termite damage — or an active infestation — can significantly reduce your home's resale value
-- **Repair costs** — Remediation of severe termite damage can cost tens of thousands of dollars, none of which is typically covered by homeowner insurance
-- **Secondary damage** — Moisture introduced by termite activity can lead to mold growth, compounding the problem
-
-Many of ${GEO.countyFull}'s beloved post-war homes — the Cape Cods and split-levels of Levittown, the colonials of Manhasset and Great Neck — were built with wood framing that termites find irresistible. Homes built on concrete slabs are not immune either, as termites can enter through expansion joints and utility penetrations.
-
-## Prevention Strategies for ${GEO.countyFull} Homeowners
-
-Taking proactive steps can significantly reduce your risk of a termite invasion:
-
-### Moisture Control
-- Fix leaky faucets, water pipes, and exterior AC units promptly
-- Ensure gutters and downspouts direct water well away from your foundation
-- Grade soil around your foundation so water flows away from the house
-- Use dehumidifiers in basements and crawl spaces to reduce humidity
-
-### Wood-to-Soil Contact
-- Maintain at least six inches of clearance between soil and any wood components of your home
-- Keep firewood, lumber, and wood debris at least 20 feet from your foundation
-- Replace wood mulch near your foundation with gravel, rubber mulch, or stone
-
-### Structural Maintenance
-- Seal cracks in your foundation with appropriate caulk or mortar
-- Repair damaged roof tiles and fascia boards
-- Ensure crawl space vents are open and unobstructed
-- Replace any wood that shows signs of water damage or rot
-
-### Annual Inspections
-- Schedule a professional termite inspection at least once per year
-- Spring is the ideal time, as it coincides with swarming season
-
-## Professional Termite Treatment Options
-
-When prevention is not enough, professional treatment is essential. At ${SITE_NAME}, our [termite control service](/services/termite-treatment) provides comprehensive protection:
-
-### Liquid Termiticide Barriers
-Professional-grade liquid termiticides are applied in a continuous barrier around your foundation, creating a treated zone that eliminates termites as they attempt to enter your home. Modern products are undetectable to termites, meaning they pass through the treatment and carry it back to their colony.
-
-### Bait Station Systems
-Strategically placed bait stations around your property's perimeter intercept foraging termites. Workers consume the bait and share it with colony members through social feeding, eventually eliminating the entire colony — including the queen.
-
-### Direct Wood Treatment
-For active infestations, we can apply targeted treatments directly to infested wood, providing immediate knockdown of termite activity in critical areas.
-
-### Ongoing Monitoring
-After initial treatment, regular monitoring ensures long-term protection. We inspect bait stations, check for new mud tubes, and adjust our approach as needed to keep your home protected.
-
-We serve homeowners in [Syosset](/syosset), [Plainview](/plainview), Massapequa, Mineola, and every community across ${GEO.countyFull}. Do not wait until you see damage — [contact us today](/contact) for a free termite inspection and estimate.
-
-## Frequently Asked Questions
-
-### How do I know if I have termites or carpenter ants?
-
-Both can damage wood, but there are key differences. Termites leave mud tubes on foundations and produce wings that are all the same length. Carpenter ants leave smooth, clean galleries inside wood and produce sawdust-like frass. Carpenter ant wings have one pair that is shorter than the other. A professional inspection can definitively identify which pest you are dealing with.
-
-### How long does termite treatment take?
-
-A typical liquid barrier treatment for a ${GEO.countyFull} home takes one day to complete. Bait station installation is usually completed in a few hours. Both methods begin working immediately, though full colony elimination with bait stations may take several weeks to a few months.
-
-### Is termite treatment disruptive to my family?
-
-Modern termite treatments are designed to be minimally disruptive. Liquid treatments are applied primarily to the exterior of your home and the soil around your foundation. You and your family can typically remain home during treatment. Our technicians take every precaution to keep the process clean and gentle for your household.
-
-### Does homeowner insurance cover termite damage in ${GEO.stateCode}?
-
-In most cases, no. Standard homeowner insurance policies in ${GEO.stateCode} exclude termite damage because it is considered a preventable maintenance issue. This is one of the strongest reasons to invest in regular inspections and preventive treatment.
-
-### How often should I have my home inspected for termites?
-
-We recommend an annual professional termite inspection for all ${GEO.countyFull} homes. Homes with a history of termite activity, older homes, and homes in areas with high moisture should consider inspections every six months. [Schedule your free inspection](/contact) today for peace of mind.
-    `.trim(),
+Call (718) 710-0330 or (516) 774-5051. For **pest control near me** for fleas and ticks across Brooklyn, Queens, and Nassau County, Jet Pest Control protects your family and pets.`
   },
   {
-    slug: 'ignoring-pest-problems',
-    title: `The Hidden Costs of Ignoring Pest Problems in ${GEO.countyFull}`,
-    description: `Don't let pest problems spiral out of control. Learn why ignoring pests in your ${GEO.countyFull} home leads to costly damage, health risks, and bigger headaches down the road.`,
-    date: '2024-11-19',
-    author: `${SITE_NAME} Team`,
-    tags: ['pest-control', 'prevention', 'rodents', 'cockroaches', 'local-pest-control', 'home-maintenance'],
-    content: `
-## Why Ignoring Pest Problems in ${GEO.countyFull} Always Makes Things Worse
+    slug: "fall-pest-prevention-brooklyn-queens-nassau",
+    title: "Fall Pest Prevention in Brooklyn, Queens, and Nassau County",
+    date: "2025-09-01",
+    excerpt: "As temperatures drop across NYC and Nassau County, pests seek warm winter shelter inside homes and buildings. Here's how to keep them out.",
+    author: "Jet Pest Control Team",
+    category: "Seasonal",
+    readTime: "6 min read",
+    tags: ["fall pest control", "pest prevention", "pest control near me", "Brooklyn", "Queens"],
+    content: `# Fall Pest Prevention in Brooklyn, Queens, and Nassau County
 
-It starts innocently enough. You spot a single mouse darting across your kitchen floor in the middle of the night. Or maybe you notice a few cockroach droppings behind the stove. You tell yourself it's no big deal — just one critter, right? But here in ${GEO.countyFull}, where our older suburban homes, dense neighborhoods, and humid summers create perfect conditions for pests, that one critter is almost never alone.
+September and October mark a critical pest prevention window across our service area. As outdoor temperatures drop, mice, rats, cockroaches, stink bugs, and overwintering insects shift from outdoor activity to seeking warm shelter inside homes and buildings.
 
-At [${SITE_NAME}](/), we've responded to thousands of calls from homeowners across [Valley Stream](/valley-stream), [Floral Park](/floral-park), and communities throughout ${GEO.region} — and the story is almost always the same: what started as a small nuisance became a full-blown infestation because the problem was put off too long.
+The challenge is different depending on your location:
 
-Let's break down exactly what happens when pest problems get ignored, and why acting quickly is the smartest move for your family, your health, and your wallet.
+**Urban Brooklyn and Queens:** Rodents are the primary fall concern. As outdoor food sources decline, mice and rats that have been active in alleys, building perimeters, and underground infrastructure intensify pressure on building entry points. Multi-unit buildings are particularly vulnerable — one compromised entry point can introduce rodents throughout a shared basement.
 
-## The Sneaky Health Risks of Pest Infestations
+**Suburban Queens and Nassau County:** Fall brings rodent entry, stink bug aggregation, and overwintering insect pressure. Older homes with aging weatherstripping, deteriorated foundation caulk, and unscreened vents give mice and overwintering insects easy access.
 
-### Rodents: More Than Just Unwanted Roommates
+## What's Coming in Fall
 
-Rodents infest an estimated 21 million U.S. homes each winter, and ${GEO.countyFull}'s suburban neighborhoods — with their mature trees, older foundations, and attached garages — are prime targets. Mice and rats can transmit more than 30 different diseases, including hantavirus, salmonella, and leptospirosis. Their droppings contaminate food, their urine carries pathogens, and their dander can trigger allergic reactions and asthma, especially in young children.
+**Mice and rats** — October is the primary entry month. Mice fit through gaps the size of a dime. Without exclusion, you're facing winter cohabitation.
 
-If you've spotted signs of [rodent activity](/services/rodent-control) in your home, waiting even a few weeks gives a small problem time to multiply — literally. A single pair of mice can produce dozens of offspring in just a few months.
+**Stink bugs and boxelder bugs** — Aggregate on sun-warmed walls in September, then push through any available gap. Seal gaps around windows, utility penetrations, and eaves in early September.
 
-### Cockroaches: Creepy, Crawly, and Dangerous
+**German cockroaches** — In NYC buildings, fall brings increased cockroach activity as the insects consolidate from outdoor areas into building interiors.
 
-Most people find cockroaches disgusting, but the real concern isn't just the "ick factor." Research shows that cockroaches carry roughly 30 different types of bacteria harmful to humans, including E. coli and Salmonella. Their shed skins, droppings, and saliva contain allergens that are a major trigger for childhood asthma.
+## Fall Prevention Checklist
 
-In ${GEO.countyFull} neighborhoods like [Valley Stream](/valley-stream) and [Floral Park](/floral-park), where many homes share walls or sit close together, a [cockroach problem](/services/cockroach-control) in one house can easily spread to neighboring properties. Early intervention protects not just your family, but your neighbors as well.
+- Inspect all exterior door sweeps — gaps less than 1/4 inch admit mice
+- Seal gaps around utility pipes at foundation with steel wool and caulk
+- Install weatherstripping on all exterior doors
+- Screen all foundation vents, attic vents, and crawl space vents
+- Move firewood away from structure and elevate it
+- Clear leaf piles and debris from foundation perimeter
 
-### Bed Bugs: Robbing You of Rest
+## Professional Fall Services
 
-While bed bugs don't transmit diseases, their impact on your mental and emotional well-being is real. Roughly one in five Americans has dealt with a bed bug infestation or knows someone who has. These tiny pests cause sleepless nights, anxiety, and constant stress — no one wants to dread climbing into their own bed.
-
-## The Property Damage You Don't See Coming
-
-### Termites: The Silent Home Wreckers
-
-Termites cause over five billion dollars in property damage across the United States every single year. Because they eat wood from the inside out, the damage is often extensive before you even notice a problem. Here on ${GEO.region}, our moist soil and wood-framed homes give eastern subterranean termites everything they need to thrive.
-
-### Rodents: Chewing Through Your Investment
-
-Mice and rats don't just eat your food — they chew through walls, insulation, electrical wiring, and even plumbing. Damaged wiring is a genuine fire hazard, and rodent-gnawed pipes can lead to water damage and mold. Nearly half of homeowners who've dealt with pest infestations report structural damage as a result.
-
-## The Financial Burden of Procrastination
-
-Here's the math that should convince anyone to act quickly: the average cost of repairing termite damage alone runs into the thousands of dollars. Compare that to the cost of routine preventive pest control, which is a fraction of what you'd pay for major repairs. An ounce of prevention truly is worth a pound of cure.
-
-And it's not just direct repair costs. Pest infestations can lower your home's resale value, create complications during home inspections, and even violate local housing codes. For families in ${GEO.countyFull} who've invested in their homes, that's money and equity slipping away.
-
-## Why Homeowners in ${GEO.countyFull} Should Act Fast
-
-The suburbs of ${GEO.region} — from [Valley Stream](/valley-stream) to [Floral Park](/floral-park) — are wonderful places to raise a family. But our older housing stock, leafy yards, and seasonal weather patterns also mean pests are a constant reality. Acting quickly when you first notice signs of activity is the single most effective way to keep your family protected and your home in great shape.
-
-Here's what you can do right now:
-
-- **Don't ignore the signs.** Droppings, gnaw marks, strange odors, and unusual sounds in walls are all red flags.
-- **Seal entry points.** Mice can squeeze through gaps as small as a dime. Check around pipes, vents, and foundation cracks.
-- **Keep things clean.** Store food in airtight containers, take out trash regularly, and reduce clutter where pests like to hide.
-- **Call a professional.** If you suspect an infestation, a [free estimate from our team](/contact) can help you understand the scope of the problem before it gets worse.
-
-## Frequently Asked Questions
-
-### How quickly can a small pest problem become a major infestation?
-
-Very quickly. Mice can reproduce every three weeks, and a single cockroach egg case can release dozens of nymphs. What looks like a minor issue today can become a serious infestation within a month or two, especially during warmer months in ${GEO.countyFull}.
-
-### What are the first signs that I might have a pest problem?
-
-Look for droppings (small dark pellets for rodents, pepper-like specks for cockroaches), gnaw marks on food packaging, grease marks along baseboards, unusual musty smells, and sounds of scratching or scurrying in walls — especially at night.
-
-### Is it worth getting professional pest control if I've only seen one mouse?
-
-Absolutely. If you're seeing one mouse, there are almost certainly more hiding nearby. A professional inspection can identify entry points and nesting areas so the problem can be addressed before it grows. [Contact us](/contact) for a free inspection.
-
-### Can pests really affect my home's resale value?
-
-Yes. Active infestations, evidence of past termite damage, and signs of rodent activity can all show up during a home inspection and significantly impact a buyer's offer — or cause them to walk away entirely.
-
-### What's the most common pest problem in ${GEO.countyFull} homes?
-
-It depends on the season, but rodents, cockroaches, and termites are among the most common year-round concerns for homeowners across ${GEO.countyFull}. Seasonal pests like ants, wasps, and mosquitoes add to the mix during warmer months.
-    `.trim(),
+Jet Pest Control provides fall perimeter treatment, rodent exclusion, and stink bug prevention across Brooklyn, Queens, Manhattan, Nassau, and Suffolk. Call (718) 710-0330 (NYC) or (516) 774-5051 (Nassau, Suffolk). When searching for **pest control near me** this fall, Jet Pest Control provides fast, discreet service with unmarked vehicles.`
   },
   {
-    slug: 'fruit-flies',
-    title: `Fruit Flies in ${GEO.countyFull}: Prevention, Home Remedies & When to Call the Pros`,
-    description: `Dealing with fruit flies in your ${GEO.countyFull} kitchen? Learn about their lifecycle, effective home remedies, and when it's time to call a professional pest control team.`,
-    date: '2024-11-18',
-    author: `${SITE_NAME} Team`,
-    tags: ['fruit-flies', 'general-pest', 'prevention', 'local-pest-control', 'home-remedies'],
-    content: `
-## The Fruit Fly Problem in ${GEO.countyFull} Homes
+    slug: "emergency-pest-control-brooklyn-queens-nyc",
+    title: "Emergency Pest Control in Brooklyn, Queens, and NYC: Fast Response",
+    date: "2025-06-15",
+    excerpt: "Some pest situations can't wait. Jet Pest Control provides same-day emergency pest control across Brooklyn, Queens, Manhattan, and Nassau County.",
+    author: "Jet Pest Control Team",
+    category: "Emergency",
+    readTime: "6 min read",
+    tags: ["emergency pest control", "same day exterminator", "exterminator near me", "Brooklyn", "Queens", "NYC"],
+    content: `# Emergency Pest Control in Brooklyn, Queens, and NYC: Fast Response
 
-If you've ever left a bunch of bananas on the counter a day too long, you've probably met Drosophila melanogaster — better known as the common fruit fly. These tiny, persistent flies are barely an eighth of an inch long, but they can take over a ${GEO.countyFull} kitchen in what feels like the blink of an eye.
+Some pest situations demand immediate action. A wasp nest discovered in your Brooklyn entryway. Rats in a Queens restaurant kitchen before a health department inspection. Bed bugs found in your Williamsburg apartment the night before guests arrive. These aren't situations where you schedule for next week.
 
-Here in ${GEO.region}, fruit flies are especially active from late spring through early fall, when warm temperatures and abundant produce create perfect breeding conditions. Homeowners in [Great Neck](/great-neck), [Manhasset](/manhasset), and across ${GEO.countyFull} know the frustration of walking into the kitchen to find a cloud of tiny flies hovering over the fruit bowl. Let's take a closer look at why these pests are so successful — and what you can do about them.
+Jet Pest Control provides same-day emergency pest control throughout Brooklyn, Queens, Manhattan, Nassau, and Suffolk County. Call (718) 710-0330 (NYC) or (516) 774-5051 (Nassau, Suffolk). We dispatch discreet technicians in unmarked vehicles.
 
-## Understanding the Fruit Fly Lifecycle
+## Emergency Situations We Handle
 
-Fruit flies are nature's speed reproducers, and that's what makes them such a headache. Here's how their lifecycle works:
+**Stinging Insects Blocking Access:** A wasp or hornet nest at your building entrance, front door, or near children creates immediate danger. We prioritize these calls for same-day response.
 
-- **Eggs:** A single female fruit fly can lay up to 500 eggs at a time, typically on the surface of fermenting or overripe fruit.
-- **Larvae:** Eggs hatch within 24 to 30 hours. The tiny larvae feed on the decaying organic material around them.
-- **Pupae:** After about four days of feeding, larvae enter the pupal stage, which lasts roughly four more days.
-- **Adults:** Newly emerged adults are ready to reproduce within just two days.
+**Rodents in Living or Dining Areas:** Rats or mice in your kitchen, dining room, or food prep area is a health crisis — particularly for restaurants facing health code compliance. We treat these as same-day emergencies.
 
-That means a single fruit fly can go from egg to reproducing adult in roughly eight to ten days. Under ideal conditions, one pair of fruit flies could theoretically produce hundreds of thousands of descendants in a single month. That's why a few fruit flies on Monday can feel like a full invasion by Friday.
+**Bed Bugs Before Occupancy:** Whether you're a landlord with a new tenant moving in or a homeowner with incoming guests, a bed bug discovery requires immediate professional response. We offer same-day inspection and same-day heat treatment where available.
 
-## Why ${GEO.countyFull} Homes Are Especially Vulnerable
+**Health Department Pressure:** If you're operating a food service establishment in Brooklyn or Queens and need verified pest control records before an inspection, we can accommodate expedited treatment timelines with proper documentation.
 
-Our suburban lifestyle in ${GEO.countyFull} actually creates several conditions that fruit flies love:
+**Wildlife in the Building:** A raccoon, squirrel, or bat inside a living space requires immediate professional response — bats carry rabies risk, and any direct exposure requires medical consultation.
 
-- **Backyard gardens and fruit trees:** Many homes in [Great Neck](/great-neck) and [Manhasset](/manhasset) have gardens, berry bushes, or fruit trees that produce ripe and fallen fruit during summer.
-- **Farmers markets and fresh produce:** We love our local produce, but bringing home fresh fruits and vegetables also brings in fruit fly eggs that are invisible to the naked eye.
-- **Composting:** Eco-conscious families who compost food scraps may inadvertently create fruit fly breeding sites close to the house.
-- **Recycling bins:** Empty bottles and cans with residual sugary liquid are magnets for fruit flies, especially in garages and mudrooms.
-- **Summer humidity:** ${GEO.region}'s warm, humid summers speed up the fermentation that fruit flies seek out.
+**Active Cockroach Infestation:** For restaurants, commercial kitchens, and residential buildings with active German cockroach infestations that require same-day documentation for compliance, Jet Pest Control responds.
 
-## Effective Home Remedies for Fruit Flies
+## What to Expect
 
-Before calling in the professionals, there are several steps you can take to fight back:
+Direct communication — not a call center. Same-day dispatch for urgent situations. Unmarked vehicles. Professional documentation of all service. Follow-up confirmation.
 
-### 1. The Apple Cider Vinegar Trap
-
-This is the classic fruit fly remedy, and it works because fruit flies are attracted to the smell of fermentation.
-
-- Pour a small amount of apple cider vinegar into a jar or bowl
-- Add a drop or two of dish soap (this breaks the surface tension so flies can't land and escape)
-- Cover loosely with plastic wrap and poke small holes
-- Place near problem areas and replace every few days
-
-### 2. Eliminate Breeding Sources
-
-The most important step is removing what's attracting them in the first place:
-
-- Store ripe fruit in the refrigerator, not on the counter
-- Empty kitchen trash cans daily, especially in warm weather
-- Clean drains thoroughly — fruit flies breed in the organic film inside drains
-- Rinse recyclables before putting them in the bin
-- Wipe down counters and clean up spills immediately
-
-### 3. The Red Wine Trap
-
-Similar to the vinegar method — leave a small amount of red wine in a bottle or glass near the infestation. The narrow opening traps flies that enter.
-
-### 4. Keep Drains Clean
-
-Pour boiling water down kitchen drains regularly, or use a mixture of baking soda and vinegar followed by hot water. Fruit flies often breed in the gunk that accumulates inside sink drains and garbage disposals.
-
-## When It's Time to Call a Professional
-
-Home remedies work well for minor fruit fly issues, but there are times when professional [general pest control](/services) is the smarter choice:
-
-- **The infestation keeps coming back** despite your best cleaning efforts
-- **You can't find the source** — fruit flies may be breeding in hidden areas like floor drains, behind appliances, or in wall voids
-- **You run a home kitchen or food business** and need the problem resolved quickly and completely
-- **The problem has spread** to multiple rooms in your home
-
-A professional technician can identify breeding sites you might miss, apply targeted treatments, and help you develop a prevention plan tailored to your home. [Contact our team](/contact) for a free estimate if you're dealing with persistent fruit flies.
-
-## Prevention Tips for ${GEO.countyFull} Homeowners
-
-The best way to handle fruit flies is to prevent them from getting established in the first place:
-
-- Inspect produce carefully before bringing it inside
-- Use mesh screens on windows and doors during summer months
-- Keep compost bins sealed and positioned away from the house
-- Clean your garbage disposal regularly with ice and citrus peels
-- Don't leave pet food or water bowls sitting out overnight
-- Fix any leaky pipes or faucets — fruit flies need moisture
-
-## Frequently Asked Questions
-
-### Are fruit flies harmful to my family's health?
-
-Fruit flies aren't known to bite, but they can carry bacteria from decaying organic matter to your food and kitchen surfaces. While they're primarily a nuisance pest, their presence in your kitchen is a sign that food sanitation needs attention.
-
-### How long does it take to get rid of fruit flies?
-
-With diligent cleaning and trapping, you can significantly reduce a fruit fly population within a week. However, because of their rapid lifecycle, it may take two to three weeks of consistent effort to fully eliminate them. If they persist beyond that, it's time to call a [professional](/contact).
-
-### Why do fruit flies seem to appear out of nowhere?
-
-Fruit fly eggs are microscopic and are often already on the produce you bring home from the store or farmers market. Once that fruit starts to ripen and ferment, the eggs hatch and the population explodes — seemingly overnight.
-
-### Do fruit flies go away on their own in winter?
-
-Fruit fly activity does decrease significantly in cooler months, but they can survive indoors year-round if they have a food source and warmth. Homes in ${GEO.countyFull} with warm kitchens and ripe produce may see fruit flies even in January.
-
-### What's the difference between fruit flies and drain flies?
-
-Fruit flies are small, tan-colored flies attracted to ripe fruit and fermentation. Drain flies (also called moth flies) are fuzzy, moth-like insects that breed in the organic buildup inside drains. Both are common in ${GEO.countyFull} homes, but they require different treatment approaches. Our [general pest control](/services) team can identify which species you're dealing with.
-    `.trim(),
+Call (718) 710-0330 or (516) 774-5051 now. When you need an **exterminator near me** fast across NYC or Nassau County, Jet Pest Control is ready.`
   },
   {
-    slug: 'roach-infestations',
-    title: `Roach Infestations in ${GEO.countyFull}: Identification, Health Risks & Control`,
-    description: `A comprehensive guide to dealing with roach infestations in ${GEO.countyFull}. Learn to identify species, understand health risks, and discover effective control strategies.`,
-    date: '2024-11-17',
-    author: `${SITE_NAME} Team`,
-    tags: ['cockroaches', 'pest-control', 'local-pest-control', 'health-risks', 'prevention'],
-    content: `
-## The Roach Reality in ${GEO.countyFull}
+    slug: "diy-vs-professional-pest-control-nyc",
+    title: "DIY vs. Professional Pest Control in NYC and Nassau County: The Honest Guide",
+    date: "2025-07-01",
+    excerpt: "When should NYC and Nassau County homeowners try DIY pest control — and when is professional service essential? An honest breakdown from Jet Pest Control.",
+    author: "Jet Pest Control Team",
+    category: "Tips & Advice",
+    readTime: "6 min read",
+    tags: ["DIY pest control", "professional pest control", "pest control near me", "Brooklyn", "Queens", "NYC"],
+    content: `# DIY vs. Professional Pest Control in NYC and Nassau County: The Honest Guide
 
-Cockroaches are among the most resilient and unwelcome pests that ${GEO.countyFull} homeowners face. Whether you're in [Oceanside](/oceanside), [Long Beach](/long-beach), or anywhere across ${GEO.region}, roaches thrive in the mix of older homes, coastal humidity, and dense suburban neighborhoods that define our area.
+The shelves of hardware stores and home goods stores are packed with pest control products promising to solve your problem. Sometimes they work. More often in NYC and Nassau County, they waste time while the underlying infestation grows. Here's an honest guide from Jet Pest Control.
 
-If you've spotted roaches in your home — or worse, found signs of an established colony — you're far from alone. Pest control professionals across ${GEO.countyFull} have seen a steady increase in roach-related calls over recent years. The good news is that with the right knowledge and approach, roach infestations can be effectively managed and eliminated. This guide will walk you through everything you need to know.
+## When DIY Makes Sense
 
-## Common Roach Species in ${GEO.countyFull}
+**Occasional kitchen ants:** A few ants exploring your kitchen in early spring may respond to Terro gel bait stations placed directly on their trail. Clean surfaces, remove food sources, and monitor.
 
-Not all cockroaches are the same, and knowing which species you're dealing with helps determine the best approach to [cockroach control](/services/cockroach-control):
+**Single small paper wasp nest in May:** If it's early season, small, and accessible, a consumer aerosol spray at night (full protective clothing) can work.
 
-### German Cockroach
+**Fruit flies:** Eliminate the source (overripe fruit, drain buildup) and use apple cider vinegar traps. Done.
 
-The most common indoor species in ${GEO.countyFull} homes. These are small (about half an inch), light brown with two dark stripes behind the head, and reproduce at an alarming rate. A single female can produce up to 400 offspring in her lifetime. They prefer warm, humid areas near food — kitchens and bathrooms are their favorite spots.
+**Isolated spider:** Relocate outdoors.
 
-### American Cockroach
+## When to Call Jet Pest Control
 
-The largest common species, sometimes called "water bugs" or "palmetto bugs." These reddish-brown roaches can grow over an inch and a half long and are often found in basements, crawl spaces, and around drains. They're more common in homes closer to the coast, including [Oceanside](/oceanside) and [Long Beach](/long-beach).
+**Any rodent inside your home:** DIY snap traps catch mice but don't seal entry points. You'll catch mice indefinitely without exclusion. Call a professional.
 
-### Oriental Cockroach
+**Termites:** No effective DIY treatment exists. Professional liquid or bait treatment is required.
 
-Dark brown to black and about an inch long, oriental cockroaches prefer cool, damp areas like basements, storm drains, and under porches. They have a strong, unpleasant musty odor that often alerts homeowners to their presence before they're seen.
+**Bed bugs:** NYC-area bed bugs are largely resistant to consumer pyrethroids. Foggers scatter the infestation. Call immediately upon finding bed bugs.
 
-### Brown-Banded Cockroach
+**German cockroach infestation:** NYC cockroaches have pyrethroid resistance. Consumer sprays repel them into adjacent rooms and units. Professional gel bait is the only reliable approach.
 
-Slightly smaller than the German cockroach, brown-banded roaches are unique in that they don't require as much moisture. They can be found throughout the home, including bedrooms, living rooms, and even behind picture frames. They prefer warmer, drier spots — including high shelves and upper cabinets.
+**Stinging insects in wall voids:** Never spray a wasp entrance in a wall. Drives thousands into your living space.
 
-## Signs of a Roach Infestation
+**Any shared-building pest issue:** In Brooklyn or Queens multi-unit buildings, individual DIY treatment is almost always insufficient. Building-wide professional coordination is necessary.
 
-Early detection is crucial. Here's what to look for:
+**Wildlife inside the building:** Professional removal and exclusion required.
 
-- **Droppings:** Small, dark, pepper-like specks (German roaches) or larger cylindrical droppings (American roaches) in cabinets, drawers, and along baseboards
-- **Egg cases (oothecae):** Brown, capsule-shaped cases found in hidden areas — each one can contain dozens of eggs
-- **Musty odor:** A strong, oily smell that becomes more noticeable as the infestation grows
-- **Shed skins:** Roaches molt several times as they mature, leaving behind translucent exoskeletons
-- **Live or dead roaches:** Seeing roaches during the day is a strong indicator of a large population, as they're typically nocturnal
-- **Smear marks:** Dark, irregular smear marks along walls and floors where roaches travel through moisture
+## The Real Cost of Delayed Professional Treatment
 
-## Health Risks of Roach Infestations
+For serious pest problems, calling **pest control near me** immediately is almost always less expensive than delayed intervention. A cockroach infestation treated early costs a fraction of a building-wide infestation. Bed bugs caught in one room cost far less than a whole-apartment treatment.
 
-Cockroaches are more than just unpleasant to look at — they pose genuine health concerns for your family:
-
-- **Allergens and asthma:** Roach droppings, shed skins, and saliva contain proteins that trigger allergic reactions and asthma attacks. Research shows that roach allergens are present in a significant percentage of urban and suburban homes, and children are especially vulnerable.
-- **Bacteria and pathogens:** Cockroaches carry approximately 30 types of bacteria harmful to humans, including E. coli and Salmonella. They pick up germs as they crawl through drains, garbage, and decaying matter, then spread those pathogens across your kitchen surfaces, dishes, and food.
-- **Food contamination:** Roaches feed on virtually anything organic. If they've been in your pantry, any unsealed food should be considered contaminated.
-- **Secondary pests:** Roach infestations can attract other pests that feed on them, including certain spiders and centipedes.
-
-## DIY vs. Professional Roach Control
-
-### What You Can Do at Home
-
-For minor roach sightings, these steps can help:
-
-- **Deep clean** your kitchen — behind and under appliances, inside cabinets, around trash cans
-- **Seal entry points** — caulk cracks around pipes, baseboards, and where utilities enter the home
-- **Eliminate moisture** — fix leaky faucets, use dehumidifiers in basements, and ensure proper ventilation in bathrooms
-- **Store food properly** — use airtight containers and never leave pet food out overnight
-- **Use bait stations** — gel baits placed in cracks and crevices can reduce small populations
-- **Reduce clutter** — cardboard boxes, stacks of paper, and cluttered storage areas provide hiding spots
-
-### When to Call the Professionals
-
-DIY methods have limits, especially against established infestations. If you're seeing roaches regularly, finding multiple egg cases, or noticing them during daylight hours, it's time to call in professional [cockroach control](/services/cockroach-control). Professional technicians offer:
-
-- **Thorough inspection** to identify species, entry points, and the extent of infestation
-- **Targeted treatments** using professional-grade products applied where roaches live and travel
-- **Integrated Pest Management (IPM)** — combining chemical and non-chemical methods for long-term results
-- **Follow-up visits** to ensure the infestation is fully resolved and prevent recurrence
-
-[Contact us](/contact) for a free estimate if you suspect a roach problem in your home.
-
-## Preventing Future Infestations
-
-Once roaches are gone, keeping them gone requires ongoing vigilance:
-
-- Take out kitchen trash every evening
-- Wipe down counters and stovetops after cooking
-- Vacuum regularly, especially in kitchens and dining areas
-- Keep drains clean and free of organic buildup
-- Inspect grocery bags and cardboard boxes before bringing them inside — roaches and their eggs often hitch rides
-- Schedule regular professional inspections, especially if you live in older homes common throughout [Oceanside](/oceanside) and [Long Beach](/long-beach)
-
-## Frequently Asked Questions
-
-### Why do I see roaches in my clean house?
-
-Cleanliness helps, but it doesn't guarantee immunity. Roaches can enter your home through tiny cracks, drains, vents, and on items like grocery bags and used furniture. Older homes in ${GEO.countyFull} often have small gaps around plumbing and foundation lines that provide easy entry.
-
-### Are roaches more common in certain parts of ${GEO.countyFull}?
-
-Roaches can be found throughout ${GEO.countyFull}, but coastal areas like [Long Beach](/long-beach) and [Oceanside](/oceanside) tend to see more American cockroaches due to higher humidity and proximity to storm drains. German cockroaches are common in all neighborhoods regardless of location.
-
-### Can roach infestations spread to neighboring homes?
-
-Yes, especially in homes that share walls or are in close proximity. In dense ${GEO.countyFull} neighborhoods, a roach infestation next door can easily migrate to your home through shared plumbing, vents, or small gaps in common walls.
-
-### How long does professional roach treatment take to work?
-
-Most professional treatments show significant results within one to two weeks. A follow-up treatment is typically recommended to address any roaches that were in the egg stage during the initial application. Full elimination of a moderate infestation usually takes two to four weeks.
-
-### Is it true that roaches can survive without their heads?
-
-Yes — a cockroach can survive for up to a week without its head because it breathes through small openings along its body rather than through its mouth. This is a testament to how biologically resilient these pests are, and why professional intervention is often necessary for complete control.
-    `.trim(),
+Jet Pest Control serves Brooklyn, Queens, Manhattan, Nassau, and Suffolk. Call (718) 710-0330 or (516) 774-5051. Unmarked vehicles; discreet professional service throughout NYC and Long Island.`
   },
   {
-    slug: 'super-rats',
-    title: `Super Rats in ${GEO.countyFull}: What Pesticide-Resistant Rodents Mean for Your Home`,
-    description: `Learn about "super rats" — pesticide-resistant rodents showing up in ${GEO.countyFull} and ${GEO.region}. Find out how they evolved and what you can do to protect your home.`,
-    date: '2024-11-16',
-    author: `${SITE_NAME} Team`,
-    tags: ['rodents', 'rats', 'pest-control', 'local-pest-control', 'prevention'],
-    content: `
-## What Are "Super Rats" — and Are They in ${GEO.countyFull}?
+    slug: "pest-inspection-brooklyn-queens-nassau",
+    title: "Pest Inspection in Brooklyn, Queens, and Nassau County: What to Expect",
+    date: "2025-07-15",
+    excerpt: "Whether buying a brownstone in Brooklyn, a home in Queens, or a Nassau County property, a professional pest inspection is essential. Here's what it covers.",
+    author: "Jet Pest Control Team",
+    category: "Inspections",
+    readTime: "6 min read",
+    tags: ["pest inspection", "WDO inspection", "termite inspection", "pest control near me", "Brooklyn", "Queens"],
+    content: `# Pest Inspection in Brooklyn, Queens, and Nassau County: What to Expect
 
-You may have heard the term "super rats" in news headlines or from a neighbor. It sounds like science fiction, but it's a very real and growing concern for homeowners across ${GEO.region} and the greater Northeast. Super rats are rodents that have developed genetic resistance to common anticoagulant rodenticides — the poisons that have been a go-to method of rodent control for decades.
+Whether you're buying a brownstone in Park Slope, a home in Forest Hills, or a Colonial in Garden City, a professional pest inspection is one of the most important steps in the process. And for existing homeowners in Brooklyn, Queens, and Nassau County, a periodic inspection is the best way to catch emerging pest problems before they become costly.
 
-At [${SITE_NAME}](/), we've been tracking this trend closely as it impacts neighborhoods in [Levittown](/levittown), [Hicksville](/hicksville), and throughout ${GEO.countyFull}. Understanding what super rats are, how they got here, and what can be done about them is essential for keeping your family and home protected.
+## Why NYC and Long Island Properties Deserve Thorough Inspections
 
-## How Super Rats Evolved
+**Brooklyn brownstones and row houses:** Pre-war construction with decades of maintenance history. Termite damage in sill plates, carpenter ant galleries in moisture-compromised areas, and rodent entry points accumulated over 50–100 years of occupancy.
 
-The story of super rats starts with basic biology. For decades, pest control relied heavily on anticoagulant poisons (like warfarin and brodifacoum) to manage rat populations. These products work by preventing blood from clotting, which is eventually fatal to the rodent.
+**Queens attached homes and multi-family buildings:** Shared wall systems create pest corridors that can harbor established cockroach and rodent populations invisible from within a single unit.
 
-However, in any large population, a small percentage of rats carry a genetic mutation that makes them partially or fully resistant to these chemicals. When poison kills off the susceptible rats, the resistant ones survive and reproduce. Over many generations, the resistant gene becomes more common in the population.
+**Nassau County homes:** Moisture-rich soil conditions, older housing stock (1940s–1970s), and proximity to wetlands and natural areas create elevated termite and wildlife pressure.
 
-This is natural selection in action — and it's been happening in cities and suburbs across the Northeast for years. Studies have found that in some urban areas, a significant portion of the rat population now carries resistance genes to one or more common rodenticides.
+## What Our Inspection Covers
 
-### What Makes Super Rats Different?
+**Exterior:** Foundation perimeter for termite mud tubes and rodent entry points; all exterior wood for damage; utility penetrations; attic and crawl space vents; roof overhang and soffit condition.
 
-Super rats aren't a new species — they're the same Norway rats (Rattus norvegicus) and roof rats that have always lived alongside humans. But they come with some advantages that make them harder to control:
+**Basement/Crawl Space:** Sill plates and floor joists for wood-destroying insect damage; moisture assessment; rodent evidence (droppings, gnaw marks, nesting); foundation cracks.
 
-- **Poison resistance:** They can consume traditional rodenticide bait without lethal effect, or they require much higher doses
-- **Behavioral adaptations:** Rats that have survived previous control efforts tend to be more cautious, often avoiding traps and bait stations entirely (a behavior called "bait shyness")
-- **Larger size:** Some populations show increased body weight, though the "giant rat" stories are often exaggerated. Still, well-fed suburban rats can certainly be bigger than you'd expect
-- **Rapid reproduction:** Like all rats, super rats reproduce quickly — a single pair can produce dozens of offspring per year, all carrying the resistance gene
+**Interior:** Kitchen (under-sink, appliances, pantry); bathrooms; basement utility areas; attic if accessible.
 
-## Why ${GEO.countyFull} Homeowners Should Pay Attention
+## WDO Report for Real Estate Transactions
 
-${GEO.countyFull}'s suburban landscape creates ideal conditions for rodent populations to thrive:
+Jet Pest Control provides certified Wood Destroying Organism (WDO) inspection reports for real estate transactions throughout Brooklyn, Queens, Nassau, and Suffolk. WDO reports document evidence of termites, carpenter ants, carpenter bees, powder post beetles, and wood decay fungi — required by many mortgage lenders before closing.
 
-- **Older homes** in neighborhoods like [Levittown](/levittown) and [Hicksville](/hicksville) often have small gaps around foundations, garage doors, and utility lines that provide easy entry points
-- **Mature landscaping** — our beautiful trees, shrubs, and hedges provide cover and nesting sites
-- **Bird feeders and pet food** left outdoors are a reliable food source
-- **Proximity to New York City** — rodent populations in the metro area are among the most studied and have shown increasing rates of resistance to traditional poisons
-- **Seasonal migration** — as temperatures drop in fall and winter, rats seek warmth and food inside suburban homes
-
-The bottom line: if you're relying solely on store-bought rat poison to handle a rodent problem, it may not be working as well as you think.
-
-## How Modern Pest Control Fights Back
-
-The rise of super rats doesn't mean we're helpless — far from it. It means the approach to [rodent control](/services/rodent-control) needs to be smarter, more comprehensive, and less dependent on a single method. Here's how professional pest control is evolving:
-
-### Integrated Pest Management (IPM)
-
-Rather than relying on poison alone, IPM combines multiple strategies:
-
-- **Exclusion:** Sealing gaps, cracks, and openings around your home's exterior. This is the single most effective long-term rodent control measure.
-- **Habitat modification:** Removing food sources, reducing clutter in garages and sheds, trimming vegetation away from the foundation, and securing garbage bins.
-- **Trapping:** Mechanical traps remain effective regardless of poison resistance. Snap traps, electronic traps, and live traps all play a role.
-- **Monitoring:** Ongoing inspections and bait station monitoring help detect new activity before it becomes a full infestation.
-
-### Newer Rodenticide Formulations
-
-Pest control professionals have access to newer-generation products and rotating active ingredients that can overcome some resistance. This is one of the key advantages of professional [rodent control](/services/rodent-control) over DIY store-bought solutions.
-
-### Technology and Data
-
-Some pest control companies now use smart monitoring stations that alert technicians when activity is detected, allowing for faster response times and more precise treatment.
-
-## What You Can Do to Protect Your ${GEO.countyFull} Home
-
-You don't need special equipment to make your home less attractive to rats — super or otherwise:
-
-- **Seal entry points:** Rats can squeeze through openings as small as a quarter. Check around pipes, vents, garage doors, and where utilities enter the house.
-- **Secure food sources:** Use heavy-duty trash cans with tight lids, bring pet food inside at night, and clean up fallen fruit from trees.
-- **Reduce shelter:** Clear woodpiles, dense brush, and stored junk from around the foundation. Keep vegetation trimmed back at least 18 inches from exterior walls.
-- **Don't rely on poison alone:** Over-the-counter rodenticide can actually contribute to the resistance problem if used improperly. Use it as part of a broader strategy, or better yet, let a professional handle it.
-- **Act quickly:** If you hear scratching in the walls, find droppings in the garage, or notice gnaw marks on food packaging, don't wait. [Contact us for a free estimate](/contact) before the problem grows.
-
-## Frequently Asked Questions
-
-### Are super rats actually larger than normal rats?
-
-Not necessarily. The term "super" refers to their resistance to common poisons, not their physical size. However, well-established suburban rat populations can grow quite large when they have abundant food sources. The rats themselves are the same species — Norway rats — that have lived alongside humans for centuries.
-
-### Can I still use store-bought rat poison?
-
-You can, but be aware that it may be less effective if you're dealing with resistant rodents. Overuse of consumer-grade rodenticide can also pose risks to children, pets, and wildlife. For persistent problems, professional [rodent control](/services/rodent-control) that combines exclusion, trapping, and targeted treatment is far more effective.
-
-### How do I know if I have super rats vs. regular rats?
-
-From a homeowner's perspective, there's no visual difference. The main clue is that traditional control methods aren't working — if you've put out poison or traps and rats keep coming back, you may be dealing with a resistant population. A professional inspection can help assess the situation.
-
-### Are super rats found everywhere in ${GEO.countyFull}?
-
-Resistance has been documented in rodent populations throughout the Northeast, and ${GEO.countyFull}'s proximity to New York City makes it likely that resistant rats are present in many local communities. Neighborhoods in [Levittown](/levittown), [Hicksville](/hicksville), and other areas with older housing stock are particularly at risk.
-
-### What time of year are rats most active in ${GEO.countyFull}?
-
-Rats are active year-round, but homeowners in ${GEO.countyFull} typically notice the most activity in fall and early winter when dropping temperatures drive rodents indoors seeking food and warmth. Late summer can also see increased activity as young rats from spring litters mature and disperse.
-    `.trim(),
+Call (718) 710-0330 or (516) 774-5051 to schedule a pest inspection. When you need **pest control near me** for a professional property inspection in NYC or Nassau County, Jet Pest Control provides thorough, documented inspection services with same-week scheduling.`
   },
   {
-    slug: 'bed-bug-infestation-guide',
-    title: `Bed Bug Infestations in ${GEO.countyFull}: Signs, Health Impacts & Professional Treatment`,
-    description: `Bed bug infestations are on the rise in ${GEO.countyFull}. Learn the warning signs, understand health impacts, and find out how professional treatment can restore your peace of mind.`,
-    date: '2024-11-14',
-    author: `${SITE_NAME} Team`,
-    tags: ['bed-bugs', 'pest-control', 'local-pest-control', 'health-risks', 'treatment'],
-    content: `
-## Bed Bug Infestations Are Rising in ${GEO.countyFull}
+    slug: "carpenter-ant-control-brooklyn-queens-nassau",
+    title: "Carpenter Ant Control in Brooklyn, Queens, and Nassau County",
+    date: "2025-08-01",
+    excerpt: "Carpenter ants are damaging structural wood in Brooklyn brownstones, Queens homes, and Nassau County properties. Here's how to identify and eliminate them.",
+    author: "Jet Pest Control Team",
+    category: "Ants",
+    readTime: "6 min read",
+    tags: ["carpenter ants", "ant control", "exterminator near me", "Brooklyn", "Queens", "Nassau County"],
+    content: `# Carpenter Ant Control in Brooklyn, Queens, and Nassau County
 
-Bed bugs have made a dramatic comeback across the United States, and ${GEO.countyFull} is no exception. These tiny, blood-feeding insects are increasingly common in homes, apartments, hotels, and even public spaces throughout ${GEO.region}. For families in [Garden City](/garden-city), [Mineola](/mineola), and communities across ${GEO.countyFull}, understanding bed bugs — how they spread, what they look like, and how to get rid of them — has become essential knowledge for homeowners.
+Large black ants — up to half an inch long — are a troubling sight in any home. If you're seeing them in your Brooklyn kitchen, emerging from a wall void in a Queens row house, or trailing across your Nassau County deck, you likely have carpenter ants. They don't eat wood like termites — but the galleries they excavate in moisture-damaged timber can cause serious structural damage over time.
 
-At [${SITE_NAME}](/), our [bed bug treatment team](/services/bed-bug-removal) has seen a significant uptick in calls from ${GEO.countyFull} residents dealing with these persistent pests. Let's take a comprehensive look at the bed bug problem and what you can do about it.
+## Why Carpenter Ants Are a Concern in Our Service Area
 
-## Understanding Bed Bugs
+**Brooklyn brownstones and row houses:** Older wooden structural elements — sill plates, floor framing, window frames, and porch framing — have often experienced decades of moisture exposure from basement dampness, roof leaks, and plumbing issues. This moisture-softened wood is prime carpenter ant habitat. We find established carpenter ant galleries in brownstones across Park Slope, Fort Greene, and Crown Heights.
 
-Bed bugs (Cimex lectularius) are small, flat, reddish-brown insects about the size and shape of an apple seed. They feed exclusively on blood — typically at night while their host is sleeping. Despite their name, bed bugs aren't limited to beds; they can hide in furniture, baseboards, electrical outlets, luggage, and even behind picture frames.
+**Queens detached homes:** Detached homes in Forest Hills, Bayside, and Rego Park — particularly those with wooden decks, porches, and additions — see significant carpenter ant activity in moisture-affected structural wood.
 
-### Key Facts About Bed Bugs
+**Nassau County:** Carpenter ants are extremely common throughout Nassau County, particularly in communities with large mature trees (which often harbor primary colonies) adjacent to structures. In Great Neck, Manhasset, and Garden City, we regularly treat carpenter ant infestations that have extended from outdoor parent colonies into deck framing and basement sill plates.
 
-- **Lifespan:** Adult bed bugs can live for several months to over a year, even without a blood meal under cool conditions
-- **Reproduction:** A single female can lay hundreds of eggs over her lifetime — tiny, white, and nearly invisible to the naked eye
-- **Travel:** Bed bugs don't fly or jump. They spread by hitchhiking on clothing, luggage, used furniture, and other personal items
-- **Resilience:** They can survive in a wide range of temperatures and go weeks or even months between feedings
-- **Nocturnal:** They typically feed between midnight and 5 a.m., making them difficult to catch in the act
+## Warning Signs
 
-## Why ${GEO.countyFull} Is Seeing More Bed Bugs
+- **Frass:** Pale, sawdust-like material near wall openings, basement areas, or under wood structures
+- **Large black ants indoors:** Particularly in spring, when foragers explore living areas
+- **Rustling in walls:** The papery sound of ants excavating galleries, audible at night near infested wall areas
+- **Winged swarmers:** Larger than termite swarmers, with unequal wing length and a pinched waist (April–June)
 
-Several factors contribute to the rising bed bug problem in our area:
+## Professional Treatment
 
-- **Proximity to New York City:** ${GEO.countyFull}'s close connection to one of the most bed-bug-affected cities in the country means these pests are constantly being transported via commuters, travelers, and moving furniture.
-- **Increased travel:** International and domestic travel has been a major driver of bed bug spread nationwide. They're frequently picked up in hotels, Airbnbs, and even on public transportation.
-- **Secondhand furniture:** Thrift stores, garage sales, and online marketplace purchases are common ways bed bugs enter ${GEO.countyFull} homes. That "great deal" on a couch could come with unwanted passengers.
-- **Dense residential areas:** Communities like [Garden City](/garden-city) and [Mineola](/mineola) have a mix of single-family homes and multi-unit buildings where bed bugs can spread between units through shared walls and utility lines.
-- **Pesticide resistance:** Like many pests, some bed bug populations have developed resistance to common over-the-counter treatments, making DIY efforts less effective.
+Effective carpenter ant treatment requires locating the primary colony (often in a tree, stump, or outdoor moisture-damaged structure), injecting residual insecticide directly into identified galleries, applying exterior perimeter treatment, and identifying and correcting the moisture source.
 
-## Signs of a Bed Bug Infestation
-
-Early detection is critical for effective treatment. Here's what to look for:
-
-- **Bite marks:** Small, red, itchy welts often appearing in lines or clusters on exposed skin — arms, shoulders, neck, and face are common areas. Note that some people don't react to bed bug bites at all, so the absence of bites doesn't mean the absence of bed bugs.
-- **Blood spots:** Tiny reddish-brown spots on sheets, pillowcases, or mattresses from crushed bugs or blood droplets
-- **Dark stains:** Small dark spots (bed bug excrement) on mattress seams, headboards, and nearby furniture
-- **Shed skins:** Translucent, hollow exoskeletons left behind as bed bugs molt through their growth stages
-- **Live bugs:** Check mattress seams, box springs, bed frames, headboards, and nightstands. Use a flashlight and look carefully — they're excellent at hiding in tiny crevices.
-- **Musty odor:** A sweet, musty smell in heavily infested rooms, caused by the bugs' scent glands
-
-## Health Risks and Psychological Impact
-
-While bed bugs are not known to transmit diseases, the health impacts of an infestation are real and significant:
-
-### Physical Effects
-
-- **Allergic reactions:** Some individuals develop severe allergic responses to bed bug bites, including large welts and intense itching
-- **Secondary infections:** Scratching bites can break the skin and lead to bacterial infections
-- **Anemia:** In rare cases of severe, prolonged infestation, repeated blood loss from feeding can contribute to anemia, particularly in vulnerable individuals like young children and the elderly
-
-### Emotional and Mental Health Effects
-
-The psychological toll of bed bugs is often underestimated:
-
-- **Insomnia and sleep disturbance:** Knowing you're being bitten at night makes restful sleep nearly impossible
-- **Anxiety and stress:** The persistent nature of bed bugs and the difficulty of elimination creates ongoing stress for the entire household
-- **Social stigma:** Many people feel embarrassed about a bed bug infestation, even though it has nothing to do with cleanliness — bed bugs are equal-opportunity pests
-- **Impact on children:** Kids in ${GEO.countyFull} families dealing with bed bugs may lose sleep, feel anxious at bedtime, and struggle with the social aspects if their friends or classmates find out
-
-## Prevention Strategies for ${GEO.countyFull} Homeowners
-
-Protecting your home from bed bugs requires ongoing awareness:
-
-- **Inspect hotel rooms** when traveling — check mattress seams, headboards, and luggage racks before unpacking
-- **Use luggage covers** and keep suitcases off hotel floors and beds
-- **Inspect secondhand items** carefully before bringing them into your home. Avoid picking up upholstered furniture left on the curb
-- **Use mattress encasements** — zippered, bed-bug-proof covers on mattresses and box springs make it harder for bugs to hide and easier to spot them
-- **Reduce clutter** around beds and sleeping areas to limit hiding spots
-- **Wash and dry** bedding, clothing, and soft items on the highest heat settings after returning from travel
-- **Be cautious with shared spaces** — laundromats, movie theaters, and public transit can all be sources of bed bug exposure
-
-## Professional Bed Bug Treatment
-
-DIY bed bug treatments rarely work for established infestations. Over-the-counter sprays may kill bugs on contact but don't reach the eggs and hidden populations. Professional [bed bug treatment](/services/bed-bug-removal) is almost always necessary for complete elimination.
-
-### What Professional Treatment Looks Like
-
-- **Thorough inspection:** A trained technician examines your home room by room, identifying all affected areas and the severity of infestation
-- **Heat treatment:** One of the most effective methods, whole-room heat treatment raises the temperature to levels lethal to bed bugs at all life stages — adults, nymphs, and eggs. No chemicals needed.
-- **Targeted chemical treatment:** Professional-grade products applied to cracks, crevices, and harborage areas where bed bugs hide. These are far more effective than consumer sprays.
-- **Combination approach:** Many professionals use both heat and chemical methods together for maximum effectiveness
-- **Follow-up inspections:** Typically scheduled two to four weeks after initial treatment to confirm elimination and catch any remaining activity
-
-### What to Expect
-
-Treatment for a moderate infestation in a typical ${GEO.countyFull} home usually involves at least two visits. Preparation — laundering linens, decluttering, and moving furniture away from walls — is an important part of the process that homeowners handle before the technician arrives.
-
-[Contact our team](/contact) for a free estimate and to discuss the best approach for your situation.
-
-## Frequently Asked Questions
-
-### Can I get rid of bed bugs on my own?
-
-For a very minor, early-stage infestation limited to a single piece of furniture, DIY methods may help. But for any established infestation — where bugs have spread to multiple areas — professional treatment is strongly recommended. Bed bugs are extremely difficult to fully eliminate without professional tools and expertise.
-
-### Do bed bugs only live in dirty homes?
-
-Absolutely not. Bed bugs are attracted to warmth and carbon dioxide from sleeping humans, not dirt or clutter. They've been found in spotless homes, luxury hotels, and everywhere in between. Clutter can give them more hiding spots, but cleanliness alone won't prevent or eliminate them.
-
-### How do bed bugs get into ${GEO.countyFull} homes?
-
-The most common ways are through travel (hotels, rentals), used furniture purchases, visiting infested locations, and even via guests who unknowingly carry them. ${GEO.countyFull}'s proximity to New York City and heavy commuter traffic make our area particularly susceptible.
-
-### How long does bed bug treatment take?
-
-A single heat treatment typically takes six to eight hours. Chemical treatments may require two or more visits spaced a few weeks apart. Most families in [Garden City](/garden-city) and [Mineola](/mineola) can expect the full process to take two to four weeks from initial inspection to confirmed elimination.
-
-### Will bed bugs come back after treatment?
-
-Professional treatment is highly effective when combined with proper preparation and follow-up. Re-infestation is possible if new bed bugs are introduced from outside sources, so ongoing vigilance — especially after travel — is important. Your [${SITE_NAME}](/services/bed-bug-removal) technician can provide tips for long-term prevention.
-    `.trim(),
+Jet Pest Control provides comprehensive carpenter ant treatment across Brooklyn, Queens, Manhattan, Nassau, and Suffolk. Call (718) 710-0330 or (516) 774-5051. When you need **pest control near me** for carpenter ants in NYC or Long Island, Jet Pest Control delivers thorough, effective treatment.`
   },
   {
-    slug: 'pest-control-myths',
-    title: `7 Common Pest Control Myths Exposed — What ${GEO.countyFull} Homeowners Need to Know`,
-    description: `Think cheese catches mice or ultrasonic devices repel pests? We debunk 7 popular pest control myths for ${GEO.countyFull} homeowners.`,
-    date: '2024-10-28',
-    author: `${SITE_NAME} Team`,
-    tags: ['pest-control', 'myths', 'rodents', 'bed-bugs', 'local-pest-control', 'education'],
-    content: `
-## Stop Believing These Pest Control Myths
+    slug: "stink-bug-control-brooklyn-queens-nassau",
+    title: "Stink Bug Control in Brooklyn, Queens, and Nassau County",
+    date: "2025-08-15",
+    excerpt: "Brown marmorated stink bugs invade homes across Queens and Nassau County every fall. Here's how to prevent them from overwintering in your walls.",
+    author: "Jet Pest Control Team",
+    category: "Stink Bugs",
+    readTime: "6 min read",
+    tags: ["stink bugs", "fall pest control", "pest control near me", "Queens", "Nassau County"],
+    content: `# Stink Bug Control in Brooklyn, Queens, and Nassau County
 
-Every homeowner in ${GEO.countyFull} has heard some version of these pest control myths — at a neighborhood barbecue in [Garden City](/garden-city), from a well-meaning relative, or maybe on social media. The problem is that believing the wrong thing about pests can lead to wasted money, ineffective treatment, and infestations that spiral out of control.
+Every fall, brown marmorated stink bugs aggregate on sun-warmed south and west-facing walls across Queens and Nassau County — and then push through every available gap to overwinter in wall voids and attics. When spring arrives, they emerge from walls in large numbers. The odor when disturbed gives this pest its unfortunate name.
 
-At ${SITE_NAME}, we talk to families across ${GEO.region} every single day who have been misled by common misconceptions. Let's set the record straight on seven of the biggest pest control myths so you can protect your home with facts, not folklore.
+## Who Gets Stink Bugs
 
-### Myth 1: Cheese Is the Best Bait for Mice
+Stink bugs are primarily a suburban pest — they're most common in Queens detached homes (Bayside, Forest Hills, Rego Park, Douglaston, Flushing) and throughout Nassau County residential neighborhoods. The more attached and high-rise urban areas of Brooklyn and Manhattan see fewer stink bugs, though they do appear in brownstone neighborhoods and areas with significant green space.
 
-This might be the most persistent pest myth of all time, thanks to cartoons and old wives' tales. In reality, mice are not particularly attracted to cheese. They prefer foods that are high in sugar and carbohydrates — peanut butter, chocolate, seeds, and crackers are all far more effective at luring mice into traps.
+Nassau County — with its suburban housing stock, tree canopy, and access to agricultural areas on eastern Long Island — sees heavy stink bug pressure every fall.
 
-If you have been setting cheese-baited traps in your basement and wondering why they sit untouched, now you know. For persistent [rodent problems](/services/rodent-control), bait selection matters, but so does trap placement, exclusion work, and understanding how mice move through your home.
+## Prevention Comes First
 
-### Myth 2: Ultrasonic Devices Keep Pests Away
+Act in September before the aggregation begins:
+- Seal gaps around all window frames and air conditioner units
+- Install door sweeps on all exterior doors
+- Caulk gaps around exterior light fixtures and utility penetrations
+- Check and repair attic soffit screens and ridge vent covers
 
-Walk through any hardware store on Long Island and you will find shelves of plug-in ultrasonic pest repellers. They promise to drive away everything from mice to spiders using high-frequency sound waves. Sounds amazing, right?
+## What Not to Do
 
-Unfortunately, the science does not back it up. Multiple independent studies — including research from the Federal Trade Commission — have found little to no evidence that ultrasonic devices effectively repel pests long-term. Rodents and insects quickly adapt to the sound, and within days, most pests ignore the devices entirely. If these gadgets actually worked, professional pest control companies would use them too.
+Don't vacuum stink bugs with your household vacuum — the odor compounds linger. Use a dedicated shop vac or bag immediately. Don't crush them — releases defensive odor and can stain surfaces.
 
-### Myth 3: A Clean Home Won't Get Pests
+## Professional Exterior Treatment
 
-This is one of the most harmful myths because it makes homeowners feel ashamed when they discover an infestation. The truth is that even the most spotless homes in Massapequa or Great Neck can get pests. Insects and rodents seek three things: food, water, and shelter. A clean home reduces available food sources, but pests can still enter looking for warmth, moisture, or nesting sites.
+A professional fall perimeter treatment applied in September kills stink bugs as they aggregate on your home's exterior before they locate entry points. This treatment also controls boxelder bugs, cluster flies, and multicolored Asian lady beetles — all common fall invaders in Queens and Nassau County.
 
-Termites eat the wood framing of your house — they do not care how often you mop. Bed bugs hitchhike in on luggage and clothing. Mice can squeeze through a gap the size of a dime in your foundation. Cleanliness helps, but it is not a guarantee.
-
-### Myth 4: Bed Bugs Only Live in Beds
-
-Despite their name, [bed bugs](/services/bed-bug-removal) are not limited to mattresses. These sneaky insects are expert hiders and can be found in:
-
-- Cracks and seams of upholstered furniture
-- Behind wallpaper and picture frames
-- Inside electrical outlets and switch plates
-- Along baseboards and carpet edges
-- In luggage, backpacks, and clothing
-
-Bed bugs go where people go. They are attracted to body heat and carbon dioxide, which is why they tend to congregate near sleeping areas — but they will happily set up camp anywhere in your home. Homeowners who only inspect their mattress may miss a much larger infestation hiding in other rooms.
-
-### Myth 5: Cats Are the Ultimate Rodent Solution
-
-Cats can certainly deter some mice, and some felines are excellent hunters. However, relying on your cat as a pest control strategy has some serious limitations. Many house cats simply are not interested in hunting. Mice and rats can be surprisingly fast, and they often nest in walls, attics, and crawl spaces where your cat cannot reach.
-
-Additionally, rodent-borne diseases can be transmitted to cats through contact with infected mice. For a thorough approach to [rodent control](/services/rodent-control), professional exclusion and trapping is far more reliable than hoping Mr. Whiskers is feeling motivated.
-
-### Myth 6: DIY Pest Control Is Always Cheaper
-
-A can of bug spray costs a few dollars. A professional pest treatment costs more upfront. So DIY is the budget-friendly choice, right? Not necessarily. Many homeowners across ${GEO.countyFull} end up spending far more on repeated DIY attempts — buying different products, trying different methods, dealing with recurring infestations — than they would have spent on a single professional treatment that actually solves the problem.
-
-Professional pest control technicians identify the root cause of the infestation, treat it comprehensively, and provide follow-up to make sure pests do not return. That long-term approach often saves families money compared to the DIY cycle of spray, wait, and spray again.
-
-### Myth 7: All Bugs Are Bad
-
-Not every insect you encounter is a pest. Many bugs play important roles in the ecosystem right in your own backyard. Ladybugs eat aphids that damage garden plants. Spiders control populations of mosquitoes and flies. Bees and butterflies pollinate the flowers and gardens that make ${GEO.countyFull} neighborhoods so beautiful.
-
-The key is knowing which insects pose a genuine threat to your home or family and which ones are actually helping. A knowledgeable pest control professional can help you tell the difference and focus treatment where it is truly needed.
-
-## How to Protect Your Home the Right Way
-
-Instead of relying on myths and old remedies, here is what actually works for pest prevention in ${GEO.countyFull}:
-
-- **Seal entry points** — caulk cracks around foundations, windows, and doors
-- **Eliminate moisture** — fix leaky pipes and ensure proper drainage
-- **Store food properly** — keep pantry items in sealed containers
-- **Reduce clutter** — pests love hiding spots, especially in basements and garages
-- **Schedule regular inspections** — catching problems early prevents major infestations
-
-For a free estimate on protecting your home, [contact the ${SITE_NAME} team today](/contact). We serve families throughout ${GEO.countyFull}, from Levittown to Floral Park and everywhere in between.
-
-## Frequently Asked Questions
-
-### Do ultrasonic pest repellers work at all?
-
-Independent research consistently shows that ultrasonic devices have little to no long-term effectiveness against common household pests. While they may briefly startle some insects or rodents, pests quickly adapt to the sound frequencies. Professional pest management using proven methods like exclusion, baiting, and targeted treatments is far more reliable.
-
-### Can I get bed bugs even if my house is clean?
-
-Absolutely. Bed bugs are not attracted to dirt or filth — they are attracted to warmth and carbon dioxide from human bodies. They spread by hitchhiking on luggage, clothing, and furniture. Even the cleanest homes in ${GEO.countyFull} can experience a bed bug infestation after travel or contact with infested items.
-
-### What is the most effective bait for mouse traps?
-
-Peanut butter is widely considered the most effective mouse bait because of its strong smell and sticky texture, which forces mice to engage with the trap mechanism. Chocolate, seeds, and small pieces of cracker also work well. Cheese, despite its reputation, is one of the less effective options.
-
-### When should I call a professional instead of handling pests myself?
-
-If you have tried DIY methods without success, if you are seeing pests repeatedly, or if you are dealing with wood-destroying insects like termites or carpenter ants, it is time to call a professional. Some infestations — particularly [bed bugs](/services/bed-bug-removal) and [rodents](/services/rodent-control) living in walls — require specialized equipment and expertise to fully resolve.
-
-### Are there any beneficial bugs I should avoid killing?
-
-Yes! Ladybugs, spiders, ground beetles, and praying mantises are all beneficial insects that help control pest populations naturally. If you find these in your garden, consider leaving them alone. If they are inside your home and you would rather they were not, a pest professional can advise on gentle relocation rather than extermination.
-    `.trim(),
+Call (718) 710-0330 or (516) 774-5051. When you're looking for **pest control near me** for fall pest prevention across Queens or Nassau County, Jet Pest Control provides discreet, professional service.`
   },
   {
-    slug: 'diy-pest-control',
-    title: `DIY Pest Control vs. Professional Treatment: What ${GEO.countyFull} Homeowners Should Know`,
-    description: `Wondering if DIY pest control is enough? Learn when home remedies work and when it's time to call a ${GEO.countyFull} professional.`,
-    date: '2024-10-21',
-    author: `${SITE_NAME} Team`,
-    tags: ['pest-control', 'diy', 'tips', 'local-pest-control', 'prevention'],
-    content: `
-## The DIY Pest Control Question Every Homeowner Faces
+    slug: "spider-control-brooklyn-queens-nassau",
+    title: "Spider Control in Brooklyn, Queens, and Nassau County",
+    date: "2025-09-15",
+    excerpt: "Most spiders in NYC and Nassau County homes are harmless, but some require professional attention. Here's how to tell the difference.",
+    author: "Jet Pest Control Team",
+    category: "Spiders",
+    readTime: "6 min read",
+    tags: ["spider control", "spiders", "pest control near me", "Brooklyn", "Queens", "Nassau County"],
+    content: `# Spider Control in Brooklyn, Queens, and Nassau County
 
-You spot a line of ants marching across your kitchen counter. A mouse scurries behind the refrigerator. Something is buzzing inside your bathroom vent. Your first instinct is probably to head to the hardware store and grab a can of spray, some traps, or a bag of granules.
+Spiders are a common fall pest complaint across our service area — from brownstone basements in Brooklyn to finished basements in Nassau County. The vast majority of spiders found in NYC-area homes are completely harmless and actually beneficial, feeding on the insects that are genuine pests. The real question is whether any species present warrant professional **pest control near me**.
 
-And honestly? Sometimes that is the right call. DIY pest control has a real place in home maintenance, and we are not here to tell you that every single bug requires a professional. But as the ${SITE_NAME} team serving families across ${GEO.countyFull}, we have seen firsthand what happens when DIY efforts fall short — and the results can be costly.
+## Common Species in Our Service Area
 
-Let's break down when DIY works, when it does not, and how to make the smartest decision for your home and family.
+**Cellar Spiders (Daddy Long-Legs):** Long-legged spiders in basement corners and crawl spaces. Completely harmless. Web removal handles cosmetic concerns.
 
-## When DIY Pest Control Can Work
+**House Spiders:** Small brownish spiders in corners, window frames, and storage areas. The most common indoor spider in Brooklyn, Queens, and Nassau County homes. Harmless; managed with web removal and reducing humidity.
 
-There are situations where a trip to the hardware store and a weekend afternoon are genuinely all you need:
+**Wolf Spiders:** Large, fast-moving, ground-level hunters. Alarming but harmless. Enter homes in fall across the entire service area. Relocate outdoors.
 
-- **A few ants near a food source** — clean up the area, seal the entry point with caulk, and set a bait station. Problem solved.
-- **An occasional spider in the basement** — a simple sticky trap or relocation is perfectly effective.
-- **Fruit flies around overripe bananas** — remove the food source and set a vinegar trap.
-- **A single mouse sighting** — a well-placed snap trap with peanut butter can work, especially if you also seal the entry point.
+**Yellow Garden Spiders:** Large striking yellow-and-black spiders in late-summer gardens. Completely harmless and beneficial. Die with the first frost.
 
-For minor, isolated pest encounters, DIY is reasonable and cost-effective. The key phrase here is "minor and isolated."
+**Black Widows:** Present in our service area — found in dry, sheltered locations: under outdoor furniture, in garage corners, in wood piles, under deck boards. The red hourglass marking on the underside of the black abdomen is diagnostic. Bites cause severe systemic symptoms. If found near living spaces, call Jet Pest Control for professional treatment.
 
-## Where DIY Falls Short
+**Long-Bodied Cellar Spiders and Sac Spiders:** Sac spiders (Cheiracanthium) found throughout Nassau County homes can deliver a mildly painful bite, though they're not medically significant.
 
-The challenge with DIY pest control is that most homeowners are treating symptoms, not root causes. You kill the ants on the counter, but the colony of thousands living behind your siding keeps sending more. You trap one mouse, but the family of twelve nesting in your attic insulation is still there.
+## Why Spider Activity Peaks in Fall
 
-Here is where DIY approaches typically fail:
+Spiders move indoors in September and October seeking warmth and prey. A professional fall perimeter treatment reduces the insect populations sustaining spider activity while directly eliminating spiders and egg sacs on the exterior.
 
-### You Cannot See the Full Picture
-
-Professional pest technicians are trained to read the signs — droppings patterns, entry points, nesting behavior, species identification. A homeowner in [Levittown](/levittown) might see a few small brown bugs and assume they are harmless beetles, when they are actually the early signs of a serious infestation that requires immediate attention.
-
-### Over-the-Counter Products Have Limitations
-
-Store-bought sprays and baits are formulated for general use at lower concentrations. They can knock down individual pests, but they often lack the residual effectiveness or targeted chemistry needed to eliminate an established colony or breeding population.
-
-### Improper Application Creates Problems
-
-Using too much pesticide, applying it in the wrong locations, or mixing products that should not be combined can create health risks for your family and pets. We have seen homeowners across ${GEO.countyFull} — from Hicksville to Valley Stream — who made infestations worse by scattering pests to new areas of the home with improper treatment.
-
-### Some Pests Simply Require Professional Treatment
-
-Certain infestations are beyond the scope of DIY no matter how determined you are:
-
-- **Termites** — subterranean termite colonies require specialized treatment systems that protect the entire structure
-- **Bed bugs** — these insects are resistant to most over-the-counter sprays and require methodical, room-by-room professional treatment
-- **Rodents in walls and attics** — trapping alone will not solve a nesting population; exclusion work is essential
-- **Carpenter ants** — the satellite colonies inside your walls need to be located and treated at the source
-- **Wasp and hornet nests** — attempting removal yourself risks serious stings, especially for anyone with allergies
-
-## The Real Cost of "Saving Money" with DIY
-
-One of the biggest reasons homeowners attempt DIY pest control is cost. And we understand — nobody wants to spend money they do not have to. But consider this common scenario:
-
-1. You buy a $12 spray and treat the area yourself
-2. Pests come back within two weeks
-3. You buy a different product for $18 and try again
-4. Still coming back — now you try a $35 bait system
-5. Three months later, the infestation is worse and you call a professional
-
-Now you have spent $65 on products that did not work, plus the full cost of professional treatment, plus three months of living with pests. Many families in Mineola, Oceanside, and throughout ${GEO.countyFull} have told us they wish they had called sooner.
-
-## What Professional Pest Control Actually Involves
-
-When you contact [${SITE_NAME}](/services) for pest control, you are not just paying someone to spray the same products you can buy at the store. Professional treatment includes:
-
-- **Thorough inspection** to identify the pest species, locate entry points, and assess the scope of the problem
-- **Targeted treatment** using professional-grade products applied precisely where they will be most effective
-- **Exclusion work** to seal the gaps, cracks, and openings that allowed pests inside in the first place
-- **Follow-up visits** to monitor the situation and ensure the treatment was successful
-- **Prevention guidance** tailored to your specific home and property
-
-This comprehensive approach is why professional pest control resolves problems that DIY methods cannot.
-
-## A Balanced Approach for Your Home
-
-We recommend a two-part strategy for ${GEO.countyFull} homeowners:
-
-1. **Maintain your home proactively** — seal cracks, fix moisture issues, store food properly, and keep landscaping trimmed back from the house. These steps prevent many pest problems before they start.
-2. **Call a professional when DIY is not working** — if you have tried a home remedy and pests persist beyond a week or two, or if you are dealing with wood-destroying insects, bed bugs, or rodents, do not wait. [Contact ${SITE_NAME}](/contact) for a free estimate.
-
-There is no shame in needing professional help. Pest control is a skilled trade, and the right treatment at the right time protects your home, your family, and your peace of mind.
-
-## Frequently Asked Questions
-
-### Is DIY pest control ever effective?
-
-Yes, for minor pest issues like a few ants near a food source, an occasional spider, or fruit flies, DIY methods can be perfectly effective. The key is addressing the root cause — not just killing individual pests. If the problem persists after a week or two of DIY treatment, it is time to consult a professional.
-
-### What are the risks of using store-bought pesticides incorrectly?
-
-Improper use of pesticides can expose your family and pets to harmful chemicals, contaminate food preparation surfaces, and actually scatter pests to new areas of your home rather than eliminating them. Always read and follow label directions carefully, and never use outdoor products indoors.
-
-### How do I know if my pest problem needs a professional?
-
-Signs that you need professional help include: recurring pest sightings after DIY treatment, evidence of structural damage (hollow wood, sawdust piles), droppings in multiple areas of your home, or the presence of pests known to be difficult to treat on your own such as termites, bed bugs, or established rodent populations.
-
-### Will a professional pest control company tell me if I don't actually need treatment?
-
-Reputable companies like [${SITE_NAME}](/services) will always perform an honest assessment. If your situation is minor enough for DIY, a trustworthy technician will tell you that and offer prevention advice instead of selling you a treatment you do not need.
-
-### How often should I have my home inspected for pests?
-
-We recommend at least an annual pest inspection for most homes in ${GEO.countyFull}, with additional checks in spring when pest activity increases. Homes with a history of termite activity, older construction, or heavy landscaping near the foundation may benefit from more frequent inspections.
-    `.trim(),
+Call (718) 710-0330 or (516) 774-5051. For spider concerns in Brooklyn, Queens, or Nassau County, Jet Pest Control provides same-week service throughout our coverage area.`
   },
   {
-    slug: 'ticks-lyme-disease',
-    title: `Ticks and Lyme Disease in ${GEO.countyFull}: A Family Protection Guide`,
-    description: `Protect your family from ticks and Lyme disease in ${GEO.countyFull}. Learn prevention tips, tick removal, and yard treatment options.`,
-    date: '2024-10-14',
-    author: `${SITE_NAME} Team`,
-    tags: ['ticks', 'lyme-disease', 'prevention', 'local-pest-control', 'family', 'outdoor'],
-    content: `
-## Ticks and Lyme Disease: What Every ${GEO.countyFull} Family Should Know
+    slug: "pantry-pest-control-brooklyn-queens-nassau",
+    title: "Pantry Pest Control in Brooklyn, Queens, and Nassau County",
+    date: "2025-10-01",
+    excerpt: "Finding weevils, moths, or beetles in your pantry staples is common across NYC and Nassau County. Here's how to identify and eliminate them for good.",
+    author: "Jet Pest Control Team",
+    category: "Pantry Pests",
+    readTime: "6 min read",
+    tags: ["pantry pests", "flour weevils", "Indian meal moth", "pest control near me", "Brooklyn", "Queens"],
+    content: `# Pantry Pest Control in Brooklyn, Queens, and Nassau County
 
-If you have kids who play in the backyard, a dog who loves long walks, or a family that enjoys the beautiful parks and nature trails across ${GEO.region}, tick awareness is not optional — it is essential. ${GEO.countyFull} sits in one of the highest-risk regions in the country for Lyme disease, and every year local families deal with the consequences of tick bites that could have been prevented.
+Finding small moths flying out of your pantry in Williamsburg, beetles in your cereal in Astoria, or weevils in your flour in Great Neck is deeply unpleasant — but it's not a sign of a dirty kitchen. Pantry pests are stored product insects that often arrive in grocery store products already infested. In NYC's dense environment with high-volume grocery throughput, these infestations are common across Brooklyn, Queens, and Nassau County.
 
-At ${SITE_NAME}, we help homeowners throughout ${GEO.countyFull} — from [Massapequa](/massapequa) to [Syosset](/syosset) and everywhere in between — create tick-resistant yards where families can enjoy the outdoors with greater peace of mind. Here is what you need to know.
+## Common Pantry Pests
 
-## Understanding Ticks in ${GEO.countyFull}
+**Indian Meal Moth:** The most commonly encountered pantry pest across our service area. Adults have distinctive reddish-brown wings with coppery outer bands; larvae spin webbing inside infested products. Infests flour, cereals, dried fruit, nuts, birdseed, dry pet food, and spices. Adults spotted flying in the evening indicate an established infestation already spread to multiple items.
 
-The blacklegged tick (also called the deer tick) is the primary carrier of Lyme disease in our area. These tiny arachnids are most active in spring and summer, but they can remain active in fall and even on warmer winter days. Ticks do not jump or fly — they wait on grass, leaf litter, and low-hanging vegetation with their front legs outstretched, ready to latch onto anything that brushes past.
+**Grain Weevils:** Small reddish-brown beetles with elongated snouts infesting whole grains, rice, wheat berries, and pasta. Adults and larvae live inside grain kernels — invisible until infestation is widespread.
 
-### Where Ticks Hide in Your Yard
+**Saw-Toothed Grain Beetle:** Flat beetles that penetrate sealed packaging. Infest flour, cereal, dried fruit, sugar, chocolate, and pasta.
 
-Ticks thrive in specific environments. In a typical ${GEO.countyFull} backyard, you will find them in:
+**Cigarette and Drugstore Beetles:** Infest spices, herbs, dry pet food, and a wide range of pantry products. Common in households with extensive spice collections.
 
-- **Tall grass and unmowed edges** along fences and property lines
-- **Leaf litter and ground cover** under trees and shrubs
-- **Woodpiles and stone walls** that attract the mice ticks feed on
-- **Shady, damp areas** that retain moisture
-- **The transition zone** between your lawn and any wooded or natural areas
+## Elimination Steps
 
-Understanding where ticks live helps you target prevention efforts where they matter most.
+1. **Remove all infested material:** Inspect everything — discard anything showing webbing, movement, or damage.
+2. **Deep clean:** Vacuum all corners and shelf edges; wipe with vinegar solution; check under shelf liner.
+3. **Inspect recent purchases:** Infestations frequently originate in recently purchased products.
+4. **Store all dry goods in sealed hard containers:** Glass or thick plastic with tight-fitting lids — this single step prevents most reinfestation.
+5. **For widespread infestations:** Call Jet Pest Control for inspection, pheromone monitoring traps, and targeted treatment.
 
-## Protecting Your Family Outdoors
-
-Whether your kids are playing soccer in the backyard, your teenager is mowing the lawn, or the whole family is heading to the park, these habits dramatically reduce tick exposure:
-
-### Dress for Protection
-
-When spending time in tick-prone areas — hiking trails, wooded edges, tall grass — wear:
-
-- Light-colored clothing so ticks are easier to spot
-- Long pants tucked into socks (fashion points are less important than tick prevention)
-- Closed-toe shoes rather than sandals
-- A hat when walking through areas with overhanging vegetation
-
-### Use Effective Repellents
-
-- EPA-registered insect repellents containing DEET or picaridin on exposed skin
-- Permethrin-treated clothing, which kills ticks on contact and remains effective through multiple washes
-- Natural alternatives like oil of lemon eucalyptus can provide some protection for lower-risk activities
-
-### Perform Tick Checks Every Time
-
-This is the single most important habit for any family in ${GEO.countyFull}. After any outdoor activity — even just playing in your own backyard — check everyone thoroughly:
-
-- Behind and around the ears
-- Along the hairline and scalp
-- Under arms and around the waist
-- Behind the knees
-- Between toes and around ankles
-- On and around pets, especially around the ears, collar area, and between toes
-
-Ticks can be as small as a poppy seed in their nymph stage, so look carefully. Showering within two hours of coming indoors has been shown to reduce the risk of tick attachment.
-
-## Tick Removal: Do It Right
-
-If you find an attached tick, do not panic — but do act promptly. The risk of Lyme disease transmission increases significantly if a tick remains attached for more than 36 hours.
-
-### Step-by-Step Tick Removal
-
-1. Use fine-tipped tweezers (not your fingers)
-2. Grasp the tick as close to the skin surface as possible
-3. Pull upward with steady, even pressure — do not twist or jerk
-4. Clean the bite area and your hands with rubbing alcohol or soap and water
-5. Save the tick in a sealed bag or container with the date noted
-
-### What NOT to Do
-
-- Do not use nail polish, petroleum jelly, or a hot match to try to make the tick "back out"
-- Do not crush the tick with your fingers
-- Do not wait — remove it as soon as you find it
-
-These folk remedies delay removal and can actually increase the chance of disease transmission.
-
-## Recognizing Lyme Disease Symptoms
-
-Not every tick bite leads to Lyme disease, but knowing the early signs allows for prompt treatment, which is critical for a full recovery.
-
-### Early Symptoms (3–30 days after a bite)
-
-- **Bull's-eye rash** (erythema migrans) — a red, expanding rash that may clear in the center. This occurs in roughly 70–80% of infected people.
-- **Fever, chills, and fatigue**
-- **Headache and muscle or joint aches**
-- **Swollen lymph nodes**
-
-### Later Symptoms (if untreated)
-
-- Severe joint pain and swelling, particularly in the knees
-- Facial palsy (drooping on one or both sides)
-- Heart palpitations or irregular heartbeat
-- Nerve pain, numbness, or tingling
-- Problems with short-term memory
-
-If you or a family member develops any of these symptoms after a tick bite, see your healthcare provider right away. Early antibiotic treatment is highly effective.
-
-## Creating a Tick-Resistant Yard
-
-You cannot eliminate every tick from the outdoors, but you can dramatically reduce their numbers in your own yard. Here is how:
-
-### Landscaping Strategies
-
-- **Keep grass mowed short** — ticks avoid sunny, dry areas
-- **Create a 3-foot barrier of wood chips or gravel** between your lawn and wooded or natural areas
-- **Remove leaf litter** regularly from under trees and shrubs
-- **Stack firewood neatly in dry areas** away from the house
-- **Trim low-hanging branches** to allow more sunlight into your yard
-- **Discourage deer** with fencing — deer carry adult ticks into residential areas
-
-### Professional Yard Treatments
-
-For families in ${GEO.countyFull} who want comprehensive tick protection, professional [tick control treatments](/services/flea-tick-treatment) target the areas where ticks live and breed. These treatments are applied at key times during tick season — typically spring through fall — to keep populations low throughout the months your family spends the most time outdoors.
-
-At ${SITE_NAME}, our tick control programs are designed with families in mind. We use targeted applications in tick habitat zones rather than blanket spraying your entire property, which is both more effective and more environmentally responsible.
-
-## Protecting Your Pets
-
-Dogs are highly susceptible to tick bites and can also contract Lyme disease. Talk to your veterinarian about:
-
-- Year-round tick prevention products (oral or topical)
-- The Lyme disease vaccine for dogs
-- Checking your dog after every walk or outdoor play session
-
-Cats are less commonly affected, but outdoor cats should still be checked regularly and kept on veterinarian-recommended tick prevention.
-
-## Take Action Before Tick Season
-
-The best time to address tick control is before peak season begins. If your property borders wooded areas, has heavy landscaping, or if you have found ticks on family members or pets in previous years, professional treatment can provide the protection your family deserves.
-
-[Contact ${SITE_NAME} today](/contact) for a free yard evaluation and tick control estimate. We help families across ${GEO.countyFull} — from Manhasset to Long Beach — enjoy their outdoor spaces with confidence.
-
-## Frequently Asked Questions
-
-### How common is Lyme disease in ${GEO.countyFull}?
-
-${GEO.countyFull} is in one of the highest-risk regions in the United States for Lyme disease. New York State consistently reports thousands of Lyme disease cases annually, with Long Island and the lower Hudson Valley among the most affected areas. Tick awareness and prevention are essential for every local family.
-
-### Can I get Lyme disease from a tick that was only attached for a few hours?
-
-The risk of Lyme disease transmission from a tick that has been attached for less than 36 hours is very low. This is why prompt tick checks and quick removal are so important. However, other tick-borne illnesses can potentially be transmitted more quickly, so removing any attached tick promptly is always the right approach.
-
-### Are tick tubes and tick boxes effective?
-
-Tick tubes (permethrin-treated cotton that mice carry into their nests) and tick boxes (devices that treat mice passing through them) can be part of an integrated tick management strategy. They target the mice that are primary hosts for young ticks. These work best when combined with habitat modification and professional yard treatments rather than used alone.
-
-### When is tick season in ${GEO.countyFull}?
-
-Tick activity in ${GEO.countyFull} typically peaks from April through September, with the highest risk in May, June, and July. However, ticks can be active any time temperatures are above freezing, so year-round awareness is recommended, especially during mild winters.
-
-### Should I have my yard treated for ticks if I have never found one?
-
-If your property is in ${GEO.countyFull} and you have any combination of grass, landscaping, shade trees, or proximity to wooded areas, ticks are very likely present even if you have not noticed them. Nymph-stage ticks are extremely small and easy to miss. A professional evaluation can assess your property's risk level and recommend appropriate treatment.
-    `.trim(),
+Call (718) 710-0330 or (516) 774-5051. For pantry pest help across Brooklyn, Queens, or Nassau County, Jet Pest Control provides thorough inspection and effective treatment.`
   },
   {
-    slug: 'winter-pests',
-    title: `Winter Pests in ${GEO.countyFull}: Which Critters Invade When the Cold Hits`,
-    description: `Cold weather drives pests indoors. Learn which winter pests target ${GEO.countyFull} homes and how to keep them out.`,
-    date: '2024-10-07',
-    author: `${SITE_NAME} Team`,
-    tags: ['winter', 'pests', 'rodents', 'prevention', 'local-pest-control', 'seasonal'],
-    content: `
-## Winter Pests: The Uninvited Houseguests of ${GEO.countyFull}
+    slug: "commercial-pest-control-brooklyn-queens-nassau",
+    title: "Commercial Pest Control in Brooklyn, Queens, and Nassau County: Protecting Your Business",
+    date: "2025-10-15",
+    excerpt: "Restaurants, retailers, and businesses across Brooklyn, Queens, and Nassau County need reliable pest control that maintains compliance and protects their reputation.",
+    author: "Jet Pest Control Team",
+    category: "Commercial",
+    readTime: "6 min read",
+    tags: ["commercial pest control", "restaurant pest control", "exterminator near me", "Brooklyn", "Queens", "NYC"],
+    content: `# Commercial Pest Control in Brooklyn, Queens, and Nassau County: Protecting Your Business
 
-When the temperature drops and frost settles over ${GEO.region}, you are not the only one looking for a warm place to hunker down. Every winter, homeowners across ${GEO.countyFull} — from [Hicksville](/hicksville) to [Plainview](/plainview) and beyond — discover that their cozy homes have become shelters for a variety of pests seeking warmth, food, and water.
+A pest problem in your business is a direct threat to your reputation, regulatory compliance, and revenue. In New York City, the NYC Department of Health and Mental Hygiene (DOHMH) conducts unannounced restaurant inspections and issues violations — including immediate closures — for active cockroach or rodent infestations. One customer photo of a pest goes viral on Yelp before you even know it happened.
 
-Understanding which pests are most active during the colder months and how they get inside is the first step toward keeping your home pest-free all winter long.
+Jet Pest Control has provided commercial pest control throughout Brooklyn, Queens, Manhattan, and Nassau County for years. Discreet service with unmarked vehicles. Professional IPM-based programs with compliance documentation. Fast emergency response.
 
-## Why Pests Move Indoors in Winter
+## The NYC Commercial Pest Challenge
 
-Pests are driven by survival. As outdoor temperatures drop below their comfort zone, many insects and rodents begin searching for protected environments with reliable food and water sources. Your home provides all three — warmth from your heating system, moisture from bathrooms and kitchens, and food from pantries and pet bowls.
+**Restaurants in Brooklyn and Queens** operate in dense commercial corridors — Flatbush Avenue, Atlantic Avenue, Jamaica Avenue, Northern Boulevard — where rodent and cockroach populations are sustained by the concentration of food waste, shared loading areas, and connected utility systems. A single neighboring establishment's pest problem can pressure your restaurant.
 
-The older housing stock common throughout ${GEO.countyFull} — including many beautiful but aging homes from the 1940s through 1970s — often has small gaps, cracks, and openings that provide easy entry points for pests. Even newer construction can have vulnerabilities around utility lines, dryer vents, and garage doors.
+**NYC DOHMH compliance:** All food service establishments must maintain pest control records. DOHMH inspectors specifically check for evidence of cockroaches, rodents, and flies — and violations result in grade penalties that directly impact foot traffic.
 
-## Common Winter Pests in ${GEO.countyFull}
+**Multi-tenant commercial buildings in Nassau County:** Office buildings, medical facilities, and retail centers require coordinated pest management across tenants to prevent cross-unit pest movement.
 
-### Mice and Rats
+## Our Commercial Services
 
-[Rodents](/services/rodent-control) are by far the most common winter pest complaint we receive at ${SITE_NAME}. House mice can squeeze through an opening as small as a dime, and Norway rats can fit through a hole the size of a quarter. Once inside, they reproduce rapidly — a single pair of mice can produce dozens of offspring in just a few months.
+- **IPM-based programs** with monthly or bi-monthly service and complete documentation
+- **Emergency same-day response** for pre-inspection or active-infestation situations
+- **German cockroach programs** using professional gel bait and IGR — the only effective approach for NYC's resistant roach population
+- **Rodent exclusion and baiting programs** for commercial properties
+- **Bird exclusion and pigeon control** for building exteriors, loading docks, and HVAC equipment
+- **Discreet service** with unmarked vehicles and minimal disruption to your operations
 
-**Signs of rodent activity:**
-- Small dark droppings along walls, in cabinets, or near food sources
-- Gnaw marks on food packaging, wood, or wiring
-- Scratching or scurrying sounds in walls or ceilings, especially at night
-- Nesting material — shredded paper, fabric, or insulation
-- Greasy rub marks along baseboards where rodents travel
+We provide service reports and treatment documentation at every visit for compliance records.
 
-Rodents are not just a nuisance — they can cause real damage. Mice and rats gnaw on electrical wiring, which creates a fire hazard. They contaminate food and surfaces with droppings and urine. And they can introduce fleas, ticks, and other parasites into your home.
-
-### Cockroaches
-
-German cockroaches and American cockroaches are both active year-round indoors, but winter often intensifies the problem as roaches that were living in outdoor areas migrate inside. Cockroaches are drawn to warmth and moisture, making kitchens and bathrooms their favorite rooms.
-
-These pests reproduce rapidly and are known to trigger allergies and asthma, particularly in children. If you see one cockroach, there are almost certainly many more hiding in walls, behind appliances, and under sinks.
-
-### Spiders
-
-While most spiders are harmless and actually beneficial — they eat other insects — nobody wants them taking up residence in their bedroom. As their outdoor prey becomes scarce in winter, spiders follow the insects moving indoors. Common species in ${GEO.countyFull} homes include house spiders, cellar spiders, and occasionally the more concerning brown recluse or black widow, though these are rare on Long Island.
-
-### Stink Bugs
-
-Brown marmorated stink bugs are a relatively newer pest in our area, but they have become a significant fall and winter nuisance across ${GEO.countyFull}. These shield-shaped insects begin entering homes in large numbers in autumn, looking for sheltered spots to spend the winter. They do not bite or cause structural damage, but they release a foul odor when disturbed or crushed — hence the name.
-
-Stink bugs often congregate around sunny exterior walls before finding their way inside through gaps around windows, doors, and siding.
-
-### Cluster Flies
-
-Similar to stink bugs, cluster flies enter homes in the fall seeking winter shelter. They often gather in large numbers in attics, wall voids, and around south-facing windows. On warm winter days, you may suddenly find dozens of sluggish flies appearing inside your home as they temporarily become active.
-
-### Silverfish
-
-These teardrop-shaped, silvery insects love dark, humid environments. In winter, they are commonly found in basements, bathrooms, and laundry rooms. Silverfish feed on starches and sugars, including book bindings, wallpaper paste, clothing, and pantry items. While they do not bite, they can damage paper goods and fabrics.
-
-## Winter Pest Prevention Tips for ${GEO.countyFull} Homeowners
-
-Prevention is always more effective and less expensive than treatment. Here is what you can do to pest-proof your home before and during the winter months:
-
-### Seal Entry Points
-
-- **Inspect your foundation** for cracks and gaps, and seal them with caulk or steel wool (mice cannot chew through steel wool)
-- **Check around utility penetrations** — pipes, wires, cables, and dryer vents often have gaps around them
-- **Install door sweeps** on all exterior doors, including garage doors
-- **Repair damaged screens** on windows and vents
-- **Examine where siding meets the foundation** for openings
-
-### Reduce Moisture
-
-- Fix leaky faucets and pipes promptly
-- Use a dehumidifier in damp basements
-- Ensure bathroom exhaust fans vent to the outside
-- Clear gutters so water drains away from the foundation
-
-### Eliminate Food Sources
-
-- Store pantry items in sealed glass or hard plastic containers
-- Do not leave pet food out overnight
-- Clean up crumbs and spills immediately
-- Take trash out regularly and use bins with tight-fitting lids
-- Avoid leaving dirty dishes in the sink overnight
-
-### Maintain Your Property
-
-- Keep firewood stacked at least 20 feet from your home and off the ground
-- Trim tree branches and shrubs that touch or overhang your house
-- Clear leaf litter and debris away from the foundation
-- Ensure attic and crawl space vents are screened and functional
-
-## When to Call a Professional
-
-If you are already seeing signs of winter pests inside your home, DIY methods may not be enough — especially for rodent infestations or cockroach problems that have had time to establish. At ${SITE_NAME}, our [general pest control services](/services) address winter pest issues with thorough inspections, targeted treatments, and exclusion work to keep pests from coming back.
-
-We recommend a fall inspection before the peak of winter pest season. Our technicians can identify vulnerabilities in your home and address them before pests settle in for the season. [Contact us for a free estimate](/contact) — we serve homeowners throughout ${GEO.countyFull}, including Bethpage, Floral Park, Garden City, and all surrounding communities.
-
-## Frequently Asked Questions
-
-### Why am I suddenly seeing mice in my house when I never had them before?
-
-Cold weather is the most common trigger for new rodent activity indoors. Mice that were living outside during warmer months need shelter when temperatures drop. If there are any gaps or openings in your home's exterior — even tiny ones — mice will find and exploit them. Changes in nearby construction or landscaping can also displace rodent populations into new areas.
-
-### Can winter pests cause health problems?
-
-Yes. Rodent droppings and urine can trigger allergies and spread diseases. Cockroaches are a known asthma trigger, especially for children. Even the dust from accumulated insect bodies (like cluster flies in attics) can cause respiratory irritation. Addressing winter pest issues protects both your home and your family's wellbeing.
-
-### Do I need pest control in winter, or should I wait until spring?
-
-Do not wait. Pests that move into your home in winter will breed and establish populations over the cold months, leading to much larger infestations by spring. Treating the problem when it first appears is always more effective and less costly than allowing pests to become entrenched.
-
-### How do I know if I have mice or rats?
-
-Mouse droppings are small (about the size of a grain of rice) while rat droppings are significantly larger (about the size of a raisin). Mice tend to nest in hidden interior spaces like wall voids and cabinets, while rats are more commonly found in basements, crawl spaces, and lower levels. A [${SITE_NAME} technician](/services/rodent-control) can quickly identify which rodent you are dealing with and recommend the appropriate treatment.
-
-### Will sealing my house completely keep all pests out?
-
-Sealing entry points is one of the most effective pest prevention strategies, but no home can be made 100% impenetrable. Pests can enter through doors that are briefly opened, on packages and deliveries, or through tiny gaps that are difficult to detect. Combining exclusion work with regular professional inspections provides the most comprehensive winter pest protection.
-    `.trim(),
+Call (718) 710-0330 (NYC) or (516) 774-5051 (Nassau, Suffolk) to discuss a commercial pest control program. Jet Pest Control — discreet, professional, compliant. When you need an **exterminator near me** for your NYC or Nassau County business, trust Jet Pest Control.`
   },
   {
-    slug: '5-destructive-pests',
-    title: `The 5 Most Destructive Pests for ${GEO.countyFull} Homes`,
-    description: `Termites, carpenter ants, bed bugs, powder post beetles, and rodents — the 5 most destructive pests threatening ${GEO.countyFull} homes.`,
-    date: '2024-09-30',
-    author: `${SITE_NAME} Team`,
-    tags: ['termites', 'carpenter-ants', 'bed-bugs', 'rodents', 'beetles', 'local-pest-control', 'home-damage'],
-    content: `
-## The 5 Pests That Cause the Most Damage to ${GEO.countyFull} Homes
+    slug: "exterminator-near-me-brooklyn-queens-nyc",
+    title: "Finding the Right Exterminator Near Me in Brooklyn, Queens, and Nassau County",
+    date: "2025-11-01",
+    excerpt: "When you search 'exterminator near me' in Brooklyn, Queens, or Nassau County, here's what matters — and why Jet Pest Control leads the way.",
+    author: "Jet Pest Control Team",
+    category: "Tips & Advice",
+    readTime: "6 min read",
+    tags: ["exterminator near me", "pest control near me", "Brooklyn", "Queens", "Nassau County"],
+    content: `# Finding the Right Exterminator Near Me in Brooklyn, Queens, and Nassau County
 
-Not all pests are created equal. While a stray ant or the occasional spider might be more of a nuisance than a threat, some pests can cause serious structural damage, destroy your belongings, and cost thousands of dollars in repairs if left unchecked.
+When a pest problem hits — mice in your Crown Heights apartment, a wasp nest in your Forest Hills yard, bed bugs discovered in your Nassau County home — you search "exterminator near me" and get dozens of results. National chains, aggregator sites, local one-person operations, and established companies all appear. How do you choose?
 
-At ${SITE_NAME}, we help homeowners across ${GEO.countyFull} protect their biggest investment — their home. Here are the five most destructive pests we encounter on Long Island and what every homeowner should know about each one.
+## What Matters in a NYC-Area Pest Control Company
 
-## 1. Termites: The Silent Destroyers
+**Experience with NYC-specific challenges:** German cockroach treatment in multi-unit Brooklyn buildings requires a fundamentally different approach than suburban treatment. Bed bug treatment in dense NYC apartments requires building-wide coordination that a company used to treating single-family homes may not know how to manage. Experience in your specific environment matters.
 
-[Termites](/services/termite-treatment) are the single most destructive pest in ${GEO.countyFull} and across the entire northeastern United States. Eastern subterranean termites — the dominant species in our area — live in underground colonies that can contain hundreds of thousands of individuals, all feeding on the cellulose in wood.
+**Discretion:** In dense urban neighborhoods, nobody wants a pest control truck parked outside announcing the situation. Jet Pest Control uses unmarked vehicles throughout our service area — a significant consideration for property managers, landlords, and homeowners alike.
 
-What makes termites so dangerous is that they work silently and out of sight. A termite colony can feed on your home's structural wood for months or even years before you notice any visible signs of damage.
+**Proper NYC licensing:** Pest control companies in New York must be licensed by the DEC. Verify the license. Require proof of general liability insurance.
 
-### Signs of Termite Activity
+**Response time:** Emergency pest situations — wasp nests, rodents in food areas, pre-inspection cockroach problems — require same-day response capability. Not all companies offer this.
 
-- **Mud tubes** running along foundation walls, floor joists, or in crawl spaces
-- **Discarded wings** near windowsills and doors, especially in spring
-- **Hollow-sounding wood** when tapped with a screwdriver handle
-- **Bubbling or peeling paint** that resembles water damage
-- **Sagging floors or doors that stick** — indicating structural wood has been weakened
+**Transparent pricing:** Written estimates before treatment. Clear service guarantees.
 
-### Why Termites Are So Costly
+## Why Jet Pest Control
 
-Termite damage is rarely covered by homeowners' insurance because it is considered a preventable maintenance issue. Repairs can range from a few thousand dollars for localized damage to tens of thousands for extensive structural work. Homes in [Bethpage](/bethpage) and throughout ${GEO.countyFull} with older construction, wood-to-soil contact, or moisture issues are at the highest risk.
+**Discreet unmarked vehicles** throughout Brooklyn, Queens, Manhattan, Nassau, and Suffolk. We understand that discretion matters in dense urban neighborhoods and suburban communities alike.
 
-Annual termite inspections and preventive treatment programs are the most cost-effective way to protect your home. [Learn more about our termite services](/services/termite-treatment).
+**5.0-star reviews:** Our track record of successful treatments and professional service is documented through consistent top-rated customer experiences.
 
-## 2. Carpenter Ants: Excavators in Your Walls
+**Full-service coverage:** Termites, bed bugs, cockroaches, rodents, ants, mosquitoes, stinging insects, wildlife, pigeons, commercial programs. One company covering all of your needs across all of our service areas.
 
-[Carpenter ants](/services/ant-control) are often confused with termites, but their behavior is different — and understanding the distinction matters for treatment. Unlike termites, carpenter ants do not eat wood. Instead, they excavate it to create smooth, gallery-like tunnels where they nest and raise their young.
+**NYC-specific expertise:** We understand German cockroach resistance, multi-unit building pest dynamics, NYC DOHMH compliance requirements, and the unique pest pressures of urban environments.
 
-Carpenter ants in ${GEO.countyFull} are typically large black ants, though some species have reddish coloring. They are attracted to moist or damaged wood, which makes bathrooms, kitchens, and areas around leaky pipes prime targets.
+**Long Island coverage:** Serving Nassau and Suffolk Counties with the same professionalism as our NYC service.
 
-### Signs of Carpenter Ant Activity
-
-- **Piles of fine sawdust** (called frass) beneath wood structures or along baseboards
-- **Large black ants** seen indoors, especially in spring and summer
-- **Rustling sounds** inside walls or wooden beams
-- **Damaged wood** that appears clean and smooth inside (unlike the rough, mud-packed tunnels of termites)
-- **Winged ants** emerging indoors — these are reproductive swarmers from an established colony
-
-### The Hidden Colony Problem
-
-Carpenter ants often establish satellite colonies inside homes while their main colony remains outdoors in a dead tree, stump, or woodpile. Killing the ants you see inside without locating and treating the parent colony means the problem will return. Professional treatment that targets both satellite and parent colonies is essential for lasting results.
-
-## 3. Bed Bugs: Destroyers of Peace and Property
-
-[Bed bugs](/services/bed-bug-removal) may not destroy the structure of your home, but they are among the most destructive pests when it comes to personal property, mental wellbeing, and financial impact. A serious bed bug infestation can result in the disposal of mattresses, furniture, clothing, and other belongings — losses that add up quickly.
-
-Bed bugs have made a major comeback in recent decades and are now common throughout ${GEO.countyFull} and the greater ${GEO.region} area. They spread by hitchhiking on luggage, clothing, used furniture, and personal items.
-
-### Signs of Bed Bug Activity
-
-- **Itchy, red bite marks** in clusters or lines on exposed skin
-- **Small blood spots** on sheets and pillowcases
-- **Dark fecal stains** (tiny black dots) on mattress seams and nearby furniture
-- **Live bugs or shed skins** in mattress seams, headboard joints, and furniture crevices
-- **A musty, sweet odor** in heavily infested rooms
-
-### Why Bed Bugs Are So Difficult to Eliminate
-
-Bed bugs are resistant to many over-the-counter pesticides. They hide in tiny cracks and crevices during the day and only come out to feed at night. A single female can lay hundreds of eggs over her lifetime, and missed eggs can restart an infestation. Professional treatment — often requiring multiple visits — is the only reliable way to fully eliminate bed bugs. [Explore our bed bug services](/services/bed-bug-removal).
-
-## 4. Powder Post Beetles: The Furniture Destroyers
-
-Powder post beetles are less well-known than termites or carpenter ants, but they can be just as destructive to wood in your home. These small beetles lay their eggs in hardwood — including flooring, furniture, cabinetry, and structural lumber. The larvae then feed on the wood from the inside, eventually reducing it to a fine, flour-like powder.
-
-### Signs of Powder Post Beetle Activity
-
-- **Tiny round exit holes** (about 1/32 to 1/8 inch) in wood surfaces
-- **Fine, powdery sawdust** (frass) beneath the exit holes or collecting on surfaces below
-- **Weakened or crumbling wood** that falls apart when touched
-- **Active infestations** are confirmed when fresh, light-colored frass is present beneath new exit holes
-
-### Hardwood at Risk
-
-Powder post beetles prefer hardwoods with higher starch content, including oak, ash, hickory, and walnut. Antique furniture, hardwood floors, and decorative woodwork in older ${GEO.countyFull} homes are particularly vulnerable. If you discover powder post beetle damage, professional treatment is necessary to prevent the infestation from spreading to other wood in your home.
-
-## 5. Rodents: The Gnawing Menace
-
-[Mice and rats](/services/rodent-control) cause an astonishing amount of damage in ${GEO.countyFull} homes every year. Unlike insects that target specific materials, rodents are generalists — they gnaw on virtually everything to keep their constantly growing teeth filed down.
-
-### The Damage Rodents Cause
-
-- **Electrical wiring** — rodent-chewed wires are a leading cause of house fires. The National Fire Protection Association estimates that rodents cause up to 25% of unexplained house fires.
-- **Insulation** — mice shred insulation for nesting material, reducing your home's energy efficiency and increasing heating costs.
-- **Plumbing** — rats can gnaw through PVC pipes, causing leaks and water damage.
-- **Food contamination** — a single mouse produces approximately 50-75 droppings per day, contaminating any food or surfaces it contacts.
-- **Structural damage** — gnawing on wood, drywall, and siding can create entry points for other pests and moisture.
-
-### Why Rodent Control Requires a Comprehensive Approach
-
-Trapping alone is not enough for an established rodent population. Effective rodent control combines:
-
-1. **Trapping** to remove existing rodents
-2. **Exclusion** to seal every possible entry point
-3. **Sanitation** to remove food and water sources
-4. **Monitoring** to ensure the problem does not return
-
-At ${SITE_NAME}, our rodent control programs address all four elements. We do not just trap mice — we figure out how they are getting in and make sure they cannot come back. [Learn about our rodent control services](/services/rodent-control).
-
-## Protecting Your ${GEO.countyFull} Home
-
-The best defense against destructive pests is early detection. Many of these pests work silently for weeks or months before homeowners notice a problem. Regular professional inspections can catch infestations early, when treatment is simpler and damage is minimal.
-
-If you are a homeowner in ${GEO.countyFull} — whether you are in Oceanside, Mineola, Great Neck, or any other community — we encourage you to schedule an annual pest inspection. It is one of the most effective things you can do to protect your home's value and your family's comfort.
-
-[Contact ${SITE_NAME} today for a free estimate](/contact). We are your neighbors, and we are here to help.
-
-## Frequently Asked Questions
-
-### Which pest causes the most expensive damage?
-
-Termites cause more structural damage to homes in the United States than any other pest — an estimated $5 billion per year nationally. In ${GEO.countyFull}, a single termite colony can cause thousands of dollars in damage before being detected, which is why annual inspections are so strongly recommended.
-
-### Can I treat powder post beetles myself?
-
-Over-the-counter treatments for powder post beetles are generally not effective for established infestations because the larvae are deep inside the wood where surface sprays cannot reach. Professional treatment may include borate-based wood treatments, fumigation for severe cases, or targeted injection treatments depending on the extent of the infestation.
-
-### How do I know if I have carpenter ants or termites?
-
-The easiest way to tell the difference is by examining the damaged wood and the insects themselves. Carpenter ant damage has clean, smooth galleries with frass (sawdust) piled below. Termite damage is rough and packed with mud. Carpenter ants have a defined waist and elbowed antennae, while termites have a straight, thick waist and straight antennae. If you are unsure, a [professional inspection](/services/termite-treatment) can quickly identify the pest.
-
-### Do rodents really cause house fires?
-
-Yes. Rodents gnaw on electrical wiring, stripping away the protective insulation and creating exposed wires that can spark. The National Fire Protection Association and insurance industry data link rodent activity to a significant percentage of residential fires with undetermined causes. Addressing rodent infestations promptly is both a pest control and a fire prevention measure.
-
-### How often should I have my home inspected for destructive pests?
-
-We recommend annual inspections at minimum for all homes in ${GEO.countyFull}. Homes with a history of termite activity, older construction, significant wood features, or dense landscaping near the foundation may benefit from inspections every six months. Real estate transactions in New York typically require a termite inspection, but proactive homeowners should not wait until they are selling to check for problems.
-    `.trim(),
-  },
-
-  {
-    slug: 'lyme-disease-ticks-prevention',
-    title: `Lyme Disease & Tick Prevention in ${GEO.countyFull}: What Every Resident Should Know`,
-    description: `Lyme disease is a serious concern in ${GEO.countyFull}. Learn about black-legged ticks, Lyme disease stages, symptoms, and professional tick control from ${SITE_NAME}.`,
-    date: '2025-02-15',
-    author: `${SITE_NAME} Team`,
-    tags: ['ticks', 'lyme-disease', 'prevention', 'local-pest-control', 'outdoor-safety'],
-    content: `
-## Lyme Disease Is a Growing Threat in ${GEO.countyFull}
-
-${GEO.countyFull} sits in the heart of one of the most tick-dense regions in the United States. Long Island's wooded preserves, manicured parks, and suburban green spaces create ideal habitat for the black-legged tick — also known as the deer tick — that transmits Lyme disease. Whether you're hiking through Stillwell Woods in Syosset, spending time near Bethpage State Park, or simply walking through a leafy backyard in Manhasset or Great Neck, the risk of tick exposure is real and growing every season.
-
-According to the New York State Department of Health, ${GEO.countyFull} and surrounding Long Island counties consistently rank among the top areas in the state for reported Lyme disease cases. With deer populations thriving throughout ${GEO.region} and carrying ticks into residential neighborhoods, protecting your family requires both awareness and action.
-
-## Understanding the Black-Legged Tick (Deer Tick)
-
-The black-legged tick (*Ixodes scapularis*) is the primary vector of Lyme disease in the northeastern United States. These ticks are far smaller than the more familiar American dog tick — adult females are about the size of a sesame seed, while nymphs (the most dangerous life stage for Lyme transmission) are no bigger than a poppy seed. Their tiny size makes them very easy to miss during a tick check.
-
-Key facts about black-legged ticks in ${GEO.countyFull}:
-
-- **Active season:** Most active from April through November, with peak nymph activity in May through July. Adult ticks are most active in fall and spring. Nymphs cause the majority of Lyme disease cases because of their small size.
-- **Preferred habitat:** Wooded edges, leaf litter, tall grass, overgrown areas, and anywhere deer travel — all common in ${GEO.countyFull} neighborhoods
-- **How they find hosts:** Ticks don't jump or fly. They "quest" — climbing to the tips of grass or shrubs and waiting to grab on to a passing host
-- **Infection rate:** In Nassau and Suffolk Counties, a meaningful percentage of black-legged ticks carry *Borrelia burgdorferi*, the bacterium that causes Lyme disease
-
-## How Lyme Disease Is Transmitted
-
-Lyme disease is caused by the bacterium *Borrelia burgdorferi*, transmitted through the bite of an infected black-legged tick. Transmission is not instantaneous — the tick generally needs to be attached for **36 to 48 hours** before the bacterium passes to a human host. This critical window is why daily tick checks are so effective: finding and removing a tick promptly reduces your risk dramatically.
-
-## Stages of Lyme Disease
-
-Lyme disease progresses through stages if left untreated. Recognizing symptoms early enables faster and more effective medical treatment.
-
-### Stage 1: Early Localized Lyme Disease (Days to Weeks After Bite)
-
-The most recognizable early symptom is the **erythema migrans rash** — commonly called the "bull's-eye rash." It appears at the site of the tick bite in approximately 70-80% of infected individuals:
-
-- Expands gradually over days, sometimes reaching several inches in diameter
-- Often appears as a red oval or circular rash with central clearing (though not always — some appear as a solid red patch)
-- Is typically not painful or itchy but may feel warm to the touch
-- Can appear on any part of the body
-
-Other early symptoms include fatigue, fever, chills, headache, muscle aches, joint pain, and swollen lymph nodes — often described as a "summer flu" that won't resolve.
-
-### Stage 2: Early Disseminated Lyme Disease (Weeks to Months)
-
-If untreated, bacteria spread to other body systems. Symptoms may include:
-
-- **Multiple rashes** at sites away from the original bite
-- **Neurological symptoms** — facial palsy (one-sided drooping), meningitis symptoms, shooting pains, or numbness and tingling in the extremities
-- **Cardiac involvement** — heart palpitations or an irregular heartbeat (Lyme carditis)
-
-### Stage 3: Late Disseminated Lyme Disease (Months to Years)
-
-Without treatment, Lyme disease can lead to serious long-term complications:
-
-- **Lyme arthritis** — painful, swollen joints, particularly the knees; can become chronic
-- **Neurological problems** — cognitive difficulties, memory issues, difficulty concentrating ("Lyme brain fog")
-- **Post-treatment Lyme disease syndrome (PTLDS)** — some patients continue experiencing fatigue, pain, and cognitive symptoms for months after completing antibiotic treatment
-
-Early-stage Lyme disease responds well to oral antibiotics (doxycycline or amoxicillin). Later-stage disease may require longer treatment courses or IV antibiotics. If you suspect Lyme disease, see a physician promptly.
-
-## Proper Tick Removal
-
-If you find an attached tick:
-
-1. **Use fine-tipped tweezers** — grip the tick as close to the skin's surface as possible
-2. **Pull upward with steady, even pressure** — do not twist or jerk, which can cause mouthparts to break off
-3. **Clean the bite area** thoroughly with rubbing alcohol or soap and water
-4. **Dispose of the tick** by sealing it in a bag or submerging it in alcohol — do not crush with your fingers
-5. **Record the date** and monitor for symptoms for 30 days
-6. **Avoid folk remedies** — petroleum jelly, nail polish, heat, or other substances do not work and may increase transmission risk
-
-## Prevention Strategies for ${GEO.countyFull} Families
-
-### In Your Yard
-
-- Mow lawns frequently, especially along property edges bordering wooded areas
-- Create a 3-foot buffer of wood chips or gravel between lawn and wooded borders — ticks struggle to cross dry, open barriers
-- Remove leaf litter, brush piles, and wood stacks that provide tick habitat
-- Stack firewood neatly in a sunny, dry location away from the house
-- Manage deer attractants: avoid certain plantings, consider deer-resistant landscaping
-
-### For Outdoor Activities
-
-- Wear long sleeves and pants when in wooded or grassy areas
-- Treat clothing with **permethrin** — bonds to fabric, kills ticks on contact, remains effective through multiple washings
-- Apply **DEET** (20-30%) or picaridin to exposed skin
-- Perform thorough tick checks after outdoor activities — pay special attention to the scalp, behind ears, armpits, groin, and behind the knees
-- Shower within 2 hours of coming indoors — this significantly reduces risk by washing off unattached ticks and allowing you to find attached ones
-
-### Highest-Risk Areas in ${GEO.countyFull}
-
-${GEO.countyFull}'s wooded preserves, golf course roughs, and suburban yards adjacent to wooded lots are prime tick habitat. Areas along the Nassau-Suffolk border with heavier tree canopy and larger deer populations tend to have higher tick densities. Communities near wooded parks and preserves warrant extra vigilance during warmer months.
-
-## Professional Tick Control for Your Property
-
-Individual prevention is important, but professional tick treatment for your property provides an additional layer of defense. ${SITE_NAME} offers targeted tick and mosquito control programs for ${GEO.countyFull} properties:
-
-- **Barrier spray treatments** — EPA-registered insecticides applied to property edges, leaf litter, and vegetation where ticks concentrate
-- **Tick tubes** — biodegradable tubes filled with permethrin-treated cotton that mice carry to their nests, killing larval ticks before they can develop into nymphs
-- **Seasonal programs** — timed treatments to target tick activity peaks in spring, early summer, and fall
-- **Property assessment** — identifying and advising on landscape features that increase tick risk on your specific property
-
-Contact ${SITE_NAME} to learn about our tick control programs for ${GEO.countyFull} homeowners.
-
-## Frequently Asked Questions
-
-### Can I get Lyme disease from my dog?
-
-Not directly — dogs cannot transmit Lyme disease to humans. However, dogs can carry infected ticks into your home or yard, where those ticks could then attach to a family member. Keep pets on veterinarian-recommended tick prevention year-round and check them for ticks after outdoor activity. Dogs can contract Lyme disease themselves; ask your vet about annual testing and the canine Lyme vaccine.
-
-### How long does a tick need to be attached to transmit Lyme disease?
-
-Black-legged ticks generally need to be attached for at least 36 to 48 hours to transmit *Borrelia burgdorferi*. If you find a tick that appears engorged or swollen, it may have been attached long enough — contact your physician. This window is why daily tick checks after outdoor activity are so protective.
-
-### What if I find an attached tick but never develop a rash?
-
-Approximately 20-30% of infected individuals do not develop the classic bull's-eye rash. If you find an attached tick and develop any flu-like symptoms — fatigue, fever, joint aches, headache — within 30 days, see a doctor and mention the tick exposure. Early antibiotic treatment is highly effective.
-
-### Are there other tick-borne diseases in ${GEO.countyFull} besides Lyme?
-
-Yes. ${GEO.countyFull} and Long Island also see cases of **Anaplasmosis**, **Babesiosis**, and **Ehrlichiosis**, all transmitted by the same black-legged tick. Rare cases of Powassan virus, a potentially serious neurological illness, have been reported in the region. This is another compelling reason tick prevention matters.
-
-### When should I call a pest control professional about ticks?
-
-If you or family members are frequently finding ticks, or your property is adjacent to wooded areas with known deer activity, professional tick treatment makes a meaningful difference. [Contact ${SITE_NAME}](/contact) to discuss a tick control program for your ${GEO.countyFull} property.
-    `.trim(),
+Call (718) 710-0330 (Brooklyn, Queens, Manhattan) or (516) 774-5051 (Nassau, Suffolk). For **pest control near me** or **exterminator near me** across NYC or Long Island, Jet Pest Control delivers professional, discreet, effective pest control.`
   },
   {
-    slug: 'raccoons-squirrels-home-invasion',
-    title: `Raccoons & Squirrels in Your ${GEO.countyFull} Home: Dangers, Signs & Exclusion`,
-    description: `Raccoons and squirrels entering ${GEO.countyFull} homes cause serious damage and health risks. Learn the warning signs and why professional wildlife exclusion is essential.`,
-    date: '2025-02-10',
-    author: `${SITE_NAME} Team`,
-    tags: ['wildlife', 'raccoons', 'squirrels', 'attic', 'local-pest-control', 'exclusion'],
-    content: `
-## Wildlife in ${GEO.countyFull} Homes Is More Common Than You Think
+    slug: "pest-control-cost-guide-brooklyn-queens-nyc",
+    title: "Pest Control Cost Guide for Brooklyn, Queens, and Nassau County",
+    date: "2025-11-15",
+    excerpt: "Wondering what pest control costs in Brooklyn, Queens, or Nassau County? A transparent breakdown of what to expect from Jet Pest Control.",
+    author: "Jet Pest Control Team",
+    category: "Tips & Advice",
+    readTime: "6 min read",
+    tags: ["pest control cost", "exterminator cost", "pest control near me", "Brooklyn", "Queens", "NYC"],
+    content: `# Pest Control Cost Guide for Brooklyn, Queens, and Nassau County
 
-${GEO.countyFull}'s suburban landscape — with its mature trees, wooded preserves like Stillwell Woods and the Nassau County Museum of Art grounds, and aging housing stock — creates a perfect interface between residential neighborhoods and wildlife. Raccoons and squirrels have adapted remarkably well to Long Island suburban life, and for homeowners from Levittown to Great Neck, finding these animals in an attic, wall void, or crawl space is a growing and alarming problem.
+One of the first questions homeowners and building managers ask when searching for **pest control near me** in Brooklyn, Queens, or Nassau County is: what does this cost? The honest answer depends on pest type, severity, property size, and treatment method. These ranges reflect what customers in our service area actually pay for professional service.
 
-Raccoons are drawn to the warmth and shelter of attics, especially as temperatures drop each fall. Squirrels take advantage of gaps near rooflines and overhanging branches to access attics year-round. Both animals can cause serious structural damage, create significant health hazards, and prove remarkably difficult to remove without professional help.
+## General Pest Control
 
-## Why Raccoons Enter ${GEO.countyFull} Homes
+**One-time interior treatment (cockroaches, ants, general crawling insects):**
+$150–$350 for a single apartment or standard home. Building-wide treatment in multi-unit buildings is quoted per unit with volume discount.
 
-Raccoons are highly intelligent, remarkably dexterous, and completely opportunistic. In ${GEO.countyFull}'s suburban neighborhoods — where raccoons thrive on unsecured garbage, bird feeders, fallen fruit, and pet food left outdoors — they've become comfortable around humans and view homes as a resource.
+**Quarterly maintenance program:**
+$100–$175 per visit. Preventive service with unlimited callbacks for covered pests — the most cost-effective approach for most homeowners and landlords.
 
-**Why they come inside:**
+## Termite Treatment
 
-- **Denning:** Female raccoons (sows) seek warm, dry, elevated spaces to give birth and raise young. An attic is an ideal den — elevated, insulated, and protected. Mothers with litters become territorial and can be aggressive if disturbed.
-- **Winter warmth:** As temperatures drop across ${GEO.countyFull} in October and November, raccoons seek insulated shelter.
-- **Opportunistic access:** Raccoons are powerful enough to pry open damaged soffits, tear through rotted fascia boards, and remove misaligned attic vents. ${GEO.countyFull}'s older housing stock — many homes built in the 1950s and 60s — is particularly vulnerable to these intrusions.
+**Liquid soil barrier treatment:** $800–$2,500 for most properties (single-family, up to 2,000 sq ft foundation). Long-lasting — typically 10+ years with premium products.
 
-**Raccoon behavior to know:**
-- **Nocturnal:** Active primarily from dusk to dawn. Heavy thumping, scratching, or vocalizations in your attic at night strongly suggest raccoons.
-- **Highly intelligent:** Raccoons can manipulate simple latches and will test every weak point in your home's exterior systematically.
-- **Family groups:** A single raccoon is often a pregnant female or nursing mother. Removing her without locating and safely managing the young leads to worse problems — distressed animals, deaths, and severe odor.
+**Bait station system:** $1,200–$3,500 installed, plus $200–$500/year monitoring.
 
-## Why Squirrels Enter ${GEO.countyFull} Homes
+## Rodent Control
 
-Gray squirrels are among the most abundant wildlife in ${GEO.countyFull}. Neighborhoods throughout Nassau County feature the mature oaks, maples, and elms that squirrels depend on — and when these trees overhang rooflines, they provide a direct highway to your home.
+**Initial inspection and treatment:** $250–$500.
 
-**Why they come inside:**
+**Exclusion service:** $400–$1,500+ depending on entry point count and materials. The critical investment — without exclusion, the problem recurs.
 
-- **Nesting:** Squirrels build nests in attics using insulation as material, destroying it in the process.
-- **Food caching:** They store food in attics and wall voids for winter, adding to the mess and damage.
-- **Year-round activity:** Unlike raccoons, squirrels are active all year. Invasions spike in late fall as they seek winter shelter and again in late winter before trees leaf out.
+## Bed Bug Treatment
 
-**Squirrel behavior to know:**
-- **Diurnal:** Active during daylight hours. Daytime scratching, scurrying, and rolling sounds in the attic point to squirrels rather than raccoons.
-- **Compulsive gnawers:** Squirrels must chew constantly to manage their ever-growing teeth. They will gnaw through wood, plastic vent covers, and electrical wiring — a genuine fire hazard.
-- **Tiny entry points:** Squirrels can squeeze through openings as small as 1.5 inches. A gap that looks minor to a homeowner is a wide-open door to a gray squirrel.
+**Chemical treatment (2–3 visits):** $400–$800 per room; $800–$1,800 for a full apartment.
 
-## The Damage They Cause
+**Heat treatment:** $1,500–$3,000 for a full apartment or home. Eliminates all life stages in one treatment.
 
-Many homeowners underestimate just how destructive these animals can be in a relatively short period of time.
+**Note:** Multi-unit NYC buildings requiring coordination with adjacent units are quoted as building programs.
 
-### Insulation Damage
-Both animals destroy attic insulation — raccoons tear it apart for bedding, squirrels shred it to build nests. Damaged insulation reduces your home's energy efficiency substantially. In severely infested attics, all insulation may need to be removed and replaced — a significant expense.
+## Mosquito Control
 
-### Electrical Fire Hazard
-Squirrels gnawing on electrical wiring is one of the primary causes of attic fires in suburban homes. In ${GEO.countyFull}'s older homes — some of which still have aging aluminum wiring — this risk is especially serious. Never ignore the sounds of squirrels in your attic. The damage may extend well beyond cosmetic issues.
+**Single barrier spray:** $125–$250 per treatment.
 
-### Structural Damage
-Raccoons are strong animals and cause real structural damage — bent roof venting, torn soffits and fascia, damaged roofline elements. Water infiltration following this damage can lead to mold growth and compounding structural deterioration, significantly increasing repair costs.
+**Seasonal program (May–September):** $600–$1,200/season.
 
-### Contamination from Droppings and Urine
-**Raccoon latrines** are particularly concerning. Raccoons establish communal defecation sites within attics, depositing large amounts of feces in the same locations repeatedly. This waste soaks through insulation and into structural materials. The ammonia odor can be overwhelming and can penetrate living spaces below. Squirrel droppings, while smaller, create similar sanitation problems over time.
+## Commercial Pest Control
 
-## Health Risks to Your Family
+Commercial accounts are quoted based on property size, pest history, service frequency, and compliance documentation requirements. Contact us for a commercial assessment.
 
-### Raccoon Roundworm (Baylisascaris procyonis)
-This is one of the most serious health risks associated with raccoons. Roundworm eggs are shed in raccoon feces and can survive in soil and debris for years. If eggs are accidentally ingested or inhaled during cleanup, larvae can migrate to the brain and cause severe, potentially fatal neurological damage. Children are at special risk. **Never attempt to clean up raccoon feces without professional-grade protective equipment.**
+## Getting an Accurate Quote
 
-### Rabies
-Raccoons are the primary rabies vector in New York State. While most raccoons are not infected, any raccoon behaving abnormally — active during daylight hours, staggering, approaching people without fear — should be treated as potentially rabid. Never handle a wild raccoon. If an animal has entered your living space, contact both a wildlife removal professional and your local health authority.
-
-### Leptospirosis
-Both raccoons and squirrels can carry leptospirosis, a bacterial infection spread through urine. Contaminated surfaces pose infection risk. Human leptospirosis can cause severe flu-like illness and in serious cases, kidney or liver failure.
-
-### Secondary Pest Problems
-Wildlife in your attic can bring fleas, mites, and flies that then spread into living areas. Additionally, raccoon and squirrel activity can attract other wildlife — from rats drawn by the scent of food caches to larger predators following the wildlife trail.
-
-## Warning Signs: Wildlife in Your Home
-
-Watch for these indicators:
-
-- **Sounds:** Heavy thumping and chattering at night (raccoons) or daytime scurrying, rolling, and scratching (squirrels)
-- **Droppings:** Found in the attic, near entry points, or on exterior surfaces near the roofline
-- **Odor:** Musky, ammonia-like smell from the attic or through ceiling fixtures and light fittings
-- **Exterior damage:** Torn soffits, chewed fascia boards, damaged vents, or visible gaps near the roofline — particularly near where branches overhang the roof
-- **Visual observation:** Raccoons or squirrels seen repeatedly entering a specific area of the roofline
-- **Staining:** Brown grease-like staining around entry points from animals' repeated passages
-
-## Why DIY Removal Doesn't Work — and Can Be Illegal
-
-Attempting to trap and relocate raccoons or squirrels yourself creates several serious problems:
-
-**Legal concerns:** New York State DEC regulations govern wildlife trapping and relocation. Certain species require permits, relocating animals across county lines may be restricted, and trapping a nursing mother without addressing her young is an outcome that creates both legal and humanitarian issues.
-
-**Safety risks:** Raccoons are strong, agile, and will bite and scratch aggressively when cornered or defending young. Handling wild animals also creates real exposure risks for rabies and leptospirosis.
-
-**Ineffective without exclusion:** Removing one animal without sealing all entry points simply invites new animals into a space that already smells like a den site. This cycle can continue indefinitely.
-
-## The Professional Wildlife Exclusion Process
-
-${SITE_NAME} uses a systematic, humane exclusion approach:
-
-1. **Complete exterior inspection** — identifying all entry points, not just the obvious ones
-2. **One-way exclusion devices** — installed at primary entries, allowing animals to exit but not re-enter
-3. **Monitoring period** — allowing time for all animals, including young, to vacate
-4. **Permanent sealing** — closing all entry points with appropriate materials (heavy-gauge hardware cloth, metal flashing, professional sealants that animals cannot chew through)
-5. **Attic assessment** — evaluating damage to insulation, wiring, and structure
-6. **Decontamination guidance** — safe removal of droppings and soiled materials using proper protective equipment
-7. **Ongoing prevention advice** — landscape and structural recommendations to reduce future risk
-
-## Seasonal Considerations
-
-- **Spring:** Nesting season for raccoons. Mothers with newborns require special management to avoid separating family units. Extra care ensures young are old enough to exit before entry points are sealed.
-- **Fall:** Peak invasion season as animals seek winter shelter. Act quickly — the sooner exclusion begins, the less damage occurs.
-- **Year-round:** Squirrels are active all year; fall and late winter are peak intrusion periods.
-
-## Frequently Asked Questions
-
-### Is it legal to trap raccoons yourself in New York State?
-
-New York State regulations on nuisance wildlife trapping are specific and can be complex. While homeowners may trap certain wildlife under certain conditions, commercial-grade trapping requires licensing. More importantly, trapping without sealing entry points is ineffective — new animals move in quickly. Professional wildlife removal ensures legal compliance and lasting results.
-
-### What should I do if I find baby raccoons?
-
-Do not handle baby raccoons with bare hands. If babies are found without a visible mother, the mother is likely nearby. Allow several hours for her to return. If babies appear cold, injured, or genuinely orphaned after several hours, contact a licensed wildlife rehabilitator in ${GEO.countyFull}. Do not attempt to raise raccoons — it is illegal in New York and creates serious health risks.
-
-### How can squirrels get into my attic when I don't see any holes?
-
-Squirrels can enter through openings as small as 1.5 inches — roughly the diameter of a golf ball. Common entry points homeowners routinely miss: gaps where rooflines meet at dormers, deteriorated plastic vent covers, spaces beneath fascia boards where the soffit meets the roofline, and small gaps around utility penetrations. A professional inspection covers your entire roofline and exterior systematically.
-
-### How do I know the animals have left after exclusion is started?
-
-After one-way doors are installed, we typically monitor for several days before permanently sealing entry points. No fresh sounds, no fresh droppings at the entry, and no visible activity all indicate successful departure. In some cases, tracking powder or motion-sensing cameras at entry points confirm the animals have exited.
-
-### Can raccoons or squirrels get into my walls?
-
-Yes. Both can access wall voids through attic spaces or directly from exterior gaps in siding or around pipes. Squirrels in particular are agile enough to travel through wall cavities from the attic. Sounds inside walls — rather than from above — should be taken as seriously as attic sounds and investigated promptly.
-    `.trim(),
+Call (718) 710-0330 (NYC boroughs) or (516) 774-5051 (Nassau, Suffolk) for a free inspection and written estimate. We assess the actual situation before quoting — no guesswork. Jet Pest Control: discreet, professional, and transparent about pricing. When you need an **exterminator near me** in Brooklyn, Queens, or Nassau County, we're here.`
   },
+  {
+    slug: "seasonal-pest-calendar-brooklyn-queens-nyc",
+    title: "Seasonal Pest Calendar for Brooklyn, Queens, and Nassau County",
+    date: "2025-12-01",
+    excerpt: "A month-by-month guide to pest activity across Brooklyn, Queens, Manhattan, and Nassau County — so you're never caught off guard by what each season brings.",
+    author: "Jet Pest Control Team",
+    category: "Seasonal",
+    readTime: "6 min read",
+    tags: ["seasonal pest control", "pest calendar", "pest control near me", "Brooklyn", "Queens", "NYC"],
+    content: `# Seasonal Pest Calendar for Brooklyn, Queens, and Nassau County
 
+Pest activity across our service area follows predictable seasonal patterns. Understanding what each season brings — from German cockroach surges in summer apartments to fall rodent entry into Brooklyn brownstones — lets you act proactively rather than reactively. This calendar is based on years of providing **pest control near me** across Brooklyn, Queens, Manhattan, Nassau, and Suffolk Counties.
+
+## January – February: Indoor Rodents and Cockroaches
+
+Peak season for indoor rodent activity. Mice settled in wall voids are breeding — a female mouse can produce a litter every 3 weeks. German cockroaches in buildings continue reproducing year-round in warm interiors. **Watch for:** Scratching in walls, droppings in cabinets, cockroach activity in kitchen and bathrooms. **Action:** Rodent trap monitoring; professional cockroach treatment if activity is observed.
+
+## March: Termite Swarmers Begin
+
+Late March brings the first warm days triggering termite swarmer activity in Brooklyn brownstones, Queens row houses, and Nassau County homes. Carpenter ants also become active. **Watch for:** Winged insects near windows or foundation; shed wings near entry points. **Action:** Termite inspection if swarmers observed.
+
+## April: Ant Season / Stinging Insect Queens
+
+Odorous house ants and pavement ants begin trailing indoors. Yellow jacket and paper wasp queens start new nests. **Watch for:** Ant trails in kitchen; small wasp nests forming under eaves. **Action:** Ant treatment before colonies reach full size; early wasp nest removal.
+
+## May: Peak Termite Swarmers / Tick Season Begins
+
+Peak swarmer activity and the start of tick nymph season. **Watch for:** Termite swarmers; ticks on pets or people after outdoor activity in green spaces. **Action:** Termite inspection if swarmers observed; yard tick treatment for Nassau County properties.
+
+## June – August: Peak Pest Season
+
+Cockroach colonies at maximum size in NYC apartment buildings. Mosquitoes at peak. Yellow jacket colonies growing rapidly through July; at maximum aggression in August. **Watch for:** Cockroach sightings; mosquito pressure in backyards; established wasp nests. **Action:** Monthly mosquito treatment; wasp nest removal — never treat mature yellow jacket nests yourself; call Jet Pest Control.
+
+## September: Fall Invasion Begins
+
+Stink bugs aggregate on exterior walls in Queens and Nassau County. The critical time to seal entry points before overwintering insects and rodents find their way in. **Watch for:** Stink bugs on south-facing walls; beginning of rodent entry attempts. **Action:** Fall perimeter treatment in early September; begin rodent exclusion work.
+
+## October: Peak Rodent Entry Month
+
+October is the primary month mice enter homes. Without exclusion, this is when winter infestations begin. **Watch for:** Scratching sounds at night; fresh droppings in previously clean areas. **Action:** Exclusion service; trap placement; exterior fall treatment.
+
+## November – December: Monitoring Season
+
+Pest activity decreases outdoors but continues indoors. **Watch for:** Overwintering insects emerging on warm days; continued rodent signs; pantry pest activity in stored dry goods. **Action:** Rodent trap checks; pantry review.
+
+## Year-Round: Jet Pest Control Is Here
+
+Jet Pest Control serves Brooklyn, Queens, Manhattan, Nassau, and Suffolk year-round. Call (718) 710-0330 (NYC) or (516) 774-5051 (Nassau, Suffolk) for seasonal treatments, emergency service, and ongoing maintenance programs. Discreet unmarked vehicles. Professional service throughout New York. When you need **pest control near me** across Brooklyn, Queens, or Nassau County, Jet Pest Control delivers.`
+  }
 ];
-
-/**
- * Get all blog posts
- */
-export function getAllBlogPosts(): BlogPost[] {
-  return blogPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-}
-
-/**
- * Get a single blog post by slug
- */
-export function getBlogPostBySlug(slug: string): BlogPost | undefined {
-  return blogPosts.find((p) => p.slug === slug);
-}
-
-/**
- * Get all blog slugs
- */
-export function getAllBlogSlugs(): string[] {
-  return blogPosts.map((p) => p.slug);
-}
