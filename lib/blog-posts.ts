@@ -372,7 +372,7 @@ Call (718) 710-0330 or (516) 774-5051. Unmarked vehicles. When you need an **ext
     slug: "wildlife-removal-brooklyn-queens-nassau",
     title: "Wildlife Removal in Brooklyn, Queens, and Nassau County",
     date: "2025-05-15",
-    excerpt: "Raccoons, squirrels, and pigeons are a growing problem across Brooklyn, Queens, and Nassau County. Here's how Jet Pest Control handles wildlife safely and effectively.",
+    excerpt: "Raccoons, squirrels, and pigeons are a growing problem across Brooklyn, Queens, and Nassau County. Here's how Jet Pest Control handles wildlife effectively and effectively.",
     author: "Jet Pest Control Team",
     category: "Wildlife",
     readTime: "6 min read",
