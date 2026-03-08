@@ -78,6 +78,18 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 <p className="text-lg text-gray-600">{post.description}</p>
               </header>
 
+              {/* Hero Image */}
+              {post.image && (
+                <div className="mb-8 rounded-xl overflow-hidden">
+                  <img
+                    src={post.image}
+                    alt={post.imageAlt || post.title}
+                    className="w-full h-64 md:h-80 object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              )}
+
               {/* Post Content */}
               <div className="prose-content">
                 {post.content.split('\n').map((paragraph, i) => {
