@@ -9,6 +9,8 @@ export interface BlogPost {
   category: string;
   readTime: string;
   tags: string[];
+  image?: string;
+  imageAlt?: string;
 }
 
 export const blogPosts: BlogPost[] = [
@@ -21,6 +23,8 @@ export const blogPosts: BlogPost[] = [
     category: "Termites",
     readTime: "6 min read",
     tags: ["termites", "pest control near me", "Brooklyn", "Queens", "Nassau County"],
+    image: 'https://images.pexels.com/photos/18021337/pexels-photo-18021337.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'Termite damage on wood — mud tubes and galleries',
     content: `# Termite Infestation Signs in Brooklyn, Queens, and NYC: What to Know
 
 Termites cause over $5 billion in property damage across the United States each year — and homeowners across Brooklyn, Queens, and Nassau County are far from immune. While many people think of termites as a suburban problem, the reality is that subterranean termites are extremely active in older wooden structures throughout New York City's boroughs and Long Island.
@@ -60,6 +64,8 @@ Call (718) 710-0330 (Brooklyn, Queens, Manhattan) or (516) 774-5051 (Nassau, Suf
     category: "Seasonal",
     readTime: "6 min read",
     tags: ["spring pest control", "pest control near me", "Brooklyn", "Queens", "Nassau County"],
+    image: 'https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'Spring blossoms on a New York City street',
     content: `# Spring Pest Prevention in Brooklyn, Queens, and Nassau County
 
 Spring in New York City and Long Island is a time of renewal — and a time of rapidly escalating pest activity. Warmer temperatures trigger dormant insect colonies back to active feeding and reproduction. Rodents that overwintered in wall voids become bolder and more active. And for homeowners in Brooklyn, Queens, and Nassau County, the search for **pest control near me** starts picking up significantly in March and April.
@@ -110,6 +116,8 @@ Jet Pest Control provides spring pest control throughout Brooklyn, Queens, Manha
     category: "Rodents",
     readTime: "6 min read",
     tags: ["rodent control", "mice", "rats", "exterminator near me", "Brooklyn", "Queens"],
+    image: 'https://images.pexels.com/photos/45917/pexels-photo-45917.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'Close-up of a rat — common NYC urban rodent',
     content: `# Rodent Control in Brooklyn, Queens, and NYC: Solving the Mouse and Rat Problem
 
 New York City has one of the most significant rodent problems of any city in the world — and Brooklyn and Queens are no exception. From the rowhouses of Bay Ridge to the apartments of Flushing, mice and rats are a persistent challenge that most NYC-area homeowners and building managers have dealt with at some point.
@@ -147,6 +155,8 @@ Jet Pest Control provides comprehensive rodent control for residential and comme
     category: "Bed Bugs",
     readTime: "6 min read",
     tags: ["bed bugs", "bed bug treatment", "exterminator near me", "Brooklyn", "Queens", "NYC"],
+    image: 'https://images.pexels.com/photos/1743231/pexels-photo-1743231.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'Mattress seam inspection for bed bugs',
     content: `# Bed Bug Treatment in Brooklyn, Queens, and NYC: What to Do Now
 
 New York City consistently ranks among the top cities in the United States for bed bug activity. Brooklyn and Queens — with their dense apartment buildings, high population turnover, and extensive short-term rental market — see bed bug infestations at rates far above national averages. If you've found bed bugs in Williamsburg, Crown Heights, Astoria, Jackson Heights, or anywhere across NYC or Nassau County, this guide is for you.
@@ -202,6 +212,8 @@ Call (718) 710-0330 (Brooklyn, Queens, Manhattan) or (516) 774-5051 (Nassau, Suf
     category: "Cockroaches",
     readTime: "6 min read",
     tags: ["cockroach control", "roaches", "exterminator near me", "Brooklyn", "Queens", "NYC"],
+    image: 'https://images.pexels.com/photos/6183434/pexels-photo-6183434.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'Cockroach pest close-up on surface',
     content: `# Cockroach Control in Brooklyn, Queens, and NYC: Eliminating Roaches for Good
 
 German cockroaches are endemic to New York City apartment buildings, brownstones, and commercial kitchens. In Brooklyn neighborhoods like Flatbush, East New York, and Canarsie, and in Queens communities from Jamaica to Astoria, German cockroach infestations are among the most common pest control calls we receive — and among the most challenging to treat effectively.
@@ -251,6 +263,8 @@ For cockroach problems in Brooklyn, Queens, Manhattan, Nassau, or Suffolk, call 
     category: "Ants",
     readTime: "6 min read",
     tags: ["ant control", "ants", "pest control near me", "Brooklyn", "Queens", "Nassau County"],
+    image: 'https://images.pexels.com/photos/842401/pexels-photo-842401.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'Ants working on tree branch — ant colony',
     content: `# Ant Control in Brooklyn, Queens, and Nassau County
 
 Ants are one of the most common spring and summer pest complaints across Brooklyn, Queens, and Nassau County. Whether it's a trail of tiny odorous house ants marching across your Williamsburg kitchen counter, pavement ants pushing up through bathroom tile joints in Astoria, or carpenter ants excavating deck framing in Garden City, ant problems affect homeowners and renters throughout our service area.
@@ -284,6 +298,8 @@ Call (718) 710-0330 (NYC) or (516) 774-5051 (Nassau, Suffolk). When you need **p
     category: "Mosquitoes",
     readTime: "6 min read",
     tags: ["mosquito control", "mosquitoes", "pest control near me", "Brooklyn", "Queens", "Nassau County"],
+    image: 'https://images.pexels.com/photos/169357/pexels-photo-169357.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'Mosquito feeding on human skin — pest control',
     content: `# Mosquito Control in Brooklyn, Queens, and Nassau County
 
 Mosquitoes are a significant summer pest throughout our service area — from the backyards of Park Slope and Astoria to the suburban yards of Hempstead and Great Neck. While Nassau County sees the most intense mosquito pressure from its proximity to wetlands and the Long Island Sound, urban Brooklyn and Queens also have substantial mosquito activity driven by standing water in residential and commercial areas.
@@ -326,6 +342,8 @@ Call (718) 710-0330 (Brooklyn, Queens, Manhattan) or (516) 774-5051 (Nassau, Suf
     category: "Stinging Insects",
     readTime: "6 min read",
     tags: ["wasp removal", "hornet nest", "stinging insects", "exterminator near me", "Brooklyn", "Queens"],
+    image: 'https://images.pexels.com/photos/9327993/pexels-photo-9327993.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'Wasps on nest — yellow jacket nest close-up',
     content: `# Wasp and Hornet Removal in Brooklyn, Queens, and Nassau County
 
 Late summer across our service area means stinging insect colonies at peak population. Yellow jacket nests in Brooklyn brownstone walls, bald-faced hornet nests under the eaves of Queens detached homes, and ground nests in Nassau County suburban yards — these colonies can contain thousands of aggressive workers by August. If you've discovered a stinging insect nest, don't attempt removal yourself.
@@ -359,6 +377,8 @@ Call (718) 710-0330 or (516) 774-5051. Unmarked vehicles. When you need an **ext
     category: "Wildlife",
     readTime: "6 min read",
     tags: ["wildlife removal", "raccoon removal", "squirrel removal", "exterminator near me", "Brooklyn", "Queens"],
+    image: 'https://images.pexels.com/photos/12639850/pexels-photo-12639850.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'Raccoon close-up — urban wildlife pest',
     content: `# Wildlife Removal in Brooklyn, Queens, and Nassau County
 
 Urban and suburban wildlife conflicts are increasing across our entire service area. Raccoons break into attics in Park Slope brownstones and Nassau County Colonials alike. Squirrels chew through rooflines in Forest Hills and Bayside. Pigeons roost on commercial building ledges throughout Brooklyn and create health hazards with their accumulating droppings. When wildlife moves into your property, professional removal is essential.
@@ -392,6 +412,8 @@ For all wildlife conflicts, call (718) 710-0330 (NYC) or (516) 774-5051 (Nassau,
     category: "Fleas & Ticks",
     readTime: "6 min read",
     tags: ["flea control", "tick control", "pest control near me", "Brooklyn", "Queens", "Nassau County"],
+    image: 'https://images.pexels.com/photos/5083103/pexels-photo-5083103.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'Tick on flower — deer tick close-up',
     content: `# Flea and Tick Control in Brooklyn, Queens, and Nassau County
 
 Fleas and ticks are a genuine health concern across our entire service area — from urban Brooklyn backyards to Nassau County suburban properties. Deer ticks transmit Lyme disease, anaplasmosis, and babesiosis. Dog ticks carry Rocky Mountain spotted fever. Fleas spread cat scratch disease and are a constant discomfort for pet-owning households.
@@ -423,6 +445,8 @@ Call (718) 710-0330 or (516) 774-5051. For **pest control near me** for fleas an
     category: "Seasonal",
     readTime: "6 min read",
     tags: ["fall pest control", "pest prevention", "pest control near me", "Brooklyn", "Queens"],
+    image: 'https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'Autumn leaves on New York City brownstone street',
     content: `# Fall Pest Prevention in Brooklyn, Queens, and Nassau County
 
 September and October mark a critical pest prevention window across our service area. As outdoor temperatures drop, mice, rats, cockroaches, stink bugs, and overwintering insects shift from outdoor activity to seeking warm shelter inside homes and buildings.
@@ -463,6 +487,8 @@ Jet Pest Control provides fall perimeter treatment, rodent exclusion, and stink 
     category: "Emergency",
     readTime: "6 min read",
     tags: ["emergency pest control", "same day exterminator", "exterminator near me", "Brooklyn", "Queens", "NYC"],
+    image: 'https://images.pexels.com/photos/8052264/pexels-photo-8052264.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'Pest control technician in protective gear',
     content: `# Emergency Pest Control in Brooklyn, Queens, and NYC: Fast Response
 
 Some pest situations demand immediate action. A wasp nest discovered in your Brooklyn entryway. Rats in a Queens restaurant kitchen before a health department inspection. Bed bugs found in your Williamsburg apartment the night before guests arrive. These aren't situations where you schedule for next week.
@@ -498,6 +524,8 @@ Call (718) 710-0330 or (516) 774-5051 now. When you need an **exterminator near 
     category: "Tips & Advice",
     readTime: "6 min read",
     tags: ["DIY pest control", "professional pest control", "pest control near me", "Brooklyn", "Queens", "NYC"],
+    image: 'https://images.pexels.com/photos/4239151/pexels-photo-4239151.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'Pest control spray bottle vs professional equipment',
     content: `# DIY vs. Professional Pest Control in NYC and Nassau County: The Honest Guide
 
 The shelves of hardware stores and home goods stores are packed with pest control products promising to solve your problem. Sometimes they work. More often in NYC and Nassau County, they waste time while the underlying infestation grows. Here's an honest guide from Jet Pest Control.
@@ -543,6 +571,8 @@ Jet Pest Control serves Brooklyn, Queens, Manhattan, Nassau, and Suffolk. Call (
     category: "Inspections",
     readTime: "6 min read",
     tags: ["pest inspection", "WDO inspection", "termite inspection", "pest control near me", "Brooklyn", "Queens"],
+    image: 'https://images.pexels.com/photos/8292785/pexels-photo-8292785.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'Home inspector with clipboard during property inspection',
     content: `# Pest Inspection in Brooklyn, Queens, and Nassau County: What to Expect
 
 Whether you're buying a brownstone in Park Slope, a home in Forest Hills, or a Colonial in Garden City, a professional pest inspection is one of the most important steps in the process. And for existing homeowners in Brooklyn, Queens, and Nassau County, a periodic inspection is the best way to catch emerging pest problems before they become costly.
@@ -578,6 +608,8 @@ Call (718) 710-0330 or (516) 774-5051 to schedule a pest inspection. When you ne
     category: "Ants",
     readTime: "6 min read",
     tags: ["carpenter ants", "ant control", "exterminator near me", "Brooklyn", "Queens", "Nassau County"],
+    image: 'https://images.pexels.com/photos/12786151/pexels-photo-12786151.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'Carpenter ant on wooden railing — large black ant',
     content: `# Carpenter Ant Control in Brooklyn, Queens, and Nassau County
 
 Large black ants — up to half an inch long — are a troubling sight in any home. If you're seeing them in your Brooklyn kitchen, emerging from a wall void in a Queens row house, or trailing across your Nassau County deck, you likely have carpenter ants. They don't eat wood like termites — but the galleries they excavate in moisture-damaged timber can cause serious structural damage over time.
@@ -612,6 +644,8 @@ Jet Pest Control provides comprehensive carpenter ant treatment across Brooklyn,
     category: "Stink Bugs",
     readTime: "6 min read",
     tags: ["stink bugs", "fall pest control", "pest control near me", "Queens", "Nassau County"],
+    image: 'https://images.pexels.com/photos/4056800/pexels-photo-4056800.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'Brown shield bug stink bug close-up on leaf',
     content: `# Stink Bug Control in Brooklyn, Queens, and Nassau County
 
 Every fall, brown marmorated stink bugs aggregate on sun-warmed south and west-facing walls across Queens and Nassau County — and then push through every available gap to overwinter in wall voids and attics. When spring arrives, they emerge from walls in large numbers. The odor when disturbed gives this pest its unfortunate name.
@@ -649,6 +683,8 @@ Call (718) 710-0330 or (516) 774-5051. When you're looking for **pest control ne
     category: "Spiders",
     readTime: "6 min read",
     tags: ["spider control", "spiders", "pest control near me", "Brooklyn", "Queens", "Nassau County"],
+    image: 'https://images.pexels.com/photos/1907785/pexels-photo-1907785.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'Spider web with spider on silk',
     content: `# Spider Control in Brooklyn, Queens, and Nassau County
 
 Spiders are a common fall pest complaint across our service area — from brownstone basements in Brooklyn to finished basements in Nassau County. The vast majority of spiders found in NYC-area homes are completely harmless and actually beneficial, feeding on the insects that are genuine pests. The real question is whether any species present warrant professional **pest control near me**.
@@ -682,6 +718,8 @@ Call (718) 710-0330 or (516) 774-5051. For spider concerns in Brooklyn, Queens, 
     category: "Pantry Pests",
     readTime: "6 min read",
     tags: ["pantry pests", "flour weevils", "Indian meal moth", "pest control near me", "Brooklyn", "Queens"],
+    image: 'https://images.pexels.com/photos/4110101/pexels-photo-4110101.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'Pantry with grain and dry goods — pantry pest control',
     content: `# Pantry Pest Control in Brooklyn, Queens, and Nassau County
 
 Finding small moths flying out of your pantry in Williamsburg, beetles in your cereal in Astoria, or weevils in your flour in Great Neck is deeply unpleasant — but it's not a sign of a dirty kitchen. Pantry pests are stored product insects that often arrive in grocery store products already infested. In NYC's dense environment with high-volume grocery throughput, these infestations are common across Brooklyn, Queens, and Nassau County.
@@ -715,6 +753,8 @@ Call (718) 710-0330 or (516) 774-5051. For pantry pest help across Brooklyn, Que
     category: "Commercial",
     readTime: "6 min read",
     tags: ["commercial pest control", "restaurant pest control", "exterminator near me", "Brooklyn", "Queens", "NYC"],
+    image: 'https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'Commercial restaurant kitchen — pest control compliance',
     content: `# Commercial Pest Control in Brooklyn, Queens, and Nassau County: Protecting Your Business
 
 A pest problem in your business is a direct threat to your reputation, regulatory compliance, and revenue. In New York City, the NYC Department of Health and Mental Hygiene (DOHMH) conducts unannounced restaurant inspections and issues violations — including immediate closures — for active cockroach or rodent infestations. One customer photo of a pest goes viral on Yelp before you even know it happened.
@@ -751,6 +791,8 @@ Call (718) 710-0330 (NYC) or (516) 774-5051 (Nassau, Suffolk) to discuss a comme
     category: "Tips & Advice",
     readTime: "6 min read",
     tags: ["exterminator near me", "pest control near me", "Brooklyn", "Queens", "Nassau County"],
+    image: 'https://images.pexels.com/photos/269140/pexels-photo-269140.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'Brooklyn Bridge with New York City skyline',
     content: `# Finding the Right Exterminator Near Me in Brooklyn, Queens, and Nassau County
 
 When a pest problem hits — mice in your Crown Heights apartment, a wasp nest in your Forest Hills yard, bed bugs discovered in your Nassau County home — you search "exterminator near me" and get dozens of results. National chains, aggregator sites, local one-person operations, and established companies all appear. How do you choose?
@@ -790,6 +832,8 @@ Call (718) 710-0330 (Brooklyn, Queens, Manhattan) or (516) 774-5051 (Nassau, Suf
     category: "Tips & Advice",
     readTime: "6 min read",
     tags: ["pest control cost", "exterminator cost", "pest control near me", "Brooklyn", "Queens", "NYC"],
+    image: 'https://images.pexels.com/photos/164527/pexels-photo-164527.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'Money and calculator for pest control budget',
     content: `# Pest Control Cost Guide for Brooklyn, Queens, and Nassau County
 
 One of the first questions homeowners and building managers ask when searching for **pest control near me** in Brooklyn, Queens, or Nassau County is: what does this cost? The honest answer depends on pest type, severity, property size, and treatment method. These ranges reflect what customers in our service area actually pay for professional service.
@@ -845,6 +889,8 @@ Call (718) 710-0330 (NYC boroughs) or (516) 774-5051 (Nassau, Suffolk) for a fre
     category: "Seasonal",
     readTime: "6 min read",
     tags: ["seasonal pest control", "pest calendar", "pest control near me", "Brooklyn", "Queens", "NYC"],
+    image: 'https://images.pexels.com/photos/1031413/pexels-photo-1031413.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'New York City neighborhood in different seasons',
     content: `# Seasonal Pest Calendar for Brooklyn, Queens, and Nassau County
 
 Pest activity across our service area follows predictable seasonal patterns. Understanding what each season brings — from German cockroach surges in summer apartments to fall rodent entry into Brooklyn brownstones — lets you act proactively rather than reactively. This calendar is based on years of providing **pest control near me** across Brooklyn, Queens, Manhattan, Nassau, and Suffolk Counties.
@@ -884,6 +930,448 @@ Pest activity decreases outdoors but continues indoors. **Watch for:** Overwinte
 ## Year-Round: Jet Pest Control Is Here
 
 Jet Pest Control serves Brooklyn, Queens, Manhattan, Nassau, and Suffolk year-round. Call (718) 710-0330 (NYC) or (516) 774-5051 (Nassau, Suffolk) for seasonal treatments, emergency service, and ongoing maintenance programs. Discreet unmarked vehicles. Professional service throughout New York. When you need **pest control near me** across Brooklyn, Queens, or Nassau County, Jet Pest Control delivers.`
+  }
+,
+  {
+    slug: "pest-control-manhattan-nyc",
+    title: "Pest Control in Manhattan: From Upper East Side to Harlem",
+    date: "2026-01-05",
+    excerpt: "Manhattan's dense pre-war buildings, high-rise towers, and constant foot traffic make it one of the most challenging pest environments in the country. Here's what works.",
+    author: "Jet Pest Control Team",
+    category: "Tips & Advice",
+    readTime: "7 min read",
+    tags: ["pest control Manhattan", "exterminator Manhattan", "pest control near me", "NYC", "Manhattan", "bed bugs"],
+    image: 'https://images.pexels.com/photos/2404843/pexels-photo-2404843.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'Manhattan skyline New York City high-rise apartments',
+    content: `# Pest Control in Manhattan: From Upper East Side to Harlem
+
+Manhattan is unique in the world of pest control. Nowhere else in the United States combines pre-war building density, multi-million-dollar real estate, relentless commercial foot traffic, and the world's most active restaurant industry in such a compressed geography. When you search for **pest control near me** in Manhattan, you're dealing with pest challenges that most extermination companies simply don't encounter elsewhere.
+
+Jet Pest Control serves all Manhattan neighborhoods with discreet, professional pest management — unmarked vehicles, rapid response, and genuine expertise in urban pest dynamics.
+
+## The Manhattan Pest Challenge by Neighborhood
+
+**Upper East Side and Upper West Side:** Pre-war co-op buildings with ornate plasterwork, old cast-iron pipe chases, and aging utility conduits provide extraordinary habitat for German cockroaches and rodents. The building staff, super, and management company are critical partners — pest control in these buildings requires building-wide coordination. Bed bugs in UES and UWS buildings are among the most frequent calls we receive, driven by the high rate of international travel and luxury hotel guests among residents.
+
+**Harlem:** East and West Harlem see significant rodent pressure along the commercial corridors of 125th Street and Lenox Avenue. Multi-family buildings in central Harlem with proximity to commercial food operations experience persistent German cockroach pressure. Northern Manhattan's housing stock — a mix of pre-war buildings, postwar public housing, and newer condominiums — presents a wide range of entry-point vulnerabilities.
+
+**Midtown:** The commercial core of Manhattan generates extraordinary food waste density sustaining large rodent populations in the underground infrastructure. Cockroach problems in restaurant and retail operations along 8th Avenue, Restaurant Row (46th Street), and the Garment District require professional IPM programs with NYC DOHMH compliance documentation. High-rise office towers have pest pressure from basement-level food service, loading docks, and the commercial operations on their ground floors.
+
+**Chelsea, Hell's Kitchen, and West Village:** Dense residential buildings in these neighborhoods see high bed bug rates from the constant rental turnover, proximity to hotels, and the active short-term rental market. Chelsea's gallery and art district — with its mix of residential loft buildings and commercial uses — presents pest coordination challenges when pests migrate from commercial to residential spaces via shared infrastructure.
+
+**Financial District and Tribeca:** The waterfront location near the East River and Hudson River creates persistent rodent pressure from below — sewer systems and utility tunnels that connect to waterfront infrastructure are primary highways. Luxury high-rise condominiums in Tribeca with ground-floor restaurants face cockroach pressure from adjacent commercial kitchens traveling upward through shared utility chases.
+
+## Why Manhattan Apartment Buildings Are Uniquely Challenging
+
+Multi-unit buildings — particularly co-ops and condos — create pest control complexity that goes beyond individual unit treatment. German cockroaches travel between units through electrical conduit knockout gaps, shared plumbing chase openings, and gaps in fire-stopping. Bed bugs migrate through these same pathways and through cracks in shared walls.
+
+The NYC Department of Housing Preservation and Development (HPD) and Department of Health and Mental Hygiene (DOHMH) both have jurisdiction over pest complaints in residential buildings. Building management has legal obligations under the NYC Administrative Code for pest-free conditions in habitable spaces.
+
+Jet Pest Control works directly with Manhattan building management companies, co-op boards, and individual unit owners to coordinate treatment across affected units, preventing the cross-infestation that makes individual unit treatment alone ineffective in connected buildings.
+
+## Our Manhattan Service
+
+We cover every Manhattan neighborhood from Battery Park City to Inwood — discreet service in unmarked vehicles. For commercial properties, we provide IPM programs with full DOHMH compliance documentation. For residential buildings, we offer unit-level and building-wide programs with flexible scheduling and rapid emergency response.
+
+Call (718) 710-0330 for Manhattan pest control. When you need an **exterminator near me** anywhere in Manhattan, Jet Pest Control delivers professional, discreet service throughout the borough.`
+  },
+  {
+    slug: "suffolk-county-pest-control",
+    title: "Pest Control in Suffolk County, NY: A Complete Guide",
+    date: "2026-01-10",
+    excerpt: "Suffolk County homeowners face a unique combination of suburban pest pressure — from deer ticks in backyard grass to termites in older housing stock near the water.",
+    author: "Jet Pest Control Team",
+    category: "Seasonal",
+    readTime: "7 min read",
+    tags: ["pest control Suffolk County", "exterminator Suffolk County", "pest control near me", "Long Island", "ticks", "termites"],
+    image: 'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'Suburban home in Long Island Suffolk County',
+    content: `# Pest Control in Suffolk County, NY: A Complete Guide
+
+Suffolk County stretches from the Nassau border all the way to Montauk Point — a geographic diversity that translates directly into a wide range of pest pressures. From the suburban developments of Babylon and Islip to the wooded Hamptons communities and North Fork wine country, Suffolk homeowners face distinct challenges depending on where they live. When you search for **pest control near me** in Suffolk County, the answer isn't one-size-fits-all.
+
+Jet Pest Control serves all of Suffolk County with the same professional, discreet service we provide across Nassau County and NYC.
+
+## Suffolk's Unique Pest Profile
+
+**Ticks:** Suffolk County is one of the highest Lyme disease transmission areas in the United States. The combination of dense deer populations, suburban-wooded interface throughout communities like Smithtown, Huntington, Dix Hills, and Commack, and the Long Island Sound's marsh habitats creates ideal deer tick conditions. Tick nymph season (May–July) is when most Lyme disease transmission occurs — nymphs are barely visible to the naked eye.
+
+**Mosquitoes:** The Great South Bay's tidal marshes generate enormous Aedes mosquito populations that pressure South Shore communities — Bay Shore, Islip, Babylon, Lindenhurst, Amityville, and Lindenhurst — every summer. West Nile Virus has been documented in Suffolk County mosquito pools every summer for over 20 years.
+
+**Termites:** Older communities near the water — Babylon village, Bay Shore, Patchogue, Sayville, and parts of the Brookhaven town — have significant termite pressure. Sandy, moisture-rich soil and older wood-frame construction from the 1940s–1970s are ideal subterranean termite conditions. Spring swarmer season runs March through May.
+
+**Deer and Wildlife Conflicts:** The Hamptons, North Fork, and Shelter Island see deer damage to landscaping and deer tick pressure as a connected problem. Raccoons, squirrels, and groundhogs conflict with homeowners throughout western Suffolk communities.
+
+**Rodents:** The commercial corridors of Hauppauge, Ronkonkoma, Central Islip, and Brentwood — with their industrial parks and commercial food operations — generate rodent populations that pressure adjacent residential areas, particularly in fall.
+
+**Carpenter Ants:** Wooded communities throughout Huntington, Smithtown, Kings Park, and Commack see regular carpenter ant activity in mature trees adjacent to structures, with gallery excavation in moisture-damaged deck framing and basement wood.
+
+## Seasonal Breakdown
+
+**Spring (March–May):** Termite swarmer season peaks. First carpenter ant activity. Tick nymph season begins in May.
+
+**Summer (June–August):** Mosquito peak. Tick nymph and adult seasons overlap. Yellow jacket colonies reach maximum size. Ground nest yellow jackets are a major hazard for lawn maintenance across Suffolk.
+
+**Fall (September–November):** Rodent entry season peaks in October. Stink bug aggregation across southern and central Suffolk. Tick adult season (Oct–Nov).
+
+**Winter:** Indoor rodent activity continues. Overwintering insects begin emerging on warm days.
+
+## Jet Pest Control in Suffolk County
+
+Jet Pest Control serves all Suffolk County communities — from Babylon and Islip on the South Shore to Huntington and Smithtown on the North Shore, and east through the Hamptons, North Fork, and Shelter Island. We use unmarked vehicles and provide discreet, professional service.
+
+Call (516) 774-5051 for Suffolk County pest control. From tick yard treatments to termite inspections and mosquito barrier programs, when you need **pest control near me** in Suffolk County, Jet Pest Control covers your community.`
+  },
+  {
+    slug: "termites-nassau-suffolk-long-island",
+    title: "Termite Control on Long Island: Nassau County and Suffolk County Guide",
+    date: "2026-01-15",
+    excerpt: "Subterranean termites are a significant threat to Long Island's aging housing stock — and many homeowners don't discover the damage until it's costly.",
+    author: "Jet Pest Control Team",
+    category: "Termites",
+    readTime: "7 min read",
+    tags: ["termite control Long Island", "termites Nassau County", "termites Suffolk County", "exterminator near me", "WDO inspection"],
+    image: 'https://images.pexels.com/photos/3790386/pexels-photo-3790386.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'Termite damage on wood — Long Island home',
+    content: `# Termite Control on Long Island: Nassau County and Suffolk County Guide
+
+Long Island has a termite problem that many homeowners don't discover until they're standing in their basement looking at severely damaged sill plates or a sagging floor joist. Subterranean termites work silently inside wood for years — sometimes decades — before structural damage becomes visible. By the time you see mud tubes or swarmer termites emerging from your walls, a colony has likely been active for several years.
+
+If you've been searching for **pest control near me** for termite protection in Nassau or Suffolk County, here's what every Long Island homeowner needs to know.
+
+## Why Long Island Has High Termite Risk
+
+**Soil conditions:** Long Island's sandy, well-draining soils throughout the South Shore, combined with the moisture-rich conditions near wetlands, Great South Bay, and the numerous tidal creeks and retention areas, create ideal subterranean termite habitat. Eastern subterranean termites — the dominant species on Long Island — require moist soil for colony survival.
+
+**Housing stock:** Long Island's suburban development boom from the 1940s through the 1970s produced an enormous inventory of wood-frame homes now 50–80 years old. Many sit on concrete block or poured concrete foundations with wooden sill plates in direct or near-contact with soil — exactly the entry path termites use.
+
+## Nassau County: High-Risk Areas
+
+Nassau County communities with elevated termite pressure include Valley Stream, Hempstead, Lynbrook, Rockville Centre, Freeport, Oceanside, and older parts of Elmont and Uniondale. These communities have dense concentrations of 1940s–1960s wood-frame homes, often with basement moisture issues from the area's high water table, particularly on the South Shore.
+
+North Shore Nassau communities — Great Neck, Port Washington, Manhasset, Roslyn — have older homes with mature landscaping and large trees, creating moisture conditions favorable to termites.
+
+## Suffolk County: High-Risk Areas
+
+Babylon village, Bay Shore, Patchogue, Sayville, Blue Point, and communities along the Great South Bay waterfront have significant termite pressure driven by coastal moisture and older housing. Deer Park, Lindenhurst, and Amityville also see regular termite activity.
+
+Brookhaven town's older communities — Medford, Patchogue, Coram, Selden — with their mix of wood-frame homes from multiple eras, generate consistent termite treatment demand.
+
+## Termite Swarmer Season on Long Island
+
+Late March through early May is peak swarmer season. On warm afternoons after spring rains, established termite colonies release winged reproductive termites in large swarms. If you see dozens of small pale-winged insects emerging from window frames, foundation gaps, or wood trim — particularly if you find piles of shed wings afterward — call Jet Pest Control immediately.
+
+## What to Look For in Long Island Basements
+
+Inspect your basement foundation walls and exposed sill plates annually:
+- **Mud tubes:** Pencil-width tunnels of dried soil on concrete or block foundation walls
+- **Damaged wood:** Sill plates that sound hollow when tapped, soft spots in floor framing, or crumbling wood near soil contact
+- **Swarmer debris:** Shed wings accumulating near basement windows in spring
+
+## Treatment Options for Long Island Homes
+
+**Liquid soil barrier treatment:** Professional termiticide injected into the soil around the foundation creates a treated zone that kills termites as they tunnel. Long-lasting — premium products maintain efficacy for 10+ years.
+
+**Termite bait stations:** In-ground stations placed around the perimeter intercept foraging termites and deliver slow-acting toxicant back to the colony. Effective for difficult treatment situations and ongoing monitoring.
+
+**WDO Reports for Real Estate Transactions:** Jet Pest Control provides certified Wood Destroying Organism inspection reports for Nassau and Suffolk County real estate closings. Many mortgage lenders require WDO reports — and a clean inspection gives buyers confidence in their purchase.
+
+Call (516) 774-5051 for Long Island termite inspection and treatment. When you need **pest control near me** for termites in Nassau or Suffolk County, Jet Pest Control provides thorough, documented service with same-week scheduling.`
+  },
+  {
+    slug: "rats-nyc-brooklyn-queens",
+    title: "Rats in NYC: Understanding and Solving Brooklyn and Queens' Rat Problem",
+    date: "2026-01-20",
+    excerpt: "New York City's rat population is legendary — and Brooklyn and Queens bear significant pressure. Here's the honest guide to what works.",
+    author: "Jet Pest Control Team",
+    category: "Rodents",
+    readTime: "7 min read",
+    tags: ["rats NYC", "rat control Brooklyn", "rat control Queens", "rodent control", "exterminator near me", "NYC pest control"],
+    image: 'https://images.pexels.com/photos/45917/pexels-photo-45917.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'Rat in urban city setting — NYC pest control',
+    content: `# Rats in NYC: Understanding and Solving Brooklyn and Queens' Rat Problem
+
+New York City's rat population is among the most studied and most legendary of any city on earth. Estimates range from 2 million to 8 million rats citywide — nobody knows exactly, but anyone who has walked through Greenpoint at dusk or heard scratching in a Crown Heights basement knows the problem is real. Brooklyn and Queens, with their mix of older housing stock, commercial corridors, and proximity to the subway infrastructure, face significant rat pressure year-round.
+
+If you're searching for an **exterminator near me** for rats in Brooklyn or Queens, here's what actually works — and what doesn't.
+
+## NYC Rat Biology: Why They're So Hard to Control
+
+Norway rats — Rattus norvegicus — are the dominant species in NYC. They're large (up to 16 inches including the tail), highly intelligent, and extraordinarily adaptable. Key biology facts that explain why urban rat control is so difficult:
+
+**Intelligence and neophobia:** Norway rats are highly suspicious of new objects in their environment, including new trap placements and bait stations. A rat that encounters a trap and avoids it will avoid similar traps indefinitely. Professional rodent control requires understanding rat movement patterns and working with their behavior, not against it.
+
+**Subway and sewer infrastructure:** New York's underground infrastructure — 665 miles of subway track, combined sewer lines running under virtually every block, and utility tunnels — provides an enormous rat habitat that is essentially impossible to treat. Rats use this infrastructure to move between blocks and access building foundations through sewer connections and utility penetrations.
+
+**Reproductive rate:** A female Norway rat can produce 4–6 litters per year, with 6–12 pups per litter. Under favorable conditions, two rats can become 2,000 in a year. This is why controlling the exterior population — not just trapping interior rats — is essential.
+
+## Brooklyn Rat Pressure Zones
+
+**Greenpoint and Williamsburg:** The waterfront industrial areas generate significant rat pressure — abandoned lots, decaying infrastructure, and the proximity to Newtown Creek (which connects to the harbor). Residential blocks on both sides of the BQE see regular rat activity.
+
+**Crown Heights and Flatbush:** The commercial corridors along Flatbush Avenue and Nostrand Avenue — with their high density of food service, grocery stores, and bodegas — sustain large exterior rat populations that pressure adjacent residential blocks throughout these neighborhoods.
+
+**Brownsville and East New York:** Older building stock with aging foundations and proximity to subway infrastructure creates persistent rat pressure. Multi-family buildings along Pitkin Avenue and Atlantic Avenue commercial corridors require building-wide exclusion programs to effectively address rat entry.
+
+## Queens Rat Pressure Zones
+
+**Flushing Main Street:** Among the highest-density restaurant concentrations in the borough generates enormous food waste and rat pressure. Residential blocks off Main Street in downtown Flushing see rat activity driven by the commercial corridor waste.
+
+**Jackson Heights — Roosevelt Avenue:** The elevated 7 train along Roosevelt Avenue creates a protected, relatively undisturbed rat habitat in the structural spaces. The restaurant density below and adjacent to the el sustains large populations.
+
+**Jamaica Avenue commercial strip:** The commercial retail and food service density along Jamaica Avenue in Jamaica and Richmond Hill generates rat pressure that extends into adjacent residential areas of South Jamaica and Hollis.
+
+## Why Bait Programs Alone Fail
+
+Many property owners install exterior bait stations and consider the problem solved. This approach reduces the exterior population but does nothing to stop rats from entering the building. Without exclusion — sealing every gap, crack, and pipe penetration where rats can enter — you are permanently in a cycle of killing rats that are immediately replaced by new arrivals.
+
+## Jet Pest Control's Rat Program
+
+**Step 1 — Inspection:** We identify all active entry points, assess the extent of interior infestation, and evaluate exterior pressure sources.
+
+**Step 2 — Exclusion:** We seal entry points with professional-grade materials — galvanized hardware cloth for large openings, copper mesh packed into pipe gaps, and professional sealant for foundation cracks. This is the permanent solution.
+
+**Step 3 — Interior trapping:** Strategic snap trap placement along rat travel routes to eliminate the existing interior population. We do not use interior bait stations — rodents dying in walls cause odor and secondary pest problems.
+
+**Step 4 — Exterior bait stations:** Tamper-resistant stations placed along the building perimeter reduce the exterior pressure population.
+
+**Step 5 — NYC DSNY compliance:** We're familiar with NYC's rat mitigation rules and DSNY requirements for extermination documentation in residential buildings.
+
+Call (718) 710-0330. When you need an **exterminator near me** for rats in Brooklyn or Queens, Jet Pest Control provides comprehensive rodent control that starts with exclusion and delivers lasting results.`
+  },
+  {
+    slug: "bed-bugs-airbnb-short-term-rentals-nyc",
+    title: "Bed Bugs in Airbnbs and Short-Term Rentals: A NYC Host's Guide",
+    date: "2026-01-25",
+    excerpt: "Short-term rental hosts in Brooklyn, Queens, and Manhattan face a disproportionate bed bug risk. Here's how to protect your property and your Airbnb rating.",
+    author: "Jet Pest Control Team",
+    category: "Bed Bugs",
+    readTime: "7 min read",
+    tags: ["bed bugs Airbnb", "bed bugs short-term rental", "bed bugs Brooklyn", "bed bugs NYC", "Airbnb host", "exterminator near me"],
+    image: 'https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'Hotel room bed inspection for bed bugs',
+    content: `# Bed Bugs in Airbnbs and Short-Term Rentals: A NYC Host's Guide
+
+New York City Airbnb hosts face a bed bug exposure risk that is fundamentally different from typical residential situations. Constant guest turnover — guests arriving from hotels, airports, and international travel — introduces bed bug risk with every new booking. A single infested guest can seed your entire unit. And in the competitive NYC short-term rental market, one negative review mentioning bed bugs can devastate your listing.
+
+If you host in Williamsburg, Bushwick, Crown Heights, Astoria, Long Island City, or anywhere across the five boroughs, this guide is for you. When you need an **exterminator near me** for your Airbnb property, Jet Pest Control provides expedited service designed for short-term rental operators.
+
+## Why STR Properties Have Elevated Bed Bug Exposure
+
+**Guest volume:** A busy Airbnb might have 15–25 different guests per month. Even with low per-guest exposure probability, that volume creates significant cumulative risk over a hosting season.
+
+**Luggage from hotels:** Guests traveling to NYC often stay in hotels before or after your property. Hotels — particularly mid-price and budget properties — have chronic bed bug issues. Luggage placed on hotel room beds or floors can pick up bed bugs and introduce them to your unit.
+
+**International travelers:** Travelers from regions with endemic bed bug populations (Southeast Asia, South America, Eastern Europe) have higher probability of carrying bed bugs in luggage. NYC's international visitor volume means your guest list is globally diverse.
+
+**Williamsburg and Bushwick density:** These Brooklyn neighborhoods have among the highest Airbnb listing densities in New York City. Guest traffic patterns through hospitality hubs create elevated bed bug circulation among neighboring properties.
+
+## How a Single Infested Guest Seeds a Unit
+
+Bed bugs don't travel on people — they travel in luggage. A guest places an infested bag on your bed, sofa, or carpet. Bed bugs emerge to feed at night and find harboring spots: mattress seams, box spring liner, behind the headboard, in sofa crevices. Within 2–3 weeks, eggs hatch into nymphs. By the time your next guest reports bites, you have an established infestation that will require professional treatment.
+
+## Best Practices for NYC Hosts
+
+**Between-guest inspection protocol:**
+- Strip the bed completely and check all mattress seams with a flashlight — look for reddish-brown insects, dark fecal spots, and tiny white eggs
+- Check behind the headboard (remove it if it's mounted on the wall)
+- Inspect sofa cushion seams and crevices in upholstered furniture
+- Check drawer interiors and furniture joints in bedside tables
+- Place luggage rack away from the bed and coach guests to use it
+
+**When a guest reports bed bugs:**
+Do NOT refund the guest and rebook immediately — this is the worst possible response. You have a liability and infestation issue that requires professional inspection and documentation before re-occupancy. Call Jet Pest Control immediately.
+
+**Luggage racks:** Always provide a luggage rack and place it in a location away from the bed. Guests who use luggage racks dramatically reduce the probability of luggage-to-bed transfer.
+
+## Heat Treatment: The STR Host's Best Option
+
+For short-term rental operators, heat treatment has significant advantages over chemical treatment:
+
+- **One-day treatment:** Heat is applied over 6–8 hours; the unit can be re-occupied the same evening
+- **No chemical residue:** No need to launder all linens and run through post-treatment protocols
+- **100% efficacy:** Heat penetrates all harborage areas simultaneously — wall voids, furniture, mattress interiors — eliminating all life stages (eggs included) in a single treatment
+- **Documentation:** You receive a treatment report documenting professional remediation for Airbnb host protection purposes
+
+## Canine K-9 Inspection
+
+For hosts who want comprehensive screening without the disruption of full heat treatment, Jet Pest Control offers certified canine bed bug detection. Our K-9 teams can inspect a unit in minutes with greater accuracy than visual inspection alone. Early detection before an infestation establishes saves significant treatment cost and downtime.
+
+## Documentation for Airbnb Host Protection
+
+Airbnb's Host Damage Protection program and Airbnb's standards for pest issues require documentation of professional remediation. Jet Pest Control provides inspection and treatment reports that satisfy Airbnb's documentation requirements.
+
+Call (718) 710-0330 for expedited Airbnb bed bug inspection and treatment across Brooklyn, Queens, and Manhattan. When you need an **exterminator near me** for your short-term rental property in NYC, Jet Pest Control provides rapid response with full documentation.`
+  },
+  {
+    slug: "tick-lyme-disease-nassau-suffolk-long-island",
+    title: "Tick Control and Lyme Disease on Long Island: Nassau and Suffolk County Guide",
+    date: "2026-02-01",
+    excerpt: "Long Island is one of the highest Lyme disease transmission areas in the country. Here's how Nassau and Suffolk County homeowners can protect their families.",
+    author: "Jet Pest Control Team",
+    category: "Fleas & Ticks",
+    readTime: "7 min read",
+    tags: ["tick control Long Island", "Lyme disease Nassau County", "Lyme disease Suffolk County", "tick treatment yard", "pest control near me"],
+    image: 'https://images.pexels.com/photos/13278493/pexels-photo-13278493.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'Deer tick on skin — Lyme disease Long Island',
+    content: `# Tick Control and Lyme Disease on Long Island: Nassau and Suffolk County Guide
+
+Long Island consistently ranks among the highest Lyme disease transmission areas in the United States. Nassau and Suffolk Counties record hundreds of confirmed Lyme disease cases annually — and the actual number of infections is believed to be significantly higher due to underreporting and misdiagnosis. For homeowners with backyards adjacent to wooded lots, naturalized vegetation, or deer corridors, tick exposure is a genuine family health risk, not a remote possibility.
+
+Jet Pest Control provides professional yard tick treatment across Nassau and Suffolk Counties. When you search for **pest control near me** for ticks on Long Island, here's what you need to know.
+
+## Why Long Island Has Such High Tick Density
+
+**Dense deer population:** Long Island's white-tailed deer population has grown dramatically since the mid-20th century with the decline of natural predators and the expansion of suburban deer-friendly landscape. Deer are the primary reproductive host for adult deer ticks (Ixodes scapularis) — the species that transmits Lyme disease, anaplasmosis, and babesiosis.
+
+**Suburban-wooded interface:** The transition zones between suburban lawns and wooded lots, naturalized areas, and unmaintained hedgerows — which exist throughout Nassau and Suffolk communities — are where deer ticks concentrate. This is exactly where children play and dogs run.
+
+**Long Island Sound marsh habitats:** The wetland margins along the North Shore from Great Neck to Lloyd Neck and throughout the North Fork harbor tick populations associated with migratory birds and small mammals.
+
+## The Lyme Disease Transmission Cycle
+
+**Nymph season (May–July):** Deer tick nymphs — roughly the size of a poppy seed — are responsible for the majority of Lyme disease transmissions. Their tiny size means they're often not noticed during the 36–48 hours of attachment required for Borrelia burgdorferi transmission. This is the highest-risk period for Long Island residents.
+
+**Adult season (October–November, and March–April):** Adult deer ticks are more visible (sesame seed size) but still dangerous. Adults seek larger hosts — deer, dogs, and people — in fall and again briefly in early spring.
+
+## Other Tick-Borne Illnesses on Long Island
+
+Long Island is not just a Lyme disease concern:
+- **Anaplasmosis:** Transmitted by deer tick; flu-like illness with fever and severe headache
+- **Babesiosis:** Transmitted by deer tick; malaria-like illness serious in elderly and immunocompromised patients
+- **Rocky Mountain Spotted Fever:** Transmitted by American dog tick (brown tick, common in suburban Long Island)
+- **Powassan Virus:** Rare but serious; transmitted in as little as 15 minutes of tick attachment; documented on Long Island
+
+## High-Risk Nassau County Areas
+
+Woodland parks and preserves throughout Nassau — Bethpage State Park, Cold Spring Harbor State Park, Caumsett State Historic Preserve — create tick pressure in adjacent communities. North Shore communities including Oyster Bay, Glen Cove, Locust Valley, Cold Spring Harbor, and Lattingtown see among the highest tick exposure rates in Nassau County.
+
+## High-Risk Suffolk County Areas
+
+The Hamptons, North Fork wine country, Shelter Island, Fire Island, and communities throughout Smithtown, Huntington, Kings Park, and Nissequogue see very high deer tick densities. Eastern Suffolk — from Riverhead through the Forks — has some of the highest deer tick nymph density in New York State.
+
+## Yard Treatment Program
+
+Professional tick yard treatment targets the transition zone between maintained lawn and wooded, mulched, or naturalized areas — where 80% of tick encounters occur. Jet Pest Control applies residual product to this zone, targeting nymphs and adults resting in low vegetation.
+
+**Timing:** We recommend a May treatment (targeting peak nymph season) and a September treatment (targeting fall adults) for maximum season-long protection across Nassau and Suffolk County properties.
+
+**Personal protection and tick removal:** Permethrin-treated clothing, DEET or picaridin repellent on exposed skin, and full-body tick checks after outdoor activity remain important personal protections alongside professional yard treatment.
+
+Call (516) 774-5051 for Long Island tick treatment. When you need **pest control near me** for ticks in Nassau or Suffolk County, Jet Pest Control provides professional yard treatment that protects your family throughout the season.`
+  },
+  {
+    slug: "mosquito-control-suffolk-county",
+    title: "Mosquito Control in Suffolk County, NY: Protecting Your Long Island Backyard",
+    date: "2026-02-10",
+    excerpt: "Suffolk County's proximity to coastal marshes, tidal wetlands, and Great South Bay makes it one of Long Island's highest mosquito pressure zones. Here's how to reclaim your yard.",
+    author: "Jet Pest Control Team",
+    category: "Mosquitoes",
+    readTime: "7 min read",
+    tags: ["mosquito control Suffolk County", "mosquitoes Long Island", "mosquito treatment yard", "pest control near me", "West Nile Virus Long Island"],
+    image: 'https://images.pexels.com/photos/169357/pexels-photo-169357.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'Mosquito on skin — Suffolk County pest control',
+    content: `# Mosquito Control in Suffolk County, NY: Protecting Your Long Island Backyard
+
+If you live on Suffolk County's South Shore — in Bay Shore, Islip, Babylon, Lindenhurst, Amityville, or anywhere near the Great South Bay — you know that summer means mosquitoes. The tidal marshes and wetlands that make these communities beautiful also generate some of the most intense mosquito pressure on Long Island. For Suffolk County homeowners who want to use their backyard from May through September, professional mosquito control is no longer a luxury — it's the only approach that actually works.
+
+Jet Pest Control provides professional mosquito barrier treatment across all of Suffolk County. When you search for **pest control near me** for mosquitoes in Suffolk County, here's what you should know.
+
+## Why Suffolk County Has Intense Mosquito Pressure
+
+**Great South Bay tidal marshes:** The wetlands and tidal marsh systems fringing the Great South Bay from Jones Beach to Fire Island generate enormous populations of salt marsh mosquitoes (Aedes sollicitans and Aedes taeniorhynchus). These mosquitoes fly up to 20 miles from their breeding sites — meaning South Shore homeowners miles from the water still experience heavy mosquito pressure driven by Bay marshes.
+
+**South Shore communities:** Bay Shore, Islip, East Islip, West Islip, Babylon, North Babylon, Lindenhurst, Amityville, and Massapequa all sit in the highest mosquito pressure zone in Suffolk County, driven by proximity to the Bay and its marsh systems.
+
+**Fire Island proximity:** Communities near Fire Island access points — Bay Shore ferry docks, Robert Moses State Park — see additional mosquito pressure from the island's undisturbed natural habitat.
+
+**Interior retention basins:** The interior suburban developments of western Suffolk — Hauppauge, Brentwood, Central Islip, Ronkonkoma — have residential retention basins and industrial-area standing water that support productive Culex mosquito breeding throughout summer. Culex pipiens is the primary West Nile Virus vector.
+
+**East End outdoor lifestyle:** The Hamptons, Southampton, East Hampton, Sag Harbor, Shelter Island, and the North Fork host extraordinary outdoor entertaining activity — exactly the environment where mosquito pressure translates directly into ruined evenings and public health risk.
+
+## Public Health: West Nile Virus and Dog Heartworm
+
+West Nile Virus has been documented in Suffolk County mosquito pools every single summer for more than 20 consecutive years. The Suffolk County Department of Health Services monitors mosquito pools throughout the county and issues advisories when WNV-positive pools are detected — which happens in multiple locations every summer.
+
+Dog heartworm (Dirofilaria immitis) is highly prevalent throughout Long Island. Dogs without year-round heartworm prevention living in Suffolk County are at significant annual risk. Professional mosquito control reduces overall mosquito exposure for both people and pets.
+
+## Barrier Spray Treatment: How It Works
+
+Adult mosquitoes spend 95% of their time resting on vegetation — the underside of leaves, in shrubs, along mulch beds, and in shaded garden areas — waiting for low-light conditions to feed. Our barrier spray treatment applies residual product to these resting areas, eliminating adult mosquitoes on contact and providing 3–4 weeks of residual protection as new adults encounter treated surfaces.
+
+**Coverage areas:** Shrub borders, ornamental plantings, mulch beds, shade trees (underside foliage), fence lines with vegetation, and perimeter transitions.
+
+## Seasonal Program: May Through September
+
+Suffolk County's mosquito season runs May through September, with peak pressure in July and August. Our seasonal program provides 6–7 treatments on a 3–4 week schedule, giving consistent season-long protection for outdoor spaces.
+
+## Source Reduction: What You Can Do
+
+Professional barrier treatment is dramatically more effective when combined with source reduction on your property:
+- Dump and refill birdbaths weekly
+- Empty saucers under potted plants after rain
+- Cover or properly drain boat covers and tarps
+- Keep pool properly maintained with appropriate chlorine levels
+- Clean gutters — clogged gutters hold standing water for weeks
+
+Call (516) 774-5051 for Suffolk County mosquito control. From seasonal barrier programs to one-time event treatments, when you need **pest control near me** for mosquitoes in Suffolk County, Jet Pest Control delivers protection you can feel.`
+  },
+  {
+    slug: "pest-control-coops-condos-nyc",
+    title: "Pest Control for NYC Co-ops and Condos: A Board Member's Guide",
+    date: "2026-02-15",
+    excerpt: "Pest control in New York City co-ops and condos requires coordination between building management, individual unit owners, and a professional pest control provider. Here's how to do it right.",
+    author: "Jet Pest Control Team",
+    category: "Commercial",
+    readTime: "7 min read",
+    tags: ["pest control co-op NYC", "pest control condo NYC", "building pest control", "exterminator near me", "NYC pest control", "Brooklyn Queens Manhattan"],
+    image: 'https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'NYC apartment building co-op condo exterior',
+    content: `# Pest Control for NYC Co-ops and Condos: A Board Member's Guide
+
+Pest control in a New York City co-op or condominium building is not a simple matter of scheduling an exterminator for an individual unit. Shared wall systems, utility chases, plumbing stacks, and electrical conduits allow pests to migrate freely between units — independent of the cleanliness or diligence of individual shareholders and unit owners. A German cockroach colony in one unit can seed an adjacent unit within weeks through a single gap in a shared wall cavity.
+
+Jet Pest Control works with co-op boards, condo associations, and building management companies throughout Brooklyn, Queens, and Manhattan. When you need an **exterminator near me** for building-wide pest control in an NYC co-op or condo, here's what effective management looks like.
+
+## Why Co-op and Condo Pest Control Is Complex
+
+**Shared infrastructure:** Most pre-war and mid-century co-op buildings in Park Slope, Brooklyn Heights, Cobble Hill, Forest Hills, and Rego Park were built with shared utility chases that run vertically through the building. These chases — containing plumbing pipes, electrical conduit, and HVAC components — are primary pest highways. German cockroaches travel vertically through these spaces; rodents use them to move between floors. Treating one floor while an adjacent chase is unaddressed produces temporary results at best.
+
+**Proprietary lease vs. condo declaration:** In co-op buildings, the proprietary lease typically places pest control responsibility on the individual shareholder for their unit, but building management is responsible for common areas and building-wide conditions. In condo buildings, the condo declaration and house rules govern similar questions. Understanding which party has legal responsibility is essential for boards managing pest complaints.
+
+**Non-compliant units:** Building-wide pest control programs are only as effective as the least-compliant unit. If one shareholder refuses to allow treatment or maintain their unit in pest-free condition, they may be the source that reinfests successfully treated adjacent units.
+
+## Common Co-op and Condo Pests in NYC Buildings
+
+**German cockroaches:** The dominant pest in NYC multi-unit buildings. They travel between units via electrical conduit knockout gaps, plumbing chase openings, and gaps in fire-stopping around pipes. A single infested unit in a building can seed an entire floor over months if untreated.
+
+**Bed bugs:** Migrate through shared walls, electrical outlets, and structural gaps between units. In dense pre-war buildings with multiple infestations over time, bed bugs can establish a persistent building-wide presence that individual unit treatments alone cannot resolve.
+
+**Rodents:** Enter buildings at the basement or ground floor level and move upward through wall voids, utility chases, and pipe penetrations. Mice have been found on upper floors of Manhattan high-rises — they travel vertically with ease.
+
+**Ants:** Spring ant incursions travel through the same plumbing and electrical pathways in pre-war buildings, often appearing simultaneously in multiple units on the same stack.
+
+## High-Density Co-op and Condo Areas
+
+**Brooklyn:** Park Slope, Brooklyn Heights, Cobble Hill, Carroll Gardens, Prospect Heights, and Windsor Terrace have dense concentrations of pre-war co-op buildings. Boards in these neighborhoods manage pest challenges that span multiple decades of building occupancy history.
+
+**Queens:** Long Island City's newer condo towers, Astoria's mid-century rental-to-condo conversions, and Rego Park's large post-war co-op complexes all require professional building-wide pest management programs.
+
+**Manhattan:** The entire borough is heavily co-op and condo; Park Avenue, Fifth Avenue, and Central Park West buildings represent some of the most complex multi-unit pest management situations in the country — where discretion is as important as effectiveness.
+
+## What to Look For in a Building Pest Control Contract
+
+- **Service frequency:** Monthly or bi-monthly service is standard for occupied buildings with active pest pressure; quarterly for maintenance in low-activity buildings
+- **Documentation at every visit:** Pest activity reports, treatment records, and recommendations for structural corrections
+- **Emergency response:** Guaranteed same-day response for urgent situations — health department inspection, active rodent in common area, guest complaints
+- **Building-wide coordination capability:** Experience managing treatment across multiple units simultaneously, working with building management and supers
+- **Discreet service:** Unmarked vehicles and professional conduct that protects building reputation
+
+## Jet Pest Control Building Programs
+
+Jet Pest Control provides building-wide pest control programs for NYC co-ops and condos — IPM-based monthly service, complete documentation at every visit, emergency response, and discreet service with unmarked vehicles. We work directly with building managers, supers, and board members to coordinate treatment logistics.
+
+Call (718) 710-0330 for a commercial building assessment. When you need **pest control near me** for your NYC co-op or condo building, Jet Pest Control brings the professional expertise your building deserves.`
   }
 ];
 
