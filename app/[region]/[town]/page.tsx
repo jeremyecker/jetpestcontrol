@@ -6,6 +6,7 @@ import { getRegion } from '@/lib/regions';
 import { BRAND } from '@/hub.config';
 import CTABanner from '@/components/sections/CTABanner';
 import { regionFAQs, regionServices, getNearbyTowns } from '@/lib/jet-town-data';
+import { jetTownOpeners } from '@/lib/jet-city-openers-data';
 
 export async function generateMetadata({ params }: { params: Promise<{ region: string; town: string }> }): Promise<Metadata> {
   const { region: regionSlug, town: townSlug } = await params;
@@ -49,6 +50,9 @@ export default async function TownPage({ params }: { params: Promise<{ region: s
   ) ?? townName;
 
   const nearbyTowns = getNearbyTowns(canonicalTownName, region.towns, 4);
+
+  // Unique opener for this town (Layer 3)
+  const uniqueOpener = jetTownOpeners[townSlug] ?? null;
 
   const localBusinessSchema = {
     '@context': 'https://schema.org',
@@ -127,10 +131,16 @@ export default async function TownPage({ params }: { params: Promise<{ region: s
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
           Pest Control in {canonicalTownName}, {region.stateCode}
         </h1>
-        <p className="text-xl text-gray-600 mb-6">
-          {BRAND.name} provides licensed, professional pest control to {canonicalTownName} residents and businesses.{' '}
-          {region.pestContext} Our technicians deliver same-day service with treatments that are safe for families and pets.
-        </p>
+
+        {/* Unique opener (Layer 3) or fallback */}
+        {uniqueOpener ? (
+          <p className="text-lg text-gray-700 leading-relaxed mb-8">{uniqueOpener}</p>
+        ) : (
+          <p className="text-xl text-gray-600 mb-6">
+            {BRAND.name} provides licensed, professional pest control to {canonicalTownName} residents and businesses.{' '}
+            {region.pestContext} Our technicians deliver same-day service with treatments that are safe for families and pets.
+          </p>
+        )}
 
         {/* Trust Stats */}
         <div className="grid grid-cols-3 gap-4 mb-10 text-center">
