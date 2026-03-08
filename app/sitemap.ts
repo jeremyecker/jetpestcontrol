@@ -1,12 +1,24 @@
 import { MetadataRoute } from 'next';
 import { BRAND, REGIONS } from '@/hub.config';
 import { SERVICES } from '@/lib/services';
+import { getAllBlogPosts } from '@/lib/blog-posts';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = `https://${BRAND.domain}`;
   const entries: MetadataRoute.Sitemap = [
     { url: base, lastModified: new Date(), changeFrequency: 'weekly', priority: 1 },
+    { url: `${base}/blog/`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
   ];
+
+  // Blog posts
+  for (const post of getAllBlogPosts()) {
+    entries.push({
+      url: `${base}/blog/${post.slug}/`,
+      lastModified: new Date(post.date),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    });
+  }
 
   for (const region of REGIONS) {
     const regionBase = `${base}/${region.slug}`;
