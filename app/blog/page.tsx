@@ -33,6 +33,16 @@ export default function BlogPage() {
             {posts.map((post) => (
               <Card key={post.slug} href={`/blog/${post.slug}`}>
                 <div className="flex flex-col h-full">
+                  {post.image && (
+                    <div className="mb-3 rounded-lg overflow-hidden">
+                      <img
+                        src={post.image}
+                        alt={post.imageAlt || post.title}
+                        className="w-full h-40 object-cover"
+                        loading="lazy"
+                      />
+                    </div>
+                  )}
                   <div className="flex items-center gap-2 text-sm text-gray-500 mb-3">
                     <time dateTime={post.date}>
                       {new Date(post.date).toLocaleDateString('en-US', {
