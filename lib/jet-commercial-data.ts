@@ -247,11 +247,11 @@ export const COMMERCIAL_VERTICALS: CommercialVertical[] = [
     slug: 'schools-daycare',
     name: 'Schools & Daycare Centers',
     icon: '🏫',
-    headline: 'School & Daycare Pest Control — Child-Safe IPM Across NYC',
-    subhead: 'NYC DOE-compliant integrated pest management with child-safe products and mandatory pesticide notification compliance.',
-    metaTitle: 'School Pest Control NYC | Child-Safe IPM | Jet Pest Control',
-    metaDescription: 'Child-safe school pest control for NYC public schools, private schools & daycare centers. DOE IPM compliant with pesticide notification. (718) 710-0330.',
-    overview: 'New York City\'s 1,800-plus public schools and thousands of licensed childcare facilities operate under some of the strictest pest management regulations in the country. The NYC Department of Education maintains a formal IPM protocol that all contracted service providers must follow, and NYC Board of Health regulations require advance pesticide notification to parents — typically 48 hours — before any pesticide application in a school or daycare setting. Brooklyn\'s dense school corridors and Queens\' large elementary school footprints create specific pest pressure challenges, particularly in lunch program areas, cafeteria kitchens, and after-school program spaces. Jet Pest Control\'s school IPM programs prioritize non-chemical methods — exclusion, sanitation, monitoring — and use only least-toxic, child-safe registered products when chemical treatment is necessary. We provide all required pesticide notification documentation and service records for NYC DOE compliance.',
+    headline: 'School & Daycare Pest Control — Child-Friendly IPM Across NYC',
+    subhead: 'NYC DOE-compliant integrated pest management with child-friendly products and mandatory pesticide notification compliance.',
+    metaTitle: 'School Pest Control NYC | Child-Friendly IPM | Jet Pest Control',
+    metaDescription: 'Child-friendly school pest control for NYC public schools, private schools & daycare centers. DOE IPM compliant with pesticide notification. (718) 710-0330.',
+    overview: 'New York City\'s 1,800-plus public schools and thousands of licensed childcare facilities operate under some of the strictest pest management regulations in the country. The NYC Department of Education maintains a formal IPM protocol that all contracted service providers must follow, and NYC Board of Health regulations require advance pesticide notification to parents — typically 48 hours — before any pesticide application in a school or daycare setting. Brooklyn\'s dense school corridors and Queens\' large elementary school footprints create specific pest pressure challenges, particularly in lunch program areas, cafeteria kitchens, and after-school program spaces. Jet Pest Control\'s school IPM programs prioritize non-chemical methods — exclusion, sanitation, monitoring — and use only least-toxic, child-friendly registered products when chemical treatment is necessary. We provide all required pesticide notification documentation and service records for NYC DOE compliance.',
     challenges: [
       {
         title: 'NYC DOE IPM Protocol Compliance',
@@ -276,7 +276,7 @@ export const COMMERCIAL_VERTICALS: CommercialVertical[] = [
         description: 'We begin every school engagement with a comprehensive non-chemical approach: physical exclusion, monitoring stations, sanitation recommendations, and structural repair referrals. Chemical treatment is the last step, not the first.',
       },
       {
-        step: 'Child-Safe Product Selection',
+        step: 'Child-Friendly Product Selection',
         description: 'When chemical treatment is necessary, we use only EPA-registered products appropriate for occupied school environments — gel baits, boric acid formulations, and low-toxicity spot treatments applied in areas inaccessible to children.',
       },
       {
@@ -400,7 +400,7 @@ export const COMMERCIAL_VERTICALS: CommercialVertical[] = [
     headline: 'Retail Pest Control for NYC\'s Commercial Corridors',
     subhead: 'Protect your stockroom, your customer experience, and your NYC retail license with professional pest management.',
     metaTitle: 'Retail Store Pest Control NYC | Stockroom Protection | Jet Pest Control',
-    metaDescription: 'Pest control for NYC retail stores on 5th Ave, Atlantic Avenue, Fulton Mall & Green Acres Mall. Stockroom protection & customer-safe treatments. (718) 710-0330.',
+    metaDescription: 'Pest control for NYC retail stores on 5th Ave, Atlantic Avenue, Fulton Mall & Green Acres Mall. Stockroom protection & customer-targeted treatments. (718) 710-0330.',
     overview: 'New York City\'s retail landscape — from Fifth Avenue luxury flagships to Atlantic Avenue\'s independent boutiques, Fulton Mall in Downtown Brooklyn, and the Green Acres Mall in Valley Stream — encompasses some of the highest-traffic commercial real estate in the world. Retail environments face a specific pest challenge: the stockroom. Receiving daily shipments from distribution centers, overseas warehouses, and local vendors, retail stockrooms are constant pest entry points — cockroach egg cases and stored product beetles travel in cardboard, packaging materials, and palletized goods. Customer-facing areas require discreet treatment protocols that protect the shopping experience while eliminating pest pressure. NYC\'s retail corridors also share building infrastructure with neighboring tenants, creating shared infestation risk that requires building-wide coordination.',
     challenges: [
       {
