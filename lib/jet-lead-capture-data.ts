@@ -32,7 +32,7 @@ Our licensed and insured technicians know Brooklyn's specific pest pressures int
     faqs: [
       { q: `How fast can Jet Pest Control respond in Brooklyn?`, a: `We offer same-day service throughout Brooklyn. When you call before noon, a licensed technician can typically arrive the same afternoon. Emergency appointments are also available.` },
       { q: `Do you service all neighborhoods in Brooklyn?`, a: `Yes — Jet Pest Control covers every neighborhood in Brooklyn including Prospect Park, the Brooklyn Bridge, Coney Island, and Williamsburg's dense residential corridors. No area is too remote or too dense for our team.` },
-      { q: `Are your treatments safe for children and pets?`, a: `Absolutely. We use EPA-registered products applied by licensed technicians following strict safety protocols. We provide detailed prep instructions before treatment and guidance on when it's safe to re-enter.` },
+      { q: `Are your treatments approved for use around children and pets?`, a: `Absolutely. We use EPA-registered products applied by licensed technicians following strict safety protocols. We provide detailed prep instructions before treatment and guidance on when it's clear to re-enter.` },
       { q: `What is included in a pest control service call?`, a: `Every service includes a full inspection, targeted treatment, a written report, and a follow-up guarantee. If pests return within the treatment period, we come back at no charge.` },
     ],
   },
@@ -116,7 +116,7 @@ Bed bugs are a persistent challenge in Brooklyn's brownstones, pre-war apartment
     faqs: [
       { q: `What bed bug treatment methods does Jet use in Brooklyn?`, a: `We offer heat treatment raising room temperature to 120 degrees or higher to kill all life stages, targeted chemical treatment using residual insecticides, and combination protocols for severe infestations. K-9 detection is available for accurate verification.` },
       { q: `How long does bed bug heat treatment take?`, a: `A standard apartment heat treatment takes 6 to 8 hours. Larger units or whole-floor treatments may require a full day. You can return the same evening once temperatures normalize.` },
-      { q: `Do I need to throw away my mattress?`, a: `Usually not. We treat mattresses in place using heat or safe residual products, and provide encasements to protect them. Discarding a mattress without treating the room is ineffective — bed bugs live in walls, baseboards, and furniture, not just mattresses.` },
+      { q: `Do I need to throw away my mattress?`, a: `Usually not. We treat mattresses in place using heat or approved residual products, and provide encasements to protect them. Discarding a mattress without treating the room is ineffective — bed bugs live in walls, baseboards, and furniture, not just mattresses.` },
       { q: `How do I know if bed bug treatment worked?`, a: `We provide a post-treatment inspection to confirm elimination. No live activity after 2 weeks is a strong indicator of success. Our service guarantee means we return if activity continues.` },
     ],
   },
@@ -158,7 +158,7 @@ Our licensed and insured technicians know Queens's specific pest pressures intim
     faqs: [
       { q: `How fast can Jet Pest Control respond in Queens?`, a: `We offer same-day service throughout Queens. When you call before noon, a licensed technician can typically arrive the same afternoon. Emergency appointments are also available.` },
       { q: `Do you service all neighborhoods in Queens?`, a: `Yes — Jet Pest Control covers every neighborhood in Queens including JFK Airport, Flushing Meadows, Jamaica, Astoria, and Forest Hills. No area is too remote or too dense for our team.` },
-      { q: `Are your treatments safe for children and pets?`, a: `Absolutely. We use EPA-registered products applied by licensed technicians following strict safety protocols. We provide detailed prep instructions before treatment and guidance on when it's safe to re-enter.` },
+      { q: `Are your treatments approved for use around children and pets?`, a: `Absolutely. We use EPA-registered products applied by licensed technicians following strict safety protocols. We provide detailed prep instructions before treatment and guidance on when it's clear to re-enter.` },
       { q: `What is included in a pest control service call?`, a: `Every service includes a full inspection, targeted treatment, a written report, and a follow-up guarantee. If pests return within the treatment period, we come back at no charge.` },
     ],
   },
@@ -242,7 +242,7 @@ Bed bugs are a persistent challenge in Queens's attached homes, two-family house
     faqs: [
       { q: `What bed bug treatment methods does Jet use in Queens?`, a: `We offer heat treatment raising room temperature to 120 degrees or higher to kill all life stages, targeted chemical treatment using residual insecticides, and combination protocols for severe infestations. K-9 detection is available for accurate verification.` },
       { q: `How long does bed bug heat treatment take?`, a: `A standard apartment heat treatment takes 6 to 8 hours. Larger units or whole-floor treatments may require a full day. You can return the same evening once temperatures normalize.` },
-      { q: `Do I need to throw away my mattress?`, a: `Usually not. We treat mattresses in place using heat or safe residual products, and provide encasements to protect them. Discarding a mattress without treating the room is ineffective — bed bugs live in walls, baseboards, and furniture, not just mattresses.` },
+      { q: `Do I need to throw away my mattress?`, a: `Usually not. We treat mattresses in place using heat or approved residual products, and provide encasements to protect them. Discarding a mattress without treating the room is ineffective — bed bugs live in walls, baseboards, and furniture, not just mattresses.` },
       { q: `How do I know if bed bug treatment worked?`, a: `We provide a post-treatment inspection to confirm elimination. No live activity after 2 weeks is a strong indicator of success. Our service guarantee means we return if activity continues.` },
     ],
   },
@@ -284,7 +284,7 @@ Our licensed and insured technicians know Manhattan's specific pest pressures in
     faqs: [
       { q: `How fast can Jet Pest Control respond in Manhattan?`, a: `We offer same-day service throughout Manhattan. When you call before noon, a licensed technician can typically arrive the same afternoon. Emergency appointments are also available.` },
       { q: `Do you service all neighborhoods in Manhattan?`, a: `Yes — Jet Pest Control covers every neighborhood in Manhattan including Midtown, the Upper East Side, Greenwich Village, Tribeca, and Harlem. No area is too remote or too dense for our team.` },
-      { q: `Are your treatments safe for children and pets?`, a: `Absolutely. We use EPA-registered products applied by licensed technicians following strict safety protocols. We provide detailed prep instructions before treatment and guidance on when it's safe to re-enter.` },
+      { q: `Are your treatments approved for use around children and pets?`, a: `Absolutely. We use EPA-registered products applied by licensed technicians following strict safety protocols. We provide detailed prep instructions before treatment and guidance on when it's clear to re-enter.` },
       { q: `What is included in a pest control service call?`, a: `Every service includes a full inspection, targeted treatment, a written report, and a follow-up guarantee. If pests return within the treatment period, we come back at no charge.` },
     ],
   },
@@ -368,7 +368,7 @@ Bed bugs are a persistent challenge in Manhattan's high-rise condos, pre-war co-
     faqs: [
       { q: `What bed bug treatment methods does Jet use in Manhattan?`, a: `We offer heat treatment raising room temperature to 120 degrees or higher to kill all life stages, targeted chemical treatment using residual insecticides, and combination protocols for severe infestations. K-9 detection is available for accurate verification.` },
       { q: `How long does bed bug heat treatment take?`, a: `A standard apartment heat treatment takes 6 to 8 hours. Larger units or whole-floor treatments may require a full day. You can return the same evening once temperatures normalize.` },
-      { q: `Do I need to throw away my mattress?`, a: `Usually not. We treat mattresses in place using heat or safe residual products, and provide encasements to protect them. Discarding a mattress without treating the room is ineffective — bed bugs live in walls, baseboards, and furniture, not just mattresses.` },
+      { q: `Do I need to throw away my mattress?`, a: `Usually not. We treat mattresses in place using heat or approved residual products, and provide encasements to protect them. Discarding a mattress without treating the room is ineffective — bed bugs live in walls, baseboards, and furniture, not just mattresses.` },
       { q: `How do I know if bed bug treatment worked?`, a: `We provide a post-treatment inspection to confirm elimination. No live activity after 2 weeks is a strong indicator of success. Our service guarantee means we return if activity continues.` },
     ],
   },
@@ -410,7 +410,7 @@ Our licensed and insured technicians know Nassau County's specific pest pressure
     faqs: [
       { q: `How fast can Jet Pest Control respond in Nassau County?`, a: `We offer same-day service throughout Nassau County. When you call before noon, a licensed technician can typically arrive the same afternoon. Emergency appointments are also available.` },
       { q: `Do you service all neighborhoods in Nassau County?`, a: `Yes — Jet Pest Control covers every neighborhood in Nassau County including Garden City, Levittown, Long Beach, Hempstead, and the South Shore barrier beaches. No area is too remote or too dense for our team.` },
-      { q: `Are your treatments safe for children and pets?`, a: `Absolutely. We use EPA-registered products applied by licensed technicians following strict safety protocols. We provide detailed prep instructions before treatment and guidance on when it's safe to re-enter.` },
+      { q: `Are your treatments approved for use around children and pets?`, a: `Absolutely. We use EPA-registered products applied by licensed technicians following strict safety protocols. We provide detailed prep instructions before treatment and guidance on when it's clear to re-enter.` },
       { q: `What is included in a pest control service call?`, a: `Every service includes a full inspection, targeted treatment, a written report, and a follow-up guarantee. If pests return within the treatment period, we come back at no charge.` },
     ],
   },
@@ -494,7 +494,7 @@ Bed bugs are a persistent challenge in Nassau County's post-war Levittown Cape C
     faqs: [
       { q: `What bed bug treatment methods does Jet use in Nassau County?`, a: `We offer heat treatment raising room temperature to 120 degrees or higher to kill all life stages, targeted chemical treatment using residual insecticides, and combination protocols for severe infestations. K-9 detection is available for accurate verification.` },
       { q: `How long does bed bug heat treatment take?`, a: `A standard apartment heat treatment takes 6 to 8 hours. Larger units or whole-floor treatments may require a full day. You can return the same evening once temperatures normalize.` },
-      { q: `Do I need to throw away my mattress?`, a: `Usually not. We treat mattresses in place using heat or safe residual products, and provide encasements to protect them. Discarding a mattress without treating the room is ineffective — bed bugs live in walls, baseboards, and furniture, not just mattresses.` },
+      { q: `Do I need to throw away my mattress?`, a: `Usually not. We treat mattresses in place using heat or approved residual products, and provide encasements to protect them. Discarding a mattress without treating the room is ineffective — bed bugs live in walls, baseboards, and furniture, not just mattresses.` },
       { q: `How do I know if bed bug treatment worked?`, a: `We provide a post-treatment inspection to confirm elimination. No live activity after 2 weeks is a strong indicator of success. Our service guarantee means we return if activity continues.` },
     ],
   },
@@ -536,7 +536,7 @@ Our licensed and insured technicians know Suffolk County's specific pest pressur
     faqs: [
       { q: `How fast can Jet Pest Control respond in Suffolk County?`, a: `We offer same-day service throughout Suffolk County. When you call before noon, a licensed technician can typically arrive the same afternoon. Emergency appointments are also available.` },
       { q: `Do you service all neighborhoods in Suffolk County?`, a: `Yes — Jet Pest Control covers every neighborhood in Suffolk County including Huntington, Brentwood, Hauppauge, the Hamptons, and Montauk. No area is too remote or too dense for our team.` },
-      { q: `Are your treatments safe for children and pets?`, a: `Absolutely. We use EPA-registered products applied by licensed technicians following strict safety protocols. We provide detailed prep instructions before treatment and guidance on when it's safe to re-enter.` },
+      { q: `Are your treatments approved for use around children and pets?`, a: `Absolutely. We use EPA-registered products applied by licensed technicians following strict safety protocols. We provide detailed prep instructions before treatment and guidance on when it's clear to re-enter.` },
       { q: `What is included in a pest control service call?`, a: `Every service includes a full inspection, targeted treatment, a written report, and a follow-up guarantee. If pests return within the treatment period, we come back at no charge.` },
     ],
   },
@@ -620,7 +620,7 @@ Bed bugs are a persistent challenge in Suffolk County's single-family colonial a
     faqs: [
       { q: `What bed bug treatment methods does Jet use in Suffolk County?`, a: `We offer heat treatment raising room temperature to 120 degrees or higher to kill all life stages, targeted chemical treatment using residual insecticides, and combination protocols for severe infestations. K-9 detection is available for accurate verification.` },
       { q: `How long does bed bug heat treatment take?`, a: `A standard apartment heat treatment takes 6 to 8 hours. Larger units or whole-floor treatments may require a full day. You can return the same evening once temperatures normalize.` },
-      { q: `Do I need to throw away my mattress?`, a: `Usually not. We treat mattresses in place using heat or safe residual products, and provide encasements to protect them. Discarding a mattress without treating the room is ineffective — bed bugs live in walls, baseboards, and furniture, not just mattresses.` },
+      { q: `Do I need to throw away my mattress?`, a: `Usually not. We treat mattresses in place using heat or approved residual products, and provide encasements to protect them. Discarding a mattress without treating the room is ineffective — bed bugs live in walls, baseboards, and furniture, not just mattresses.` },
       { q: `How do I know if bed bug treatment worked?`, a: `We provide a post-treatment inspection to confirm elimination. No live activity after 2 weeks is a strong indicator of success. Our service guarantee means we return if activity continues.` },
     ],
   },
