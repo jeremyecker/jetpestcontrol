@@ -3,6 +3,7 @@ export interface BlogPost {
   title: string;
   date: string;
   excerpt: string;
+  description?: string;
   content: string;
   author: string;
   category: string;
@@ -885,3 +886,23 @@ Pest activity decreases outdoors but continues indoors. **Watch for:** Overwinte
 Jet Pest Control serves Brooklyn, Queens, Manhattan, Nassau, and Suffolk year-round. Call (718) 710-0330 (NYC) or (516) 774-5051 (Nassau, Suffolk) for seasonal treatments, emergency service, and ongoing maintenance programs. Discreet unmarked vehicles. Professional service throughout New York. When you need **pest control near me** across Brooklyn, Queens, or Nassau County, Jet Pest Control delivers.`
   }
 ];
+
+// ============================================================
+// HELPER FUNCTIONS
+// ============================================================
+
+export function getAllBlogPosts(): BlogPost[] {
+  return blogPosts.map(post => ({
+    ...post,
+    description: post.description ?? post.excerpt,
+  }));
+}
+
+export function getBlogPostBySlug(slug: string): BlogPost | undefined {
+  const post = blogPosts.find(p => p.slug === slug);
+  if (!post) return undefined;
+  return {
+    ...post,
+    description: post.description ?? post.excerpt,
+  };
+}
