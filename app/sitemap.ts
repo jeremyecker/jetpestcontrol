@@ -2,13 +2,25 @@ import { MetadataRoute } from 'next';
 import { BRAND, REGIONS } from '@/hub.config';
 import { SERVICES } from '@/lib/services';
 import { getAllBlogPosts } from '@/lib/blog-posts';
+import { COMMERCIAL_VERTICALS } from '@/lib/jet-commercial-data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = `https://${BRAND.domain}`;
   const entries: MetadataRoute.Sitemap = [
     { url: base, lastModified: new Date(), changeFrequency: 'weekly', priority: 1 },
     { url: `${base}/blog/`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${base}/commercial/`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
   ];
+
+  // Commercial vertical pages
+  for (const vertical of COMMERCIAL_VERTICALS) {
+    entries.push({
+      url: `${base}/commercial/${vertical.slug}/`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    });
+  }
 
   // Blog posts
   for (const post of getAllBlogPosts()) {
