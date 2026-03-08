@@ -5,17 +5,24 @@ import LeadCapturePage from '@/components/LeadCapturePage';
 const LEAD_TYPE = 'exterminator-near-me';
 
 export async function generateMetadata(
-  { params }: { params: { region: string } }
+  { params }: { params: Promise<{ region: string }> }
 ): Promise<Metadata> {
-  const page = getLeadCapturePage(params.region, LEAD_TYPE);
+  const { region } = await params;
+  const page = getLeadCapturePage(region, LEAD_TYPE);
   if (!page) return {};
   return {
     title: page.metaTitle,
     description: page.metaDesc,
-    alternates: { canonical: `https://jetpestcontrol.com/${params.region}/${LEAD_TYPE}` },
+    alternates: { canonical: `https://jetpestcontrol.com/${region}/${LEAD_TYPE}` },
   };
 }
 
-export default function Page({ params }: { params: { region: string } }) {
-  return <LeadCapturePage region={params.region} leadType={LEAD_TYPE} />;
+export async function generateStaticParams() {
+  const regions = ['brooklyn', 'queens', 'manhattan', 'nassau', 'suffolk'];
+  return regions.map(region => ({ region }));
+}
+
+export default async function Page({ params }: { params: Promise<{ region: string }> }) {
+  const { region } = await params;
+  return <LeadCapturePage region={region} leadType={LEAD_TYPE} />;
 }
