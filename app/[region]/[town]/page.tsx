@@ -7,6 +7,7 @@ import { BRAND } from '@/hub.config';
 import CTABanner from '@/components/sections/CTABanner';
 import { regionFAQs, regionServices, getNearbyTowns } from '@/lib/jet-town-data';
 import { jetTownOpeners } from '@/lib/jet-city-openers-data';
+import { cityFAQs, nearbyTownMap, hubNeighborhoods } from '@/lib/jet-layer7-data';
 
 export async function generateMetadata({ params }: { params: Promise<{ region: string; town: string }> }): Promise<Metadata> {
   const { region: regionSlug, town: townSlug } = await params;
@@ -41,7 +42,7 @@ export default async function TownPage({ params }: { params: Promise<{ region: s
   );
   if (!isValidTown && region.towns.length > 0) notFound();
 
-  const faqs = regionFAQs[regionSlug] ?? regionFAQs['brooklyn'];
+  const faqs = cityFAQs[townSlug] ?? regionFAQs[regionSlug] ?? regionFAQs['brooklyn'];
   const services = regionServices[regionSlug] ?? regionServices['brooklyn'];
 
   // Find the actual town name (for proper casing)
@@ -49,7 +50,10 @@ export default async function TownPage({ params }: { params: Promise<{ region: s
     t => t.toLowerCase().replace(/\s+/g, '-') === townSlug
   ) ?? townName;
 
-  const nearbyTowns = getNearbyTowns(canonicalTownName, region.towns, 4);
+  const nearbyTowns = nearbyTownMap[townSlug] ?? getNearbyTowns(canonicalTownName, region.towns, 4);
+
+  // Neighborhoods section (Layer 7)
+  const neighborhoods = hubNeighborhoods[townSlug] ?? null;
 
   // Unique opener for this town (Layer 3)
   const uniqueOpener = jetTownOpeners[townSlug] ?? null;
@@ -220,6 +224,26 @@ export default async function TownPage({ params }: { params: Promise<{ region: s
             </div>
           ))}
         </div>
+
+        {/* Neighborhoods (Layer 7) */}
+        {neighborhoods && (
+          <div className="bg-gray-50 rounded-xl p-6 mb-12">
+            <h2 className="text-xl font-bold text-gray-900 mb-4">
+              Neighborhoods We Serve in {canonicalTownName}
+            </h2>
+            <div className="space-y-3">
+              {neighborhoods.map(n => (
+                <div key={n.name} className="flex gap-3">
+                  <span className="text-brand-primary font-bold mt-0.5">▸</span>
+                  <div>
+                    <span className="font-semibold text-gray-900">{n.name}:</span>{' '}
+                    <span className="text-gray-600">{n.detail}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Nearby Towns */}
         {nearbyTowns.length > 0 && (
