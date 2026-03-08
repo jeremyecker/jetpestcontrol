@@ -21,7 +21,7 @@ const genericDescriptions: Record<string, string> = {
 
 export const metadata: Metadata = {
   title: `Pest Control Services | ${BRAND.name}`,
-  description: `Full pest control services for ${serviceArea}. Family-safe treatments, same-day service available.`,
+  description: `Full pest control services for ${serviceArea}. Family-targeted treatments, same-day service available.`,
 };
 
 export default function ServicesPage() {
@@ -32,7 +32,7 @@ export default function ServicesPage() {
           Our Pest Control Services
         </h1>
         <p className="text-xl text-gray-600">
-          Serving {serviceArea} with professional, family-safe pest control.
+          Serving {serviceArea} with professional, family-friendly pest control.
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
