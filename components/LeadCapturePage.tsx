@@ -1,4 +1,3 @@
-'use client';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getLeadCapturePage } from '@/lib/jet-lead-capture-data';
@@ -25,10 +24,11 @@ interface LeadCapturePageProps {
 
 export default function LeadCapturePage({ region, leadType }: LeadCapturePageProps) {
   const page = getLeadCapturePage(region, leadType);
-  if (!page) return notFound();
+  if (!page) notFound();
 
   const towns = REGION_TOWNS[region] || [];
-  const regionDisplay = page.regionDisplay;
+  const regionDisplay = page!.regionDisplay;
+  const p = page!;
 
   const schema = {
     '@context': 'https://schema.org',
@@ -39,13 +39,13 @@ export default function LeadCapturePage({ region, leadType }: LeadCapturePagePro
         telephone: PHONE,
         url: 'https://jetpestcontrol.com',
         areaServed: regionDisplay,
-        serviceType: page.title,
+        serviceType: p.title,
         priceRange: '$$',
         openingHours: 'Mo-Su 07:00-21:00',
       },
       {
         '@type': 'FAQPage',
-        mainEntity: page.faqs.map(faq => ({
+        mainEntity: p.faqs.map(faq => ({
           '@type': 'Question',
           name: faq.q,
           acceptedAnswer: { '@type': 'Answer', text: faq.a },
@@ -56,7 +56,7 @@ export default function LeadCapturePage({ region, leadType }: LeadCapturePagePro
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://jetpestcontrol.com' },
           { '@type': 'ListItem', position: 2, name: regionDisplay, item: `https://jetpestcontrol.com/${region}` },
-          { '@type': 'ListItem', position: 3, name: page.title, item: `https://jetpestcontrol.com/${region}/${leadType}` },
+          { '@type': 'ListItem', position: 3, name: p.title, item: `https://jetpestcontrol.com/${region}/${leadType}` },
         ],
       },
     ],
@@ -73,12 +73,12 @@ export default function LeadCapturePage({ region, leadType }: LeadCapturePagePro
         <div className="max-w-4xl mx-auto text-center">
           <nav className="text-blue-300 text-sm mb-4">
             <Link href="/" className="hover:text-white">Home</Link>
-            {' > '}
+            {' / '}
             <Link href={`/${region}`} className="hover:text-white">{regionDisplay}</Link>
-            {' > '}
-            <span>{page.title}</span>
+            {' / '}
+            <span>{p.title}</span>
           </nav>
-          <h1 className="text-4xl font-bold mb-4">{page.h1}</h1>
+          <h1 className="text-4xl font-bold mb-4">{p.h1}</h1>
           <p className="text-xl text-blue-200 mb-8">Licensed &amp; Insured &middot; Same-Day Service &middot; Guaranteed Results</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href={PHONE_HREF} className="bg-yellow-400 text-blue-900 font-bold py-4 px-8 rounded-lg text-lg hover:bg-yellow-300 transition">
@@ -103,15 +103,15 @@ export default function LeadCapturePage({ region, leadType }: LeadCapturePagePro
       <main className="max-w-4xl mx-auto px-4 py-12">
 
         <section className="mb-12">
-          {page.intro.split('\n\n').map((para, i) => (
+          {p.intro.split('\n\n').map((para, i) => (
             <p key={i} className="text-gray-700 text-lg leading-relaxed mb-4">{para}</p>
           ))}
         </section>
 
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Our {page.title} Services in {regionDisplay}</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Our {p.title} Services in {regionDisplay}</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {page.services.map((service) => (
+            {p.services.map((service) => (
               <div key={service} className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-center">
                 <p className="font-semibold text-blue-900 text-sm">{service}</p>
               </div>
@@ -123,17 +123,17 @@ export default function LeadCapturePage({ region, leadType }: LeadCapturePagePro
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Why {regionDisplay} Residents Choose Jet Pest Control</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              { icon: 'lightning', title: 'Same-Day Response', desc: 'Call before noon and we arrive the same afternoon.' },
-              { icon: 'badge', title: 'Licensed NY DEC Technicians', desc: 'Every technician is licensed by New York State DEC and fully insured.' },
-              { icon: 'search', title: 'Integrated Pest Management', desc: 'We identify root causes and entry points, not just symptoms.' },
-              { icon: 'check', title: 'Service Guarantee', desc: 'If pests return within the treatment period, we come back at no charge.' },
-              { icon: 'leaf', title: 'Family and Pet Safe', desc: 'EPA-registered products applied with strict safety protocols.' },
-              { icon: 'map', title: 'Local Experts', desc: `We know ${regionDisplay}'s housing stock and local pest pressures intimately.` },
-            ].map(item => (
-              <div key={item.title} className="flex gap-4">
+              ['Same-Day Response', 'Call before noon and we arrive the same afternoon.'],
+              ['Licensed NY DEC Technicians', 'Every technician is licensed by New York State DEC and fully insured.'],
+              ['Integrated Pest Management', 'We identify root causes and entry points, not just symptoms.'],
+              ['Service Guarantee', 'If pests return within the treatment period, we come back at no charge.'],
+              ['Family and Pet Safe', 'EPA-registered products applied with strict safety protocols.'],
+              ['Local Experts', `We know ${regionDisplay}'s housing stock and local pest pressures intimately.`],
+            ].map(([title, desc]) => (
+              <div key={title} className="flex gap-4">
                 <div>
-                  <h3 className="font-bold text-gray-900">{item.title}</h3>
-                  <p className="text-gray-600 text-sm">{item.desc}</p>
+                  <h3 className="font-bold text-gray-900">{title}</h3>
+                  <p className="text-gray-600 text-sm">{desc}</p>
                 </div>
               </div>
             ))}
@@ -143,7 +143,7 @@ export default function LeadCapturePage({ region, leadType }: LeadCapturePagePro
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
           <div className="space-y-4">
-            {page.faqs.map((faq, i) => (
+            {p.faqs.map((faq, i) => (
               <div key={i} className="border border-gray-200 rounded-lg p-6">
                 <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>
                 <p className="text-gray-700">{faq.a}</p>
@@ -155,7 +155,7 @@ export default function LeadCapturePage({ region, leadType }: LeadCapturePagePro
         {towns.length > 0 && (
           <section className="mb-12">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">We Serve All of {regionDisplay}</h2>
-            <p className="text-gray-600 mb-4">Jet Pest Control provides {page.title.toLowerCase()} service throughout {regionDisplay}, including:</p>
+            <p className="text-gray-600 mb-4">Jet Pest Control provides {p.title.toLowerCase()} service throughout {regionDisplay}, including:</p>
             <div className="flex flex-wrap gap-2">
               {towns.map(town => (
                 <Link key={town} href={`/${region}/${toTownSlug(town)}`}
@@ -172,7 +172,7 @@ export default function LeadCapturePage({ region, leadType }: LeadCapturePagePro
         )}
 
         <section className="bg-blue-900 text-white rounded-xl p-8 text-center">
-          <h2 className="text-2xl font-bold mb-2">{page.title} in {regionDisplay}</h2>
+          <h2 className="text-2xl font-bold mb-2">{p.title} in {regionDisplay}</h2>
           <p className="text-blue-200 mb-6">Same-day service &middot; Licensed technicians &middot; Guaranteed results</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href={PHONE_HREF} className="bg-yellow-400 text-blue-900 font-bold py-3 px-8 rounded-lg hover:bg-yellow-300 transition">
