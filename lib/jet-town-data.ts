@@ -18,7 +18,7 @@ export const regionFAQs: Record<string, TownFAQ[]> = {
     },
     {
       q: 'Do you treat cockroach infestations in Brooklyn without harsh chemicals?',
-      a: 'Yes. Jet Pest Control uses integrated pest management (IPM) protocols with low-toxicity gel baits, insect growth regulators, and targeted applications. All treatments are family-safe and pet-safe. German cockroaches are the most common species in Brooklyn apartments — we target harborage areas in kitchens and bathrooms.',
+      a: 'Yes. Jet Pest Control uses integrated pest management (IPM) protocols with low-toxicity gel baits, insect growth regulators, and targeted applications. All treatments are family-friendly and pet-friendly. German cockroaches are the most common species in Brooklyn apartments — we target harborage areas in kitchens and bathrooms.',
     },
     {
       q: 'Are your Brooklyn pest control services guaranteed?',
@@ -72,7 +72,7 @@ export const regionFAQs: Record<string, TownFAQ[]> = {
     },
     {
       q: 'How does Jet handle mosquito control for Nassau County properties?',
-      a: 'Our Nassau mosquito program includes barrier spray treatments applied to vegetation, shrubs, and lawn edges where mosquitoes rest. Treatments are scheduled every 3 weeks during peak season (May–October). We also identify and address standing water sources on the property. Treatments are safe for children and pets when dry.',
+      a: 'Our Nassau mosquito program includes barrier spray treatments applied to vegetation, shrubs, and lawn edges where mosquitoes rest. Treatments are scheduled every 3 weeks during peak season (May–October). We also identify and address standing water sources on the property. Treatments are approved for use around children and pets when dry.',
     },
     {
       q: 'Is same-day pest control available in Nassau County?',
@@ -113,7 +113,7 @@ export const regionServices: Record<string, { title: string; description: string
   manhattan: [
     { title: 'Bed Bug Removal', description: 'Discreet bed bug treatment for Manhattan apartments, co-ops, and condos. K-9 detection, heat treatment, full building coordination available.', icon: '🛏️' },
     { title: 'Rodent Exclusion', description: 'Mice and rat programs for Manhattan buildings — exclusion at unit level, bait stations in common areas, and building management coordination.', icon: '🐀' },
-    { title: 'Cockroach Control', description: 'Low-disruption gel bait protocols for Manhattan apartment cockroach infestations. Safe for kitchens, bathrooms, and around food prep areas.', icon: '🪲' },
+    { title: 'Cockroach Control', description: 'Low-disruption gel bait protocols for Manhattan apartment cockroach infestations. Approved for use in kitchens, bathrooms, and around food prep areas.', icon: '🪲' },
   ],
   nassau: [
     { title: 'Termite Inspection & Treatment', description: 'WDO inspections and liquid barrier termite treatments for Nassau County homes. Protect your investment from subterranean termite damage.', icon: '🪵' },
