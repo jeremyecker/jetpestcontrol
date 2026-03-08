@@ -201,7 +201,7 @@ export const SERVICE_CONTENT: Record<string, ServiceContent> = {
     ],
     process: [
       { step: 'Nest Location', description: 'We locate all active nests on your property, including hidden nests inside wall voids, attics, and underground burrows that aren\'t visible.' },
-      { step: 'Safe Elimination', description: 'Using professional protective equipment and targeted products, we eliminate the colony and safely remove or treat the nest.' },
+      { step: 'Professional Elimination', description: 'Using professional protective equipment and targeted products, we eliminate the colony and professionally remove or treat the nest.' },
       { step: 'Entry Point Treatment', description: 'We treat entry points and areas where wasps commonly build to discourage new colonies from establishing.' },
       { step: 'Prevention Plan', description: 'We identify conditions attracting wasps to your property and recommend changes to minimize future nesting activity.' },
     ],
@@ -213,7 +213,7 @@ export const SERVICE_CONTENT: Record<string, ServiceContent> = {
       'Treat or paint exposed wood surfaces that paper wasps harvest for nest building',
       'Consider preventive treatments in early spring before colonies have a chance to establish',
     ],
-    whyPro: `Removing a wasp or hornet nest yourself is genuinely dangerous. Disturbing a nest can trigger a coordinated attack from hundreds of stinging insects, and underground nests are especially unpredictable. Professional technicians have the protective equipment, commercial-grade products, and training to safely eliminate colonies — including nests hidden deep in wall voids, attics, or underground that are impossible to reach with consumer products.`,
+    whyPro: `Removing a wasp or hornet nest yourself is genuinely dangerous. Disturbing a nest can trigger a coordinated attack from hundreds of stinging insects, and underground nests are especially unpredictable. Professional technicians have the protective equipment, commercial-grade products, and training to effectively eliminate colonies — including nests hidden deep in wall voids, attics, or underground that are impossible to reach with consumer products.`,
   },
   'flea-tick-treatment': {
     overview: `Fleas and ticks aren't just a problem for your pets — they bite humans and can transmit serious diseases. Ticks in the Northeast carry Lyme disease, anaplasmosis, and babesiosis, all of which are increasingly common. Fleas can infest your entire home, laying eggs deep in carpets, upholstered furniture, and pet bedding. A single flea lays up to 50 eggs per day, and pupae can lie dormant for months waiting for a host. Effective control means treating your home, your yard, and breaking the reproductive cycle at every stage.`,
@@ -242,7 +242,7 @@ export const SERVICE_CONTENT: Record<string, ServiceContent> = {
     whyPro: `Only about 5% of a flea infestation consists of visible adult fleas — the other 95% are eggs, larvae, and pupae hiding deep in your carpets and furniture. Store-bought foggers and sprays miss these hidden life stages completely, which is why the problem always comes back. Professional treatment uses a combination of fast-acting adulticides and insect growth regulators that target every stage of the flea lifecycle, plus yard treatments to eliminate the outdoor breeding source.`,
   },
   'wildlife-removal': {
-    overview: `Raccoons, squirrels, opossums, skunks, and other wildlife can cause serious damage when they decide your home makes a good den. They tear through insulation, chew electrical wiring (creating fire hazards), contaminate attics and crawl spaces with droppings and urine, and can introduce parasites like fleas, ticks, and mites. Beyond property damage, wildlife can carry rabies and other zoonotic diseases. Professional, humane removal is the safest and most effective approach — and in New York, it's required by law for most species.`,
+    overview: `Raccoons, squirrels, opossums, skunks, and other wildlife can cause serious damage when they decide your home makes a good den. They tear through insulation, chew electrical wiring (creating fire hazards), contaminate attics and crawl spaces with droppings and urine, and can introduce parasites like fleas, ticks, and mites. Beyond property damage, wildlife can carry rabies and other zoonotic diseases. Professional, humane removal is the most effective and most effective approach — and in New York, it's required by law for most species.`,
     signs: [
       'Scratching, thumping, or scurrying sounds in your attic, walls, or chimney — especially at dawn and dusk',
       'Droppings, urine stains, or strong odors in your attic, garage, or crawl space',
@@ -253,7 +253,7 @@ export const SERVICE_CONTENT: Record<string, ServiceContent> = {
     ],
     process: [
       { step: 'Inspection & Identification', description: 'We identify the animal species, locate all entry points, and assess any damage to your home\'s structure, insulation, and wiring.' },
-      { step: 'Humane Removal', description: 'Using humane traps and one-way exclusion devices, we safely remove wildlife from your home in full compliance with state regulations.' },
+      { step: 'Humane Removal', description: 'Using humane traps and one-way exclusion devices, we humanely remove wildlife from your home in full compliance with state regulations.' },
       { step: 'Permanent Exclusion', description: 'We seal every entry point with professional-grade, animal-resistant materials to ensure wildlife cannot re-enter.' },
       { step: 'Cleanup & Restoration', description: 'We clean and sanitize contaminated areas, remove soiled insulation, and repair or recommend repairs for any structural damage.' },
     ],
