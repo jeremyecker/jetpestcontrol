@@ -142,7 +142,7 @@ export default async function TownPage({ params }: { params: Promise<{ region: s
         ) : (
           <p className="text-xl text-gray-600 mb-6">
             {BRAND.name} provides licensed, professional pest control to {canonicalTownName} residents and businesses.{' '}
-            {region.pestContext} Our technicians deliver same-day service with treatments that are safe for families and pets.
+            {region.pestContext} Our technicians deliver same-day service with treatments that are family-friendly and pets.
           </p>
         )}
 
