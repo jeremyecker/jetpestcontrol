@@ -2,12 +2,20 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { NAV_LINKS, SITE_NAME, PHONE, PHONE_HREF } from '@/site.config';
+import { usePathname } from 'next/navigation';
+import { NAV_LINKS, SITE_NAME, PHONE, PHONE_HREF, REGION_PHONES, HOMEPAGE_PHONES } from '@/site.config';
 import MobileMenu from './MobileMenu';
 import Button from '@/components/ui/Button';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  // Determine regional phone
+  const segment = pathname?.split('/')[1] ?? '';
+  const isHomepage = pathname === '/';
+  const regional = REGION_PHONES[segment];
+  const activePhone = regional ?? { display: PHONE, href: PHONE_HREF };
 
   return (
     <>
@@ -37,12 +45,26 @@ export default function Header() {
 
             {/* Desktop CTA */}
             <div className="hidden lg:flex items-center gap-3">
-              <a
-                href={PHONE_HREF}
-                className="font-bold text-brand-primary text-lg hover:text-brand-secondary transition-colors"
-              >
-                {PHONE}
-              </a>
+              {isHomepage ? (
+                <div className="flex flex-col items-end gap-0.5">
+                  {HOMEPAGE_PHONES.map((p) => (
+                    <a
+                      key={p.href}
+                      href={p.href}
+                      className="text-sm font-semibold text-brand-primary hover:text-brand-secondary transition-colors leading-tight"
+                    >
+                      <span className="text-gray-500 font-normal">{p.label}: </span>{p.display}
+                    </a>
+                  ))}
+                </div>
+              ) : (
+                <a
+                  href={activePhone.href}
+                  className="font-bold text-brand-primary text-lg hover:text-brand-secondary transition-colors"
+                >
+                  {activePhone.display}
+                </a>
+              )}
               <Button href="/contact" variant="accent" size="sm">
                 Free Quote
               </Button>
@@ -51,7 +73,7 @@ export default function Header() {
             {/* Mobile: Phone + Hamburger */}
             <div className="flex items-center gap-2 lg:hidden">
               <a
-                href={PHONE_HREF}
+                href={activePhone.href}
                 className="flex items-center justify-center w-10 h-10 rounded-full bg-brand-accent text-white"
                 aria-label="Call us"
               >

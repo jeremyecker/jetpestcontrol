@@ -24,6 +24,19 @@ export const PHONE = '(718) 710-0330';
 export const PHONE_RAW = '+17187100330';
 export const PHONE_HREF = 'tel:+17187100330';
 
+export const REGION_PHONES: Record<string, { display: string; href: string }> = {
+  brooklyn:  { display: '(718) 710-0330', href: 'tel:+17187100330' },
+  queens:    { display: '(718) 710-0330', href: 'tel:+17187100330' },
+  manhattan: { display: '(718) 710-0330', href: 'tel:+17187100330' },
+  nassau:    { display: '(516) 774-5051', href: 'tel:+15167745051' },
+  suffolk:   { display: '(516) 774-5051', href: 'tel:+15167745051' },
+};
+
+export const HOMEPAGE_PHONES = [
+  { label: 'NYC', display: '(718) 710-0330', href: 'tel:+17187100330' },
+  { label: 'Long Island', display: '(516) 774-5051', href: 'tel:+15167745051' },
+];
+
 export const GEO = {
   county: 'Brooklyn',
   countyFull: 'Brooklyn',
