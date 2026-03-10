@@ -8,6 +8,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const base = `https://${BRAND.domain}`;
   const entries: MetadataRoute.Sitemap = [
     { url: base, lastModified: new Date(), changeFrequency: 'weekly', priority: 1 },
+    { url: `${base}/pest-control-near-me/`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${base}/exterminator-near-me/`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${base}/emergency-pest-control/`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${base}/same-day-pest-control/`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${base}/bed-bug-exterminator/`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${base}/free-pest-inspection/`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
     { url: `${base}/blog/`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
     { url: `${base}/commercial/`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
   ];
