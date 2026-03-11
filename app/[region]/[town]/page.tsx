@@ -15,9 +15,9 @@ export async function generateMetadata({ params }: { params: Promise<{ region: s
   if (!region) return {};
   const townName = townSlug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
   return {
-    title: `Pest Control in ${townName}, ${region.stateCode} | ${BRAND.name}`,
+    title: `Pest Control in ${townName}, ${region.stateCode}`,
     description: `Licensed pest control in ${townName}, ${region.stateCode}. ${BRAND.name} provides same-day service for bed bugs, rodents, cockroaches, and more. Call ${BRAND.phoneFormatted} now.`,
-    alternates: { canonical: `https://${BRAND.domain}/${regionSlug}/${townSlug}/` },
+    alternates: { canonical: `https://${BRAND.domain}/${regionSlug}/${townSlug}` },
   };
 }
 
@@ -64,7 +64,7 @@ export default async function TownPage({ params }: { params: Promise<{ region: s
   const localBusinessSchema = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    '@id': `https://${BRAND.domain}/${regionSlug}/${townSlug}/`,
+    '@id': `https://${BRAND.domain}/#business`,
     name: BRAND.name,
     description: `Professional pest control services in ${canonicalTownName}, ${region.stateCode}. Licensed and insured. Same-day service available.`,
     url: `https://${BRAND.domain}`,
@@ -99,9 +99,9 @@ export default async function TownPage({ params }: { params: Promise<{ region: s
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: `https://${BRAND.domain}/` },
-      { '@type': 'ListItem', position: 2, name: region.name, item: `https://${BRAND.domain}/${regionSlug}/` },
-      { '@type': 'ListItem', position: 3, name: `Pest Control in ${canonicalTownName}`, item: `https://${BRAND.domain}/${regionSlug}/${townSlug}/` },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `https://${BRAND.domain}` },
+      { '@type': 'ListItem', position: 2, name: region.name, item: `https://${BRAND.domain}/${regionSlug}` },
+      { '@type': 'ListItem', position: 3, name: `Pest Control in ${canonicalTownName}`, item: `https://${BRAND.domain}/${regionSlug}/${townSlug}` },
     ],
   };
 
@@ -129,7 +129,7 @@ export default async function TownPage({ params }: { params: Promise<{ region: s
         <nav className="text-sm text-gray-500 mb-8" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-brand-primary">Home</Link>
           {' / '}
-          <Link href={`/${regionSlug}/`} className="hover:text-brand-primary">{region.name}</Link>
+          <Link href={`/${regionSlug}`} className="hover:text-brand-primary">{region.name}</Link>
           {' / '}
           <span className="text-gray-900">Pest Control in {canonicalTownName}</span>
         </nav>
@@ -174,7 +174,7 @@ export default async function TownPage({ params }: { params: Promise<{ region: s
             📞 Call {BRAND.phoneFormatted}
           </a>
           <Link
-            href={`/${regionSlug}/contact/`}
+            href={`/${regionSlug}/contact`}
             className="flex-1 text-center bg-brand-accent hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors"
           >
             Get a Free Quote
@@ -260,7 +260,7 @@ export default async function TownPage({ params }: { params: Promise<{ region: s
                 return (
                   <Link
                     key={town}
-                    href={`/${regionSlug}/${slug}/`}
+                    href={`/${regionSlug}/${slug}`}
                     className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-sm text-brand-primary hover:bg-brand-light hover:border-brand-primary transition-colors"
                   >
                     {town}
@@ -268,7 +268,7 @@ export default async function TownPage({ params }: { params: Promise<{ region: s
                 );
               })}
               <Link
-                href={`/${regionSlug}/`}
+                href={`/${regionSlug}`}
                 className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-sm text-brand-primary hover:bg-brand-light hover:border-brand-primary transition-colors"
               >
                 All {region.shortName} Service Areas →
@@ -293,7 +293,7 @@ export default async function TownPage({ params }: { params: Promise<{ region: s
               📞 {BRAND.phoneFormatted}
             </a>
             <Link
-              href={`/${regionSlug}/contact/`}
+              href={`/${regionSlug}/contact`}
               className="bg-brand-accent hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg transition-colors"
             >
               Get a Free Quote

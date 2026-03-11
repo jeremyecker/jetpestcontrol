@@ -3,8 +3,20 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  images: {
+    remotePatterns: [
+      { protocol: 'https', hostname: 'images.unsplash.com' },
+    ],
+  },
   async redirects() {
     return [
+      // www → non-www
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.jetpestcontrol.com' }],
+        destination: 'https://jetpestcontrol.com/:path*',
+        permanent: true,
+      },
       // Cross-region corrections — neighborhood in wrong borough
       { source: '/manhattan/astoria', destination: '/queens/astoria', permanent: true },
       { source: '/manhattan/brooklyn-heights', destination: '/brooklyn/brooklyn-heights', permanent: true },

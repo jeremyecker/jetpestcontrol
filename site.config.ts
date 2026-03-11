@@ -12,7 +12,7 @@ export const SITE_NAME = 'Jet Pest Control';
 export const SITE_DOMAIN = 'jetpestcontrol.com';
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://jetpestcontrol.com';
 export const SITE_TAGLINE = 'Professional Pest Control Services — NYC, Long Island & Beyond';
-export const SITE_DESCRIPTION = 'Professional pest control serving Brooklyn, Queens, Manhattan, Nassau & Suffolk Counties. Discreet unmarked trucks. Licensed, insured, and effective treatments. Free estimates.';
+export const SITE_DESCRIPTION = 'Pest control for Brooklyn, Queens, Manhattan, Nassau & Suffolk Counties. Licensed, insured, discreet unmarked trucks. Same-day service available.';
 export const EMAIL = 'info@jetpestcontrol.com';
 
 export const SITE = {
@@ -162,7 +162,7 @@ export const REVIEWS = [
   {
     name: "Leah G.",
     rating: 5,
-    text: "Jeffrey was great! He was super calm, meticulous, and answered all of my questions while he was here. I especially appreciate that he came out quickly within the same day, when my own building wouldn’t coordinate a quick response to a pest issue. Would definitely recommend him and this company.",
+    text: "Jeffrey was great! He was super calm, meticulous, and answered all of my questions while he was here. I especially appreciate that he came out quickly within the same day, when my own building wouldn't coordinate a quick response to a pest issue. Would definitely recommend him and this company.",
     date: "2 days ago",
     source: "Google"
   },
@@ -176,7 +176,7 @@ export const REVIEWS = [
   {
     name: "Patricia T.",
     rating: 5,
-    text: "Jeffry does an excellent job, he’s the best at what he does!",
+    text: "Jeffry does an excellent job, he's the best at what he does!",
     date: "1 day ago",
     source: "Google"
   },
