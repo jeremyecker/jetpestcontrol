@@ -18,6 +18,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/commercial`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
   ];
 
+  // Static pages
+  entries.push(
+    { url: `${base}/services`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/about`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/contact`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/terms`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.3 },
+    { url: `${base}/privacy`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.3 },
+    { url: `${base}/reviews`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/service-areas`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+  );
+
   // Commercial vertical pages
   for (const vertical of COMMERCIAL_VERTICALS) {
     entries.push({
@@ -33,6 +44,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entries.push({
       url: `${base}/blog/${post.slug}`,
       lastModified: new Date(post.date),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    });
+  }
+
+  // Individual service pages
+  for (const service of SERVICES) {
+    entries.push({
+      url: `${base}/services/${service.slug}`,
+      lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.7,
     });
