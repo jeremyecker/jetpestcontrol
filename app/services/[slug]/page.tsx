@@ -1,4 +1,6 @@
 import { notFound } from 'next/navigation';
+import { SITE_URL, SITE_NAME, PHONE, GEO } from '@/site.config';
+import { generatePageMetadata, breadcrumbSchema } from '@/lib/seo';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { SERVICES } from '@/lib/services';
@@ -11,10 +13,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const service = SERVICES.find(s => s.slug === slug);
   if (!service) return {};
-  return {
+  const description = `Professional ${service.name.toLowerCase()} for ${serviceArea}. Licensed, insured. Same-day service available. Call ${BRAND.phoneFormatted}.`;
+  return generatePageMetadata({
     title: service.name,
-    description: `Professional ${service.name.toLowerCase()} for ${serviceArea}. Licensed, insured. Same-day service available. Call ${BRAND.phoneFormatted}.`,
-  };
+    description,
+    path: `/services/${slug}`,
+  });
 }
 
 export function generateStaticParams() {
@@ -126,6 +130,34 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
         >
           Get Free Quote
         </Link>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            breadcrumbSchema([
+              { label: 'Home', href: '/' },
+              { label: 'Services', href: '/services' },
+              { label: service.name },
+            ]),
+            {
+              '@context': 'https://schema.org',
+              '@type': 'LocalBusiness',
+              '@id': `${SITE_URL}/#business`,
+              name: SITE_NAME,
+              url: SITE_URL,
+              telephone: PHONE,
+              image: `${SITE_URL}/images/og-default.jpg`,
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: GEO.countyFull,
+                addressRegion: GEO.stateCode,
+                addressCountry: 'US',
+              },
+            },
+          ]),
+        }}
+      />
       </div>
     </div>
   );
