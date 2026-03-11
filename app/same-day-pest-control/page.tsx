@@ -43,6 +43,20 @@ const REGIONS = [
 ];
 
 export default function Page() {
+  const localBusinessSchema = {
+    '@context': 'https://schema.org',
+    '@type': ["LocalBusiness", "PestControlService"],
+    name: 'Jet Pest Control',
+    url: 'https://jetpestcontrol.com',
+    telephone: '+17187100330',
+    image: 'https://jetpestcontrol.com/images/og-default.jpg',
+    address: {
+      '@type': 'PostalAddress',
+      addressRegion: 'NY',
+      addressCountry: 'US',
+    },
+  };
+
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -68,6 +82,11 @@ export default function Page() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
