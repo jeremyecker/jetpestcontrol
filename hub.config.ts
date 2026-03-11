@@ -79,15 +79,15 @@ const QUEENS_TOWNS = [
 const MANHATTAN_TOWNS = [
   'Battery Park City', 'Chelsea', 'Chinatown', 'East Harlem', 'East Village',
   'Financial District', 'Flatiron District', 'Gramercy Park', 'Greenwich Village',
-  'Hamilton Heights', 'Harlem', "Hell's Kitchen", 'Inwood', 'Kips Bay',
+  'Hamilton Heights', 'Harlem', 'Hells Kitchen', 'Inwood', 'Kips Bay',
   'Lenox Hill', 'Little Italy', 'Lower East Side', 'Marble Hill', 'Midtown',
   'Morningside Heights', 'Murray Hill', 'NoHo', 'Nolita', 'Roosevelt Island',
   'SoHo', 'Stuyvesant Town', 'Tribeca', 'Upper East Side', 'Upper West Side',
   'Washington Heights', 'West Village', 'Yorkville',
 ];
 const NASSAU_TOWNS = [
-  'Atlantic Beach', 'Baldwin', 'Bayville', 'Bellmore', 'Bethpage',
-  'Carle Place', 'Cedarhurst', 'East Meadow', 'East Rockaway', 'Elmont',
+  'Albertson', 'Alden Manor', 'Atlantic Beach', 'Baldwin', 'Bayville', 'Bellmore', 'Bethpage',
+  'Carle Place', 'Cedarhurst', 'East Meadow', 'East Norwich', 'East Rockaway', 'Elmont',
   'Farmingdale', 'Floral Park', 'Franklin Square', 'Freeport', 'Garden City',
   'Glen Cove', 'Glen Head', 'Glenwood Landing', 'Great Neck', 'Greenvale',
   'Hempstead', 'Herricks', 'Hewlett', 'Hicksville', 'Inwood',
@@ -102,14 +102,14 @@ const NASSAU_TOWNS = [
   'West Hempstead', 'Westbury', 'Williston Park', 'Woodbury', 'Woodmere',
 ];
 const SUFFOLK_TOWNS = [
-  'Amityville', 'Aquebogue', 'Babylon', 'Bay Shore', 'Bayport', 'Bellport',
+  'Amagansett', 'Amityville', 'Aquebogue', 'Babylon', 'Bay Shore', 'Bayport', 'Bellport',
   'Blue Point', 'Bohemia', 'Brentwood', 'Bridgehampton', 'Brightwaters',
-  'Brookhaven', 'Calverton', 'Center Moriches', 'Centereach', 'Central Islip',
+  'Brookhaven', 'Calverton', 'Center Moriches', 'Centereach', 'Centerport', 'Central Islip',
   'Cold Spring Harbor', 'Commack', 'Copiague', 'Coram', 'Cutchogue',
   'Deer Park', 'Dix Hills', 'East Hampton', 'East Islip', 'East Marion',
   'East Moriches', 'East Northport', 'East Patchogue', 'East Quogue',
   'East Setauket', 'Eastport', 'Farmingville', 'Fire Island', 'Flanders',
-  'Great River', 'Greenlawn', 'Greenport', 'Hauppauge', 'Holbrook',
+  'Great River', 'Greenlawn', 'Greenport', 'Hampton Bays', 'Hauppauge', 'Holbrook',
   'Holtsville', 'Huntington', 'Huntington Station', 'Islandia', 'Islip',
   'Islip Terrace', 'Jamesport', 'Kings Park', 'Lake Grove', 'Lake Ronkonkoma',
   'Laurel', 'Lindenhurst', 'Manorville', 'Mastic', 'Mastic Beach',

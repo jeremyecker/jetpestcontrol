@@ -18,6 +18,10 @@ export default function ReviewsPage() {
     <>
       <Schema data={localBusinessSchema()} />
       <Breadcrumbs items={[{ label: 'Reviews' }]} />
+      <div className="max-w-7xl mx-auto px-4 pt-8">
+        <h1 className="text-3xl font-bold text-gray-900 mb-2">Customer Reviews</h1>
+        <p className="text-gray-600 mb-6">Real reviews from homeowners across {GEO.region}.</p>
+      </div>
       <TrustBar />
       <ReviewsSection limit={6} title={`Real Reviews from ${GEO.region} Homeowners`} />
       <CTABanner />

@@ -69,6 +69,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       { url: `${regionBase}/contact`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     );
 
+    // Region lead capture pages
+    const leadTypes = [
+      'pest-control-near-me',
+      'exterminator-near-me',
+      'emergency-pest-control',
+      'same-day-pest-control',
+      'bed-bug-exterminator',
+      'free-pest-inspection',
+    ];
+    for (const leadType of leadTypes) {
+      entries.push({
+        url: `${regionBase}/${leadType}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: 0.8,
+      });
+    }
+
     for (const service of SERVICES) {
       entries.push({
         url: `${regionBase}/services/${service.slug}`,

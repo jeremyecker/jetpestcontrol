@@ -20,7 +20,7 @@ export const leadCapturePages: LeadCapturePage[] = [
     regionDisplay: 'Brooklyn',
     leadType: 'pest-control-near-me',
     title: 'Pest Control Near Me',
-    metaTitle: `Pest Control Near Me Brooklyn | Same-Day Service | Jet Pest Control`,
+    metaTitle: `Pest Control Near Me Brooklyn | Same-Day Service`,
     metaDesc: `Looking for pest control near you in Brooklyn? Jet Pest Control offers same-day service, licensed technicians, and guaranteed results. Call (800) 990-9296.`,
     h1: `Pest Control Near Me in Brooklyn`,
     intro: `When you search for pest control near you in Brooklyn, you need a company that actually shows up — same day, with the right solution. Jet Pest Control has served Brooklyn and the surrounding area for years, handling everything from cockroaches and rodents to bed bugs and termites in brownstones, pre-war apartment buildings, converted loft spaces, and densely packed row houses.
@@ -41,7 +41,7 @@ Our licensed and insured technicians know Brooklyn's specific pest pressures int
     regionDisplay: 'Brooklyn',
     leadType: 'exterminator-near-me',
     title: 'Exterminator Near Me',
-    metaTitle: `Exterminator Near Me Brooklyn | Licensed and Insured | Jet Pest Control`,
+    metaTitle: `Exterminator Near Me Brooklyn | Licensed and Insured`,
     metaDesc: `Need an exterminator near you in Brooklyn? Jet Pest Control is licensed, insured, and ready for same-day service. Call (800) 990-9296 now.`,
     h1: `Exterminator Near Me in Brooklyn`,
     intro: `Searching for an exterminator near you in Brooklyn? The quality of your exterminator matters more than most people realize — the wrong approach just pushes pests deeper into the structure without eliminating them. Jet Pest Control's licensed technicians identify the root cause of every infestation before treatment, delivering lasting results in brownstones, pre-war apartment buildings, converted loft spaces, and densely packed row houses.
@@ -62,7 +62,7 @@ We handle Brooklyn's full range of pest problems: German cockroaches thrive in t
     regionDisplay: 'Brooklyn',
     leadType: 'emergency-pest-control',
     title: 'Emergency Pest Control',
-    metaTitle: `Emergency Pest Control Brooklyn | Same-Day Urgent Response | Jet Pest Control`,
+    metaTitle: `Emergency Pest Control Brooklyn | Same-Day Urgent Response`,
     metaDesc: `Emergency pest control in Brooklyn. Same-day response for severe infestations, bed bugs, rodents, and more. Call Jet Pest Control at (800) 990-9296.`,
     h1: `Emergency Pest Control in Brooklyn`,
     intro: `A pest emergency in Brooklyn cannot wait. Whether you've discovered bed bugs before guests arrive, a rat in the kitchen, a wasp nest near a doorway, or a cockroach infestation that appeared overnight — Jet Pest Control offers emergency same-day response throughout Brooklyn.
@@ -83,7 +83,7 @@ Pest emergencies are stressful and often escalate quickly in brownstones, pre-wa
     regionDisplay: 'Brooklyn',
     leadType: 'same-day-pest-control',
     title: 'Same Day Pest Control',
-    metaTitle: `Same Day Pest Control Brooklyn | Book Today, Service Today | Jet Pest Control`,
+    metaTitle: `Same Day Pest Control Brooklyn | Book Today, Service Today`,
     metaDesc: `Same-day pest control in Brooklyn. Call Jet Pest Control at (800) 990-9296 before noon for afternoon service. Licensed, insured, guaranteed.`,
     h1: `Same Day Pest Control in Brooklyn`,
     intro: `Same-day pest control in Brooklyn is Jet's signature service. Call before noon and a licensed technician arrives the same afternoon — no waiting days for an appointment while an infestation spreads through your home or building.
@@ -104,7 +104,7 @@ Same-day service matters most in Brooklyn's densely housed communities. German c
     regionDisplay: 'Brooklyn',
     leadType: 'bed-bug-exterminator',
     title: 'Bed Bug Exterminator',
-    metaTitle: `Bed Bug Exterminator Brooklyn | Heat Treatment + Chemical | Jet Pest Control`,
+    metaTitle: `Bed Bug Exterminator Brooklyn | Heat Treatment + Chemical`,
     metaDesc: `Bed bug exterminator in Brooklyn. Heat treatment, chemical treatment, and K-9 detection available. Call Jet Pest Control at (800) 990-9296.`,
     h1: `Bed Bug Exterminator in Brooklyn`,
     intro: `Bed bugs in Brooklyn require specialized treatment — not the generic pest spray that works for cockroaches. Jet Pest Control's bed bug division uses heat treatment, targeted chemical protocols, and K-9 detection to eliminate infestations at every stage of the life cycle, including eggs.
@@ -125,7 +125,7 @@ Bed bugs are a persistent challenge in Brooklyn's brownstones, pre-war apartment
     regionDisplay: 'Brooklyn',
     leadType: 'free-pest-inspection',
     title: 'Free Pest Inspection',
-    metaTitle: `Free Pest Inspection Brooklyn | No-Cost Assessment | Jet Pest Control`,
+    metaTitle: `Free Pest Inspection Brooklyn | No-Cost Assessment`,
     metaDesc: `Free pest inspection in Brooklyn. Jet Pest Control offers no-cost inspections to identify infestations, entry points, and risk factors. Call (800) 990-9296.`,
     h1: `Free Pest Inspection in Brooklyn`,
     intro: `Not sure if you have a pest problem — or how serious it is? Jet Pest Control offers free pest inspections throughout Brooklyn. A licensed technician will assess your property, identify any active infestations, locate entry points, and give you a clear picture of what you're dealing with — at no cost and no obligation.
@@ -146,7 +146,7 @@ A free inspection is the right starting point for any pest concern. In Brooklyn'
     regionDisplay: 'Queens',
     leadType: 'pest-control-near-me',
     title: 'Pest Control Near Me',
-    metaTitle: `Pest Control Near Me Queens | Same-Day Service | Jet Pest Control`,
+    metaTitle: `Pest Control Near Me Queens | Same-Day Service`,
     metaDesc: `Looking for pest control near you in Queens? Jet Pest Control offers same-day service, licensed technicians, and guaranteed results. Call (800) 990-9296.`,
     h1: `Pest Control Near Me in Queens`,
     intro: `When you search for pest control near you in Queens, you need a company that actually shows up — same day, with the right solution. Jet Pest Control has served Queens and the surrounding area for years, handling everything from cockroaches and rodents to bed bugs and termites in attached homes, two-family houses, garden apartments, and dense urban neighborhoods transitioning to suburban-style streets.
@@ -167,7 +167,7 @@ Our licensed and insured technicians know Queens's specific pest pressures intim
     regionDisplay: 'Queens',
     leadType: 'exterminator-near-me',
     title: 'Exterminator Near Me',
-    metaTitle: `Exterminator Near Me Queens | Licensed and Insured | Jet Pest Control`,
+    metaTitle: `Exterminator Near Me Queens | Licensed and Insured`,
     metaDesc: `Need an exterminator near you in Queens? Jet Pest Control is licensed, insured, and ready for same-day service. Call (800) 990-9296 now.`,
     h1: `Exterminator Near Me in Queens`,
     intro: `Searching for an exterminator near you in Queens? The quality of your exterminator matters more than most people realize — the wrong approach just pushes pests deeper into the structure without eliminating them. Jet Pest Control's licensed technicians identify the root cause of every infestation before treatment, delivering lasting results in attached homes, two-family houses, garden apartments, and dense urban neighborhoods transitioning to suburban-style streets.
@@ -188,7 +188,7 @@ We handle Queens's full range of pest problems: rodents are common near the boro
     regionDisplay: 'Queens',
     leadType: 'emergency-pest-control',
     title: 'Emergency Pest Control',
-    metaTitle: `Emergency Pest Control Queens | Same-Day Urgent Response | Jet Pest Control`,
+    metaTitle: `Emergency Pest Control Queens | Same-Day Urgent Response`,
     metaDesc: `Emergency pest control in Queens. Same-day response for severe infestations, bed bugs, rodents, and more. Call Jet Pest Control at (800) 990-9296.`,
     h1: `Emergency Pest Control in Queens`,
     intro: `A pest emergency in Queens cannot wait. Whether you've discovered bed bugs before guests arrive, a rat in the kitchen, a wasp nest near a doorway, or a cockroach infestation that appeared overnight — Jet Pest Control offers emergency same-day response throughout Queens.
@@ -209,7 +209,7 @@ Pest emergencies are stressful and often escalate quickly in attached homes, two
     regionDisplay: 'Queens',
     leadType: 'same-day-pest-control',
     title: 'Same Day Pest Control',
-    metaTitle: `Same Day Pest Control Queens | Book Today, Service Today | Jet Pest Control`,
+    metaTitle: `Same Day Pest Control Queens | Book Today, Service Today`,
     metaDesc: `Same-day pest control in Queens. Call Jet Pest Control at (800) 990-9296 before noon for afternoon service. Licensed, insured, guaranteed.`,
     h1: `Same Day Pest Control in Queens`,
     intro: `Same-day pest control in Queens is Jet's signature service. Call before noon and a licensed technician arrives the same afternoon — no waiting days for an appointment while an infestation spreads through your home or building.
@@ -230,7 +230,7 @@ Same-day service matters most in Queens's densely housed communities. Rodents ar
     regionDisplay: 'Queens',
     leadType: 'bed-bug-exterminator',
     title: 'Bed Bug Exterminator',
-    metaTitle: `Bed Bug Exterminator Queens | Heat Treatment + Chemical | Jet Pest Control`,
+    metaTitle: `Bed Bug Exterminator Queens | Heat Treatment + Chemical`,
     metaDesc: `Bed bug exterminator in Queens. Heat treatment, chemical treatment, and K-9 detection available. Call Jet Pest Control at (800) 990-9296.`,
     h1: `Bed Bug Exterminator in Queens`,
     intro: `Bed bugs in Queens require specialized treatment — not the generic pest spray that works for cockroaches. Jet Pest Control's bed bug division uses heat treatment, targeted chemical protocols, and K-9 detection to eliminate infestations at every stage of the life cycle, including eggs.
@@ -251,7 +251,7 @@ Bed bugs are a persistent challenge in Queens's attached homes, two-family house
     regionDisplay: 'Queens',
     leadType: 'free-pest-inspection',
     title: 'Free Pest Inspection',
-    metaTitle: `Free Pest Inspection Queens | No-Cost Assessment | Jet Pest Control`,
+    metaTitle: `Free Pest Inspection Queens | No-Cost Assessment`,
     metaDesc: `Free pest inspection in Queens. Jet Pest Control offers no-cost inspections to identify infestations, entry points, and risk factors. Call (800) 990-9296.`,
     h1: `Free Pest Inspection in Queens`,
     intro: `Not sure if you have a pest problem — or how serious it is? Jet Pest Control offers free pest inspections throughout Queens. A licensed technician will assess your property, identify any active infestations, locate entry points, and give you a clear picture of what you're dealing with — at no cost and no obligation.
@@ -272,7 +272,7 @@ A free inspection is the right starting point for any pest concern. In Queens's 
     regionDisplay: 'Manhattan',
     leadType: 'pest-control-near-me',
     title: 'Pest Control Near Me',
-    metaTitle: `Pest Control Near Me Manhattan | Same-Day Service | Jet Pest Control`,
+    metaTitle: `Pest Control Near Me Manhattan | Same-Day Service`,
     metaDesc: `Looking for pest control near you in Manhattan? Jet Pest Control offers same-day service, licensed technicians, and guaranteed results. Call (800) 990-9296.`,
     h1: `Pest Control Near Me in Manhattan`,
     intro: `When you search for pest control near you in Manhattan, you need a company that actually shows up — same day, with the right solution. Jet Pest Control has served Manhattan and the surrounding area for years, handling everything from cockroaches and rodents to bed bugs and termites in high-rise condos, pre-war co-ops, walk-up apartment buildings, and luxury doorman buildings.
@@ -293,7 +293,7 @@ Our licensed and insured technicians know Manhattan's specific pest pressures in
     regionDisplay: 'Manhattan',
     leadType: 'exterminator-near-me',
     title: 'Exterminator Near Me',
-    metaTitle: `Exterminator Near Me Manhattan | Licensed and Insured | Jet Pest Control`,
+    metaTitle: `Exterminator Near Me Manhattan | Licensed and Insured`,
     metaDesc: `Need an exterminator near you in Manhattan? Jet Pest Control is licensed, insured, and ready for same-day service. Call (800) 990-9296 now.`,
     h1: `Exterminator Near Me in Manhattan`,
     intro: `Searching for an exterminator near you in Manhattan? The quality of your exterminator matters more than most people realize — the wrong approach just pushes pests deeper into the structure without eliminating them. Jet Pest Control's licensed technicians identify the root cause of every infestation before treatment, delivering lasting results in high-rise condos, pre-war co-ops, walk-up apartment buildings, and luxury doorman buildings.
@@ -314,7 +314,7 @@ We handle Manhattan's full range of pest problems: bed bugs are endemic to the b
     regionDisplay: 'Manhattan',
     leadType: 'emergency-pest-control',
     title: 'Emergency Pest Control',
-    metaTitle: `Emergency Pest Control Manhattan | Same-Day Urgent Response | Jet Pest Control`,
+    metaTitle: `Emergency Pest Control Manhattan | Same-Day Urgent Response`,
     metaDesc: `Emergency pest control in Manhattan. Same-day response for severe infestations, bed bugs, rodents, and more. Call Jet Pest Control at (800) 990-9296.`,
     h1: `Emergency Pest Control in Manhattan`,
     intro: `A pest emergency in Manhattan cannot wait. Whether you've discovered bed bugs before guests arrive, a rat in the kitchen, a wasp nest near a doorway, or a cockroach infestation that appeared overnight — Jet Pest Control offers emergency same-day response throughout Manhattan.
@@ -335,7 +335,7 @@ Pest emergencies are stressful and often escalate quickly in high-rise condos, p
     regionDisplay: 'Manhattan',
     leadType: 'same-day-pest-control',
     title: 'Same Day Pest Control',
-    metaTitle: `Same Day Pest Control Manhattan | Book Today, Service Today | Jet Pest Control`,
+    metaTitle: `Same Day Pest Control Manhattan | Book Today, Service Today`,
     metaDesc: `Same-day pest control in Manhattan. Call Jet Pest Control at (800) 990-9296 before noon for afternoon service. Licensed, insured, guaranteed.`,
     h1: `Same Day Pest Control in Manhattan`,
     intro: `Same-day pest control in Manhattan is Jet's signature service. Call before noon and a licensed technician arrives the same afternoon — no waiting days for an appointment while an infestation spreads through your home or building.
@@ -356,7 +356,7 @@ Same-day service matters most in Manhattan's densely housed communities. Bed bug
     regionDisplay: 'Manhattan',
     leadType: 'bed-bug-exterminator',
     title: 'Bed Bug Exterminator',
-    metaTitle: `Bed Bug Exterminator Manhattan | Heat Treatment + Chemical | Jet Pest Control`,
+    metaTitle: `Bed Bug Exterminator Manhattan | Heat Treatment + Chemical`,
     metaDesc: `Bed bug exterminator in Manhattan. Heat treatment, chemical treatment, and K-9 detection available. Call Jet Pest Control at (800) 990-9296.`,
     h1: `Bed Bug Exterminator in Manhattan`,
     intro: `Bed bugs in Manhattan require specialized treatment — not the generic pest spray that works for cockroaches. Jet Pest Control's bed bug division uses heat treatment, targeted chemical protocols, and K-9 detection to eliminate infestations at every stage of the life cycle, including eggs.
@@ -377,7 +377,7 @@ Bed bugs are a persistent challenge in Manhattan's high-rise condos, pre-war co-
     regionDisplay: 'Manhattan',
     leadType: 'free-pest-inspection',
     title: 'Free Pest Inspection',
-    metaTitle: `Free Pest Inspection Manhattan | No-Cost Assessment | Jet Pest Control`,
+    metaTitle: `Free Pest Inspection Manhattan | No-Cost Assessment`,
     metaDesc: `Free pest inspection in Manhattan. Jet Pest Control offers no-cost inspections to identify infestations, entry points, and risk factors. Call (800) 990-9296.`,
     h1: `Free Pest Inspection in Manhattan`,
     intro: `Not sure if you have a pest problem — or how serious it is? Jet Pest Control offers free pest inspections throughout Manhattan. A licensed technician will assess your property, identify any active infestations, locate entry points, and give you a clear picture of what you're dealing with — at no cost and no obligation.
@@ -398,7 +398,7 @@ A free inspection is the right starting point for any pest concern. In Manhattan
     regionDisplay: 'Nassau County',
     leadType: 'pest-control-near-me',
     title: 'Pest Control Near Me',
-    metaTitle: `Pest Control Near Me Nassau County | Same-Day Service | Jet Pest Control`,
+    metaTitle: `Pest Control Near Me Nassau County | Same-Day Service`,
     metaDesc: `Looking for pest control near you in Nassau County? Jet Pest Control offers same-day service, licensed technicians, and guaranteed results. Call (800) 990-9296.`,
     h1: `Pest Control Near Me in Nassau County`,
     intro: `When you search for pest control near you in Nassau County, you need a company that actually shows up — same day, with the right solution. Jet Pest Control has served Nassau County and the surrounding area for years, handling everything from cockroaches and rodents to bed bugs and termites in post-war Levittown Cape Cods, split-level homes, colonial-style houses, and mature tree-lined neighborhoods with aging foundations.
@@ -419,7 +419,7 @@ Our licensed and insured technicians know Nassau County's specific pest pressure
     regionDisplay: 'Nassau County',
     leadType: 'exterminator-near-me',
     title: 'Exterminator Near Me',
-    metaTitle: `Exterminator Near Me Nassau County | Licensed and Insured | Jet Pest Control`,
+    metaTitle: `Exterminator Near Me Nassau County | Licensed and Insured`,
     metaDesc: `Need an exterminator near you in Nassau County? Jet Pest Control is licensed, insured, and ready for same-day service. Call (800) 990-9296 now.`,
     h1: `Exterminator Near Me in Nassau County`,
     intro: `Searching for an exterminator near you in Nassau County? The quality of your exterminator matters more than most people realize — the wrong approach just pushes pests deeper into the structure without eliminating them. Jet Pest Control's licensed technicians identify the root cause of every infestation before treatment, delivering lasting results in post-war Levittown Cape Cods, split-level homes, colonial-style houses, and mature tree-lined neighborhoods with aging foundations.
@@ -440,7 +440,7 @@ We handle Nassau County's full range of pest problems: termites are active in Na
     regionDisplay: 'Nassau County',
     leadType: 'emergency-pest-control',
     title: 'Emergency Pest Control',
-    metaTitle: `Emergency Pest Control Nassau County | Same-Day Urgent Response | Jet Pest Control`,
+    metaTitle: `Emergency Pest Control Nassau County | Same-Day Urgent Response`,
     metaDesc: `Emergency pest control in Nassau County. Same-day response for severe infestations, bed bugs, rodents, and more. Call Jet Pest Control at (800) 990-9296.`,
     h1: `Emergency Pest Control in Nassau County`,
     intro: `A pest emergency in Nassau County cannot wait. Whether you've discovered bed bugs before guests arrive, a rat in the kitchen, a wasp nest near a doorway, or a cockroach infestation that appeared overnight — Jet Pest Control offers emergency same-day response throughout Nassau County.
@@ -461,7 +461,7 @@ Pest emergencies are stressful and often escalate quickly in post-war Levittown 
     regionDisplay: 'Nassau County',
     leadType: 'same-day-pest-control',
     title: 'Same Day Pest Control',
-    metaTitle: `Same Day Pest Control Nassau County | Book Today, Service Today | Jet Pest Control`,
+    metaTitle: `Same Day Pest Control Nassau County | Book Today, Service Today`,
     metaDesc: `Same-day pest control in Nassau County. Call Jet Pest Control at (800) 990-9296 before noon for afternoon service. Licensed, insured, guaranteed.`,
     h1: `Same Day Pest Control in Nassau County`,
     intro: `Same-day pest control in Nassau County is Jet's signature service. Call before noon and a licensed technician arrives the same afternoon — no waiting days for an appointment while an infestation spreads through your home or building.
@@ -482,7 +482,7 @@ Same-day service matters most in Nassau County's densely housed communities. Ter
     regionDisplay: 'Nassau County',
     leadType: 'bed-bug-exterminator',
     title: 'Bed Bug Exterminator',
-    metaTitle: `Bed Bug Exterminator Nassau County | Heat Treatment + Chemical | Jet Pest Control`,
+    metaTitle: `Bed Bug Exterminator Nassau County | Heat Treatment + Chemical`,
     metaDesc: `Bed bug exterminator in Nassau County. Heat treatment, chemical treatment, and K-9 detection available. Call Jet Pest Control at (800) 990-9296.`,
     h1: `Bed Bug Exterminator in Nassau County`,
     intro: `Bed bugs in Nassau County require specialized treatment — not the generic pest spray that works for cockroaches. Jet Pest Control's bed bug division uses heat treatment, targeted chemical protocols, and K-9 detection to eliminate infestations at every stage of the life cycle, including eggs.
@@ -503,7 +503,7 @@ Bed bugs are a persistent challenge in Nassau County's post-war Levittown Cape C
     regionDisplay: 'Nassau County',
     leadType: 'free-pest-inspection',
     title: 'Free Pest Inspection',
-    metaTitle: `Free Pest Inspection Nassau County | No-Cost Assessment | Jet Pest Control`,
+    metaTitle: `Free Pest Inspection Nassau County | No-Cost Assessment`,
     metaDesc: `Free pest inspection in Nassau County. Jet Pest Control offers no-cost inspections to identify infestations, entry points, and risk factors. Call (800) 990-9296.`,
     h1: `Free Pest Inspection in Nassau County`,
     intro: `Not sure if you have a pest problem — or how serious it is? Jet Pest Control offers free pest inspections throughout Nassau County. A licensed technician will assess your property, identify any active infestations, locate entry points, and give you a clear picture of what you're dealing with — at no cost and no obligation.
@@ -524,7 +524,7 @@ A free inspection is the right starting point for any pest concern. In Nassau Co
     regionDisplay: 'Suffolk County',
     leadType: 'pest-control-near-me',
     title: 'Pest Control Near Me',
-    metaTitle: `Pest Control Near Me Suffolk County | Same-Day Service | Jet Pest Control`,
+    metaTitle: `Pest Control Near Me Suffolk County | Same-Day Service`,
     metaDesc: `Looking for pest control near you in Suffolk County? Jet Pest Control offers same-day service, licensed technicians, and guaranteed results. Call (800) 990-9296.`,
     h1: `Pest Control Near Me in Suffolk County`,
     intro: `When you search for pest control near you in Suffolk County, you need a company that actually shows up — same day, with the right solution. Jet Pest Control has served Suffolk County and the surrounding area for years, handling everything from cockroaches and rodents to bed bugs and termites in single-family colonial and ranch homes, waterfront properties, rural estates, and seasonal communities along the East End.
@@ -545,7 +545,7 @@ Our licensed and insured technicians know Suffolk County's specific pest pressur
     regionDisplay: 'Suffolk County',
     leadType: 'exterminator-near-me',
     title: 'Exterminator Near Me',
-    metaTitle: `Exterminator Near Me Suffolk County | Licensed and Insured | Jet Pest Control`,
+    metaTitle: `Exterminator Near Me Suffolk County | Licensed and Insured`,
     metaDesc: `Need an exterminator near you in Suffolk County? Jet Pest Control is licensed, insured, and ready for same-day service. Call (800) 990-9296 now.`,
     h1: `Exterminator Near Me in Suffolk County`,
     intro: `Searching for an exterminator near you in Suffolk County? The quality of your exterminator matters more than most people realize — the wrong approach just pushes pests deeper into the structure without eliminating them. Jet Pest Control's licensed technicians identify the root cause of every infestation before treatment, delivering lasting results in single-family colonial and ranch homes, waterfront properties, rural estates, and seasonal communities along the East End.
@@ -566,7 +566,7 @@ We handle Suffolk County's full range of pest problems: deer ticks carrying Lyme
     regionDisplay: 'Suffolk County',
     leadType: 'emergency-pest-control',
     title: 'Emergency Pest Control',
-    metaTitle: `Emergency Pest Control Suffolk County | Same-Day Urgent Response | Jet Pest Control`,
+    metaTitle: `Emergency Pest Control Suffolk County | Same-Day Urgent Response`,
     metaDesc: `Emergency pest control in Suffolk County. Same-day response for severe infestations, bed bugs, rodents, and more. Call Jet Pest Control at (800) 990-9296.`,
     h1: `Emergency Pest Control in Suffolk County`,
     intro: `A pest emergency in Suffolk County cannot wait. Whether you've discovered bed bugs before guests arrive, a rat in the kitchen, a wasp nest near a doorway, or a cockroach infestation that appeared overnight — Jet Pest Control offers emergency same-day response throughout Suffolk County.
@@ -587,7 +587,7 @@ Pest emergencies are stressful and often escalate quickly in single-family colon
     regionDisplay: 'Suffolk County',
     leadType: 'same-day-pest-control',
     title: 'Same Day Pest Control',
-    metaTitle: `Same Day Pest Control Suffolk County | Book Today, Service Today | Jet Pest Control`,
+    metaTitle: `Same Day Pest Control Suffolk County | Book Today, Service Today`,
     metaDesc: `Same-day pest control in Suffolk County. Call Jet Pest Control at (800) 990-9296 before noon for afternoon service. Licensed, insured, guaranteed.`,
     h1: `Same Day Pest Control in Suffolk County`,
     intro: `Same-day pest control in Suffolk County is Jet's signature service. Call before noon and a licensed technician arrives the same afternoon — no waiting days for an appointment while an infestation spreads through your home or building.
@@ -608,7 +608,7 @@ Same-day service matters most in Suffolk County's densely housed communities. De
     regionDisplay: 'Suffolk County',
     leadType: 'bed-bug-exterminator',
     title: 'Bed Bug Exterminator',
-    metaTitle: `Bed Bug Exterminator Suffolk County | Heat Treatment + Chemical | Jet Pest Control`,
+    metaTitle: `Bed Bug Exterminator Suffolk County | Heat Treatment + Chemical`,
     metaDesc: `Bed bug exterminator in Suffolk County. Heat treatment, chemical treatment, and K-9 detection available. Call Jet Pest Control at (800) 990-9296.`,
     h1: `Bed Bug Exterminator in Suffolk County`,
     intro: `Bed bugs in Suffolk County require specialized treatment — not the generic pest spray that works for cockroaches. Jet Pest Control's bed bug division uses heat treatment, targeted chemical protocols, and K-9 detection to eliminate infestations at every stage of the life cycle, including eggs.
@@ -629,7 +629,7 @@ Bed bugs are a persistent challenge in Suffolk County's single-family colonial a
     regionDisplay: 'Suffolk County',
     leadType: 'free-pest-inspection',
     title: 'Free Pest Inspection',
-    metaTitle: `Free Pest Inspection Suffolk County | No-Cost Assessment | Jet Pest Control`,
+    metaTitle: `Free Pest Inspection Suffolk County | No-Cost Assessment`,
     metaDesc: `Free pest inspection in Suffolk County. Jet Pest Control offers no-cost inspections to identify infestations, entry points, and risk factors. Call (800) 990-9296.`,
     h1: `Free Pest Inspection in Suffolk County`,
     intro: `Not sure if you have a pest problem — or how serious it is? Jet Pest Control offers free pest inspections throughout Suffolk County. A licensed technician will assess your property, identify any active infestations, locate entry points, and give you a clear picture of what you're dealing with — at no cost and no obligation.

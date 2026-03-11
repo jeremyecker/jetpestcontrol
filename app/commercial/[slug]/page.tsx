@@ -9,7 +9,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const vertical = COMMERCIAL_VERTICALS.find(v => v.slug === slug);
   if (!vertical) return {};
   return {
-    title: `${vertical.metaTitle} | Jet Pest Control`,
+    title: vertical.metaTitle,
     description: vertical.metaDescription,
   };
 }
