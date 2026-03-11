@@ -60,9 +60,10 @@ const BROOKLYN_TOWNS = [
   'Bay Ridge', 'Bedford-Stuyvesant', 'Bensonhurst', 'Borough Park', 'Brighton Beach',
   'Brooklyn Heights', 'Brownsville', 'Bushwick', 'Canarsie', 'Carroll Gardens',
   'Clinton Hill', 'Cobble Hill', 'Coney Island', 'Crown Heights', 'Ditmas Park',
-  'Downtown Brooklyn', 'Dumbo', 'East Flatbush', 'East New York', 'Flatbush',
-  'Flatlands', 'Fort Greene', 'Gravesend', 'Greenpoint', 'Kensington',
-  'Marine Park', 'Park Slope', 'Sheepshead Bay', 'Sunset Park', 'Williamsburg',
+  'Downtown Brooklyn', 'Dumbo', 'Dyker Heights', 'East Flatbush', 'East New York',
+  'Flatbush', 'Flatlands', 'Fort Greene', 'Gowanus', 'Gravesend', 'Greenpoint',
+  'Greenwood', 'Kensington', 'Marine Park', 'Mill Basin', 'Park Slope',
+  'Prospect Heights', 'Sheepshead Bay', 'Sunset Park', 'Williamsburg',
 ];
 const QUEENS_TOWNS = [
   'Arverne', 'Astoria', 'Bayside', 'Bellerose', 'Briarwood',
@@ -70,9 +71,10 @@ const QUEENS_TOWNS = [
   'East Elmhurst', 'Elmhurst', 'Far Rockaway', 'Floral Park',
   'Flushing', 'Forest Hills', 'Fresh Meadows', 'Glen Oaks',
   'Glendale', 'Hollis', 'Howard Beach', 'Jackson Heights',
-  'Jamaica', 'Kew Gardens', 'Little Neck', 'Long Island City',
+  'Jamaica', 'Kew Gardens', 'Kew Gardens Hills', 'Little Neck', 'Long Island City',
   'Maspeth', 'Middle Village', 'Oakland Gardens', 'Ozone Park',
-  'Rego Park', 'Richmond Hill', 'Ridgewood', 'Woodhaven',
+  'Queens Village', 'Rego Park', 'Richmond Hill', 'Ridgewood', 'Rosedale',
+  'Sunnyside', 'Whitestone', 'Woodhaven', 'Woodside',
 ];
 const MANHATTAN_TOWNS = [
   'Battery Park City', 'Chelsea', 'Chinatown', 'East Harlem', 'East Village',
@@ -228,9 +230,6 @@ export const REGIONS: RegionConfig[] = [
 
 // Town arrays imported from data - see Quest config for full lists
 // Brooklyn, Queens, Manhattan, Nassau, Suffolk towns defined in data/towns.json
-
-
-
 
 
 

@@ -21,7 +21,7 @@ export const cityFAQs: Record<string, Array<{q: string; a: string}>> = {
     {q: 'What season is worst for pests in Bushwick?', a: 'Summer brings intense cockroach pressure as restaurants and bars on Wyckoff Ave ramp up operations. Fall triggers mass rodent migration into buildings as outdoor temperatures drop — Bushwick\'s high concentration of loading dock conversions creates dozens of entry points. Jet recommends a fall exclusion service in September-October for all Bushwick warehouse residential conversions — including buildings near Maria Hernandez Park and the Myrtle-Wyckoff corridor — to seal entry points before winter.'},
     {q: 'Does Jet serve all of Bushwick including the Flushing Ave corridor?', a: 'Yes — Jet serves all Bushwick zip codes including 11221 and 11237, covering the Myrtle-Wyckoff area, Jefferson St corridor, and the industrial lofts near the Queens border. Same-day service is available for both residential and commercial properties. We\'re familiar with the unique structural challenges of warehouse conversions. Call (800) 990-9296 for same-day availability.'},
   ],
-  'bed-stuy': [
+  'bedford-stuyvesant': [
     {q: 'How do bed bugs spread in Bed-Stuy\'s rowhouse buildings?', a: 'Bed-Stuy\'s pre-war rowhouses are physically connected through shared party walls, allowing bed bugs to migrate between units without any human assistance. Absentee landlord buildings on Fulton St and Gates Ave often have untreated infestations in adjacent units that reinfest treated apartments. Jet\'s Bed-Stuy protocol includes neighbor inspections and barrier treatments at shared wall utility penetrations to break the reinfestation cycle. Call (800) 990-9296.'},
     {q: 'What pest issues come from aging plumbing in Bed-Stuy buildings?', a: 'Pre-war plumbing systems in Bed-Stuy\'s rowhouses create moisture-rich harborage for German cockroaches — leaking pipe chases under kitchen sinks and bathroom walls are primary harborage zones. Jet\'s cockroach treatment targets these moisture-driven harborage points with gel bait and IGR applications, combined with recommendations for plumber repairs that eliminate conditions supporting re-infestation.'},
     {q: 'When does rodent pressure peak in Bed-Stuy?', a: 'Fall is the highest-risk period for rodent entry in Bed-Stuy — as temperatures drop in October and November, mice seek entry into the basement-level apartments common in the neighborhood\'s rowhouse stock. The commercial strip along Fulton St generates harborage that drives rodents into adjacent residential buildings. Jet\'s fall rodent exclusion service seals foundation gaps and installs door sweeps before the migration window.'},
@@ -366,11 +366,11 @@ export const cityFAQs: Record<string, Array<{q: string; a: string}>> = {
 };
 
 export const nearbyTownMap: Record<string, string[]> = {
-  'williamsburg': ['Greenpoint', 'Bushwick', 'Bed-Stuy', 'Long Island City'],
+  'williamsburg': ['Greenpoint', 'Bushwick', 'Bedford-Stuyvesant', 'Long Island City'],
   'park-slope': ['Prospect Heights', 'Carroll Gardens', 'Crown Heights', 'Gowanus'],
-  'bushwick': ['Williamsburg', 'Ridgewood', 'Bed-Stuy', 'East New York'],
-  'bed-stuy': ['Crown Heights', 'Bushwick', 'Williamsburg', 'Park Slope'],
-  'crown-heights': ['Bed-Stuy', 'Flatbush', 'Park Slope', 'Prospect Heights'],
+  'bushwick': ['Williamsburg', 'Ridgewood', 'Bedford-Stuyvesant', 'East New York'],
+  'bedford-stuyvesant': ['Crown Heights', 'Bushwick', 'Williamsburg', 'Park Slope'],
+  'crown-heights': ['Bedford-Stuyvesant', 'Flatbush', 'Park Slope', 'Prospect Heights'],
   'flatbush': ['Crown Heights', 'Flatlands', 'Bensonhurst', 'Park Slope'],
   'bay-ridge': ['Bensonhurst', 'Sunset Park', 'Dyker Heights', 'Greenwood'],
   'greenpoint': ['Williamsburg', 'Long Island City', 'Astoria', 'Bushwick'],
@@ -379,7 +379,7 @@ export const nearbyTownMap: Record<string, string[]> = {
   'coney-island': ['Brighton Beach', 'Bensonhurst', 'Sheepshead Bay', 'Gravesend'],
   'bensonhurst': ['Bay Ridge', 'Sunset Park', 'Coney Island', 'Flatbush'],
   'flatlands': ['Canarsie', 'Flatbush', 'East New York', 'Mill Basin'],
-  'east-new-york': ['Canarsie', 'Bushwick', 'Brownsville', 'Bed-Stuy'],
+  'east-new-york': ['Canarsie', 'Bushwick', 'Brownsville', 'Bedford-Stuyvesant'],
   'dumbo': ['Williamsburg', 'Brooklyn Heights', 'Greenpoint', 'Long Island City'],
   'astoria': ['Long Island City', 'Jackson Heights', 'Woodside', 'Sunnyside'],
   'flushing': ['Bayside', 'Jamaica', 'Elmhurst', 'Fresh Meadows'],
@@ -444,7 +444,7 @@ export const hubNeighborhoods: Record<string, Array<{name: string; detail: strin
     {name: 'Jefferson Street Area', detail: 'Former industrial buildings converted to live-work lofts have legacy rodent infrastructure from manufacturing operations that persists in utility chases and basements'},
     {name: 'Flushing Ave Industrial Zone', detail: 'The transition zone between active industrial facilities and new residential development creates elevated rodent pressure from loading dock and warehouse harborage'},
   ],
-  'bed-stuy': [
+  'bedford-stuyvesant': [
     {name: 'Fulton Street Corridor', detail: 'Commercial strip and adjacent rowhouses have combined cockroach pressure from food service plus rodent pressure, with absentee landlord buildings creating untreated infestation reservoirs'},
     {name: 'Stuyvesant Heights', detail: 'Landmark district rowhouses on charismatic blocks like Decatur and Bainbridge have sharing-wall bed bug spread through the connected pre-war building fabric'},
     {name: 'Gates Avenue Blocks', detail: 'Pre-war rowhouses with aging plumbing infrastructure provide moisture-rich harborage for German cockroaches in pipe chases and under kitchen sinks'},

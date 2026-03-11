@@ -50,7 +50,10 @@ export default async function TownPage({ params }: { params: Promise<{ region: s
     t => t.toLowerCase().replace(/\s+/g, '-') === townSlug
   ) ?? townName;
 
-  const nearbyTowns = nearbyTownMap[townSlug] ?? getNearbyTowns(canonicalTownName, region.towns, 4);
+  const allNearby = nearbyTownMap[townSlug] ?? getNearbyTowns(canonicalTownName, region.towns, 4);
+  const nearbyTowns = allNearby.filter(town =>
+    region.towns.some(t => t.toLowerCase().replace(/[\s']/g, m => m === "'" ? '' : '-') === town.toLowerCase().replace(/[\s']/g, m => m === "'" ? '' : '-'))
+  );
 
   // Neighborhoods section (Layer 7)
   const neighborhoods = hubNeighborhoods[townSlug] ?? null;
