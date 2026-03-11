@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import { SITE_NAME, SITE_DESCRIPTION, SITE_URL, SEO, GEO, PHONE, EMAIL, SERVICES } from '@/site.config';
+import { SITE_NAME, SITE_DESCRIPTION, SITE_URL, SEO } from '@/site.config';
 import TopBar from '@/components/layout/TopBar';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
@@ -34,34 +34,6 @@ export const metadata: Metadata = {
   },
 };
 
-const schemaData = {
-  "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "PestControlService"],
-  "name": SITE_NAME,
-  "url": SITE_URL,
-  "telephone": PHONE,
-  "email": EMAIL,
-  "priceRange": "$$",
-  "areaServed": {
-    "@type": "AdministrativeArea",
-    "name": GEO.region,
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "addressRegion": GEO.stateCode,
-    "addressCountry": "US",
-  },
-  "openingHours": "Mo-Su 07:00-21:00",
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Pest Control Services",
-    "itemListElement": SERVICES.slice(0, 6).map(s => ({
-      "@type": "Offer",
-      "itemOffered": { "@type": "Service", "name": s.name },
-    })),
-  },
-};
-
 export default function RootLayout({
   children,
 }: {
@@ -88,13 +60,6 @@ export default function RootLayout({
             />
           </>
         )}
-        {/* Schema Markup */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(schemaData),
-          }}
-        />
       </head>
       <body className="min-h-screen flex flex-col">
         <TopBar />
