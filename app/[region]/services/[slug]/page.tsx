@@ -1,10 +1,11 @@
 import { notFound } from 'next/navigation';
+import { SITE_URL, SITE_NAME, PHONE, GEO } from '@/site.config';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getRegion } from '@/lib/regions';
 import { SERVICES, getServiceDescription } from '@/lib/services';
 import { SERVICE_CONTENT } from '@/lib/service-content';
-import { serviceSchema } from '@/lib/seo';
+import { serviceSchema, generatePageMetadata, breadcrumbSchema } from '@/lib/seo';
 import Schema from '@/components/seo/Schema';
 import { BRAND, REGIONS } from '@/hub.config';
 import CTABanner from '@/components/sections/CTABanner';
@@ -14,10 +15,11 @@ export async function generateMetadata({ params }: { params: Promise<{ region: s
   const region = getRegion(regionSlug);
   const service = SERVICES.find(s => s.slug === slug);
   if (!region || !service) return {};
-  return {
+  return generatePageMetadata({
     title: `${service.name} in ${region.name}`,
     description: getServiceDescription(service, region),
-  };
+    path: `/${regionSlug}/services/${slug}`,
+  });
 }
 
 export async function generateStaticParams() {
@@ -145,6 +147,35 @@ export default async function ServicePage({ params }: { params: Promise<{ region
           </Link>
         </div>
       </div>
+      
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            breadcrumbSchema([
+              { label: 'Home', href: '/' },
+              { label: region.name, href: `/${regionSlug}` },
+              { label: 'Services', href: `/${regionSlug}/services` },
+              { label: service.name },
+            ]),
+            {
+              '@context': 'https://schema.org',
+              '@type': 'LocalBusiness',
+              '@id': `${SITE_URL}/#business`,
+              name: SITE_NAME,
+              url: SITE_URL,
+              telephone: PHONE,
+              image: `${SITE_URL}/images/og-default.jpg`,
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: GEO.countyFull,
+                addressRegion: GEO.stateCode,
+                addressCountry: 'US',
+              },
+            },
+          ]),
+        }}
+      />
       <CTABanner />
     </>
   );
