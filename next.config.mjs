@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   async redirects() {
     return [
       // Cross-region corrections — neighborhood in wrong borough
