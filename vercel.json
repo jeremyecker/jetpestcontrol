@@ -3,7 +3,7 @@
   "buildCommand": "next build",
   "outputDirectory": ".next",
   "redirects": [
-    { "source": "/:path*/", "destination": "/:path*", "permanent": true },
+    { "source": "/:path+/", "destination": "/:path+", "permanent": true },
     { "source": "/manhattan/hell%27s-kitchen", "destination": "/manhattan", "permanent": true },
     { "source": "/manhattan/hell's-kitchen", "destination": "/manhattan", "permanent": true },
     { "source": "/suffolk/cherry-grove", "destination": "/suffolk", "permanent": true }
