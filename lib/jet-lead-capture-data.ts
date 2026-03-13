@@ -644,7 +644,7 @@ A free inspection is the right starting point for any pest concern. In Suffolk C
       { q: `Will I be pressured to buy a treatment after the inspection?`, a: `No. Our inspections are genuinely free — if we find a problem and you want us to treat it, we will give you a transparent quote. If you want to think it over, that is completely fine. We want to earn your business, not pressure you into it.` },
       { q: `When should I get a free pest inspection?`, a: `Any time you are concerned: if you have seen a pest, noticed droppings or damage, moved into a new home, or just want peace of mind. Annual inspections are a good preventive practice in Suffolk County's older housing stock.` },
     ],
-  },,
+  },
 // ─────────────────────────────────────────────
   // BROOKLYN — Wildlife Services
   // ─────────────────────────────────────────────
