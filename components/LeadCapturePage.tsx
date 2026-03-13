@@ -158,7 +158,7 @@ export default function LeadCapturePage({ region, leadType }: LeadCapturePagePro
             <p className="text-gray-600 mb-4">Jet Pest Control provides {p.title.toLowerCase()} service throughout {regionDisplay}, including:</p>
             <div className="flex flex-wrap gap-2">
               {towns.map(town => (
-                <Link key={town} href={`/${region}/${toTownSlug(town)}`}
+                <Link key={town} href={`/${region}/${leadType}/${toTownSlug(town)}`}
                   className="bg-blue-50 border border-blue-200 text-blue-800 px-3 py-1 rounded text-sm hover:bg-blue-100 transition">
                   {town}
                 </Link>
