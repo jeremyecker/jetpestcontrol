@@ -72,14 +72,18 @@ export async function generateMetadata({
   const region = getRegion(regionSlug);
   if (!region) return {};
   const townName = townSlug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-  const fullTitle = `${SERVICE_NAME} in ${townName}, ${region.stateCode} | ${BRAND.name}`;
-  const shortTitle = `${SERVICE_NAME} in ${townName}, ${region.stateCode}`;
-  const title = fullTitle.length <= 60 ? fullTitle : shortTitle;
-  const description = `Licensed ${SERVICE_NAME.toLowerCase()} serving ${townName}, ${region.stateCode}. ${BRAND.name} — same-day service, guaranteed results. Call ${BRAND.phoneFormatted}.`;
+  const title = `${SERVICE_NAME} in ${townName}, ${region.name}`;
+  const description = `Licensed ${SERVICE_NAME.toLowerCase()} serving ${townName}, ${region.name}. ${BRAND.name} — same-day service, guaranteed results. Call ${BRAND.phoneFormatted}.`;
   return {
     title,
     description: description.length <= 155 ? description : description.slice(0, 152) + '...',
     alternates: { canonical: `https://${BRAND.domain}/${regionSlug}/${SERVICE_SLUG}/${townSlug}` },
+    openGraph: {
+      title,
+      description,
+      url: `https://${BRAND.domain}/${regionSlug}/${SERVICE_SLUG}/${townSlug}`,
+      images: [{ url: `https://${BRAND.domain}/og-image.png` }],
+    },
   };
 }
 

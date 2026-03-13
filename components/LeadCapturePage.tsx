@@ -1,17 +1,16 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getLeadCapturePage } from '@/lib/jet-lead-capture-data';
+import { BRAND, REGIONS } from '@/hub.config';
 
-const PHONE = "(800) 990-9296";
-const PHONE_HREF = "tel:8009909296";
-
-const REGION_TOWNS: Record<string, string[]> = {
-  brooklyn: ['Williamsburg', 'Park Slope', 'Bed-Stuy', 'Bushwick', 'Flatbush', 'Bay Ridge', 'Canarsie', 'Sunset Park', 'Crown Heights', 'Greenpoint'],
-  queens: ['Astoria', 'Flushing', 'Jamaica', 'Jackson Heights', 'Forest Hills', 'Ridgewood', 'Bayside', 'Corona', 'Howard Beach', 'Woodside'],
-  manhattan: ['Upper East Side', 'Upper West Side', 'Harlem', 'Chelsea', 'Greenwich Village', 'Midtown', 'Tribeca', 'Lower East Side', 'East Village', 'Washington Heights'],
-  nassau: ['Garden City', 'Hempstead', 'Levittown', 'Long Beach', 'Freeport', 'Valley Stream', 'Mineola', 'Hicksville', 'Great Neck', 'Oceanside'],
-  suffolk: ['Huntington', 'Babylon', 'Brentwood', 'Hauppauge', 'Patchogue', 'Smithtown', 'East Hampton', 'Riverhead', 'Commack', 'Bay Shore'],
-};
+// Services that have actual [town] sub-pages — only link towns for these
+const SERVICES_WITH_TOWN_PAGES = new Set([
+  'raccoon-removal',
+  'wildlife-removal',
+  'rodent-control',
+  'squirrel-removal',
+  'bed-bug-exterminator',
+]);
 
 function toTownSlug(town: string) {
   return town.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
@@ -26,7 +25,6 @@ export default function LeadCapturePage({ region, leadType }: LeadCapturePagePro
   const page = getLeadCapturePage(region, leadType);
   if (!page) notFound();
 
-  const towns = REGION_TOWNS[region] || [];
   const regionDisplay = page!.regionDisplay;
   const p = page!;
 
@@ -35,9 +33,9 @@ export default function LeadCapturePage({ region, leadType }: LeadCapturePagePro
     '@graph': [
       {
         '@type': 'LocalBusiness',
-        name: 'Jet Pest Control',
-        telephone: PHONE,
-        url: 'https://jetpestcontrol.com',
+        name: BRAND.name,
+        telephone: BRAND.phoneFormatted,
+        url: `https://${BRAND.domain}`,
         areaServed: regionDisplay,
         serviceType: p.title,
         priceRange: '$$',
@@ -54,9 +52,9 @@ export default function LeadCapturePage({ region, leadType }: LeadCapturePagePro
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://jetpestcontrol.com' },
-          { '@type': 'ListItem', position: 2, name: regionDisplay, item: `https://jetpestcontrol.com/${region}` },
-          { '@type': 'ListItem', position: 3, name: p.title, item: `https://jetpestcontrol.com/${region}/${leadType}` },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: `https://${BRAND.domain}` },
+          { '@type': 'ListItem', position: 2, name: regionDisplay, item: `https://${BRAND.domain}/${region}` },
+          { '@type': 'ListItem', position: 3, name: p.title, item: `https://${BRAND.domain}/${region}/${leadType}` },
         ],
       },
     ],
@@ -81,8 +79,8 @@ export default function LeadCapturePage({ region, leadType }: LeadCapturePagePro
           <h1 className="text-4xl font-bold mb-4">{p.h1}</h1>
           <p className="text-xl text-blue-200 mb-8">Licensed &amp; Insured &middot; Same-Day Service &middot; Guaranteed Results</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={PHONE_HREF} className="bg-yellow-400 text-blue-900 font-bold py-4 px-8 rounded-lg text-lg hover:bg-yellow-300 transition">
-              Call {PHONE}
+            <a href={`tel:+1${BRAND.phone}`} className="bg-yellow-400 text-blue-900 font-bold py-4 px-8 rounded-lg text-lg hover:bg-yellow-300 transition">
+              Call {BRAND.phoneFormatted}
             </a>
             <Link href="/contact" className="border-2 border-white text-white font-bold py-4 px-8 rounded-lg text-lg hover:bg-white hover:text-blue-900 transition">
               Get a Free Quote
@@ -152,31 +150,35 @@ export default function LeadCapturePage({ region, leadType }: LeadCapturePagePro
           </div>
         </section>
 
-        {towns.length > 0 && (
-          <section className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">We Serve All of {regionDisplay}</h2>
-            <p className="text-gray-600 mb-4">Jet Pest Control provides {p.title.toLowerCase()} service throughout {regionDisplay}, including:</p>
-            <div className="flex flex-wrap gap-2">
-              {towns.map(town => (
-                <Link key={town} href={`/${region}/${leadType}/${toTownSlug(town)}`}
-                  className="bg-blue-50 border border-blue-200 text-blue-800 px-3 py-1 rounded text-sm hover:bg-blue-100 transition">
-                  {town}
+        {SERVICES_WITH_TOWN_PAGES.has(leadType) && (() => {
+          const regionConfig = REGIONS.find(r => r.slug === region);
+          const towns = regionConfig?.towns ?? [];
+          return towns.length > 0 ? (
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">We Serve All of {regionDisplay}</h2>
+              <p className="text-gray-600 mb-4">Jet Pest Control provides {p.title.toLowerCase()} service throughout {regionDisplay}, including:</p>
+              <div className="flex flex-wrap gap-2">
+                {towns.map(town => (
+                  <Link key={town} href={`/${region}/${leadType}/${toTownSlug(town)}`}
+                    className="bg-blue-50 border border-blue-200 text-blue-800 px-3 py-1 rounded text-sm hover:bg-blue-100 transition">
+                    {town}
+                  </Link>
+                ))}
+                <Link href={`/${region}`}
+                  className="bg-blue-600 text-white px-3 py-1 rounded text-sm hover:bg-blue-700 transition">
+                  View All {regionDisplay} Towns
                 </Link>
-              ))}
-              <Link href={`/${region}`}
-                className="bg-blue-600 text-white px-3 py-1 rounded text-sm hover:bg-blue-700 transition">
-                View All {regionDisplay} Towns
-              </Link>
-            </div>
-          </section>
-        )}
+              </div>
+            </section>
+          ) : null;
+        })()}
 
         <section className="bg-blue-900 text-white rounded-xl p-8 text-center">
           <h2 className="text-2xl font-bold mb-2">{p.title} in {regionDisplay}</h2>
           <p className="text-blue-200 mb-6">Same-day service &middot; Licensed technicians &middot; Guaranteed results</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={PHONE_HREF} className="bg-yellow-400 text-blue-900 font-bold py-3 px-8 rounded-lg hover:bg-yellow-300 transition">
-              {PHONE}
+            <a href={`tel:+1${BRAND.phone}`} className="bg-yellow-400 text-blue-900 font-bold py-3 px-8 rounded-lg hover:bg-yellow-300 transition">
+              {BRAND.phoneFormatted}
             </a>
             <Link href="/contact" className="border-2 border-white text-white font-bold py-3 px-8 rounded-lg hover:bg-white hover:text-blue-900 transition">
               Get a Free Quote
