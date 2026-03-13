@@ -21,6 +21,13 @@ export async function generateMetadata({ params }: { params: Promise<{ region: s
   return {
     title: region.metaTitle,
     description: region.metaDescription,
+    alternates: { canonical: `https://${BRAND.domain}/${regionSlug}` },
+    openGraph: {
+      title: region.metaTitle,
+      description: region.metaDescription,
+      url: `https://${BRAND.domain}/${regionSlug}`,
+      images: [{ url: `https://${BRAND.domain}/og-image.png` }],
+    },
   };
 }
 

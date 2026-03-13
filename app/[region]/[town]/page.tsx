@@ -18,6 +18,12 @@ export async function generateMetadata({ params }: { params: Promise<{ region: s
     title: `Pest Control in ${townName}, ${region.stateCode}`,
     description: `Licensed pest control in ${townName}, ${region.stateCode}. ${BRAND.name} provides same-day service for bed bugs, rodents, cockroaches, and more. Call ${BRAND.phoneFormatted} now.`,
     alternates: { canonical: `https://${BRAND.domain}/${regionSlug}/${townSlug}` },
+    openGraph: {
+      title: `Pest Control in ${townName}, ${region.stateCode}`,
+      description: `Licensed pest control in ${townName}, ${region.stateCode}. ${BRAND.name} provides same-day service for bed bugs, rodents, cockroaches, and more. Call ${BRAND.phoneFormatted} now.`,
+      url: `https://${BRAND.domain}/${regionSlug}/${townSlug}`,
+      images: [{ url: `https://${BRAND.domain}/og-image.png` }],
+    },
   };
 }
 

@@ -14,6 +14,12 @@ export async function generateMetadata(
     title: page.metaTitle,
     description: page.metaDesc,
     alternates: { canonical: `https://jetpestcontrol.com/${region}/${LEAD_TYPE}` },
+    openGraph: {
+      title: page.metaTitle,
+      description: page.metaDesc,
+      url: `https://jetpestcontrol.com/${region}/${LEAD_TYPE}`,
+      images: [{ url: 'https://jetpestcontrol.com/og-image.png' }],
+    },
   };
 }
 
