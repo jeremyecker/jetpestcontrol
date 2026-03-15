@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Exterminator Near Me | NYC & Long Island | Jet Pest Control',
   description: 'Need a licensed exterminator? Jet Pest Control serves Brooklyn, Queens, Manhattan, Nassau & Suffolk County. Bed bugs, rodents, roaches & more. Call (718) 710-0330.',
   alternates: {
-    canonical: 'https://jetpestcontrol.com/exterminator-near-me/',
+    canonical: 'https://jetpestcontrol.com/exterminator-near-me',
   },
 };
 
