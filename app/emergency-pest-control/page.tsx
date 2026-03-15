@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Emergency Pest Control | NYC & Long Island | Jet Pest Control',
   description: 'Emergency pest control in Brooklyn, Queens, Manhattan, Nassau & Suffolk County. Fast response for rodents, wasps, bed bugs & more. Call (718) 710-0330 now.',
   alternates: {
-    canonical: 'https://jetpestcontrol.com/emergency-pest-control/',
+    canonical: 'https://jetpestcontrol.com/emergency-pest-control',
   },
 };
 

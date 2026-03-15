@@ -27,6 +27,9 @@ export async function generateMetadata({ params }: { params: Promise<{ region: s
       description: region.metaDescription,
       url: `https://${BRAND.domain}/${regionSlug}`,
       images: [{ url: `https://${BRAND.domain}/og-image.png` }],
+      type: 'website',
+      locale: 'en_US',
+      siteName: BRAND.name,
     },
   };
 }

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Same Day Pest Control | NYC & Long Island | Jet Pest Control',
   description: 'Same-day pest control across Brooklyn, Queens, Manhattan, Nassau & Suffolk County. Licensed local technicians ready today. Call (718) 710-0330.',
   alternates: {
-    canonical: 'https://jetpestcontrol.com/same-day-pest-control/',
+    canonical: 'https://jetpestcontrol.com/same-day-pest-control',
   },
 };
 
