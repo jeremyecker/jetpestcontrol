@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Free Pest Inspection | NYC & Long Island | Jet Pest Control',
   description: 'Free pest inspection in Brooklyn, Queens, Manhattan, Nassau & Suffolk County. Licensed technicians inspect for termites, rodents, bed bugs & more. Call (718) 710-0330.',
   alternates: {
-    canonical: 'https://jetpestcontrol.com/free-pest-inspection/',
+    canonical: 'https://jetpestcontrol.com/free-pest-inspection',
   },
 };
 

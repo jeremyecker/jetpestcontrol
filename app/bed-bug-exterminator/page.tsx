@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Bed Bug Exterminator | NYC & Long Island | Jet Pest Control',
   description: 'Professional bed bug extermination in Brooklyn, Queens, Manhattan, Nassau & Suffolk County. Heat treatment, K-9 detection, guaranteed results. Call (718) 710-0330.',
   alternates: {
-    canonical: 'https://jetpestcontrol.com/bed-bug-exterminator/',
+    canonical: 'https://jetpestcontrol.com/bed-bug-exterminator',
   },
 };
 
