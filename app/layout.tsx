@@ -32,6 +32,11 @@ export const metadata: Metadata = {
     locale: 'en_US',
     images: ['/og-image.png'],
   },
+  verification: {
+    other: {
+      'msvalidate.01': ['7269DBA7AB2884805155E8C4E40544B8'],
+    },
+  },
 };
 
 export default function RootLayout({
