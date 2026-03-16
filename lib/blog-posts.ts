@@ -1372,7 +1372,238 @@ Jet Pest Control works with co-op boards, condo associations, and building manag
 Jet Pest Control provides building-wide pest control programs for NYC co-ops and condos — IPM-based monthly service, complete documentation at every visit, emergency response, and discreet service with unmarked vehicles. We work directly with building managers, supers, and board members to coordinate treatment logistics.
 
 Call (718) 710-0330 for a commercial building assessment. When you need **pest control near me** for your NYC co-op or condo building, Jet Pest Control brings the professional expertise your building deserves.`
-  }
+  },
+
+  {
+    slug: "silverfish-nyc-apartments",
+    title: "Silverfish in NYC Apartments: Why They're There and How to Get Rid of Them",
+    date: "2026-03-16",
+    excerpt: "Silverfish are one of the most common insects in Brooklyn, Queens, and Manhattan apartments — and one of the most misunderstood. Learn why NYC apartments are particularly prone to silverfish and how to eliminate them for good.",
+    author: "Jet Pest Control Team",
+    category: "Silverfish",
+    readTime: "6 min read",
+    tags: ["silverfish", "NYC apartments", "Brooklyn", "Queens", "pest control", "moisture pests"],
+    image: 'https://images.pexels.com/photos/4491461/pexels-photo-4491461.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'Bathroom sink with plumbing — silverfish prefer moisture-rich areas',
+    content: `# Silverfish in NYC Apartments: Why They're There and How to Get Rid of Them
+
+Silverfish are one of the most common insects found in Brooklyn, Queens, and Manhattan apartments — but most NYC residents have never heard of them until they see one darting across their bathroom floor at 2 AM. That fast-moving, metallic silver insect disappearing under the baseboard isn't dangerous, but it is a sign that something in your apartment's environment is attracting them. Here's what silverfish actually are, why New York City apartments are particularly vulnerable, and how to eliminate them.
+
+## What Are Silverfish?
+
+Silverfish (*Lepisma saccharina*) are small (1/2 to 3/4 inch), wingless insects with a distinctive silvery-gray color and fish-like movement — a rapid side-to-side wiggling motion that gives them their name. They have three long tail-like appendages at the rear and two long antennae. They are completely harmless to humans — they don't bite, sting, or transmit disease. But they do feed on paper, cardboard, book bindings, wallpaper, linen, silk, and starchy foods. In large numbers they can damage books, documents, and clothing.
+
+Silverfish are ancient insects — they have existed largely unchanged for 400 million years. They thrive in conditions that NYC apartments provide in abundance: high humidity, darkness, and plenty of starchy organic material to eat.
+
+## Why NYC Apartments Are Especially Prone to Silverfish
+
+The combination of factors in typical Brooklyn, Queens, and Manhattan apartments creates ideal silverfish conditions:
+
+**Older building plumbing**: Pre-war buildings throughout Brooklyn Heights, Park Slope, Astoria, and Jackson Heights have aging pipes with frequent slow leaks and condensation issues. Silverfish need humidity levels above 75% to thrive — a leaky pipe under a bathroom sink or inside a wall creates the perfect microclimate.
+
+**Shared walls and plumbing stacks**: Silverfish travel through shared wall voids and along plumbing stacks. In multi-unit buildings, a silverfish infestation in one apartment spreads to adjacent units via these pathways. You can do everything right in your own apartment and still have silverfish if a neighboring unit has an untreated moisture problem.
+
+**Abundance of food sources**: NYC apartments tend to have dense book collections, abundant cardboard (Amazon deliveries), paper bags, and linens stored in closets — all silverfish food sources. Bathroom wallpaper, plaster dust, and dried organic residue in wall voids are additional food.
+
+**Basements and sub-grade units**: Ground-floor and garden-level apartments in Brooklyn and Queens brownstones are especially prone to silverfish due to higher ground moisture, proximity to the soil, and the condensation patterns of below-grade spaces.
+
+## Where to Find Silverfish in Your Apartment
+
+Silverfish are nocturnal and photophobic — they scatter when lights come on, which is why most people see them briefly and then lose them. The most common locations in NYC apartments:
+
+- **Bathroom**: Under the sink (especially near any leak or moisture), along the baseboard near the tub, under loose floor tile or around the toilet base
+- **Kitchen**: Under the sink, in the back of lower cabinets, along baseboards near the refrigerator
+- **Bedroom and closets**: In stacked books, in paper bags stored in closet floors, behind dressers pushed against exterior or bathroom walls
+- **Bathroom and kitchen ceilings**: Silverfish are excellent climbers and often enter ceiling voids from wall stacks
+
+## Signs of Silverfish Beyond Seeing the Bug
+
+- **Yellow staining on paper**: Silverfish excrement leaves yellowish staining on paper and books
+- **Irregular feeding marks**: Irregular chewed areas on paper, book bindings, or cardboard (unlike termites, the feeding marks are surface-level, not structural)
+- **Shed skins (exuviae)**: Silverfish molt throughout their lives; finding tiny translucent husks in closets or behind books indicates silverfish activity even if you haven't seen a live bug
+- **Notched fabric**: Silverfish will feed on natural fiber clothing, linen, and silk stored in closets — particularly items with starch residue from dry cleaning
+
+## How to Get Rid of Silverfish in Your NYC Apartment
+
+Getting rid of silverfish permanently requires addressing both the population and the conditions that support it.
+
+**Step 1: Reduce humidity**
+This is the most important long-term fix. Check under bathroom and kitchen sinks for slow drips or supply line condensation. Report any leaks to your landlord in writing (in NYC, landlords are legally required to address plumbing leaks). Use a dehumidifier in rooms above 50% humidity. In Brooklyn and Queens basement apartments, this may mean a dehumidifier running continuously.
+
+**Step 2: Reduce food sources**
+Move paper bags and cardboard boxes out of kitchen and closet floors. Store books in sealed boxes if you have heavy silverfish activity. Move stacked magazines and newspapers off the floor. Check for any cardboard-backed shelving in closets.
+
+**Step 3: Seal entry points**
+Silverfish enter apartments from wall voids and plumbing chases. Seal gaps around pipes under sinks with expandable foam or silicone caulk. Check where the baseboard meets the floor in bathrooms and closets — gaps here are a primary entry route.
+
+**Step 4: Targeted treatment**
+Desiccant dusts (such as diatomaceous earth or silica gel dust) applied into wall voids through outlet plates, under baseboards, and in closet corners kill silverfish through physical desiccation. Professional applications reach harborage areas that surface sprays don't penetrate. Residual treatments in high-activity areas combined with the moisture reduction steps above produce lasting results.
+
+**Step 5: Laundry**
+If you've found silverfish in your closet, wash any natural-fiber clothing that may have been affected on high heat. This kills any eggs laid in fabric.
+
+## Do Silverfish Mean Your Apartment Has a Bigger Problem?
+
+Not necessarily — silverfish can establish in any apartment with sufficient moisture and food. However, heavy silverfish activity (seeing multiple bugs regularly) combined with other signs — peeling wallpaper, a musty odor, or evidence of moisture in walls — may indicate a building moisture problem that your landlord needs to address. In NYC, landlords are responsible for maintaining apartments free from moisture conditions that cause pest infestations.
+
+## When to Call a Professional
+
+If silverfish activity persists despite reducing humidity and removing food sources, a professional treatment is the most effective next step. In multi-unit buildings, professional treatment combined with landlord notification about moisture issues addresses both the population in your unit and the source conditions in shared wall voids. Jet Pest Control serves Brooklyn, Queens, Manhattan, Nassau County, and Suffolk County with targeted silverfish treatments and moisture problem assessments.
+
+Call (718) 710-0330 (Brooklyn, Queens, Manhattan) or (516) 774-5051 (Nassau, Suffolk) for a silverfish inspection. Unmarked vehicles; discreet professional service throughout New York.`
+  },
+  {
+    slug: "nassau-county-pest-control-guide",
+    title: "Nassau County Pest Control: A Complete Guide for Long Island Homeowners",
+    date: "2026-03-16",
+    excerpt: "Nassau County homeowners face year-round pest pressure from ticks and mosquitoes to stink bugs and carpenter ants. This complete guide covers the pests most active in Nassau County communities and what professional pest control looks like on Long Island.",
+    author: "Jet Pest Control Team",
+    category: "Long Island",
+    readTime: "8 min read",
+    tags: ["Nassau County", "pest control", "Long Island", "exterminator", "residential"],
+    image: 'https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'Suburban Nassau County home with lawn — Long Island residential pest control',
+    content: `# Nassau County Pest Control: A Complete Guide for Long Island Homeowners
+
+Nassau County is one of New York's most densely populated suburban areas — and density, older housing stock, wooded lots, and proximity to Long Island Sound and the South Shore wetlands create a complex year-round pest environment. If you own a home in Hempstead, Garden City, Valley Stream, Levittown, Hicksville, Massapequa, or anywhere across Nassau County, understanding the pests most active in your community is the first step toward protecting your home.
+
+This guide covers the major pest categories affecting Nassau County homes, their seasonal timing, and what professional pest control looks like for Long Island properties.
+
+## The Nassau County Pest Environment
+
+Nassau County's combination of coastal climate, abundant mature tree canopy, older housing stock (many homes built in the 1940s–1960s postwar boom), and proximity to wetlands creates conditions that support a wide variety of pests. South Shore communities like Oceanside, Freeport, Long Beach, and Baldwin face different pest pressures than North Shore communities like Great Neck, Manhasset, Port Washington, and Roslyn — but all Nassau County homeowners contend with the same core pest challenges.
+
+## Ants: Nassau County's #1 Spring Pest
+
+Ant season on Long Island begins as early as March in South Shore communities and runs through June. The three most common ant species in Nassau County homes:
+
+**Pavement ants** (*Tetramorium caespitum*): Most common, enter through foundation cracks and expansion joints. Small, dark brown ants found in kitchen floors and along walls in ground-floor rooms of homes throughout Hempstead, Garden City, and Valley Stream.
+
+**Odorous house ants**: When you crush one, it smells like rotten coconut. Found near moisture sources — under kitchen sinks, in bathroom vanities, along plumbing. Queens of this species can split the colony ("bud") when threatened, making DIY sprays counterproductive.
+
+**Carpenter ants**: Large black ants (up to 1/2 inch). Don't eat wood but excavate moisture-damaged wood for nesting. In Nassau County's aging housing stock, carpenter ants are frequently found in damaged window frames, roof edges, and deck posts. Frass (coarse sawdust) near wood indicates active galleries.
+
+## Ticks: The Highest Health Risk on Long Island
+
+Nassau County is in the heart of New York's Lyme disease belt. Deer ticks (*Ixodes scapularis*) are present throughout Nassau County wherever there is deer movement and wooded or overgrown habitat — which is most backyards with any naturalized area or adjacent preserved land.
+
+Tick season is year-round but peaks in two windows: spring (May–June) when nymph ticks are active in leaf litter and grass edges, and fall (October–November) when adult ticks are seeking a final blood meal before winter. Lone Star ticks add a second species concern across Long Island.
+
+Nassau County homeowners with wooded lots or properties bordering parks and preserves should consider seasonal tick control programs. Perimeter barrier treatments applied in May and again in September–October provide the highest level of protection for families and pets.
+
+## Mosquitoes: South Shore and Waterfront Communities
+
+Mosquito pressure varies significantly across Nassau County. South Shore communities — Oceanside, Freeport, Long Beach, Baldwin, Wantagh, Seaford — face the heaviest mosquito activity due to proximity to the salt marshes and water features that provide larval breeding habitat. Nassau County's mosquito control commission applies larvicide to public wetlands, but residential yards with any standing water contribute independent breeding populations.
+
+Backyard mosquito control programs targeting landscape areas (wooded borders, foundation plantings, under decks) provide significant reduction in residential mosquito activity and complement county-level control efforts.
+
+## Stink Bugs: The Fall Invasion
+
+Every September, brown marmorated stink bugs begin congregating on south-facing walls of homes across Nassau County, seeking entry points to overwinter inside wall voids. Communities throughout Nassau County experience this annual invasion — from the waterfront homes of Sands Point to the postwar colonials of Levittown.
+
+Stink bugs are a nuisance pest — they don't reproduce indoors or damage the structure. The problem is their sheer numbers (dozens to hundreds can enter a single home) and the odor they release when disturbed. The most effective control is perimeter exclusion applied in late August — before the swarm begins. Once bugs are inside wall voids, options are limited until spring.
+
+## Bed Bugs: Nassau County's Density Risk
+
+Nassau County's proximity to New York City and high residential density create ongoing bed bug introduction risk. Infestations are introduced through used furniture, travel, and visiting houseguests from higher-density urban areas. Apartment complexes in Hempstead, rental properties along the South Shore, and hotels throughout the county all represent potential exposure vectors.
+
+A professional bed bug inspection is recommended any time you: bring used upholstered furniture into your home, return from travel with unexplained bites, or have guests who report bed bug issues at their own residence.
+
+## Rodents: Year-Round in Nassau County
+
+House mice are present year-round throughout Nassau County, with peak activity in fall and winter as mice seek warmth. Rats are more common in commercial districts and areas near waterways — the South Shore communities near Freeport, Oceanside, and Long Beach — but suburban rat activity is increasing across Nassau County. Norway rats in residential settings typically nest in burrows near foundations, under decks, or in compost areas.
+
+Nassau County's older housing stock, with settling foundations and gaps around aging utility penetrations, provides numerous rodent entry points. Professional exclusion — sealing entry points with rodent-proof materials — is the most durable rodent prevention measure.
+
+## Termites: A Serious Long Island Risk
+
+Eastern subterranean termites are active throughout Nassau County, particularly in older neighborhoods with high soil moisture and wood debris accumulation. Garden City, Hempstead, Westbury, and the South Shore communities have aging housing stock where termite pressure is especially relevant. Annual termite inspections are recommended for Nassau County homeowners — especially those with crawl spaces, wood-to-soil contact in older construction, or a history of moisture problems.
+
+## What Professional Pest Control Looks Like in Nassau County
+
+A professional residential pest program for Nassau County typically includes:
+- **Quarterly service visits** addressing seasonal pest pressures (ants in spring, mosquitoes/ticks in summer, stink bugs/rodents in fall)
+- **Perimeter exterior treatment** targeting the zone between your foundation and the lawn edge
+- **Interior service** for any active interior activity (cockroaches, ants, silverfish)
+- **Exclusion recommendations** to address structural entry points
+- **Specialty services** as needed: tick/mosquito control, termite inspection, bed bug treatment
+
+Jet Pest Control serves Nassau County communities from Hempstead to the North Shore, providing local service that understands the specific pest pressures of Long Island residential properties.
+
+Call (516) 774-5051 for Nassau County pest control. When you need **pest control near me** on Long Island, Jet Pest Control delivers professional, discreet service with unmarked vehicles throughout Nassau County.`
+  },
+  {
+    slug: "drain-flies-nyc-brooklyn",
+    title: "Drain Flies in NYC and Brooklyn Apartments: What They Are and How to Eliminate Them",
+    date: "2026-03-16",
+    excerpt: "Small moth-like flies hovering near your sink or shower in a Brooklyn or Manhattan apartment are almost certainly drain flies. Here's why they appear in NYC apartments and the right way to get rid of them permanently.",
+    author: "Jet Pest Control Team",
+    category: "Drain Flies",
+    readTime: "6 min read",
+    tags: ["drain flies", "NYC", "Brooklyn", "Queens", "apartment pest control", "moisture pests"],
+    image: 'https://images.pexels.com/photos/4099354/pexels-photo-4099354.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    imageAlt: 'Bathroom sink drain in an NYC apartment — drain flies breed in organic biofilm',
+    content: `# Drain Flies in NYC and Brooklyn Apartments: What They Are and How to Eliminate Them
+
+You've noticed small, fuzzy, moth-like flies — maybe a few, maybe a dozen — hovering near your bathroom sink, shower, or kitchen drain. They appear in the evening, they don't fly very fast, and they tend to rest on walls near the drain. They're drain flies (also called moth flies or filter flies), and they're extremely common in Brooklyn, Queens, and Manhattan apartments.
+
+The good news: they don't bite, don't transmit disease, and they're fixable. The frustrating part: most people treat them wrong, which is why they keep coming back.
+
+## What Are Drain Flies?
+
+Drain flies (*Psychodidae*) are tiny (1/8 inch), fuzzy-winged flies with wings held tent-like over their body when at rest. That fuzzy, moth-like appearance is distinctive — they look nothing like a fruit fly or fungus gnat up close. They're most active in the evening and tend to hover slowly near their breeding source.
+
+**They are not coming from outside.** Drain flies breed almost exclusively inside drain pipes — specifically in the gelatinous organic biofilm that coats the interior walls of P-traps, floor drains, and older cast iron or clay drain pipe sections. They are an indoor problem with an indoor source.
+
+## Why NYC and Brooklyn Apartments Are Especially Prone
+
+New York City apartment drain systems have several factors that accelerate drain fly breeding:
+
+**Aging infrastructure**: Pre-war Brooklyn brownstones, Queens attached houses, and Manhattan buildings built before the 1950s have cast iron and clay drain pipe sections that accumulate dense biofilm much faster than modern PVC systems. The irregular interior surface of old cast iron pipe holds biofilm in a way that smooth PVC doesn't.
+
+**Building-wide drain stacks**: In multi-unit buildings throughout Brooklyn and Queens, drain stacks are shared. If biofilm is accumulating in the shared stack (not just your unit's pipes), drain flies can emerge into multiple apartments through floor drains or gaps around pipe penetrations.
+
+**Overflow drains**: The small hole under your bathroom faucet is an overflow drain. It has its own tiny drainage channel behind the sink basin that almost never gets cleaned — and it's a prime drain fly breeding site in NYC apartments. Most people don't even know it exists.
+
+**Infrequently used floor drains**: Apartments with a basement laundry room, utility sink, or floor drain that doesn't get used often have dried-out P-traps. When the P-trap dries, it opens a direct connection to the sewer — and drain flies can travel up from the building's main drain stack.
+
+## The Tape Test: Confirming the Source
+
+Before treating every drain in your apartment, confirm exactly which drain is the breeding source:
+1. Cover each suspect drain with clear tape (sticky side down) overnight
+2. In the morning, check the tape — drain flies stuck to the underside confirm that drain as the breeding source
+3. If no flies are on the tape after 2 nights, it's not the primary source — move to the next suspect drain
+
+This saves you from treating the wrong drain and wondering why they're still there.
+
+## What Actually Works (and What Doesn't)
+
+**What does NOT work:**
+- **Pouring boiling water down the drain**: Kills surface bacteria but doesn't reach the biofilm layer on pipe walls where breeding occurs
+- **Bleach**: Too dilute by the time it reaches the biofilm; kills some surface bacteria but doesn't break down the gelatinous organic matter
+- **Standard liquid drain cleaners**: Not designed to remove biofilm, focused on clearing clogs
+
+**What DOES work:**
+
+**1. Physical drain brushing**: A drain brush used to scrub the inside pipe walls — the mechanical removal of biofilm is what breaks the breeding cycle. For the P-trap under the sink, you may need to remove the trap and clean it manually.
+
+**2. Enzymatic drain gel**: Products containing live bacterial cultures (not bleach-based) that digest organic matter over repeated applications. Apply several evenings in a row to establish the bacterial culture in the pipe.
+
+**3. Cleaning the overflow drain**: Remove the overflow cover plate (usually one screw) and scrub the channel behind it with a small brush or pipe cleaner. This overlooked location is responsible for a surprising number of persistent drain fly problems in NYC bathroom sinks.
+
+**4. Pour mineral oil into unused floor drains**: This slows evaporation of the water seal and prevents the P-trap from drying out — closing the connection to the building sewer stack.
+
+## When to Call a Professional
+
+A professional drain fly treatment is warranted when:
+- You've thoroughly cleaned the identified drain and they're still appearing after 2–3 weeks
+- Flies are coming from multiple locations throughout the apartment (suggests a building-level issue in the shared drain stack)
+- You see phorid flies (small flies with a humped back and erratic movement) rather than typical drain flies — phorid flies can indicate a sewage leak or decaying organic matter inside a wall void, which requires investigation
+
+For Brooklyn and Queens buildings with older plumbing, building-level drain stack issues require coordination with the building super or management — not just treatment within your unit. Jet Pest Control can inspect your apartment's drain system and coordinate with building management when a shared stack is the source.
+
+Call (718) 710-0330 (Brooklyn, Queens, Manhattan) or (516) 774-5051 (Nassau, Suffolk) for a drain fly inspection. Unmarked vehicles; discreet professional service throughout New York.`
+  },
 ];
 
 // ============================================================
