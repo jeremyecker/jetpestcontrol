@@ -1372,7 +1372,7 @@ Jet Pest Control works with co-op boards, condo associations, and building manag
 Jet Pest Control provides building-wide pest control programs for NYC co-ops and condos — IPM-based monthly service, complete documentation at every visit, emergency response, and discreet service with unmarked vehicles. We work directly with building managers, supers, and board members to coordinate treatment logistics.
 
 Call (718) 710-0330 for a commercial building assessment. When you need **pest control near me** for your NYC co-op or condo building, Jet Pest Control brings the professional expertise your building deserves.`
-  }
+  },
 
   {
     slug: "silverfish-nyc-apartments",
