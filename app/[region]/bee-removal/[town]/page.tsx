@@ -9,8 +9,8 @@ import { regionFAQs, getNearbyTowns } from '@/lib/jet-town-data';
 import { jetTownOpeners } from '@/lib/jet-city-openers-data';
 import { cityFAQs, nearbyTownMap, hubNeighborhoods } from '@/lib/jet-layer7-data';
 
-const SERVICE_NAME = 'Rodent Control';
-const SERVICE_SLUG = 'rodent-control';
+const SERVICE_NAME = 'Bee & Wasp Removal';
+const SERVICE_SLUG = 'bee-removal';
 
 interface ServiceContent {
   headline: string;
@@ -20,48 +20,48 @@ interface ServiceContent {
 
 const SERVICE_CONTENT: Record<string, ServiceContent> = {
   brooklyn: {
-    headline: `Professional Rodent Control in Brooklyn, NY`,
-    body: `Brooklyn's density makes it one of New York's most rodent-challenged boroughs. Norway rats thrive near the commercial avenues — the restaurant strips on Fifth Avenue, Atlantic Avenue, and Flatbush Avenue generate food waste that sustains large populations which migrate into adjacent residential brownstones and apartment buildings. House mice exploit the original knob-and-tube plumbing and lath-and-plaster walls of pre-war buildings to travel between units without detection. Our Brooklyn rodent control technicians use a multi-step approach: exterior exclusion to seal entry points, interior baiting stations in harborage areas, and snap traps in active zones. We identify the source rather than just treating visible activity.`,
+    headline: `Professional Bee & Wasp Removal in Brooklyn, NY`,
+    body: `Bees, wasps, and yellow jackets in Brooklyn range from manageable nuisances to genuine structural infestations. Yellow jacket colonies nest in wall voids of brownstones and apartment buildings — building paper-nest colonies inside exterior walls that can reach 5,000 workers by late summer. Paper wasps construct visible nests under eaves, on window frames, and in building crevices throughout the borough. Honey bee swarms are seasonal visitors that occasionally establish colonies in wall voids and chimney flues of older Brooklyn buildings. European hornets nest in tree hollows and building soffit areas. Our Brooklyn bee and wasp removal team handles all species safely — from immediate wasp nest removal to full honey bee colony extraction from building structures.`,
     faqs: [
-      { q: `Why are there so many rats in Brooklyn?`, a: `Brooklyn's combination of dense restaurant districts, aging sewer infrastructure, and connected building basements creates ideal conditions for Norway rat populations. Rats access buildings through gaps as small as ½ inch around utility pipes and foundation cracks.` },
-      { q: `How do mice get into Brooklyn apartments on upper floors?`, a: `Mice are excellent climbers and travel through plumbing chases, electrical conduits, and shared wall voids between connected brownstone units. Upper-floor infestations often originate in ground-floor or basement harborage areas.` },
-      { q: `How quickly can you respond to a rodent problem in Brooklyn?`, a: `We offer same-day and next-day appointments throughout Brooklyn. Early morning calls have the best chance for same-day service.` },
+      { q: `Do I need to remove a wasp nest from my Brooklyn building or can I leave it?`, a: `Active nests in high-traffic areas or inside building structures should be removed. Leaving a yellow jacket nest in a wall void allows the colony to expand to thousands of workers and potentially damage the structure. Abandoned nests from previous seasons can be left as they will not be reused.` },
+      { q: `Is a honey bee swarm in Brooklyn dangerous?`, a: `Swarms — the cluster of bees you see hanging from a tree or ledge — are actually the calmest bees you will encounter. They have no nest to defend and are rarely aggressive. However, if the swarm enters a void space and establishes a colony, professional removal is necessary.` },
+      { q: `How do you remove a yellow jacket nest from inside a Brooklyn brownstone wall?`, a: `We apply professional-grade insecticide dust into the nest entrance, which workers carry into the colony. Nests in wall voids are typically eliminated within 24-48 hours. Physical nest removal may be recommended after treatment to prevent honey fermentation and structural damage.` },
     ],
   },
   queens: {
-    headline: `Professional Rodent Control in Queens, NY`,
-    body: `Queens' combination of dense residential neighborhoods, active commercial corridors, and proximity to major transit infrastructure creates year-round rodent pressure across the borough. The elevated subway lines along Roosevelt Avenue and Jamaica Avenue create shadowed corridors beneath which restaurant refuse accumulates, sustaining large rat populations that spread into residential streets. House mice are a persistent concern in Queens' abundant stock of brick walk-up apartment buildings, where aging plumbing chases and shared basements allow populations to migrate across entire buildings. Our Queens rodent control team uses exterior exclusion, interior baiting, and targeted snap trapping to eliminate infestations at the source.`,
+    headline: `Professional Bee & Wasp Removal in Queens, NY`,
+    body: `Queens' diverse mix of single-family homes, attached rowhomes, and apartment buildings provides abundant nesting sites for bees, wasps, and yellow jackets. Yellow jackets are the most commonly encountered stinging insect in Queens, building large colonies in soil, wall voids, and attic spaces throughout the summer. Paper wasps colonize under eaves and porch structures across the borough. Bald-faced hornets build large gray paper nests in trees and under roof overhangs that can appear suddenly in July and August. Honey bee swarms are common in spring, occasionally establishing in building voids. Our Queens stinging insect removal team responds same-day to active nest situations and provides structural treatments for hidden nests.`,
     faqs: [
-      { q: `Are rats common near the subway lines in Queens?`, a: `Yes. The elevated subway corridors along Roosevelt and Jamaica Avenues concentrate food waste from street vendors and restaurants, creating ideal conditions for Norway rat populations. These rats regularly migrate into surrounding residential buildings.` },
-      { q: `Can rodents travel between connected row houses in Queens?`, a: `Absolutely. Queens' attached rowhomes share basement walls, plumbing chases, and utility corridors that rodents use as travel highways. An infestation in one unit can spread to neighboring homes without ever entering the outdoors.` },
-      { q: `What should I do if I hear scratching in my walls at night in Queens?`, a: `Wall scratching, especially at night, typically indicates mice or rats traveling through wall voids. Call us for a same-day inspection — the sooner an infestation is addressed, the less structural damage occurs.` },
+      { q: `What should I do if I find a large gray wasp nest in my Queens yard?`, a: `Keep people and pets away from the nest and call us immediately. Bald-faced hornet nests can house 400-700 highly defensive workers by late summer — disturbing the nest can provoke a mass attack. Professional removal with protective equipment is the only safe approach.` },
+      { q: `Are yellow jackets nesting in the ground near my Queens home dangerous?`, a: `Ground-nesting yellow jacket colonies can reach thousands of workers by August and defend a large radius aggressively. We recommend professional treatment — our technicians apply insecticide at night when yellow jackets are less active and all workers are in the nest.` },
+      { q: `How quickly can you remove a wasp nest from my Queens property?`, a: `We offer same-day service for stinging insect emergencies throughout Queens. Nest removal is typically completed in 30-60 minutes depending on nest location and species.` },
     ],
   },
   manhattan: {
-    headline: `Professional Rodent Control in Manhattan, NY`,
-    body: `Manhattan's rodent problem is one of the oldest in the Western Hemisphere — rats arrived with the first Dutch settlers and have been expanding their underground territory ever since. The subway system's 245 miles of track and thousands of station rooms provide climate-controlled corridors that rats navigate from the Battery to Inwood without surfacing. Buildings throughout Manhattan experience rodent intrusions through utility penetrations, basement service entrances, and loading docks that open multiple times daily. Our Manhattan rodent control program addresses both the entry points and the harborage — sealing gaps, removing attractants, and placing professional-grade bait stations and traps in the specific locations where rodents travel.`,
+    headline: `Professional Bee & Wasp Removal in Manhattan, NY`,
+    body: `Stinging insects in Manhattan primarily involve yellow jackets nesting in building wall voids and planters, paper wasps under window sills and fire escape structures, and honey bee swarms on building ledges and in chimney flues. The concentrated urban environment means stinging insect activity near building entrances, outdoor dining areas, and rooftop gardens requires prompt professional attention. Manhattan's urban beekeeping community has increased honey bee swarm frequency in recent years. Building management companies across the borough rely on Jet Pest Control for fast, discreet stinging insect removal that meets co-op board and property manager standards.`,
     faqs: [
-      { q: `Do Manhattan high-rises get rats even on upper floors?`, a: `Yes. Rats and mice access high-rise buildings through basement service areas and travel vertically through utility shafts, pipe chases, and elevator shafts. We've treated active rodent infestations on floors 20 and above.` },
-      { q: `Is there a NYC law requiring landlords to address rodent infestations?`, a: `Yes. Under the NYC Housing Maintenance Code, landlords are required to exterminate rodents within 30 days of a written tenant complaint. Our technicians provide documentation for tenant and landlord records.` },
-      { q: `Can rodent control be done discreetly in a Manhattan co-op building?`, a: `Absolutely. We use unmarked vehicles, carry equipment in standard bags, and coordinate with building management to schedule treatments at times that minimize visibility to other residents.` },
+      { q: `There are bees swarming on my Manhattan building ledge — is this an emergency?`, a: `A swarm cluster on a ledge is not immediately dangerous but should be addressed within 24-48 hours before the bees enter a void. We can contact a local beekeeper to safely relocate honey bee swarms — call us and we will coordinate.` },
+      { q: `How do yellow jackets get inside Manhattan building walls?`, a: `Yellow jackets enter through any exterior gap larger than ¼ inch — around window frames, under siding, through utility penetrations, and via roof membrane gaps. Once inside a wall void, colonies can reach 5,000 workers before residents notice the problem.` },
+      { q: `Can you remove a wasp nest on a high floor of a Manhattan building?`, a: `Yes. Our technicians are equipped to treat wasp nests at height via interior access, exterior window access, or coordination with building management for roof access. We treat stinging insect issues throughout Manhattan including high-rise environments.` },
     ],
   },
   nassau: {
-    headline: `Professional Rodent Control in Nassau County, NY`,
-    body: `Nassau County's suburban landscape creates seasonal rodent pressure that peaks in fall as temperatures drop and mice and rats seek shelter in residential structures. House mice exploit the smallest gaps — less than a dime's width — around utility penetrations, foundation weep holes, and garage door frames to enter warm basements and crawlspaces. Norway rats are active year-round near commercial areas and dumpster locations, with populations in restaurant areas of Hempstead, Freeport, and Garden City regularly migrating into adjacent residential streets. Our Nassau County rodent control program combines professional-grade exterior exclusion materials, bait stations, and interior snap trapping to eliminate infestations and prevent re-entry.`,
+    headline: `Professional Bee & Wasp Removal in Nassau County, NY`,
+    body: `Nassau County homeowners encounter the full range of stinging insect species throughout the warm season. Yellow jacket colonies in wall voids, attic spaces, and underground nests are the most common emergency call — large colonies discovered in August and September when family activity outdoors peaks. Paper wasps build accessible nests under eaves and porch structures that require early-season removal before colonies grow large. Bald-faced hornets construct large above-ground nests in Nassau's mature trees and shrubs. Carpenter bees drill perfectly round holes in cedar siding and wood deck structures across the county. Honey bee swarms are common in spring. Our Nassau County bee and wasp removal team handles all species with same-day emergency service available.`,
     faqs: [
-      { q: `When do mice most commonly enter Nassau County homes?`, a: `The peak entry period is September through November as temperatures drop below 50°F. Mice seek heated spaces and can squeeze through any gap larger than ¼ inch — a gap easily found around utility pipes entering foundations.` },
-      { q: `Do I need to worry about rats in suburban Nassau County?`, a: `Yes. Norway rats are active throughout Nassau County, particularly near commercial areas, restaurant dumpsters, and bird feeders. They burrow under concrete slabs and access homes through basement utility openings.` },
-      { q: `What is rodent exclusion and does it really work?`, a: `Rodent exclusion involves sealing all potential entry points with steel wool, hardware cloth, caulk, and metal flashing — materials that rodents cannot chew through. Combined with interior treatment, exclusion provides the most permanent solution.` },
+      { q: `How do I know if I have yellow jackets nesting in my Nassau County home's wall?`, a: `You may notice workers entering and exiting a small hole in exterior siding or foundation, hear buzzing in a wall cavity, or see workers appearing from around window trim. Late-season colonies produce significant buzzing audible from indoors.` },
+      { q: `Are carpenter bees damaging my Nassau County deck?`, a: `Carpenter bees drill 3/8-inch round entry holes in untreated wood — particularly cedar and pine — to create nesting galleries. Over several years, multiple bee families using the same structure can create significant structural damage. Annual treatment and wood staining prevent establishment.` },
+      { q: `Do you handle ground-nesting yellow jacket removal in Nassau County?`, a: `Yes. Ground-nesting yellow jackets are common in Nassau County lawns. We treat underground nests at night when all workers are present, using professional insecticide injected directly into the nest entrance for immediate knockdown.` },
     ],
   },
   suffolk: {
-    headline: `Professional Rodent Control in Suffolk County, NY`,
-    body: `Suffolk County's mix of suburban neighborhoods, wooded preserves, and agricultural land creates year-round rodent pressure from both the native species — white-footed mice, meadow voles, deer mice — and the commensal species that live alongside humans: Norway rats and house mice. Fall migration into homes intensifies in Suffolk due to the larger undeveloped areas surrounding residential communities, giving rodent populations a larger source reservoir than is typical in denser suburban areas. Hamlets near the Long Island Sound and Great South Bay experience additional pressure from waterfront industrial activity. Our Suffolk County rodent control team handles everything from single-family home exclusion projects to multi-building commercial bait station programs.`,
+    headline: `Professional Bee & Wasp Removal in Suffolk County, NY`,
+    body: `Suffolk County's wooded neighborhoods, large lots, and abundant native landscaping create ideal conditions for every species of stinging insect active in New York. Bald-faced hornets build large paper nests in Suffolk's mature trees and shrubs that can surprise homeowners who discover them mid-summer when foliage hides them. Yellow jackets nest aggressively in underground sites across the county, with lawn mowing and gardening triggering dangerous encounters each summer. The East End's agricultural areas see elevated bee and wasp activity. Carpenter bees are extremely common throughout Suffolk, targeting the cedar shingle and wood trim that defines many South and North Fork homes. Our Suffolk County stinging insect removal team provides same-day service for emergency nest situations.`,
     faqs: [
-      { q: `Are deer mice a concern in Suffolk County?`, a: `Yes. Deer mice are common in Suffolk County's wooded areas and can carry Hantavirus. We recommend professional treatment rather than DIY methods when deer mice are suspected, as disturbing nesting material can aerosolize virus particles.` },
-      { q: `Do rodent problems get worse near the Hamptons marshes and wetlands?`, a: `Wetland and marsh environments support large rodent populations. Homes bordering nature preserves and wetlands in the Hamptons and East End experience elevated pressure, especially during drought years when natural food sources dry up.` },
-      { q: `How often should I have my Suffolk County home inspected for rodents?`, a: `We recommend an annual fall inspection before the peak entry season, plus an inspection any time you see droppings, hear scratching, or notice gnaw marks. Early detection dramatically reduces treatment costs.` },
+      { q: `Why are there so many wasps and hornets in my Suffolk County yard?`, a: `Suffolk County's wooded, landscaped environment provides abundant nesting sites for yellow jackets, paper wasps, and bald-faced hornets. Properties bordering wooded areas or with multiple mature trees and dense shrubs experience the highest stinging insect pressure.` },
+      { q: `Are carpenter bees a serious problem in Suffolk County cedar-sided homes?`, a: `Yes. Cedar shingles and cedar trim are a carpenter bee magnet throughout Suffolk County. Unpainted or unstained cedar is particularly vulnerable. Annual treatment of existing holes combined with painting or staining exposed wood surfaces is the most effective prevention strategy.` },
+      { q: `When is the best time to remove wasp nests in Suffolk County?`, a: `Early season — May and June — when colonies are small (under 50 workers) is the safest and easiest time for removal. By August, yellow jacket colonies can reach 5,000 workers and are extremely defensive. Call us at the first sign of nest activity rather than waiting.` },
     ],
   },
 };
@@ -200,7 +200,7 @@ export default async function ServiceTownPage({
           </div>
           <div className="bg-brand-light rounded-lg p-4">
             <div className="text-2xl font-bold text-brand-primary">Guaranteed</div>
-            <div className="text-sm text-gray-600">Results or We Return</div>
+            <div className="text-sm text-gray-600">Safe Removal Guaranteed</div>
           </div>
         </div>
 
@@ -269,7 +269,7 @@ export default async function ServiceTownPage({
         )}
 
         <div className="bg-brand-primary rounded-xl p-8 text-center text-white">
-          <h2 className="text-2xl font-bold mb-2">Ready to Eliminate Rodents in {canonicalTownName}?</h2>
+          <h2 className="text-2xl font-bold mb-2">Ready for Safe Bee & Wasp Removal in {canonicalTownName}?</h2>
           <p className="mb-6 opacity-90">Licensed, insured, same-day service available. Call now or get a free quote online.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href={`tel:+1${BRAND.phone}`} className="bg-white text-brand-primary font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors">📞 {BRAND.phoneFormatted}</a>

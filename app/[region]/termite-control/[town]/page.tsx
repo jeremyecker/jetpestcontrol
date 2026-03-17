@@ -9,8 +9,8 @@ import { regionFAQs, getNearbyTowns } from '@/lib/jet-town-data';
 import { jetTownOpeners } from '@/lib/jet-city-openers-data';
 import { cityFAQs, nearbyTownMap, hubNeighborhoods } from '@/lib/jet-layer7-data';
 
-const SERVICE_NAME = 'Wildlife Removal';
-const SERVICE_SLUG = 'wildlife-removal';
+const SERVICE_NAME = 'Termite Control';
+const SERVICE_SLUG = 'termite-control';
 
 interface ServiceContent {
   headline: string;
@@ -19,22 +19,49 @@ interface ServiceContent {
 }
 
 const SERVICE_CONTENT: Record<string, ServiceContent> = {
-  nassau: {
-    headline: `Professional Wildlife Removal in Nassau County, NY`,
-    body: `Nassau County's suburban landscape borders extensive natural areas — Hempstead Lake State Park, Bethpage State Park, and the county's network of preserves — that support robust populations of raccoons, opossums, groundhogs, skunks, and other wildlife that regularly interact with residential properties. Raccoons are the most common attic invader in Nassau County, with females establishing maternity dens in March through May that require careful, humane removal to avoid separating mothers and young. Groundhogs tunnel under sheds, decks, and foundations. Skunks den under porches and in crawlspaces, creating odor and disease risks. Our Nassau County wildlife removal team handles all native wildlife humanely and in compliance with DEC regulations, providing permanent exclusion after removal.`,
+  brooklyn: {
+    headline: `Professional Termite Control in Brooklyn, NY`,
+    body: `Subterranean termites are Brooklyn's most destructive hidden pest — living entirely underground and within wood, they can consume structural lumber for years before signs of damage appear. Brooklyn's brownstones and wood-frame houses, many built between 1880 and 1930, are particularly vulnerable: original untreated lumber in direct soil contact at foundation grade creates ideal termite entry conditions. The Eastern Subterranean Termite is the dominant species throughout New York City, forming colonies of up to 500,000 workers that can cause significant structural damage before discovery. Our Brooklyn termite control program uses liquid termiticide barriers and bait station systems to eliminate colonies and protect structures from re-infestation.`,
     faqs: [
-      { q: `What wildlife species are most common in Nassau County homes?`, a: `Raccoons in attics and chimneys, groundhogs under decks and sheds, skunks under porches and in crawlspaces, and opossums in garages and outbuildings are the most common calls in Nassau County. Deer mice and flying squirrels round out the list in wooded neighborhoods.` },
-      { q: `Is wildlife removal regulated in Nassau County?`, a: `Yes. New York State DEC regulates the trapping and relocation of most wildlife species. Our wildlife removal team is fully licensed and compliant with all state regulations. We provide proper documentation and handle relocation in accordance with DEC guidelines.` },
-      { q: `How do you prevent wildlife from returning to my Nassau County home after removal?`, a: `After removal, we perform a complete inspection and exclusion — sealing all entry points with heavy-gauge hardware cloth, metal flashing, and concrete to prevent re-entry. We also address attractants like unsecured garbage, accessible bird feeders, and overgrown vegetation near the structure.` },
+      { q: `How do I know if my Brooklyn brownstone has termites?`, a: `Look for mud tubes on foundation walls or wood surfaces, discarded wings near window sills in spring, hollow-sounding wood when tapped, and small piles of frass (termite droppings) near wood surfaces. Annual professional inspections catch infestations before significant damage occurs.` },
+      { q: `Are Brooklyn brownstones at higher risk for termites?`, a: `Yes. Brooklyn brownstones built before 1950 frequently have original wood sill plates in direct contact with soil and original basement wooden framing that has never been treated. These conditions are exactly what Eastern Subterranean Termites exploit.` },
+      { q: `How long does termite treatment take for a Brooklyn building?`, a: `A liquid termiticide treatment for a typical Brooklyn brownstone or rowhouse takes 4-6 hours. Bait station installation is faster. We provide a written treatment report and warranty with every service.` },
+    ],
+  },
+  queens: {
+    headline: `Professional Termite Control in Queens, NY`,
+    body: `Queens has some of the highest termite pressure in New York City — the borough's large inventory of attached rowhomes, many built in the 1920s through 1940s on continuous foundation systems, allows termite colonies to move between buildings without disruption. The Eastern Subterranean Termite forages along soil-structure interfaces, entering through cracks as small as 1/64 of an inch in foundation walls and slab penetrations. Queens' attached housing means a colony under one building can technically forage across an entire block of connected structures. Our Queens termite control team performs thorough pre-treatment inspections and applies liquid termiticide barrier treatments and bait station systems with long-term monitoring.`,
+    faqs: [
+      { q: `Can termites spread between connected Queens rowhomes?`, a: `Yes. Termite colonies are not contained to a single property — they forage wherever the soil leads them, including under the continuous foundation systems of attached Queens rowhomes. Treating only your unit may not eliminate the colony.` },
+      { q: `What is the difference between a termite swarm and a flying ant swarm in Queens?`, a: `Termite swarmers have straight antennae, equal-length wings, and a thick waist. Flying ants have elbowed antennae, unequal wings, and a pinched waist. Either way, a spring swarm indoors indicates an established colony — call us for a free inspection.` },
+      { q: `Do you offer termite warranties for Queens homes?`, a: `Yes. Every termite treatment includes a one-year renewable warranty. We perform annual inspection visits and re-treat at no charge if termite activity is found within the warranty period.` },
+    ],
+  },
+  manhattan: {
+    headline: `Professional Termite Control in Manhattan, NY`,
+    body: `Termites in Manhattan are less visible than in the outer boroughs — but no less destructive. The dense urban infrastructure means Eastern Subterranean Termite colonies live underground beneath sidewalks, street trees, and building foundations, foraging upward into structural wood whenever they find access. Pre-war Manhattan buildings with original wood joists, subflooring, and window framing are particularly vulnerable. The moisture conditions created by aging plumbing systems and below-grade spaces accelerate termite activity. Our Manhattan termite control program uses non-disruptive liquid treatment and bait station systems suitable for occupied high-rise and brownstone environments.`,
+    faqs: [
+      { q: `Are termites common in Manhattan?`, a: `Termites are present throughout Manhattan, though less commonly encountered than in the outer boroughs due to less exposed wood-soil contact. The highest-risk buildings are pre-war structures with original wood framing elements near grade.` },
+      { q: `Can you treat termites in a Manhattan building without major disruption?`, a: `Yes. We use targeted liquid termiticide application through small-diameter drill holes and bait station installation that requires no structural modification. Treatments are completed in a single day with minimal disruption.` },
+      { q: `How do termites access a Manhattan building from underground?`, a: `Eastern Subterranean Termites build mud tubes that allow them to travel from soil to wood while maintaining the moisture they need. These tubes can run up foundation walls, through expansion joints, and along utility penetrations to reach structural wood.` },
+    ],
+  },
+  nassau: {
+    headline: `Professional Termite Control in Nassau County, NY`,
+    body: `Nassau County has among the highest termite pressure in New York State. The island's sandy soil, abundant moisture, and large inventory of pre-1980 housing stock create ideal conditions for Eastern Subterranean Termite colonies throughout the county. Virtually every home built before 1975 has untreated lumber in areas of potential soil contact — and most have never received a professional termite treatment. Nassau's connected neighborhood layouts mean termite colonies can forage across multiple property lines simultaneously. Our Nassau County termite control team performs complete perimeter inspections and uses both liquid termiticide barriers and Sentricon bait station systems to eliminate colonies and provide long-term protection.`,
+    faqs: [
+      { q: `How common are termites in Nassau County?`, a: `Eastern Subterranean Termites are present on virtually every block in Nassau County. An estimated 1 in 5 homes in Nassau County has some level of termite activity at any given time, most of it undetected.` },
+      { q: `What does a Nassau County termite inspection involve?`, a: `Our inspector examines the entire perimeter foundation, all basement and crawlspace areas, garage slab edges, wood deck connections, and any exterior wood features in contact with or near soil. The inspection takes 45-60 minutes and includes a written report.` },
+      { q: `How long does termite treatment last for a Nassau County home?`, a: `Liquid termiticide treatments provide 5-10 years of protection. Bait station systems provide ongoing protection with annual monitoring. We offer renewable annual warranties on all treatments.` },
     ],
   },
   suffolk: {
-    headline: `Professional Wildlife Removal in Suffolk County, NY`,
-    body: `Suffolk County's larger undeveloped areas and proximity to extensive natural habitats means wildlife interactions with residential properties are more frequent than in denser suburban areas. Raccoons, opossums, groundhogs, skunks, foxes, and white-tailed deer all live in close proximity to Suffolk County homes. Raccoon attic invasions peak in early spring when females seek maternity dens — a single litter of 3-5 kits in an attic can cause significant insulation damage before the family is discovered. Groundhogs excavate extensive tunnel systems under foundations, sheds, and decks that can undermine structural integrity. Skunks are a year-round nuisance and health concern throughout the county. Our Suffolk County wildlife removal team provides humane, DEC-compliant removal and permanent structural exclusion.`,
+    headline: `Professional Termite Control in Suffolk County, NY`,
+    body: `Suffolk County's termite pressure rivals any suburban area on the East Coast. The county's combination of sandy loam soil (ideal for subterranean termite tunneling), abundant moisture from coastal proximity, and aging housing stock creates conditions where termite colonies thrive across the entire county — from Babylon to Montauk. Long Island's barrier island communities face additional pressure from moisture infiltration and the untreated wood common in beach cottages and seasonal structures. Our Suffolk County termite control program includes thorough property inspections, liquid termiticide perimeter treatments, and bait station monitoring systems to eliminate existing colonies and prevent future infestations.`,
     faqs: [
-      { q: `Are there foxes in Suffolk County residential areas?`, a: `Yes. Red foxes are common throughout Suffolk County including in residential neighborhoods. They typically avoid humans but will den under decks and sheds. Fox dens under structures can be addressed with exclusion after pups have dispersed in late summer.` },
-      { q: `What should I do if I find a baby raccoon or opossum in my Suffolk County home?`, a: `Do not handle young wildlife — mothers are typically nearby and will reclaim young when humans withdraw. Call us for a professional assessment. We coordinate humane removal that keeps families intact in compliance with DEC guidelines.` },
-      { q: `How do groundhogs damage Suffolk County home foundations?`, a: `Groundhog burrow systems can extend 5+ feet deep and 25+ feet long, undermining concrete footings, shed slabs, and deck posts. A single groundhog family can destabilize a concrete slab within one season. Professional removal and burrow collapse is recommended before backfilling.` },
+      { q: `Are Hamptons beach homes at risk for termites?`, a: `Extremely high risk. Beach communities in the Hamptons and across the South Fork have historically high termite pressure due to moisture conditions, sandy soil, and older wood construction. We recommend annual inspections for all Suffolk County coastal properties.` },
+      { q: `Can termites damage a Suffolk County home in just one season?`, a: `A large Eastern Subterranean Termite colony can consume a 2x4 wood member in as little as 6 months under ideal conditions. Most infestations develop over several years before detection, but damage can be significant.` },
+      { q: `Do you treat termites in Suffolk County crawlspace homes?`, a: `Yes. Crawlspace homes are among the highest-risk structures for termite damage because wood framing is near soil grade. We treat crawlspace sill plates, floor joists, and the surrounding soil with termiticide and install bait stations around the perimeter.` },
     ],
   },
 };
@@ -65,15 +92,12 @@ export async function generateMetadata({
 
 export async function generateStaticParams() {
   const { REGIONS } = await import('@/hub.config');
-  const suburbanSlugs = ['nassau', 'suffolk'];
-  return REGIONS
-    .filter((region: { slug: string; towns: string[] }) => suburbanSlugs.includes(region.slug))
-    .flatMap((region: { slug: string; towns: string[] }) =>
-      region.towns.map((town: string) => ({
-        region: region.slug,
-        town: town.toLowerCase().replace(/\s+/g, '-'),
-      }))
-    );
+  return REGIONS.flatMap((region: { slug: string; towns: string[] }) =>
+    region.towns.map((town: string) => ({
+      region: region.slug,
+      town: town.toLowerCase().replace(/\s+/g, '-'),
+    }))
+  );
 }
 
 export default async function ServiceTownPage({
@@ -94,7 +118,7 @@ export default async function ServiceTownPage({
   );
   if (!isValidTown) notFound();
 
-  const content = SERVICE_CONTENT[regionSlug] ?? SERVICE_CONTENT['nassau'];
+  const content = SERVICE_CONTENT[regionSlug] ?? SERVICE_CONTENT['brooklyn'];
   const uniqueOpener = jetTownOpeners[townSlug] ?? null;
   const townFaqs = cityFAQs[townSlug] ?? regionFAQs[regionSlug] ?? regionFAQs['brooklyn'];
   const neighborhoods = hubNeighborhoods[townSlug] ?? null;
@@ -172,11 +196,11 @@ export default async function ServiceTownPage({
           </div>
           <div className="bg-brand-light rounded-lg p-4">
             <div className="text-2xl font-bold text-brand-primary">Licensed</div>
-            <div className="text-sm text-gray-600">NY State DEC Permitted</div>
+            <div className="text-sm text-gray-600">NY State DEC Certified</div>
           </div>
           <div className="bg-brand-light rounded-lg p-4">
-            <div className="text-2xl font-bold text-brand-primary">Humane</div>
-            <div className="text-sm text-gray-600">No Poisons or Harm</div>
+            <div className="text-2xl font-bold text-brand-primary">Warranted</div>
+            <div className="text-sm text-gray-600">Written Guarantee Included</div>
           </div>
         </div>
 
@@ -245,7 +269,7 @@ export default async function ServiceTownPage({
         )}
 
         <div className="bg-brand-primary rounded-xl p-8 text-center text-white">
-          <h2 className="text-2xl font-bold mb-2">Ready for Humane Wildlife Removal in {canonicalTownName}?</h2>
+          <h2 className="text-2xl font-bold mb-2">Ready to Protect Your {canonicalTownName} Home from Termites?</h2>
           <p className="mb-6 opacity-90">Licensed, insured, same-day service available. Call now or get a free quote online.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href={`tel:+1${BRAND.phone}`} className="bg-white text-brand-primary font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors">📞 {BRAND.phoneFormatted}</a>

@@ -9,8 +9,8 @@ import { regionFAQs, getNearbyTowns } from '@/lib/jet-town-data';
 import { jetTownOpeners } from '@/lib/jet-city-openers-data';
 import { cityFAQs, nearbyTownMap, hubNeighborhoods } from '@/lib/jet-layer7-data';
 
-const SERVICE_NAME = 'Wildlife Removal';
-const SERVICE_SLUG = 'wildlife-removal';
+const SERVICE_NAME = 'Cricket Exterminator';
+const SERVICE_SLUG = 'cricket-exterminator';
 
 interface ServiceContent {
   headline: string;
@@ -19,22 +19,49 @@ interface ServiceContent {
 }
 
 const SERVICE_CONTENT: Record<string, ServiceContent> = {
-  nassau: {
-    headline: `Professional Wildlife Removal in Nassau County, NY`,
-    body: `Nassau County's suburban landscape borders extensive natural areas — Hempstead Lake State Park, Bethpage State Park, and the county's network of preserves — that support robust populations of raccoons, opossums, groundhogs, skunks, and other wildlife that regularly interact with residential properties. Raccoons are the most common attic invader in Nassau County, with females establishing maternity dens in March through May that require careful, humane removal to avoid separating mothers and young. Groundhogs tunnel under sheds, decks, and foundations. Skunks den under porches and in crawlspaces, creating odor and disease risks. Our Nassau County wildlife removal team handles all native wildlife humanely and in compliance with DEC regulations, providing permanent exclusion after removal.`,
+  brooklyn: {
+    headline: `Professional Cricket Exterminator in Brooklyn, NY`,
+    body: `Field crickets and camel crickets (cave crickets) invade Brooklyn homes and apartment buildings in late summer and fall, seeking warmth as outdoor temperatures drop. Field crickets enter through foundation gaps and poorly sealed entry points, establishing in basements and ground-floor areas where their nighttime chirping can disrupt sleep. Camel crickets — the large, humpbacked, silent species — favor damp basement environments and are commonly found in laundry rooms, utility areas, and below-grade spaces. Brooklyn's dense housing stock with shared basements and aging foundation systems provides ample entry points. Our Brooklyn cricket extermination uses perimeter barrier treatments, interior crack-and-crevice application, and moisture management recommendations to eliminate crickets and prevent seasonal return.`,
     faqs: [
-      { q: `What wildlife species are most common in Nassau County homes?`, a: `Raccoons in attics and chimneys, groundhogs under decks and sheds, skunks under porches and in crawlspaces, and opossums in garages and outbuildings are the most common calls in Nassau County. Deer mice and flying squirrels round out the list in wooded neighborhoods.` },
-      { q: `Is wildlife removal regulated in Nassau County?`, a: `Yes. New York State DEC regulates the trapping and relocation of most wildlife species. Our wildlife removal team is fully licensed and compliant with all state regulations. We provide proper documentation and handle relocation in accordance with DEC guidelines.` },
-      { q: `How do you prevent wildlife from returning to my Nassau County home after removal?`, a: `After removal, we perform a complete inspection and exclusion — sealing all entry points with heavy-gauge hardware cloth, metal flashing, and concrete to prevent re-entry. We also address attractants like unsecured garbage, accessible bird feeders, and overgrown vegetation near the structure.` },
+      { q: `Why do I suddenly have crickets in my Brooklyn apartment in the fall?`, a: `Field crickets seek heated structures as outdoor temperatures drop below 50°F in September and October. Ground-floor and basement Brooklyn apartments are primary entry points as crickets move through foundation cracks and around utility penetrations.` },
+      { q: `Are the large humpbacked crickets in my Brooklyn basement harmful?`, a: `Camel crickets (also called cave crickets or spider crickets) are harmless to humans but can damage fabrics, stored clothing, and cardboard boxes. They thrive in damp basement environments and are a sign of moisture conditions that should be addressed.` },
+      { q: `How do I stop crickets from chirping in my Brooklyn home at night?`, a: `Professional exterior perimeter treatment and interior crack-and-crevice application eliminate active crickets and create a barrier against new entry. Results are typically fast — most chirping stops within 24-48 hours of treatment.` },
+    ],
+  },
+  queens: {
+    headline: `Professional Cricket Exterminator in Queens, NY`,
+    body: `Cricket invasions are a late-summer and fall fixture across Queens, with field crickets and camel crickets seeking shelter in residential structures as temperatures drop. Queens' stock of attached rowhomes and apartment buildings with shared basement areas provides ideal cricket harborage — dark, slightly humid spaces that crickets prefer. The borough's commercial areas near loading docks and dumpster areas also experience elevated cricket activity. Both species are drawn to light sources at night, making commercial storefronts and buildings with exterior lighting prime entry targets. Our Queens cricket extermination program treats both interior infestations and creates exterior barriers to prevent seasonal entry.`,
+    faqs: [
+      { q: `Are crickets dangerous or just a nuisance in Queens?`, a: `Crickets are primarily a nuisance pest — their chirping disrupts sleep and they can damage stored fabrics. They do not bite or carry disease. However, large camel cricket populations in damp basements can indicate moisture conditions that may attract other pests.` },
+      { q: `Why do crickets come into Queens homes in the fall?`, a: `Crickets are cold-intolerant insects that seek heated spaces as temperatures drop. The transition from summer to fall — typically mid-September in Queens — triggers mass cricket movement toward buildings with heat signatures.` },
+      { q: `Can professional treatment eliminate crickets completely from my Queens home?`, a: `Yes. A combination of interior treatment and exterior perimeter barrier effectively eliminates existing crickets and prevents seasonal entry. Most Queens homeowners see complete resolution within 48-72 hours.` },
+    ],
+  },
+  manhattan: {
+    headline: `Professional Cricket Exterminator in Manhattan, NY`,
+    body: `Cricket invasions in Manhattan concentrate in ground-floor and basement spaces — below-grade apartments, building mechanical rooms, laundry facilities, and commercial basement storage areas that provide the dark, moist conditions crickets prefer. Field crickets enter through building perimeter gaps in fall, while camel crickets establish year-round colonies in perpetually damp basement environments. The constant vibration and heat of Manhattan's underground infrastructure actually attracts crickets to certain building locations. Our Manhattan cricket extermination uses targeted interior treatment and entry-point sealing to eliminate crickets from residential and commercial spaces.`,
+    faqs: [
+      { q: `I hear crickets in my Manhattan building at night but can not find them — why?`, a: `Field crickets chirp to attract mates and often hide during the day in wall voids, under appliances, and in basement ceiling gaps. A professional inspection locates the harborage area so treatment can be targeted precisely.` },
+      { q: `Are camel crickets common in Manhattan basements?`, a: `Yes. Manhattan's pre-war buildings with perpetually damp below-grade spaces provide ideal camel cricket habitat. These large, silent crickets are harmless but alarming in appearance and indicate damp conditions that should be addressed.` },
+      { q: `Do exterminators really get rid of crickets or do they just come back?`, a: `Professional treatment with perimeter barrier application significantly reduces reentry. Annual fall treatment is the most effective long-term approach, preventing the seasonal influx before it establishes indoors.` },
+    ],
+  },
+  nassau: {
+    headline: `Professional Cricket Exterminator in Nassau County, NY`,
+    body: `Nassau County homeowners deal with both field crickets and camel crickets (cave crickets) throughout late summer and fall. Field crickets invade from the yard, drawn to exterior lighting and the heat signature of the house. They enter through gaps in weatherstripping, foundation cracks, and around utility penetrations. Camel crickets are a common find in Nassau basements and crawlspaces — they thrive in the slightly damp, dark environments that Nassau's aging housing stock produces. Cricket populations can be significant in Nassau's mature residential neighborhoods where large trees and leaf litter provide ideal outdoor breeding habitat close to homes. Our Nassau County cricket treatment combines interior application, perimeter barrier spray, and outdoor habitat modification recommendations.`,
+    faqs: [
+      { q: `What causes cricket infestations in Nassau County homes?`, a: `Outdoor lighting attracts field crickets, which then find entry points in the foundation and walls. Damp basement conditions attract camel crickets. Reducing exterior lighting intensity, clearing leaf litter from the foundation, and sealing entry points dramatically reduces cricket pressure.` },
+      { q: `Are cricket infestations a sign of a bigger pest problem in Nassau County?`, a: `Large camel cricket populations in basements often indicate moisture conditions that attract other pests — cockroaches, silverfish, and centipedes also prefer damp basements. We recommend addressing the moisture source when camel crickets are found.` },
+      { q: `How do you treat crickets in a Nassau County home with a large yard?`, a: `We apply a perimeter barrier treatment around the foundation, treat active indoor areas, and recommend reducing exterior lighting near entry points. A granular outdoor treatment around the yard perimeter can reduce the outdoor cricket population that sources the indoor invasion.` },
     ],
   },
   suffolk: {
-    headline: `Professional Wildlife Removal in Suffolk County, NY`,
-    body: `Suffolk County's larger undeveloped areas and proximity to extensive natural habitats means wildlife interactions with residential properties are more frequent than in denser suburban areas. Raccoons, opossums, groundhogs, skunks, foxes, and white-tailed deer all live in close proximity to Suffolk County homes. Raccoon attic invasions peak in early spring when females seek maternity dens — a single litter of 3-5 kits in an attic can cause significant insulation damage before the family is discovered. Groundhogs excavate extensive tunnel systems under foundations, sheds, and decks that can undermine structural integrity. Skunks are a year-round nuisance and health concern throughout the county. Our Suffolk County wildlife removal team provides humane, DEC-compliant removal and permanent structural exclusion.`,
+    headline: `Professional Cricket Exterminator in Suffolk County, NY`,
+    body: `Suffolk County's larger lots and greater proximity to wooded and open areas means cricket populations here can be significantly larger than those in denser suburban areas. Field crickets breed in great numbers in Suffolk's unmowed areas, meadow edges, and woodland borders — producing the populations that invade homes each fall. Camel crickets are particularly common in Suffolk basements and crawlspaces, especially in homes near wetlands and wooded areas where ambient moisture is elevated. The South Fork and North Fork communities with larger properties experience the most intense cricket pressure. Our Suffolk County cricket extermination program includes outdoor habitat reduction, perimeter barrier treatment, and interior application.`,
     faqs: [
-      { q: `Are there foxes in Suffolk County residential areas?`, a: `Yes. Red foxes are common throughout Suffolk County including in residential neighborhoods. They typically avoid humans but will den under decks and sheds. Fox dens under structures can be addressed with exclusion after pups have dispersed in late summer.` },
-      { q: `What should I do if I find a baby raccoon or opossum in my Suffolk County home?`, a: `Do not handle young wildlife — mothers are typically nearby and will reclaim young when humans withdraw. Call us for a professional assessment. We coordinate humane removal that keeps families intact in compliance with DEC guidelines.` },
-      { q: `How do groundhogs damage Suffolk County home foundations?`, a: `Groundhog burrow systems can extend 5+ feet deep and 25+ feet long, undermining concrete footings, shed slabs, and deck posts. A single groundhog family can destabilize a concrete slab within one season. Professional removal and burrow collapse is recommended before backfilling.` },
+      { q: `Why are crickets so bad at my Suffolk County home near the woods?`, a: `Properties bordering woodland, meadow, or wetland areas have direct access to the large cricket breeding populations these habitats support. The abundance of outdoor breeding sites means annual fall treatment is especially important for edge-of-woods Suffolk County homes.` },
+      { q: `Do crickets damage anything in my Suffolk County home?`, a: `Field crickets will chew through clothing, curtains, and fabric stored in basement areas. Camel crickets damage stored goods in damp basements. Beyond physical damage, the chirping of field crickets and the startling appearance of camel crickets make them significant nuisance pests.` },
+      { q: `What is the best treatment for cricket prevention in Suffolk County?`, a: `A spring perimeter application followed by a fall treatment before peak cricket season (August-September) is the most effective prevention approach for Suffolk County homes. This two-treatment annual program keeps cricket populations from establishing indoors.` },
     ],
   },
 };
@@ -65,15 +92,12 @@ export async function generateMetadata({
 
 export async function generateStaticParams() {
   const { REGIONS } = await import('@/hub.config');
-  const suburbanSlugs = ['nassau', 'suffolk'];
-  return REGIONS
-    .filter((region: { slug: string; towns: string[] }) => suburbanSlugs.includes(region.slug))
-    .flatMap((region: { slug: string; towns: string[] }) =>
-      region.towns.map((town: string) => ({
-        region: region.slug,
-        town: town.toLowerCase().replace(/\s+/g, '-'),
-      }))
-    );
+  return REGIONS.flatMap((region: { slug: string; towns: string[] }) =>
+    region.towns.map((town: string) => ({
+      region: region.slug,
+      town: town.toLowerCase().replace(/\s+/g, '-'),
+    }))
+  );
 }
 
 export default async function ServiceTownPage({
@@ -94,7 +118,7 @@ export default async function ServiceTownPage({
   );
   if (!isValidTown) notFound();
 
-  const content = SERVICE_CONTENT[regionSlug] ?? SERVICE_CONTENT['nassau'];
+  const content = SERVICE_CONTENT[regionSlug] ?? SERVICE_CONTENT['brooklyn'];
   const uniqueOpener = jetTownOpeners[townSlug] ?? null;
   const townFaqs = cityFAQs[townSlug] ?? regionFAQs[regionSlug] ?? regionFAQs['brooklyn'];
   const neighborhoods = hubNeighborhoods[townSlug] ?? null;
@@ -172,11 +196,11 @@ export default async function ServiceTownPage({
           </div>
           <div className="bg-brand-light rounded-lg p-4">
             <div className="text-2xl font-bold text-brand-primary">Licensed</div>
-            <div className="text-sm text-gray-600">NY State DEC Permitted</div>
+            <div className="text-sm text-gray-600">NY State DEC Certified</div>
           </div>
           <div className="bg-brand-light rounded-lg p-4">
-            <div className="text-2xl font-bold text-brand-primary">Humane</div>
-            <div className="text-sm text-gray-600">No Poisons or Harm</div>
+            <div className="text-2xl font-bold text-brand-primary">Guaranteed</div>
+            <div className="text-sm text-gray-600">Results or We Return</div>
           </div>
         </div>
 
@@ -245,7 +269,7 @@ export default async function ServiceTownPage({
         )}
 
         <div className="bg-brand-primary rounded-xl p-8 text-center text-white">
-          <h2 className="text-2xl font-bold mb-2">Ready for Humane Wildlife Removal in {canonicalTownName}?</h2>
+          <h2 className="text-2xl font-bold mb-2">Ready to Eliminate Crickets in {canonicalTownName}?</h2>
           <p className="mb-6 opacity-90">Licensed, insured, same-day service available. Call now or get a free quote online.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href={`tel:+1${BRAND.phone}`} className="bg-white text-brand-primary font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors">📞 {BRAND.phoneFormatted}</a>
