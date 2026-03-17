@@ -9,8 +9,8 @@ import { regionFAQs, getNearbyTowns } from '@/lib/jet-town-data';
 import { jetTownOpeners } from '@/lib/jet-city-openers-data';
 import { cityFAQs, nearbyTownMap, hubNeighborhoods } from '@/lib/jet-layer7-data';
 
-const SERVICE_NAME = 'Wildlife Removal';
-const SERVICE_SLUG = 'wildlife-removal';
+const SERVICE_NAME = 'Cockroach Exterminator';
+const SERVICE_SLUG = 'cockroach-exterminator';
 
 interface ServiceContent {
   headline: string;
@@ -19,22 +19,49 @@ interface ServiceContent {
 }
 
 const SERVICE_CONTENT: Record<string, ServiceContent> = {
-  nassau: {
-    headline: `Professional Wildlife Removal in Nassau County, NY`,
-    body: `Nassau County's suburban landscape borders extensive natural areas — Hempstead Lake State Park, Bethpage State Park, and the county's network of preserves — that support robust populations of raccoons, opossums, groundhogs, skunks, and other wildlife that regularly interact with residential properties. Raccoons are the most common attic invader in Nassau County, with females establishing maternity dens in March through May that require careful, humane removal to avoid separating mothers and young. Groundhogs tunnel under sheds, decks, and foundations. Skunks den under porches and in crawlspaces, creating odor and disease risks. Our Nassau County wildlife removal team handles all native wildlife humanely and in compliance with DEC regulations, providing permanent exclusion after removal.`,
+  brooklyn: {
+    headline: `Professional Cockroach Exterminator in Brooklyn, NY`,
+    body: `German cockroaches are Brooklyn's most persistent pest — small enough to hide in the thinnest wall crack, prolific enough to produce 300 offspring in a single month, and hardy enough to survive most over-the-counter sprays. In Brooklyn's brownstones and pre-war apartment buildings, a cockroach infestation in one unit's kitchen can spread to an entire building within weeks via shared plumbing chases and wall voids. The commercial kitchen density on Flatbush Avenue, Atlantic Avenue, and the borough's restaurant corridors creates reservoirs of cockroach activity that continuously reinfest adjacent residential buildings. Our Brooklyn cockroach extermination program uses gel bait, insect growth regulators, and targeted application in harborage zones — eliminating infestations in 1-2 treatments.`,
     faqs: [
-      { q: `What wildlife species are most common in Nassau County homes?`, a: `Raccoons in attics and chimneys, groundhogs under decks and sheds, skunks under porches and in crawlspaces, and opossums in garages and outbuildings are the most common calls in Nassau County. Deer mice and flying squirrels round out the list in wooded neighborhoods.` },
-      { q: `Is wildlife removal regulated in Nassau County?`, a: `Yes. New York State DEC regulates the trapping and relocation of most wildlife species. Our wildlife removal team is fully licensed and compliant with all state regulations. We provide proper documentation and handle relocation in accordance with DEC guidelines.` },
-      { q: `How do you prevent wildlife from returning to my Nassau County home after removal?`, a: `After removal, we perform a complete inspection and exclusion — sealing all entry points with heavy-gauge hardware cloth, metal flashing, and concrete to prevent re-entry. We also address attractants like unsecured garbage, accessible bird feeders, and overgrown vegetation near the structure.` },
+      { q: `Why do I keep getting cockroaches even after treating my Brooklyn apartment?`, a: `Re-infestation typically occurs because neighboring units or shared building spaces remain untreated. German cockroaches spread through wall voids and plumbing chases from connected units. A whole-building treatment approach is the most effective long-term solution.` },
+      { q: `Are the cockroach treatments safe for children and pets?`, a: `Yes. We use gel baits applied in specific harborage areas inaccessible to children and pets, and insect growth regulators that are non-toxic to mammals. There is no need to leave your Brooklyn apartment during or after treatment.` },
+      { q: `How fast does cockroach extermination work in a Brooklyn apartment?`, a: `Most Brooklyn cockroach infestations show significant reduction within 3-5 days of gel bait application. Full elimination typically takes 2-3 weeks, with a follow-up visit included in every service.` },
+    ],
+  },
+  queens: {
+    headline: `Professional Cockroach Exterminator in Queens, NY`,
+    body: `Queens' extraordinary restaurant density — the borough has more restaurants per square mile than almost anywhere else in the world — creates a cockroach pressure environment that affects residential buildings throughout the borough. The commercial kitchen ecosystems of Flushing's Main Street, Jackson Heights' 74th Street, and Jamaica's commercial corridor support massive German cockroach populations that migrate nightly into adjacent residential buildings. Queens' stock of pre-war apartment buildings with original plumbing and shared basement systems allows cockroach populations to spread across entire building footprints. Our Queens cockroach extermination team uses targeted gel bait placement and insect growth regulators to eliminate populations at the source.`,
+    faqs: [
+      { q: `Can cockroaches come from restaurants into my Queens apartment?`, a: `Yes. German cockroaches regularly migrate between commercial kitchens and residential buildings through shared walls, plumbing penetrations, and utility conduits. If you live above or adjacent to a restaurant in Queens, you face elevated cockroach pressure.` },
+      { q: `Do I need to prepare my Queens apartment before a cockroach treatment?`, a: `We recommend removing items from under sinks and behind appliances for access to harborage zones. No need to bag food or leave the apartment — our gel bait treatments are safe for occupied spaces.` },
+      { q: `How many treatments does it take to eliminate cockroaches in Queens?`, a: `Most Queens cockroach infestations are resolved in 1-2 treatments. Severe infestations or multi-unit building situations may require a follow-up visit 3-4 weeks after the initial service.` },
+    ],
+  },
+  manhattan: {
+    headline: `Professional Cockroach Exterminator in Manhattan, NY`,
+    body: `Manhattan's 24/7 food culture — the street carts, the all-night diners, the office building cafeterias — creates a cockroach ecosystem that never sleeps. German cockroaches are the dominant species, thriving in the warm, humid environments of restaurant kitchens and then migrating into residential buildings through shared walls and utility penetrations. Pre-war Manhattan buildings have original plumbing systems designed before pest control was a consideration — every pipe penetration, every steam riser, every dumbwaiter shaft is a cockroach corridor. Our Manhattan cockroach program uses professional gel bait formulations and insect growth regulators that interrupt cockroach reproduction cycles, achieving lasting results where store-bought sprays create resistance.`,
+    faqs: [
+      { q: `Are cockroaches common in Manhattan luxury buildings?`, a: `Yes. Building prestige has no bearing on cockroach risk. Luxury high-rises have the same plumbing penetrations and service entrances as older buildings, and cockroaches access them the same way. We regularly treat five-star buildings and Upper East Side co-ops.` },
+      { q: `My Manhattan building has a pest control service but I still have cockroaches — why?`, a: `Building-level pest control programs often use quarterly spray treatments that provide short-term relief but don't address harborage zones or use insect growth regulators. A targeted gel bait program applied by our technicians typically outperforms building-wide spray programs.` },
+      { q: `Can you treat cockroaches in my Manhattan home office without disrupting my work?`, a: `Yes. Gel bait treatments are applied in specific harborage areas and are completely odorless. We can work around your schedule and the treatment takes 30-45 minutes for a typical Manhattan apartment.` },
+    ],
+  },
+  nassau: {
+    headline: `Professional Cockroach Exterminator in Nassau County, NY`,
+    body: `Nassau County cockroach problems differ from the city in important ways. While German cockroaches dominate in urban environments, Nassau County homeowners also contend with American cockroaches (water bugs) and Oriental cockroaches in basement and crawlspace environments. The moisture conditions in Nassau's aging housing stock — particularly in homes with finished basements near the water table — create ideal conditions for the larger peridomestic species. Restaurant concentrations in Hempstead, Valley Stream, and Freeport generate cockroach pressure that reaches adjacent residential areas. Our Nassau County cockroach extermination team treats both German and peridomestic species with targeted programs appropriate for suburban single-family homes.`,
+    faqs: [
+      { q: `What is the difference between German cockroaches and water bugs in Nassau County homes?`, a: `German cockroaches (small, tan, live in kitchens) are introduced via groceries and appliance deliveries. American cockroaches (large, reddish-brown) enter from exterior through basement drains and utility penetrations. Both require professional treatment but different protocols.` },
+      { q: `Do cockroaches in Nassau County homes mean the house is dirty?`, a: `No. Cockroach infestations in Nassau County most commonly result from introductions via grocery bags, secondhand appliances, or cardboard boxes — not sanitation issues. Any home can develop a cockroach problem regardless of cleanliness.` },
+      { q: `How do you treat cockroaches in a Nassau County home with children and pets?`, a: `We use gel baits placed precisely in harborage zones inaccessible to children and pets, and insect growth regulators that affect only insects. Treatments are safe for occupied homes and require no preparation or evacuation.` },
     ],
   },
   suffolk: {
-    headline: `Professional Wildlife Removal in Suffolk County, NY`,
-    body: `Suffolk County's larger undeveloped areas and proximity to extensive natural habitats means wildlife interactions with residential properties are more frequent than in denser suburban areas. Raccoons, opossums, groundhogs, skunks, foxes, and white-tailed deer all live in close proximity to Suffolk County homes. Raccoon attic invasions peak in early spring when females seek maternity dens — a single litter of 3-5 kits in an attic can cause significant insulation damage before the family is discovered. Groundhogs excavate extensive tunnel systems under foundations, sheds, and decks that can undermine structural integrity. Skunks are a year-round nuisance and health concern throughout the county. Our Suffolk County wildlife removal team provides humane, DEC-compliant removal and permanent structural exclusion.`,
+    headline: `Professional Cockroach Exterminator in Suffolk County, NY`,
+    body: `Suffolk County cockroach infestations most commonly involve German cockroaches introduced via groceries and used appliances, and American cockroaches entering from exterior moisture environments in basement and crawlspace areas. The county's coastal communities experience elevated moisture pressure that creates ideal conditions for peridomestic cockroach species in basement apartments and below-grade spaces. Commercial areas in Babylon, Brentwood, and Patchogue generate restaurant-associated cockroach pressure. Our Suffolk County cockroach extermination team uses gel bait and insect growth regulator programs that achieve full elimination in 1-2 visits.`,
     faqs: [
-      { q: `Are there foxes in Suffolk County residential areas?`, a: `Yes. Red foxes are common throughout Suffolk County including in residential neighborhoods. They typically avoid humans but will den under decks and sheds. Fox dens under structures can be addressed with exclusion after pups have dispersed in late summer.` },
-      { q: `What should I do if I find a baby raccoon or opossum in my Suffolk County home?`, a: `Do not handle young wildlife — mothers are typically nearby and will reclaim young when humans withdraw. Call us for a professional assessment. We coordinate humane removal that keeps families intact in compliance with DEC guidelines.` },
-      { q: `How do groundhogs damage Suffolk County home foundations?`, a: `Groundhog burrow systems can extend 5+ feet deep and 25+ feet long, undermining concrete footings, shed slabs, and deck posts. A single groundhog family can destabilize a concrete slab within one season. Professional removal and burrow collapse is recommended before backfilling.` },
+      { q: `How do cockroaches get into Suffolk County homes?`, a: `The most common entry routes are grocery bags from infested stores, secondhand appliances and furniture, cardboard moving boxes, and utility penetrations in basements. German cockroaches can also migrate between connected units in multi-family buildings.` },
+      { q: `Are cockroaches a year-round problem in Suffolk County?`, a: `Yes. German cockroaches are indoor pests that thrive year-round in heated structures. American cockroaches may become more active outdoors in summer but remain in heated basement environments year-round.` },
+      { q: `What is the fastest way to get rid of cockroaches in my Suffolk County home?`, a: `Professional gel bait treatment is the fastest and most effective approach. Our technicians place bait in specific harborage zones, and cockroaches begin feeding within hours. Most infestations show significant reduction within 3-5 days.` },
     ],
   },
 };
@@ -65,15 +92,12 @@ export async function generateMetadata({
 
 export async function generateStaticParams() {
   const { REGIONS } = await import('@/hub.config');
-  const suburbanSlugs = ['nassau', 'suffolk'];
-  return REGIONS
-    .filter((region: { slug: string; towns: string[] }) => suburbanSlugs.includes(region.slug))
-    .flatMap((region: { slug: string; towns: string[] }) =>
-      region.towns.map((town: string) => ({
-        region: region.slug,
-        town: town.toLowerCase().replace(/\s+/g, '-'),
-      }))
-    );
+  return REGIONS.flatMap((region: { slug: string; towns: string[] }) =>
+    region.towns.map((town: string) => ({
+      region: region.slug,
+      town: town.toLowerCase().replace(/\s+/g, '-'),
+    }))
+  );
 }
 
 export default async function ServiceTownPage({
@@ -94,7 +118,7 @@ export default async function ServiceTownPage({
   );
   if (!isValidTown) notFound();
 
-  const content = SERVICE_CONTENT[regionSlug] ?? SERVICE_CONTENT['nassau'];
+  const content = SERVICE_CONTENT[regionSlug] ?? SERVICE_CONTENT['brooklyn'];
   const uniqueOpener = jetTownOpeners[townSlug] ?? null;
   const townFaqs = cityFAQs[townSlug] ?? regionFAQs[regionSlug] ?? regionFAQs['brooklyn'];
   const neighborhoods = hubNeighborhoods[townSlug] ?? null;
@@ -172,11 +196,11 @@ export default async function ServiceTownPage({
           </div>
           <div className="bg-brand-light rounded-lg p-4">
             <div className="text-2xl font-bold text-brand-primary">Licensed</div>
-            <div className="text-sm text-gray-600">NY State DEC Permitted</div>
+            <div className="text-sm text-gray-600">NY State DEC Certified</div>
           </div>
           <div className="bg-brand-light rounded-lg p-4">
-            <div className="text-2xl font-bold text-brand-primary">Humane</div>
-            <div className="text-sm text-gray-600">No Poisons or Harm</div>
+            <div className="text-2xl font-bold text-brand-primary">Guaranteed</div>
+            <div className="text-sm text-gray-600">Results or We Return</div>
           </div>
         </div>
 
@@ -245,7 +269,7 @@ export default async function ServiceTownPage({
         )}
 
         <div className="bg-brand-primary rounded-xl p-8 text-center text-white">
-          <h2 className="text-2xl font-bold mb-2">Ready for Humane Wildlife Removal in {canonicalTownName}?</h2>
+          <h2 className="text-2xl font-bold mb-2">Ready to Eliminate Cockroaches in {canonicalTownName}?</h2>
           <p className="mb-6 opacity-90">Licensed, insured, same-day service available. Call now or get a free quote online.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href={`tel:+1${BRAND.phone}`} className="bg-white text-brand-primary font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors">📞 {BRAND.phoneFormatted}</a>

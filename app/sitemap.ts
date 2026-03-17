@@ -107,11 +107,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
-  // Service+city pages (5 services x all towns)
-  const SERVICE_SLUGS = ['bed-bug-exterminator', 'raccoon-removal', 'rodent-control', 'squirrel-removal', 'wildlife-removal'];
+  // Service×town pages — urban services (all 5 regions)
+  const URBAN_SERVICE_SLUGS = [
+    'bed-bug-exterminator',
+    'raccoon-removal',
+    'rodent-control',
+    'cockroach-exterminator',
+    'termite-control',
+    'ant-exterminator',
+    'cricket-exterminator',
+    'bee-removal',
+  ];
   entries.push(
     ...REGIONS.flatMap((region: { slug: string; towns: string[] }) =>
-      SERVICE_SLUGS.flatMap(service =>
+      URBAN_SERVICE_SLUGS.flatMap(service =>
         region.towns.map((town: string) => ({
           url: `${base}/${region.slug}/${service}/${town.toLowerCase().replace(/\s+/g, '-')}`,
           lastModified: new Date(),
@@ -120,6 +129,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
         }))
       )
     )
+  );
+
+  // Service×town pages — suburban-only services (nassau + suffolk only)
+  const SUBURBAN_SERVICE_SLUGS = ['squirrel-removal', 'wildlife-removal'];
+  const SUBURBAN_REGION_SLUGS = ['nassau', 'suffolk'];
+  entries.push(
+    ...REGIONS
+      .filter((region: { slug: string; towns: string[] }) => SUBURBAN_REGION_SLUGS.includes(region.slug))
+      .flatMap((region: { slug: string; towns: string[] }) =>
+        SUBURBAN_SERVICE_SLUGS.flatMap(service =>
+          region.towns.map((town: string) => ({
+            url: `${base}/${region.slug}/${service}/${town.toLowerCase().replace(/\s+/g, '-')}`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.8,
+          }))
+        )
+      )
   );
 
   return entries;
