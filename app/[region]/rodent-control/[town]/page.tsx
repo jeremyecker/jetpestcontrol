@@ -5,6 +5,9 @@ import Script from 'next/script';
 import { getRegion } from '@/lib/regions';
 import { BRAND } from '@/hub.config';
 import CTABanner from '@/components/sections/CTABanner';
+import { regionFAQs, getNearbyTowns } from '@/lib/jet-town-data';
+import { jetTownOpeners } from '@/lib/jet-city-openers-data';
+import { cityFAQs, nearbyTownMap, hubNeighborhoods } from '@/lib/jet-layer7-data';
 
 const SERVICE_NAME = 'Rodent Control';
 const SERVICE_SLUG = 'rodent-control';
@@ -17,48 +20,48 @@ interface ServiceContent {
 
 const SERVICE_CONTENT: Record<string, ServiceContent> = {
   brooklyn: {
-    headline: `Expert Rodent Control in Brooklyn, NY`,
-    body: `Brooklyn ranks among the most rodent-challenged boroughs in New York City, with rats and mice exploiting its aging housing stock, dense restaurant corridors, and extensive subway infrastructure. Homes in Bushwick, East New York, and Sunset Park often have multiple rodent entry points through gaps at pipe penetrations, deteriorated foundation masonry, and utility chases. Our Brooklyn rodent control team performs detailed exclusion inspections — identifying every gap 1/4 inch or larger — and seals them using gnaw-proof materials including steel mesh, caulk, and cement mortar. We then deploy tamper-resistant bait stations at strategic interior and exterior locations and return for follow-up service until activity ceases. Our integrated pest management approach addresses both the rodents you see and the conditions that attract them.`,
+    headline: `Professional Rodent Control in Brooklyn, NY`,
+    body: `Brooklyn's dense urban environment — connected basements, aging plumbing, restaurant refuse, and Prospect Park's wildlife corridors — makes it one of New York City's most challenging boroughs for rodent control. Norway rats colonize basement levels of brownstone blocks, moving between buildings through utility conduits and shared foundation walls. Mice exploit the same gaps, establishing in wall cavities and kitchen cabinetry. Our Brooklyn rodent control specialists use integrated pest management: thorough inspection to find all entry points, bait stations calibrated for your building type, and professional exclusion sealing to prevent re-entry. We don't just trap — we eliminate colonies and close the door behind them.`,
     faqs: [
-      { q: 'Why is rodent control so difficult in Brooklyn apartments?', a: 'Brooklyn\'s multi-family buildings have shared wall voids, utility chases, and basement spaces that create highways for rodents between units. Without sealing the entire building\'s entry points, rodents simply move between apartments.' },
-      { q: 'What is the best rodent control method for Brooklyn rowhouses?', a: 'Integrated exclusion plus baiting. We seal all exterior entry points with gnaw-proof materials first, then deploy interior and exterior bait stations. Exclusion alone stops entry; baiting eliminates existing populations.' },
-      { q: 'Do Brooklyn restaurants need commercial rodent control programs?', a: 'Yes. NYC Health Code requires restaurants to maintain effective pest control programs. We offer monthly commercial rodent control contracts for Brooklyn food service establishments, including documentation for DOH inspections.' },
+      { q: 'Why are rats so common in Brooklyn?', a: "Brooklyn has perfect rodent habitat: abundant food from restaurants and outdoor trash, aging sewer infrastructure, connected buildings with basement corridors, and parks that provide breeding cover. Rat populations have thrived for decades despite city extermination efforts." },
+      { q: 'How do mice get into Brooklyn apartments?', a: 'Mice can squeeze through gaps as small as a dime. Common entry points include gaps around pipes under sinks, cracks in foundation walls, gaps at door sweeps, and utility penetrations in walls. We identify and seal all entry points as part of our exclusion service.' },
+      { q: 'How long does rodent control take in a Brooklyn building?', a: 'Most residential infestations are resolved within 2–4 visits over 2–3 weeks. We return until activity has ceased, and our exclusion work carries a guarantee against re-entry through sealed points.' },
     ],
   },
   queens: {
-    headline: `Expert Rodent Control in Queens, NY`,
-    body: `Queens' diverse neighborhoods — from the dense apartment corridors of Astoria to the residential streets of Bayside — all face rodent pressure driven by proximity to food sources, subway lines, and aging utility infrastructure. Mice exploit gaps as small as a dime to enter Queens homes, while rats tunnel under foundations and enter through broken drain pipes and cracks in masonry. Our Queens rodent control specialists perform full exterior and interior inspections, identify all active entry points, and seal them with professional-grade exclusion materials. We install tamper-resistant bait stations appropriate for your property type — from single-family rowhomes to large apartment complexes — and provide monthly maintenance programs to ensure long-term results. Call for a free rodent inspection in any Queens neighborhood.`,
+    headline: `Professional Rodent Control in Queens, NY`,
+    body: `Queens' combination of urban density, commercial food waste, and suburban-style green spaces creates persistent rodent pressure across all neighborhoods. Restaurant concentrations in Flushing, Jackson Heights, and Jamaica produce the food waste that sustains large rat populations near residential blocks. Attached rowhomes and multi-family buildings allow mice and rats to migrate through connected basement systems without outdoor exposure. Our Queens rodent control team uses targeted baiting, professional-grade exclusion, and follow-up monitoring to eliminate infestations permanently rather than simply displacing them to adjacent units.`,
     faqs: [
-      { q: 'How do mice get into Queens apartments in winter?', a: 'Mice enter Queens homes through utility penetrations, gaps around pipes under sinks, cracks in foundation walls, and gaps around doors and windows. As temperatures drop, they seek warm harborage inside buildings.' },
-      { q: 'What signs of rodents should I look for in a Queens home?', a: 'Look for dark droppings near food sources, gnaw marks on wood and food packaging, greasy rub marks along baseboards, and shredded nesting material in drawers or attic insulation.' },
-      { q: 'Can you do rodent control in Queens commercial buildings?', a: 'Absolutely. We handle rodent control for restaurants, offices, warehouses, and multi-family buildings throughout Queens, including compliance documentation for NYC Health Code inspections.' },
+      { q: 'Are rats a problem near Queens restaurants and food courts?', a: "Yes. The extraordinary restaurant density in areas like Flushing, Jackson Heights, and Jamaica creates one of Queens' most significant rodent pressure points. Residential buildings within 1-2 blocks of these commercial corridors face elevated rat pressure year-round." },
+      { q: 'Can rats enter Queens homes through the sewer system?', a: 'Yes. Norway rats commonly use sewer infrastructure as travel corridors and can enter buildings through floor drains, broken sewer laterals, and gaps around utility penetrations. We inspect plumbing entry points as part of every rodent assessment.' },
+      { q: 'Do you treat rodents in Queens multi-family buildings?', a: 'Yes. We offer whole-building rodent programs for landlords and property managers throughout Queens, with coordinated treatment across all units and common areas.' },
     ],
   },
   manhattan: {
-    headline: `Expert Rodent Control in Manhattan, NY`,
-    body: `Manhattan's pre-war buildings, extensive underground infrastructure, and thousands of restaurants per square mile create a challenging rodent environment unlike anywhere else in the country. Rats in Manhattan exploit the subway system to move between blocks, while mice thrive in the wall voids of pre-war co-ops and condos. Our Manhattan rodent control team specializes in high-density urban environments, using integrated exclusion, tamper-resistant bait stations, and ongoing monitoring to eliminate infestations and prevent recurrence. We work with building management in co-ops and condos to address building-wide rodent problems, and we provide restaurant-grade rodent control programs for food service businesses. Discreet service, licensed professionals, and guaranteed results throughout Manhattan.`,
+    headline: `Professional Rodent Control in Manhattan, NY`,
+    body: `Manhattan's rodent problem is legendary — the city's 24/7 food service industry, underground transit infrastructure, and century-old building stock provide ideal conditions for year-round rat and mouse activity. Our Manhattan rodent control specialists work in both residential and commercial environments: co-op and condo buildings with basement-level rodent pressure, restaurants facing NYC Health Department violations, and office buildings with shared kitchen areas. We use discreet, unmarked service vehicles and schedule around building access protocols. Every treatment plan includes interior baiting, exterior station placement, and professional exclusion of all identified entry points.`,
     faqs: [
-      { q: 'Why do Manhattan pre-war buildings have more rodent problems?', a: 'Pre-war buildings have complex utility layouts, aging masonry with settling cracks, and pipe penetrations that were never sealed to modern standards. These create numerous rodent entry points that are difficult to address without professional exclusion expertise.' },
-      { q: 'Are Manhattan landlords required to control rodents?', a: 'Yes. NYC Housing Maintenance Code Section 27-2018 requires landlords to keep buildings free from rodent infestations. Landlords who fail to address rodent problems can face fines from the NYC DOHMH.' },
-      { q: 'What is IPM (Integrated Pest Management) and do you use it in Manhattan?', a: 'IPM is an evidence-based approach combining inspection, exclusion, sanitation recommendations, and targeted treatment to manage pests with minimal chemical use. NYC requires IPM for all school pest control and recommends it building-wide. We use IPM methods for all Manhattan rodent control work.' },
+      { q: "Why are rats so persistent in Manhattan despite regular extermination?", a: "Manhattan's rat population is sustained by abundant food (restaurants, outdoor dining, trash), underground corridors (subways, utilities), and the sheer scale of connected building basements. Effective control requires eliminating food sources, sealing entry points, and systematic baiting — not just reactive trapping." },
+      { q: 'Can mice live on upper floors of Manhattan high-rises?', a: 'Yes. Mice climb plumbing pipes, elevator shafts, and utility chases to access upper-floor units. Infestations are not limited to ground-floor or basement apartments.' },
+      { q: 'Do you handle rodent issues for Manhattan restaurants and businesses?', a: 'Yes. We provide commercial rodent control programs for Manhattan restaurants, hotels, and office buildings, including NYC Health Department compliance documentation and emergency response for inspection failures.' },
     ],
   },
   nassau: {
-    headline: `Expert Rodent Control in Nassau County, NY`,
-    body: `Nassau County's suburban homes, shopping centers, and older housing stock provide mice and rats with ample harborage and food sources year-round. As weather cools each fall, mice attempt to enter Nassau homes in large numbers through gaps around pipes, foundation cracks, and gaps at garage door sweeps. Rats are prevalent near waterways, dumpsters, and older sewer infrastructure in denser Nassau communities like Hempstead and Freeport. Our Nassau County rodent control program begins with a thorough exterior and interior inspection, followed by professional exclusion work and deployment of tamper-resistant bait stations. We also provide sanitation recommendations to remove food and harborage attractants. Monthly maintenance plans available for Nassau homeowners and commercial accounts.`,
+    headline: `Professional Rodent Control in Nassau County, NY`,
+    body: `Nassau County's suburban neighborhoods experience rodent pressure that differs from New York City but is no less persistent. Mice routinely enter homes through foundation gaps and utility penetrations as temperatures drop in fall, establishing in wall voids, attic insulation, and basement storage areas. Norway rats colonize properties near commercial areas, dumpsters, and bird feeders, with populations exploding quickly if not addressed professionally. Our Nassau County rodent control team combines interior bait station programs, professional exclusion sealing, and exterior perimeter baiting to eliminate active infestations and prevent recurrence.`,
     faqs: [
-      { q: 'When is rodent season in Nassau County?', a: 'Rodent activity in Nassau County peaks in fall (September–November) as mice and rats seek warm harborage for winter. However, rodents breed year-round indoors, so infestations can develop in any season.' },
-      { q: 'How do I mouse-proof my Nassau County home?', a: 'Seal all gaps 1/4 inch or larger around pipes, wires, and foundation penetrations. Install door sweeps, replace damaged weatherstripping, and ensure garage doors seal properly. Our team can perform a full exclusion inspection and seal your home professionally.' },
-      { q: 'Do you offer rodent control maintenance plans in Nassau County?', a: 'Yes. Our monthly maintenance plans for Nassau County homes and businesses include regular bait station checks, trap service, and exterior inspections. Plans start at a flat monthly rate with no long-term contract required.' },
+      { q: 'When do rodents start entering Nassau County homes?', a: 'Mouse entry into structures typically increases sharply in October as outdoor temperatures drop. Homeowners often notice the first signs — droppings, gnaw marks, sounds in walls — in late fall. Earlier treatment is more effective and less costly.' },
+      { q: 'Do bird feeders attract rats to Nassau County yards?', a: 'Yes. Spilled birdseed is one of the most common rat attractants in Nassau County suburban yards. We recommend switching to squirrel-proof feeders and eliminating ground-level seed accumulation as part of any rodent prevention plan.' },
+      { q: 'What does rodent exclusion involve for a Nassau County home?', a: 'Exclusion involves sealing all entry points greater than 1/4 inch using copper mesh, caulk, hardware cloth, and expanding foam. We inspect foundations, utility penetrations, garage doors, and rooflines for gaps that allow rodent access.' },
     ],
   },
   suffolk: {
-    headline: `Expert Rodent Control in Suffolk County, NY`,
-    body: `Suffolk County's diverse landscape — from wooded interior townships to dense South Shore communities and North Fork farmland — supports large populations of both house mice and Norway rats. Wooded lots in Brookhaven and Smithtown see deer mice and voles in addition to the common house mouse, while coastal and marina communities deal with persistent Norway rat populations near waterways. Our Suffolk County rodent control specialists tailor programs to your specific environment: exterior rodent bait stations for larger properties, full interior exclusion for homes with active infestations, and commercial IPM programs for restaurants and warehouses. We serve all of Suffolk County with same-day inspection availability and guaranteed results.`,
+    headline: `Professional Rodent Control in Suffolk County, NY`,
+    body: `Suffolk County's mix of wooded neighborhoods, waterfront properties, and residential communities creates rodent pressure that peaks seasonally but persists year-round. Mice seek shelter in homes from October through March, while rat activity near commercial areas and waterfront restaurants continues through all seasons. The county's abundant green space — state parks, nature preserves, residential woodlands — supports large outdoor populations that pressure home foundations and garages. Our Suffolk County rodent control specialists provide thorough inspections, professional exclusion, and targeted bait programs calibrated for both residential and commercial properties.`,
     faqs: [
-      { q: 'Are deer mice or hantavirus a concern in Suffolk County?', a: 'Deer mice, which can carry hantavirus, are present in wooded parts of Suffolk County but are far less common in homes than the typical house mouse. Any rodent dropping cleanup in attics or crawlspaces should use protective equipment and HEPA vacuums.' },
-      { q: 'How do rats get into homes near Suffolk County waterways?', a: 'Norway rats near water frequently burrow under foundations, enter through broken sewer laterals, and access homes through gaps in basement walls at or below grade. Waterfront and marina-adjacent properties need regular exterior inspections.' },
-      { q: 'What is the cost of rodent control in Suffolk County?', a: 'A one-time rodent inspection and exclusion treatment for a single-family Suffolk County home typically starts at a few hundred dollars depending on scope. We provide detailed written estimates after our free inspection.' },
+      { q: 'Are deer mice common in Suffolk County?', a: "Yes. Deer mice are common in Suffolk County's wooded and suburban areas and are a known carrier of hantavirus. Unlike house mice, deer mice typically enter from outdoor habitats rather than urban environments. We identify the species during inspection and tailor treatment accordingly." },
+      { q: 'How do rodents enter a Suffolk County home during winter?', a: 'Common entry points include gaps around utility pipe penetrations, foundation cracks, garage door seals, dryer vents, and attic soffit vents. Mice only need a 1/4-inch gap. We perform a full perimeter inspection and seal all identified openings.' },
+      { q: 'Do you treat rodents in Suffolk County commercial properties?', a: 'Yes. We serve restaurants, food service facilities, warehouses, and commercial properties throughout Suffolk County with professional rodent control programs including compliance documentation.' },
     ],
   },
 };
@@ -72,8 +75,8 @@ export async function generateMetadata({
   const region = getRegion(regionSlug);
   if (!region) return {};
   const townName = townSlug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-  const title = `${SERVICE_NAME} in ${townName}, ${region.name}`;
-  const description = `Licensed ${SERVICE_NAME.toLowerCase()} serving ${townName}, ${region.name}. ${BRAND.name} — same-day service, guaranteed results. Call ${BRAND.phoneFormatted}.`;
+  const title = `${SERVICE_NAME} in ${townName}, ${region.name} | ${BRAND.name}`;
+  const description = `Licensed ${SERVICE_NAME.toLowerCase()} in ${townName}. ${BRAND.name} — same-day service, guaranteed results. Call ${BRAND.phoneFormatted}.`;
   return {
     title,
     description: description.length <= 155 ? description : description.slice(0, 152) + '...',
@@ -107,36 +110,60 @@ export default async function ServiceTownPage({
   if (!region) notFound();
 
   const townName = townSlug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+  const canonicalTownName = region.towns.find(
+    (t: string) => t.toLowerCase().replace(/\s+/g, '-') === townSlug
+  ) ?? townName;
   const isValidTown = region.towns.some(
     (t: string) => t.toLowerCase().replace(/\s+/g, '-') === townSlug
   );
   if (!isValidTown) notFound();
 
-  const content = SERVICE_CONTENT[regionSlug] ?? SERVICE_CONTENT[Object.keys(SERVICE_CONTENT)[0]];
+  const content = SERVICE_CONTENT[regionSlug] ?? SERVICE_CONTENT['brooklyn'];
+  const uniqueOpener = jetTownOpeners[townSlug] ?? null;
+  const townFaqs = cityFAQs[townSlug] ?? regionFAQs[regionSlug] ?? regionFAQs['brooklyn'];
+  const neighborhoods = hubNeighborhoods[townSlug] ?? null;
+
+  const allNearby = nearbyTownMap[townSlug] ?? getNearbyTowns(canonicalTownName, region.towns, 4);
+  const nearbyTowns = allNearby.filter((town: string) =>
+    region.towns.some((t: string) => t.toLowerCase().replace(/[\s']/g, m => m === "'" ? '' : '-') === town.toLowerCase().replace(/[\s']/g, m => m === "'" ? '' : '-'))
+  );
 
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'PestControlService',
-    name: `${SERVICE_NAME} — ${townName}`,
+    name: `${SERVICE_NAME} in ${canonicalTownName}`,
     provider: { '@type': 'LocalBusiness', name: BRAND.name, telephone: `+1${BRAND.phone}` },
-    areaServed: { '@type': 'City', name: townName },
+    areaServed: { '@type': 'City', name: canonicalTownName },
     url: `https://${BRAND.domain}/${regionSlug}/${SERVICE_SLUG}/${townSlug}`,
   };
 
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: content.faqs.map(faq => ({
+    mainEntity: [...content.faqs, ...townFaqs.slice(0, 2)].map(faq => ({
       '@type': 'Question',
       name: faq.q,
       acceptedAnswer: { '@type': 'Answer', text: faq.a },
     })),
   };
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `https://${BRAND.domain}` },
+      { '@type': 'ListItem', position: 2, name: region.name, item: `https://${BRAND.domain}/${regionSlug}` },
+      { '@type': 'ListItem', position: 3, name: SERVICE_NAME, item: `https://${BRAND.domain}/${regionSlug}/${SERVICE_SLUG}` },
+      { '@type': 'ListItem', position: 4, name: canonicalTownName, item: `https://${BRAND.domain}/${regionSlug}/${SERVICE_SLUG}/${townSlug}` },
+    ],
+  };
+
   return (
     <>
       <Script id="schema-service" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <Script id="schema-faq" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <Script id="schema-breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+
       <div className="max-w-4xl mx-auto px-4 py-16">
         <nav className="text-sm text-gray-500 mb-8" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-brand-primary">Home</Link>
@@ -145,10 +172,38 @@ export default async function ServiceTownPage({
           {' / '}
           <Link href={`/${regionSlug}/${SERVICE_SLUG}`} className="hover:text-brand-primary">{SERVICE_NAME}</Link>
           {' / '}
-          <span className="text-gray-900">{townName}</span>
+          <span className="text-gray-900">{canonicalTownName}</span>
         </nav>
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">{content.headline}</h1>
-        <p className="text-lg text-gray-700 leading-relaxed mb-8">{content.body}</p>
+
+        <h1 className="text-4xl font-bold text-gray-900 mb-4">
+          {SERVICE_NAME} in {canonicalTownName}, {region.stateCode}
+        </h1>
+
+        {uniqueOpener ? (
+          <p className="text-lg text-gray-700 leading-relaxed mb-6">{uniqueOpener}</p>
+        ) : (
+          <p className="text-lg text-gray-700 leading-relaxed mb-6">
+            {BRAND.name} provides licensed rodent control to {canonicalTownName} residents and businesses. Our technicians deliver same-day service with treatments that eliminate infestations and seal entry points permanently.
+          </p>
+        )}
+
+        <p className="text-gray-600 leading-relaxed mb-8">{content.body}</p>
+
+        <div className="grid grid-cols-3 gap-4 mb-10 text-center">
+          <div className="bg-brand-light rounded-lg p-4">
+            <div className="text-2xl font-bold text-brand-primary">Same Day</div>
+            <div className="text-sm text-gray-600">Service Available</div>
+          </div>
+          <div className="bg-brand-light rounded-lg p-4">
+            <div className="text-2xl font-bold text-brand-primary">Licensed</div>
+            <div className="text-sm text-gray-600">NY State DEC Certified</div>
+          </div>
+          <div className="bg-brand-light rounded-lg p-4">
+            <div className="text-2xl font-bold text-brand-primary">Guaranteed</div>
+            <div className="text-sm text-gray-600">Results or We Return</div>
+          </div>
+        </div>
+
         <div className="flex flex-col sm:flex-row gap-4 mb-12">
           <a href={`tel:+1${BRAND.phone}`} className="flex-1 text-center bg-brand-primary hover:bg-brand-secondary text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors">
             📞 Call {BRAND.phoneFormatted}
@@ -157,17 +212,64 @@ export default async function ServiceTownPage({
             Get a Free Quote
           </Link>
         </div>
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">{SERVICE_NAME} FAQ — {townName}</h2>
+
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">{SERVICE_NAME} FAQ — {canonicalTownName}</h2>
         <div className="space-y-6 mb-12">
-          {content.faqs.map((faq, i) => (
+          {[...content.faqs, ...townFaqs.slice(0, 2)].map((faq, i) => (
             <div key={i} className="border-b border-gray-200 pb-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">{faq.q}</h3>
               <p className="text-gray-600">{faq.a}</p>
             </div>
           ))}
         </div>
+
+        {neighborhoods && (
+          <div className="bg-gray-50 rounded-xl p-6 mb-12">
+            <h2 className="text-xl font-bold text-gray-900 mb-4">
+              Neighborhoods We Serve in {canonicalTownName}
+            </h2>
+            <div className="space-y-3">
+              {neighborhoods.map((n: { name: string; detail: string }) => (
+                <div key={n.name} className="flex gap-3">
+                  <span className="text-brand-primary font-bold mt-0.5">▸</span>
+                  <div>
+                    <span className="font-semibold text-gray-900">{n.name}:</span>{' '}
+                    <span className="text-gray-600">{n.detail}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {nearbyTowns.length > 0 && (
+          <div className="bg-gray-50 rounded-xl p-6 mb-12">
+            <h2 className="text-xl font-bold text-gray-900 mb-4">Also Serving Nearby Communities</h2>
+            <div className="flex flex-wrap gap-3">
+              {nearbyTowns.map((town: string) => {
+                const slug = town.toLowerCase().replace(/\s+/g, '-');
+                return (
+                  <Link
+                    key={town}
+                    href={`/${regionSlug}/${SERVICE_SLUG}/${slug}`}
+                    className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-sm text-brand-primary hover:bg-brand-light hover:border-brand-primary transition-colors"
+                  >
+                    {town}
+                  </Link>
+                );
+              })}
+              <Link
+                href={`/${regionSlug}/${SERVICE_SLUG}`}
+                className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-sm text-brand-primary hover:bg-brand-light hover:border-brand-primary transition-colors"
+              >
+                All {region.name} Areas →
+              </Link>
+            </div>
+          </div>
+        )}
+
         <div className="bg-brand-primary rounded-xl p-8 text-center text-white">
-          <h2 className="text-2xl font-bold mb-2">Ready to Eliminate Rodents in {townName}?</h2>
+          <h2 className="text-2xl font-bold mb-2">Ready to Eliminate Rodents from {canonicalTownName}?</h2>
           <p className="mb-6 opacity-90">Licensed, insured, same-day service available. Call now or get a free quote online.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href={`tel:+1${BRAND.phone}`} className="bg-white text-brand-primary font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors">📞 {BRAND.phoneFormatted}</a>
