@@ -235,6 +235,22 @@ export const REGIONS: RegionConfig[] = [
 
 
 // ============================================================
+// SERVICE×TOWN ROUTES — for internal linking from town pages
+// ============================================================
+export const SERVICE_TOWN_ROUTES = [
+  { slug: 'ant-exterminator', label: 'Ant Exterminator', emoji: '🐜' },
+  { slug: 'bed-bug-exterminator', label: 'Bed Bug Exterminator', emoji: '🛏️' },
+  { slug: 'bee-removal', label: 'Bee Removal', emoji: '🐝' },
+  { slug: 'cockroach-exterminator', label: 'Cockroach Exterminator', emoji: '🪳' },
+  { slug: 'cricket-exterminator', label: 'Cricket Exterminator', emoji: '🦗' },
+  { slug: 'raccoon-removal', label: 'Raccoon Removal', emoji: '🦝' },
+  { slug: 'rodent-control', label: 'Rodent Control', emoji: '🐀' },
+  { slug: 'squirrel-removal', label: 'Squirrel Removal', emoji: '🐿️' },
+  { slug: 'termite-control', label: 'Termite Control', emoji: '🐛' },
+  { slug: 'wildlife-removal', label: 'Wildlife Removal', emoji: '🦌' },
+] as const;
+
+// ============================================================
 // NETWORK SITES — sister sites for cross-linking
 // ============================================================
 export const NETWORK_SITES: NetworkSite[] = [];

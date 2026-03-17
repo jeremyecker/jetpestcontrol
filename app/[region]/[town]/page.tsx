@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Script from 'next/script';
 import { getRegion } from '@/lib/regions';
-import { BRAND } from '@/hub.config';
+import { BRAND, SERVICE_TOWN_ROUTES } from '@/hub.config';
 import CTABanner from '@/components/sections/CTABanner';
 import { regionFAQs, regionServices, getNearbyTowns } from '@/lib/jet-town-data';
 import { jetTownOpeners } from '@/lib/jet-city-openers-data';
@@ -190,17 +190,22 @@ export default async function TownPage({ params }: { params: Promise<{ region: s
           </Link>
         </div>
 
-        {/* Services */}
+        {/* Services — linked to service×town pages */}
         <h2 className="text-2xl font-bold text-gray-900 mb-6">
-          Pest Control Services in {canonicalTownName}
+          Pest Control Services Available in {canonicalTownName}
         </h2>
-        <div className="grid md:grid-cols-3 gap-6 mb-12">
-          {services.map((svc) => (
-            <div key={svc.title} className="border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow">
-              <div className="text-3xl mb-3">{svc.icon}</div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">{svc.title}</h3>
-              <p className="text-gray-600 text-sm">{svc.description}</p>
-            </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
+          {SERVICE_TOWN_ROUTES.map((svc) => (
+            <Link
+              key={svc.slug}
+              href={`/${regionSlug}/${svc.slug}/${townSlug}`}
+              className="border border-gray-200 rounded-xl p-5 hover:shadow-md hover:border-brand-primary transition-all group"
+            >
+              <div className="text-3xl mb-2">{svc.emoji}</div>
+              <h3 className="text-lg font-bold text-gray-900 group-hover:text-brand-primary transition-colors">
+                {svc.label} in {canonicalTownName}
+              </h3>
+            </Link>
           ))}
         </div>
 
