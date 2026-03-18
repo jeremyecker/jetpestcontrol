@@ -5,10 +5,10 @@ import { getRegion } from '@/lib/regions';
 import { BRAND } from '@/hub.config';
 import CTABanner from '@/components/sections/CTABanner';
 
-const SERVICE_NAME = 'Wildlife Removal';
-const SERVICE_SLUG = 'wildlife-removal';
-const SERVICE_DESC = 'Humane removal for all nuisance wildlife — raccoons, squirrels, skunks, opossums, and more.';
-const SERVICE_ICON = '🦌';
+const SERVICE_NAME = 'Termite Control';
+const SERVICE_SLUG = 'termite-control';
+const SERVICE_DESC = 'Liquid barrier treatments and bait systems for complete termite elimination and structural protection.';
+const SERVICE_ICON = '🪲';
 
 export async function generateMetadata({
   params,

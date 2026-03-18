@@ -123,6 +123,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'termite-control',
     'wildlife-removal',
   ];
+
+  // ============================================================
+  // Service index pages — /{region}/{service}/ (50 URLs total)
+  // ============================================================
+  entries.push(
+    ...REGIONS.flatMap((region: { slug: string }) =>
+      ALL_SERVICE_SLUGS.map(service => ({
+        url: `${base}/${region.slug}/${service}/`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.85,
+      }))
+    )
+  );
+
   entries.push(
     ...REGIONS.flatMap((region: { slug: string; towns: string[] }) =>
       ALL_SERVICE_SLUGS.flatMap(service =>

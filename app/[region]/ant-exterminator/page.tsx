@@ -5,10 +5,10 @@ import { getRegion } from '@/lib/regions';
 import { BRAND } from '@/hub.config';
 import CTABanner from '@/components/sections/CTABanner';
 
-const SERVICE_NAME = 'Wildlife Removal';
-const SERVICE_SLUG = 'wildlife-removal';
-const SERVICE_DESC = 'Humane removal for all nuisance wildlife — raccoons, squirrels, skunks, opossums, and more.';
-const SERVICE_ICON = '🦌';
+const SERVICE_NAME = 'Ant Exterminator';
+const SERVICE_SLUG = 'ant-exterminator';
+const SERVICE_DESC = 'Complete ant colony elimination — carpenter ants, odorous house ants, and pavement ants treated at the source.';
+const SERVICE_ICON = '🐜';
 
 export async function generateMetadata({
   params,
