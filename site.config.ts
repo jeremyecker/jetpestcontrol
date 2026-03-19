@@ -144,6 +144,13 @@ export const FOOTER_LINKS = {
     { label: 'Reviews', href: '/reviews/' },
     { label: 'Contact', href: '/contact/' },
     { label: 'Blog', href: '/blog/' },
+    { label: 'Emergency Service', href: '/emergency-pest-control/' },
+    { label: 'Same-Day Service', href: '/same-day-pest-control/' },
+    { label: 'Commercial', href: '/commercial/' },
+    { label: 'Free Inspection', href: '/free-pest-inspection/' },
+    { label: 'Pest Control Near Me', href: '/pest-control-near-me/' },
+    { label: 'Exterminator Near Me', href: '/exterminator-near-me/' },
+    { label: 'Bed Bug Exterminator', href: '/bed-bug-exterminator/' },
   ],
   legal: [
     { label: 'Privacy Policy', href: '/privacy/' },
