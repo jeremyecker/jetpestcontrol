@@ -123,31 +123,31 @@ export const SEO = {
 
 export const NAV_LINKS = [
   { label: 'Home', href: '/' },
-  { label: 'Services', href: '/services' },
-  { label: 'Service Areas', href: '/service-areas' },
-  { label: 'Reviews', href: '/reviews' },
-  { label: 'Blog', href: '/blog' },
-  { label: 'About', href: '/about' },
-  { label: 'Contact', href: '/contact' },
+  { label: 'Services', href: '/services/' },
+  { label: 'Service Areas', href: '/service-areas/' },
+  { label: 'Reviews', href: '/reviews/' },
+  { label: 'Blog', href: '/blog/' },
+  { label: 'About', href: '/about/' },
+  { label: 'Contact', href: '/contact/' },
 ] as const;
 
 export const FOOTER_LINKS = {
   services: [
-    { label: 'Ant Control', href: '/services/ant-control' },
-    { label: 'Termite Treatment', href: '/services/termite-treatment' },
-    { label: 'Bed Bug Removal', href: '/services/bed-bug-removal' },
-    { label: 'Rodent Control', href: '/services/rodent-control' },
-    { label: 'Cockroach Control', href: '/services/cockroach-control' },
+    { label: 'Ant Control', href: '/services/ant-control/' },
+    { label: 'Termite Treatment', href: '/services/termite-treatment/' },
+    { label: 'Bed Bug Removal', href: '/services/bed-bug-removal/' },
+    { label: 'Rodent Control', href: '/services/rodent-control/' },
+    { label: 'Cockroach Control', href: '/services/cockroach-control/' },
   ],
   company: [
-    { label: 'About Us', href: '/about' },
-    { label: 'Reviews', href: '/reviews' },
-    { label: 'Contact', href: '/contact' },
-    { label: 'Blog', href: '/blog' },
+    { label: 'About Us', href: '/about/' },
+    { label: 'Reviews', href: '/reviews/' },
+    { label: 'Contact', href: '/contact/' },
+    { label: 'Blog', href: '/blog/' },
   ],
   legal: [
-    { label: 'Privacy Policy', href: '/privacy' },
-    { label: 'Terms of Service', href: '/terms' },
+    { label: 'Privacy Policy', href: '/privacy/' },
+    { label: 'Terms of Service', href: '/terms/' },
   ],
 } as const;
 
