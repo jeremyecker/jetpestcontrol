@@ -46,7 +46,7 @@ export default async function ServiceIndexPage({
 
   const towns = region.towns.map((t: string) => ({
     name: t,
-    slug: t.toLowerCase().replace(/\s+/g, '-'),
+    slug: t.toLowerCase().replace(/\s+/g, '-').replace(/'/g, ''),
   }));
 
   return (
