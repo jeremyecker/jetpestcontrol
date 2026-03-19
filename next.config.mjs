@@ -33,6 +33,10 @@ const nextConfig = {
       { source: '/queens/williamsburg', destination: '/brooklyn/williamsburg', permanent: true },
       // Slug corrections
       { source: '/brooklyn/bed-stuy', destination: '/brooklyn/bedford-stuyvesant', permanent: true },
+
+      // Hell's Kitchen slug normalization (apostrophe in URL → clean slug)
+      { source: '/manhattan/:service/hell\'s-kitchen', destination: '/manhattan/:service/hells-kitchen', permanent: true },
+      { source: '/manhattan/:service/hell\'s-kitchen/', destination: '/manhattan/:service/hells-kitchen/', permanent: true },
       // County corrections — town in wrong county
       { source: '/nassau/amityville', destination: '/suffolk/amityville', permanent: true },
       { source: '/suffolk/massapequa', destination: '/nassau/massapequa', permanent: true },
