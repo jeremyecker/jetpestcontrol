@@ -75,7 +75,7 @@ export async function generateMetadata({
   const region = getRegion(regionSlug);
   if (!region) return {};
   const townName = townSlug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-  const title = `${SERVICE_NAME} in ${townName}, ${region.name} | ${BRAND.name}`;
+  const title = `${SERVICE_NAME} in ${townName}, ${region.name}`;
   const description = `Licensed ${SERVICE_NAME.toLowerCase()} in ${townName}. ${BRAND.name} — same-day service, guaranteed results. Call ${BRAND.phoneFormatted}.`;
   return {
     title,
