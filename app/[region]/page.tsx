@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import { getRegion, getRegionGMB } from '@/lib/regions';
 import { getTownsByRegion } from '@/lib/db';
@@ -97,6 +98,34 @@ export default async function RegionHomePage({ params }: { params: Promise<{ reg
         subtitle={`We serve families in all ${region.townCount} communities across ${region.name}. Find your community below.`}
       />
       <FAQSection faqs={faqs} />
+      {/* Regional Quick Links — de-orphan about/service-areas sub-pages */}
+      <section className="bg-gray-50 py-10">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-xl font-bold text-gray-800 mb-4">More from {BRAND.name} in {region.name}</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <Link href={`/${regionSlug}/about/`} className="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-center">
+              <span className="text-2xl mb-1">ℹ️</span>
+              <span className="font-medium text-sm text-gray-900">About Us</span>
+              <span className="text-xs text-gray-500">{region.shortName || region.name}</span>
+            </Link>
+            <Link href={`/${regionSlug}/service-areas/`} className="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-center">
+              <span className="text-2xl mb-1">📍</span>
+              <span className="font-medium text-sm text-gray-900">Service Areas</span>
+              <span className="text-xs text-gray-500">{region.shortName || region.name}</span>
+            </Link>
+            <Link href={`/${regionSlug}/services/`} className="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-center">
+              <span className="text-2xl mb-1">🛡️</span>
+              <span className="font-medium text-sm text-gray-900">All Services</span>
+              <span className="text-xs text-gray-500">{region.shortName || region.name}</span>
+            </Link>
+            <Link href={`/${regionSlug}/contact/`} className="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-center">
+              <span className="text-2xl mb-1">📞</span>
+              <span className="font-medium text-sm text-gray-900">Contact Us</span>
+              <span className="text-xs text-gray-500">{region.shortName || region.name}</span>
+            </Link>
+          </div>
+        </div>
+      </section>
       <CTABanner region={region} phone={BRAND.phone} phoneFormatted={BRAND.phoneFormatted} />
     </>
   );
