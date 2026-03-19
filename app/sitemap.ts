@@ -108,8 +108,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
 
   // ============================================================
-  // Service×town pages — all 10 services for all regions
-  // WARNING: When adding new services, update this list!
+  // Service index pages — /{region}/{service}/ (50 URLs total)
   // ============================================================
   const ALL_SERVICE_SLUGS = [
     'ant-exterminator',
@@ -124,9 +123,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'wildlife-removal',
   ];
 
-  // ============================================================
-  // Service index pages — /{region}/{service}/ (50 URLs total)
-  // ============================================================
   entries.push(
     ...REGIONS.flatMap((region: { slug: string }) =>
       ALL_SERVICE_SLUGS.map(service => ({
@@ -135,19 +131,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: 'monthly' as const,
         priority: 0.85,
       }))
-    )
-  );
-
-  entries.push(
-    ...REGIONS.flatMap((region: { slug: string; towns: string[] }) =>
-      ALL_SERVICE_SLUGS.flatMap(service =>
-        region.towns.map((town: string) => ({
-          url: `${base}/${region.slug}/${service}/${town.toLowerCase().replace(/\s+/g, '-')}/`,
-          lastModified: new Date(),
-          changeFrequency: 'monthly' as const,
-          priority: 0.8,
-        }))
-      )
     )
   );
 
