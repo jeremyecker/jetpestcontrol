@@ -5,12 +5,12 @@
   "redirects": [
     {
       "source": "/manhattan/hell%27s-kitchen",
-      "destination": "/manhattan",
+      "destination": "/manhattan/hells-kitchen",
       "permanent": true
     },
     {
       "source": "/manhattan/hell's-kitchen",
-      "destination": "/manhattan",
+      "destination": "/manhattan/hells-kitchen",
       "permanent": true
     },
     {
