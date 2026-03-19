@@ -32,7 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Commercial vertical pages
   for (const vertical of COMMERCIAL_VERTICALS) {
     entries.push({
-      url: `${base}/commercial/${vertical.slug}`,
+      url: `${base}/commercial/${vertical.slug}`/,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
@@ -42,7 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Blog posts
   for (const post of getAllBlogPosts()) {
     entries.push({
-      url: `${base}/blog/${post.slug}`,
+      url: `${base}/blog/${post.slug}`/,
       lastModified: new Date(post.date),
       changeFrequency: 'monthly',
       priority: 0.7,
@@ -52,7 +52,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Individual service pages
   for (const service of SERVICES) {
     entries.push({
-      url: `${base}/services/${service.slug}`,
+      url: `${base}/services/${service.slug}`/,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.7,
@@ -126,7 +126,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   entries.push(
     ...REGIONS.flatMap((region: { slug: string }) =>
       ALL_SERVICE_SLUGS.map(service => ({
-        url: `${base}/${region.slug}/${service}`,
+        url: `${base}/${region.slug}/${service}`/,
         lastModified: new Date(),
         changeFrequency: 'monthly' as const,
         priority: 0.85,
