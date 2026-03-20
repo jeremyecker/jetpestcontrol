@@ -16,7 +16,7 @@ const townCount = getTownCount();
 
 const homepageFAQs = [
   {
-    question: 'Are your treatments safe for kids and pets?',
+    question: 'Are your treatments family-friendly for kids and pets?',
     answer: `Absolutely — we use EPA-approved products and Integrated Pest Management (IPM) techniques specifically chosen to be gentle around children and pets.`,
   },
   {
