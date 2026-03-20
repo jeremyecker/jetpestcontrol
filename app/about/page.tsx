@@ -40,7 +40,7 @@ export default function AboutPage() {
           <p>
             Every treatment plan is customized to your situation. We don&apos;t do one-size-fits-all
             spray-and-pray. Our technicians assess your specific problem, explain the treatment
-            options, and use targeted solutions that are tough on pests and safe for your family
+            options, and use targeted solutions that are tough on pests and trusted for your family
             and pets. We use EPA-approved products and Integrated Pest Management techniques —
             the same science-based approach trusted by hospitals and schools.
           </p>
