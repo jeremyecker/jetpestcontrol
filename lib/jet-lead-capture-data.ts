@@ -21,7 +21,7 @@ export const leadCapturePages: LeadCapturePage[] = [
     leadType: 'pest-control-near-me',
     title: 'Pest Control Near Me',
     metaTitle: `Pest Control Near Me Brooklyn | Same-Day Service`,
-    metaDesc: `Looking for pest control near you in Brooklyn? Jet Pest Control offers same-day service, licensed technicians, and guaranteed results. Call (718) 710-0330.`,
+    metaDesc: `Looking for pest control near you in Brooklyn? Jet Pest Control offers same-day service, licensed technicians, and proven results. Call (718) 710-0330.`,
     h1: `Pest Control Near Me in Brooklyn`,
     intro: `When you search for pest control near you in Brooklyn, you need a company that actually shows up — same day, with the right solution. Jet Pest Control has served Brooklyn and the surrounding area for years, handling everything from cockroaches and rodents to bed bugs and termites in brownstones, pre-war apartment buildings, converted loft spaces, and densely packed row houses.
 
@@ -84,7 +84,7 @@ Pest emergencies are stressful and often escalate quickly in brownstones, pre-wa
     leadType: 'same-day-pest-control',
     title: 'Same Day Pest Control',
     metaTitle: `Same Day Pest Control Brooklyn | Book Today, Service Today`,
-    metaDesc: `Same-day pest control in Brooklyn. Call Jet Pest Control at (718) 710-0330 before noon for afternoon service. Licensed, insured, guaranteed.`,
+    metaDesc: `Same-day pest control in Brooklyn. Call Jet Pest Control at (718) 710-0330 before noon for afternoon service. Licensed, insured, reliable.`,
     h1: `Same Day Pest Control in Brooklyn`,
     intro: `Same-day pest control in Brooklyn is Jet's signature service. Call before noon and a licensed technician arrives the same afternoon — no waiting days for an appointment while an infestation spreads through your home or building.
 
@@ -147,7 +147,7 @@ A free inspection is the right starting point for any pest concern. In Brooklyn'
     leadType: 'pest-control-near-me',
     title: 'Pest Control Near Me',
     metaTitle: `Pest Control Near Me Queens | Same-Day Service`,
-    metaDesc: `Looking for pest control near you in Queens? Jet Pest Control offers same-day service, licensed technicians, and guaranteed results. Call (718) 710-0330.`,
+    metaDesc: `Looking for pest control near you in Queens? Jet Pest Control offers same-day service, licensed technicians, and proven results. Call (718) 710-0330.`,
     h1: `Pest Control Near Me in Queens`,
     intro: `When you search for pest control near you in Queens, you need a company that actually shows up — same day, with the right solution. Jet Pest Control has served Queens and the surrounding area for years, handling everything from cockroaches and rodents to bed bugs and termites in attached homes, two-family houses, garden apartments, and dense urban neighborhoods transitioning to suburban-style streets.
 
@@ -210,7 +210,7 @@ Pest emergencies are stressful and often escalate quickly in attached homes, two
     leadType: 'same-day-pest-control',
     title: 'Same Day Pest Control',
     metaTitle: `Same Day Pest Control Queens | Book Today, Service Today`,
-    metaDesc: `Same-day pest control in Queens. Call Jet Pest Control at (718) 710-0330 before noon for afternoon service. Licensed, insured, guaranteed.`,
+    metaDesc: `Same-day pest control in Queens. Call Jet Pest Control at (718) 710-0330 before noon for afternoon service. Licensed, insured, reliable.`,
     h1: `Same Day Pest Control in Queens`,
     intro: `Same-day pest control in Queens is Jet's signature service. Call before noon and a licensed technician arrives the same afternoon — no waiting days for an appointment while an infestation spreads through your home or building.
 
@@ -273,7 +273,7 @@ A free inspection is the right starting point for any pest concern. In Queens's 
     leadType: 'pest-control-near-me',
     title: 'Pest Control Near Me',
     metaTitle: `Pest Control Near Me Manhattan | Same-Day Service`,
-    metaDesc: `Looking for pest control near you in Manhattan? Jet Pest Control offers same-day service, licensed technicians, and guaranteed results. Call (718) 710-0330.`,
+    metaDesc: `Looking for pest control near you in Manhattan? Jet Pest Control offers same-day service, licensed technicians, and proven results. Call (718) 710-0330.`,
     h1: `Pest Control Near Me in Manhattan`,
     intro: `When you search for pest control near you in Manhattan, you need a company that actually shows up — same day, with the right solution. Jet Pest Control has served Manhattan and the surrounding area for years, handling everything from cockroaches and rodents to bed bugs and termites in high-rise condos, pre-war co-ops, walk-up apartment buildings, and luxury doorman buildings.
 
@@ -336,7 +336,7 @@ Pest emergencies are stressful and often escalate quickly in high-rise condos, p
     leadType: 'same-day-pest-control',
     title: 'Same Day Pest Control',
     metaTitle: `Same Day Pest Control Manhattan | Book Today, Service Today`,
-    metaDesc: `Same-day pest control in Manhattan. Call Jet Pest Control at (718) 710-0330 before noon for afternoon service. Licensed, insured, guaranteed.`,
+    metaDesc: `Same-day pest control in Manhattan. Call Jet Pest Control at (718) 710-0330 before noon for afternoon service. Licensed, insured, reliable.`,
     h1: `Same Day Pest Control in Manhattan`,
     intro: `Same-day pest control in Manhattan is Jet's signature service. Call before noon and a licensed technician arrives the same afternoon — no waiting days for an appointment while an infestation spreads through your home or building.
 
@@ -399,7 +399,7 @@ A free inspection is the right starting point for any pest concern. In Manhattan
     leadType: 'pest-control-near-me',
     title: 'Pest Control Near Me',
     metaTitle: `Pest Control Near Me Nassau County | Same-Day Service`,
-    metaDesc: `Looking for pest control near you in Nassau County? Jet Pest Control offers same-day service, licensed technicians, and guaranteed results. Call (718) 710-0330.`,
+    metaDesc: `Looking for pest control near you in Nassau County? Jet Pest Control offers same-day service, licensed technicians, and proven results. Call (718) 710-0330.`,
     h1: `Pest Control Near Me in Nassau County`,
     intro: `When you search for pest control near you in Nassau County, you need a company that actually shows up — same day, with the right solution. Jet Pest Control has served Nassau County and the surrounding area for years, handling everything from cockroaches and rodents to bed bugs and termites in post-war Levittown Cape Cods, split-level homes, colonial-style houses, and mature tree-lined neighborhoods with aging foundations.
 
@@ -462,7 +462,7 @@ Pest emergencies are stressful and often escalate quickly in post-war Levittown 
     leadType: 'same-day-pest-control',
     title: 'Same Day Pest Control',
     metaTitle: `Same Day Pest Control Nassau County | Book Today, Service Today`,
-    metaDesc: `Same-day pest control in Nassau County. Call Jet Pest Control at (718) 710-0330 before noon for afternoon service. Licensed, insured, guaranteed.`,
+    metaDesc: `Same-day pest control in Nassau County. Call Jet Pest Control at (718) 710-0330 before noon for afternoon service. Licensed, insured, reliable.`,
     h1: `Same Day Pest Control in Nassau County`,
     intro: `Same-day pest control in Nassau County is Jet's signature service. Call before noon and a licensed technician arrives the same afternoon — no waiting days for an appointment while an infestation spreads through your home or building.
 
@@ -525,7 +525,7 @@ A free inspection is the right starting point for any pest concern. In Nassau Co
     leadType: 'pest-control-near-me',
     title: 'Pest Control Near Me',
     metaTitle: `Pest Control Near Me Suffolk County | Same-Day Service`,
-    metaDesc: `Looking for pest control near you in Suffolk County? Jet Pest Control offers same-day service, licensed technicians, and guaranteed results. Call (718) 710-0330.`,
+    metaDesc: `Looking for pest control near you in Suffolk County? Jet Pest Control offers same-day service, licensed technicians, and proven results. Call (718) 710-0330.`,
     h1: `Pest Control Near Me in Suffolk County`,
     intro: `When you search for pest control near you in Suffolk County, you need a company that actually shows up — same day, with the right solution. Jet Pest Control has served Suffolk County and the surrounding area for years, handling everything from cockroaches and rodents to bed bugs and termites in single-family colonial and ranch homes, waterfront properties, rural estates, and seasonal communities along the East End.
 
@@ -588,7 +588,7 @@ Pest emergencies are stressful and often escalate quickly in single-family colon
     leadType: 'same-day-pest-control',
     title: 'Same Day Pest Control',
     metaTitle: `Same Day Pest Control Suffolk County | Book Today, Service Today`,
-    metaDesc: `Same-day pest control in Suffolk County. Call Jet Pest Control at (718) 710-0330 before noon for afternoon service. Licensed, insured, guaranteed.`,
+    metaDesc: `Same-day pest control in Suffolk County. Call Jet Pest Control at (718) 710-0330 before noon for afternoon service. Licensed, insured, reliable.`,
     h1: `Same Day Pest Control in Suffolk County`,
     intro: `Same-day pest control in Suffolk County is Jet's signature service. Call before noon and a licensed technician arrives the same afternoon — no waiting days for an appointment while an infestation spreads through your home or building.
 
@@ -678,7 +678,7 @@ A free inspection is the right starting point for any pest concern. In Suffolk C
     faqs: [
       { q: `How do I know if I have rats or mice in my Brooklyn home?`, a: `Rat droppings are larger (3/4 inch), mice leave smaller pellet-shaped droppings. Both leave gnaw marks, grease trails along walls, and scratching sounds at night. Rats are also visible in yards and alleys. A professional inspection will identify the species and extent of infestation.` },
       { q: `Why do rodents keep coming back to my Brooklyn home?`, a: `Recurring rodent problems mean entry points have not been fully sealed. Rodents follow pheromone trails left by previous animals and will reuse the same entry gaps. Effective control requires both extermination of existing animals and permanent exclusion of all entry points.` },
-      { q: `Are rodent control treatments safe for my family and pets?`, a: `Yes. We use EPA-registered products applied by licensed technicians following strict safety protocols. Bait stations are tamper-resistant, and we provide clear guidance on safety precautions during and after treatment.` },
+      { q: `Are rodent control treatments family-friendly for kids and pets?`, a: `Yes. We use EPA-registered products applied by licensed technicians following strict safety protocols. Bait stations are tamper-resistant, and we provide clear guidance on safety precautions during and after treatment.` },
       { q: `How long does rodent control take in Brooklyn?`, a: `Most active infestations are resolved within two to three service visits over two to four weeks. Entry point sealing is completed in a follow-up visit after elimination is confirmed. We follow up to ensure the problem is fully resolved.` },
     ],
   },
@@ -874,7 +874,7 @@ A free inspection is the right starting point for any pest concern. In Suffolk C
     faqs: [
       { q: `When do raccoons typically enter Nassau County attics?`, a: `The primary intrusion season is late January through April when pregnant females seek denning sites. A second wave occurs in fall when juveniles from the summer litter seek new territory. Year-round vigilance is recommended for Nassau County homes with large tree canopy.` },
       { q: `How much damage can raccoons cause in a Nassau County attic?`, a: `Raccoons destroy attic insulation, contaminate surfaces with urine and droppings which carry raccoon roundworm, chew electrical wiring, and damage roofing materials at entry points. A single season of raccoon occupancy can result in thousands of dollars in remediation costs.` },
-      { q: `What should I do if I hear raccoons in my Nassau County attic?`, a: `Call Jet Pest Control immediately. Do not attempt to remove the animals yourself — raccoons with young are defensive and can cause injury. Professional removal is safe, humane, and resolves the problem without risk to you or the animals.` },
+      { q: `What should I do if I hear raccoons in my Nassau County attic?`, a: `Call Jet Pest Control immediately. Do not attempt to remove the animals yourself — raccoons with young are defensive and can cause injury. Professional removal is responsible, humane, and resolves the problem without risk to you or the animals.` },
       { q: `Does Jet seal attic entry points after raccoon removal in Nassau County?`, a: `Yes. Entry point sealing is included in our raccoon removal service. We use heavy-gauge metal flashing, hardware cloth, and professional sealants that raccoons cannot pull away or chew through — providing permanent exclusion rather than a temporary fix.` },
     ],
   },
@@ -925,7 +925,7 @@ A free inspection is the right starting point for any pest concern. In Suffolk C
     faqs: [
       { q: `What wildlife is most commonly removed in Nassau County?`, a: `Raccoons, opossums, skunks, groundhogs, and Eastern gray squirrels are the most frequent wildlife removal cases throughout Nassau County. Communities near preserve corridors also see occasional woodchuck and muskrat situations.` },
       { q: `How do skunks get under Nassau County porches and decks?`, a: `Skunks dig beneath deck and porch perimeters, exploiting gaps in lattice skirting and areas where wooden structures meet ground level. Hardware cloth exclusion buried at the perimeter is the standard permanent deterrent after removal.` },
-      { q: `Is it safe to handle wildlife removal in Nassau County myself?`, a: `Attempting DIY wildlife removal in Nassau County carries significant risks: injury from defensive animals, potential rabies exposure from raccoons and skunks, legal liability for handling protected species without a license, and incomplete removal that results in animals returning. Licensed professionals resolve the situation correctly and safely.` },
+      { q: `Is it advisable to handle wildlife removal in Nassau County myself?`, a: `Attempting DIY wildlife removal in Nassau County carries significant risks: injury from defensive animals, potential rabies exposure from raccoons and skunks, legal liability for handling protected species without a license, and incomplete removal that results in animals returning. Licensed professionals resolve the situation correctly and safely.` },
       { q: `How quickly can Jet Pest Control respond to a wildlife situation in Nassau County?`, a: `We offer same-day and next-day wildlife removal service throughout Nassau County. For situations involving animal injury, aggressive behavior, or direct access to living spaces, we treat them as priority calls and dispatch accordingly.` },
     ],
   },

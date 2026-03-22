@@ -51,7 +51,7 @@ export const COMMERCIAL_VERTICALS: CommercialVertical[] = [
         description: 'We assess your entire operation through a food safety lens — grease traps, floor drains, dry storage, walk-in coolers, and receiving areas — documenting pest pressure points that align with your HACCP plan.',
       },
       {
-        step: 'Targeted Treatment with DOH-Safe Products',
+        step: 'Targeted Treatment with DOH-Approved Products',
         description: 'We use gel baits, crack-and-crevice treatments, and EPA-registered products approved for food-handling areas. All treatments are timed to avoid food prep and service windows.',
       },
       {

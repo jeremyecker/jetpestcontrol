@@ -77,7 +77,7 @@ export default function LeadCapturePage({ region, leadType }: LeadCapturePagePro
             <span>{p.title}</span>
           </nav>
           <h1 className="text-4xl font-bold mb-4">{p.h1}</h1>
-          <p className="text-xl text-blue-200 mb-8">Licensed &amp; Insured &middot; Same-Day Service &middot; Guaranteed Results</p>
+          <p className="text-xl text-blue-200 mb-8">Licensed &amp; Insured &middot; Same-Day Service &middot; Proven Results</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href={`tel:+1${BRAND.phone}`} className="bg-yellow-400 text-blue-900 font-bold py-4 px-8 rounded-lg text-lg hover:bg-yellow-300 transition">
               Call {BRAND.phoneFormatted}
@@ -93,7 +93,7 @@ export default function LeadCapturePage({ region, leadType }: LeadCapturePagePro
         <div className="max-w-4xl mx-auto flex flex-wrap justify-center gap-6 text-blue-900 font-semibold text-sm">
           <span>Same-Day Service Available</span>
           <span>Licensed NY DEC Technicians</span>
-          <span>100% Satisfaction Guaranteed</span>
+          <span>100% Satisfaction Assured</span>
           <span>Serving All of {regionDisplay}</span>
         </div>
       </section>
@@ -125,7 +125,7 @@ export default function LeadCapturePage({ region, leadType }: LeadCapturePagePro
               ['Licensed NY DEC Technicians', 'Every technician is licensed by New York State DEC and fully insured.'],
               ['Integrated Pest Management', 'We identify root causes and entry points, not just symptoms.'],
               ['Service Guarantee', 'If pests return within the treatment period, we come back at no charge.'],
-              ['Family and Pet Safe', 'EPA-registered products applied with strict safety protocols.'],
+              ['Family and Pet Friendly', 'EPA-registered products applied with strict safety protocols.'],
               ['Local Experts', `We know ${regionDisplay}'s housing stock and local pest pressures intimately.`],
             ].map(([title, desc]) => (
               <div key={title} className="flex gap-4">
@@ -175,7 +175,7 @@ export default function LeadCapturePage({ region, leadType }: LeadCapturePagePro
 
         <section className="bg-blue-900 text-white rounded-xl p-8 text-center">
           <h2 className="text-2xl font-bold mb-2">{p.title} in {regionDisplay}</h2>
-          <p className="text-blue-200 mb-6">Same-day service &middot; Licensed technicians &middot; Guaranteed results</p>
+          <p className="text-blue-200 mb-6">Same-day service &middot; Licensed technicians &middot; Proven results</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href={`tel:+1${BRAND.phone}`} className="bg-yellow-400 text-blue-900 font-bold py-3 px-8 rounded-lg hover:bg-yellow-300 transition">
               {BRAND.phoneFormatted}

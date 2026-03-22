@@ -182,7 +182,7 @@ export const REGIONS: RegionConfig[] = [
     primaryPests: ['Bed Bugs', 'Rodents', 'Cockroaches', 'Mice'],
     pestContext: "Manhattan's ultra-dense urban environment, aging building stock, and constant foot traffic create ideal conditions for bed bugs, rodents, and cockroaches.",
     metaTitle: 'Manhattan Exterminators',
-    metaDescription: 'Expert pest control for Manhattan. Serving Upper East Side, Harlem, Chelsea & all 32 neighborhoods. Discreet service, guaranteed results.',
+    metaDescription: 'Expert pest control for Manhattan. Serving Upper East Side, Harlem, Chelsea & all 32 neighborhoods. Discreet service, proven results.',
     towns: MANHATTAN_TOWNS,
     townCount: MANHATTAN_TOWNS.length,
   },
