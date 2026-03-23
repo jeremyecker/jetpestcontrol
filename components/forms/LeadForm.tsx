@@ -139,6 +139,14 @@ export default function LeadForm({
 
       if (data.success) {
         setSubmitted(true);
+        // GA4 enriched conversion event — fired with form data before redirect
+        if (typeof window !== 'undefined' && typeof (window as any).gtag === 'function') {
+          (window as any).gtag('event', 'generate_lead', {
+            currency: 'USD',
+            value: 50,
+            service_type: formData.pest_type || undefined,
+          });
+        }
         window.location.href = '/thank-you';
       } else {
         setError(data.message || 'Something went wrong. Please try again or call us directly.');
